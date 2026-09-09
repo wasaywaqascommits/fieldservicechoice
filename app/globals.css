@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-surface-subtle text-ink antialiased;
+}
+
+/* Respect users who prefer reduced motion (spec §67). */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-content px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+  .btn-primary {
+    @apply btn bg-brand-600 text-white hover:bg-brand-700;
+  }
+  .btn-secondary {
+    @apply btn border border-slate-300 bg-white text-ink hover:bg-surface-subtle;
+  }
+  .btn-ghost {
+    @apply btn text-brand-700 hover:bg-surface-sky;
+  }
+
+  .card {
+    @apply rounded-xl border border-slate-200 bg-white shadow-card;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1 rounded-full border px-2.5 py-0.5 text-xs font-medium;
+  }
+
+  .prose-fsc {
+    @apply text-ink-soft leading-relaxed;
+  }
+  .prose-fsc h2 {
+    @apply mt-10 mb-3 text-2xl font-bold text-ink;
+  }
+  .prose-fsc h3 {
+    @apply mt-8 mb-2 text-lg font-semibold text-ink;
+  }
+  .prose-fsc p {
+    @apply mb-4;
+  }
+  .prose-fsc ul {
+    @apply mb-4 list-disc space-y-1 pl-5;
+  }
+  .prose-fsc a {
+    @apply text-brand-700 underline underline-offset-2 hover:text-brand-800;
+  }
+}
+
+/* Focus-visible defaults for keyboard users. */
+a:focus-visible,
+button:focus-visible,
+[role='button']:focus-visible {
+  outline: 2px solid theme('colors.brand.500');
+  outline-offset: 2px;
+}
