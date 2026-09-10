@@ -10,10 +10,10 @@ export const metadata: Metadata = {
 };
 
 const ADMIN_NAV = [
-  { href: '/admin/', label: 'Dashboard' },
-  { href: '/admin/products/', label: 'Products' },
-  { href: '/admin/leads/', label: 'Leads' },
-  { href: '/admin/partners/', label: 'Partner inquiries' },
+  { href: '/console-x7k29q/', label: 'Dashboard' },
+  { href: '/console-x7k29q/products/', label: 'Products' },
+  { href: '/console-x7k29q/leads/', label: 'Leads' },
+  { href: '/console-x7k29q/partners/', label: 'Partner inquiries' },
 ];
 
 export default async function AdminLayout({ children }: { children: React.ReactNode }) {
@@ -30,7 +30,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
       <div className="border-b border-slate-200 bg-white">
         <div className="container-page flex h-14 items-center justify-between">
           <div className="flex items-center gap-6">
-            <Link href="/admin/" className="font-bold text-ink">
+            <Link href="/console-x7k29q/" className="font-bold text-ink">
               FSC Admin
             </Link>
             <nav className="flex gap-1">

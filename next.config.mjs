@@ -10,7 +10,7 @@ const nextConfig = {
       {
         // Keep the admin area and APIs out of the index defensively at the
         // header level, in addition to per-page robots directives.
-        source: '/admin/:path*',
+        source: '/console-x7k29q/:path*',
         headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }],
       },
       {

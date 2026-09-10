@@ -17,9 +17,9 @@ export default async function AdminProducts({ searchParams }: { searchParams: Pr
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-bold text-ink">Products</h1>
         <div className="flex gap-2 text-sm">
-          <Link href="/admin/products/" className={`rounded-md px-3 py-1.5 ${!filter ? 'bg-brand-600 text-white' : 'text-ink-soft hover:bg-white'}`}>All</Link>
-          <Link href="/admin/products/?filter=needs-pricing" className={`rounded-md px-3 py-1.5 ${filter === 'needs-pricing' ? 'bg-brand-600 text-white' : 'text-ink-soft hover:bg-white'}`}>Needs pricing</Link>
-          <Link href="/admin/products/?filter=needs-features" className={`rounded-md px-3 py-1.5 ${filter === 'needs-features' ? 'bg-brand-600 text-white' : 'text-ink-soft hover:bg-white'}`}>Needs features</Link>
+          <Link href="/console-x7k29q/products/" className={`rounded-md px-3 py-1.5 ${!filter ? 'bg-brand-600 text-white' : 'text-ink-soft hover:bg-white'}`}>All</Link>
+          <Link href="/console-x7k29q/products/?filter=needs-pricing" className={`rounded-md px-3 py-1.5 ${filter === 'needs-pricing' ? 'bg-brand-600 text-white' : 'text-ink-soft hover:bg-white'}`}>Needs pricing</Link>
+          <Link href="/console-x7k29q/products/?filter=needs-features" className={`rounded-md px-3 py-1.5 ${filter === 'needs-features' ? 'bg-brand-600 text-white' : 'text-ink-soft hover:bg-white'}`}>Needs features</Link>
         </div>
       </div>
 

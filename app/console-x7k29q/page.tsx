@@ -48,16 +48,16 @@ export default async function AdminDashboard() {
 
       <h2 className="mt-8 mb-3 text-sm font-semibold uppercase tracking-wide text-ink-muted">Content</h2>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <StatCard label="Products" value={products.length} href="/admin/products/" />
-        <StatCard label="Needs pricing verification" value={needsPricing} href="/admin/products/?filter=needs-pricing" hint="pricingVerifiedAt is null" />
-        <StatCard label="Needs feature verification" value={needsFeatures} href="/admin/products/?filter=needs-features" />
+        <StatCard label="Products" value={products.length} href="/console-x7k29q/products/" />
+        <StatCard label="Needs pricing verification" value={needsPricing} href="/console-x7k29q/products/?filter=needs-pricing" hint="pricingVerifiedAt is null" />
+        <StatCard label="Needs feature verification" value={needsFeatures} href="/console-x7k29q/products/?filter=needs-features" />
         <StatCard label="Comparisons / industries" value={`${getComparisons().length} / ${getIndustries().length}`} />
       </div>
 
       <h2 className="mt-8 mb-3 text-sm font-semibold uppercase tracking-wide text-ink-muted">Pipeline</h2>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <StatCard label="Leads" value={fmt(leads)} href="/admin/leads/" hint={leads === null ? 'Connect Supabase' : undefined} />
-        <StatCard label="Partner inquiries" value={fmt(partners)} href="/admin/partners/" hint={partners === null ? 'Connect Supabase' : undefined} />
+        <StatCard label="Leads" value={fmt(leads)} href="/console-x7k29q/leads/" hint={leads === null ? 'Connect Supabase' : undefined} />
+        <StatCard label="Partner inquiries" value={fmt(partners)} href="/console-x7k29q/partners/" hint={partners === null ? 'Connect Supabase' : undefined} />
         <StatCard label="Tracked events" value={fmt(events)} hint={events === null ? 'Connect Supabase' : 'finder, vendor clicks, etc.'} />
         <StatCard label="Vendor clicks" value={fmt(events)} hint="See attribution_events" />
       </div>
