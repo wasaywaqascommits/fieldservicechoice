@@ -39,6 +39,33 @@ export const INDUSTRIES: IndustryPage[] = [
     ],
     recommendedProducts: ['servicetitan', 'housecall-pro', 'jobber', 'fieldedge', 'fieldpulse', 'workiz'],
     relatedComparisons: ['servicetitan-vs-fieldedge', 'jobber-vs-housecall-pro', 'housecall-pro-vs-fieldpulse'],
+    faqs: [
+      {
+        question: 'What is the best software for an HVAC business?',
+        answer:
+          'It depends on your size and residential/commercial mix. Established HVAC companies running memberships, financing and a flat-rate pricebook tend to fit ServiceTitan or FieldEdge; small and residential-focused teams are usually better served by Jobber, Housecall Pro or Workiz, which are faster to adopt. Use the Finder for a shortlist scored against your specific business.',
+      },
+      {
+        question: 'What features do HVAC businesses need most?',
+        answer:
+          'Beyond core scheduling and invoicing, HVAC benefits from emergency and same-day dispatch, equipment and service history by unit, maintenance or membership agreements, a flat-rate pricebook, point-of-sale financing for system replacements, inventory or truck stock, and a strong technician mobile app. Which of these are must-haves depends on whether you sell replacements and run memberships.',
+      },
+      {
+        question: 'How much does HVAC field service software cost?',
+        answer:
+          'Pricing ranges from modest per-user monthly plans for small-team tools to quote-based pricing for enterprise platforms like ServiceTitan, where cost depends on your size and modules. We label pricing as unverified rather than publish figures we have not confirmed — check the vendor for current numbers and use the Finder to match a budget band.',
+      },
+      {
+        question: 'Which HVAC software integrates with QuickBooks?',
+        answer:
+          'It depends on your QuickBooks version. Shops on QuickBooks Online are well served by Jobber and Housecall Pro; shops anchored to QuickBooks Desktop are usually better off with FieldEdge, which has deep Desktop ties. Confirm Online vs Desktop support before committing, as it varies between platforms.',
+      },
+      {
+        question: 'What HVAC software is best for maintenance agreements?',
+        answer:
+          'Membership and maintenance-agreement management is a strength of the more established platforms — ServiceTitan and FieldEdge handle recurring agreements, visit scheduling and renewals well. If memberships are central to your revenue, treat depth here as a hard requirement when you compare options.',
+      },
+    ],
     published: true,
   },
   {
@@ -67,6 +94,33 @@ export const INDUSTRIES: IndustryPage[] = [
     ],
     recommendedProducts: ['jobber', 'housecall-pro', 'servicetitan', 'workiz', 'fieldpulse', 'simpro'],
     relatedComparisons: ['jobber-vs-housecall-pro', 'jobber-vs-workiz', 'servicetitan-vs-simpro'],
+    faqs: [
+      {
+        question: 'What is the best software for a plumbing business?',
+        answer:
+          'It depends on whether you are primarily a residential service business or a commercial/project business. Residential-heavy plumbers usually fit Jobber, Housecall Pro or Workiz, which speed up quoting, dispatch and getting paid; commercial and project plumbers are better served by Simpro or ServiceTitan for estimating and job-costing depth. Use the Finder for a personalized shortlist.',
+      },
+      {
+        question: 'What do plumbers need from field service software?',
+        answer:
+          'Service plumbing needs fast emergency and on-call scheduling, clear on-site estimates, invoicing and online payments, and strong customer communication. As shops grow, a flat-rate pricebook and service agreements help. Commercial and project plumbers additionally need job costing, inventory and progress billing.',
+      },
+      {
+        question: 'What is the best software for commercial plumbing?',
+        answer:
+          'Commercial and project-based plumbing needs estimating depth, job costing, materials tracking and progress billing, which points toward Simpro or the enterprise depth of ServiceTitan. General residential-focused tools tend to be underpowered for genuine commercial project work.',
+      },
+      {
+        question: 'How much does plumbing software cost?',
+        answer:
+          'Small-team tools generally use predictable per-user monthly pricing, while enterprise and project platforms are often quote-based and depend on your size and modules. We label pricing as unverified rather than publish figures we have not confirmed — check the vendor and use the Finder to match your budget.',
+      },
+      {
+        question: 'Which plumbing software is best for emergency dispatch?',
+        answer:
+          'Fast dispatch is a strength of the service-oriented platforms — Jobber, Housecall Pro and Workiz all handle same-day scheduling well, and Workiz adds built-in call handling that phone-driven shops value. Larger operations with high dispatch volume may prefer ServiceTitan’s deeper dispatch board.',
+      },
+    ],
     published: true,
   },
   {
@@ -95,6 +149,33 @@ export const INDUSTRIES: IndustryPage[] = [
     ],
     recommendedProducts: ['jobber', 'workiz', 'servicetitan', 'simpro', 'tradify', 'fieldpulse'],
     relatedComparisons: ['jobber-vs-workiz', 'jobber-vs-servicem8', 'servicetitan-vs-buildops'],
+    faqs: [
+      {
+        question: 'What is the best software for electrical contractors?',
+        answer:
+          'It depends on whether your work is service-heavy or project-based. Service electricians are well served by Jobber, Workiz or Tradify for scheduling, quoting and invoicing; commercial and project-based contractors need the estimating, job costing and project management of Simpro, BuildOps or ServiceTitan. Use the Finder for a shortlist matched to your mix.',
+      },
+      {
+        question: 'What is the difference between service and project electrical software?',
+        answer:
+          'Service work runs on fast scheduling, on-site quoting, invoicing and payments — a lightweight, mobile-first tool wins. Project and commercial work runs on estimating depth, job costing, materials tracking and progress billing across long jobs, which needs a platform built for projects. Most electrical businesses lean one way and should buy for that side.',
+      },
+      {
+        question: 'What is the best software for commercial or project-based electrical work?',
+        answer:
+          'For commercial and project electrical contractors, Simpro, BuildOps and ServiceTitan bring the estimating, job costing and project management that larger work demands. General residential-focused service tools are usually underpowered for this kind of work.',
+      },
+      {
+        question: 'How much does electrical field service software cost?',
+        answer:
+          'Service-oriented tools generally use predictable per-user monthly pricing, while project and enterprise platforms are often quote-based depending on size and modules. We label pricing as unverified rather than publish unconfirmed figures — check the vendor and use the Finder to match your budget band.',
+      },
+      {
+        question: 'Which electrical software integrates with QuickBooks or Xero?',
+        answer:
+          'Most platforms integrate with QuickBooks Online, and several also support Xero, but depth varies and QuickBooks Desktop support is less common. Confirm which accounting system and version a platform supports before committing, especially if you run QuickBooks Desktop.',
+      },
+    ],
     published: true,
   },
   {
@@ -122,6 +203,33 @@ export const INDUSTRIES: IndustryPage[] = [
     ],
     recommendedProducts: ['jobber', 'fieldpulse', 'simpro', 'buildops'],
     relatedComparisons: ['jobber-vs-housecall-pro'],
+    faqs: [
+      {
+        question: 'What is the best software for a roofing business?',
+        answer:
+          'Roofing is more sales- and project-driven than most trades, so the best fit depends on how much of your work is production/project versus smaller service and repair. Project-oriented roofers benefit from the estimating and project management of Simpro or BuildOps; smaller service/repair roofing can run on Jobber or FieldPulse. Use the Finder for a shortlist matched to your business.',
+      },
+      {
+        question: 'Why is roofing software different from other trades?',
+        answer:
+          'A roofing job is closer to a project than a service call: it involves a sales cycle, an estimate, materials, a crew and a production timeline. That makes CRM and sales pipeline, estimating, document and photo management, and project tracking more important than the high-volume recurring dispatch that drives HVAC or pest control software.',
+      },
+      {
+        question: 'Do general field service tools work for roofing?',
+        answer:
+          'General FSM platforms can work well for smaller roofing service and repair work, where scheduling, quoting and invoicing are the priorities. For dedicated roofing production businesses with a real sales pipeline and project timelines, project-oriented tools like Simpro or BuildOps — or roofing-specific software — often fit better. Where a general tool is used, prioritize estimating, document management and job costing.',
+      },
+      {
+        question: 'How much does roofing software cost?',
+        answer:
+          'Pricing ranges from predictable per-user monthly plans for lighter tools to quote-based pricing for project and enterprise platforms, which depends on your size and modules. We label pricing as unverified rather than publish unconfirmed figures — check the vendor and use the Finder to match your budget.',
+      },
+      {
+        question: 'What features matter most for roofing?',
+        answer:
+          'The priorities shift toward CRM and sales pipeline, estimating and proposals, document and photo management, production/project workflows, and job costing — rather than recurring-visit scheduling. If insurance or production workflows are central to your business, weigh those capabilities heavily.',
+      },
+    ],
     published: true,
   },
   {
@@ -149,6 +257,33 @@ export const INDUSTRIES: IndustryPage[] = [
     ],
     recommendedProducts: ['jobber', 'fieldpulse', 'kickserv', 'workiz'],
     relatedComparisons: ['jobber-vs-housecall-pro', 'jobber-vs-workiz'],
+    faqs: [
+      {
+        question: 'What is the best software for a landscaping business?',
+        answer:
+          'Because so much landscaping and lawn-care work is recurring and route-based, the best fit is a tool that handles repeating visits and routes efficiently. Jobber is a popular general fit for landscaping; FieldPulse and Kickserv are also common choices, and larger route-dense operations may want more specialized routing tools. Use the Finder for a personalized shortlist.',
+      },
+      {
+        question: 'What features do landscaping businesses need most?',
+        answer:
+          'The priorities center on recurring and route service, route optimization, crew scheduling, straightforward estimates and invoicing, and customer notifications. Because much of the work repeats seasonally, strong recurring-job handling and reliable recurring billing matter more than emergency dispatch.',
+      },
+      {
+        question: 'Which landscaping software is best for route-based lawn care?',
+        answer:
+          'Route-heavy lawn-care operations benefit most from strong recurring scheduling and routing. Jobber handles recurring visits and routing well for many businesses; very large, route-dense operations may consider more specialized route-optimization tooling. Prioritize recurring-job handling and mobile crew tools when you compare.',
+      },
+      {
+        question: 'How much does landscaping software cost?',
+        answer:
+          'Landscaping tools generally use predictable per-user monthly pricing, with cost scaling by users and tier. We label pricing as unverified rather than publish figures we have not confirmed — check the vendor for current numbers and use the Finder to match your budget band.',
+      },
+      {
+        question: 'Does landscaping software handle recurring billing?',
+        answer:
+          'Yes — recurring and route billing is a core need for landscaping, and the platforms recommended here support repeating visits and recurring invoicing to keep revenue predictable. If subscription-style billing is central to your model, confirm the depth of recurring billing when you evaluate options.',
+      },
+    ],
     published: true,
   },
   {
@@ -176,6 +311,33 @@ export const INDUSTRIES: IndustryPage[] = [
     ],
     recommendedProducts: ['jobber', 'fieldpulse', 'workiz', 'kickserv'],
     relatedComparisons: ['jobber-vs-workiz', 'housecall-pro-vs-fieldpulse'],
+    faqs: [
+      {
+        question: 'What is the best software for a pest control business?',
+        answer:
+          'Pest control is one of the most route- and recurring-service-intensive trades, so the best fit is a tool with strong routing and recurring scheduling. Jobber, FieldPulse, Workiz and Kickserv are common general choices; dedicated pest-control platforms also exist for compliance-heavy operations. Use the Finder for a shortlist matched to your business.',
+      },
+      {
+        question: 'What features do pest control businesses need most?',
+        answer:
+          'The highest priorities are route optimization, recurring scheduling and subscriptions, reliable recurring billing, technician scheduling, and service and chemical/application records. Because so much work runs on routes and recurring visits, efficient routing and recurring management matter more than one-off emergency dispatch.',
+      },
+      {
+        question: 'Does pest control software track chemical and service records?',
+        answer:
+          'Chemical and service records are important for compliance and for a clear service history per property. Coverage varies among general FSM tools, so if compliance documentation is central to your operation, confirm how a platform records applications and service history — or consider a dedicated pest-control system.',
+      },
+      {
+        question: 'How much does pest control software cost?',
+        answer:
+          'Pest control tools generally use predictable per-user monthly pricing, scaling by users and tier. We label pricing as unverified rather than publish unconfirmed figures — check the vendor for current numbers and use the Finder to match your budget band.',
+      },
+      {
+        question: 'Which pest control software is best for recurring billing?',
+        answer:
+          'Reliable recurring billing keeps revenue predictable, and the platforms recommended here support recurring visits and subscription-style invoicing. If recurring billing and route density are central to your model, prioritize the depth of recurring scheduling and billing when you compare options.',
+      },
+    ],
     published: true,
   },
 ];

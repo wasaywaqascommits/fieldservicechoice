@@ -305,6 +305,8 @@ export interface IndustryPage {
   /** Recommended product slugs, editorially ordered. */
   recommendedProducts: string[];
   relatedComparisons: string[];
+  /** Optional FAQ block; also emitted as FAQPage structured data. */
+  faqs?: { question: string; answer: string }[];
   published: boolean;
   seo?: SeoMeta;
 }

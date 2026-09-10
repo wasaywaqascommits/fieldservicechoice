@@ -9,8 +9,11 @@ import {
   getProductsBySlugs,
 } from '@/lib/database/content';
 import { buildMetadata } from '@/lib/seo/metadata';
+import { faqPageJsonLd, itemListJsonLd, jsonLdScript } from '@/lib/seo/jsonld';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { ProductCard } from '@/components/products/ProductCard';
+import { BestComparisonTable, type BestTableRow } from '@/components/best/BestComparisonTable';
+import { FaqList } from '@/components/best/FaqList';
 import { CTASection } from '@/components/shared/CTASection';
 
 export function generateStaticParams() {
@@ -35,14 +38,28 @@ export default async function IndustryPage({ params }: { params: Promise<{ slug:
   if (!page) notFound();
 
   const products = getProductsBySlugs(page.recommendedProducts);
+  const tableRows: BestTableRow[] = products.map((product, i) => ({
+    position: i + 1,
+    bestForLabel: product.bestFor[0],
+    product,
+  }));
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLdScript(itemListJsonLd(products, page.name))}
+      />
+      {page.faqs && page.faqs.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={jsonLdScript(faqPageJsonLd(page.faqs))}
+        />
+      )}
       <Breadcrumbs
         crumbs={[
           { name: 'Home', path: '/' },
-          { name: 'Industries', path: `/industries/${page.slug}/` },
-          { name: page.shortName, path: `/industries/${page.slug}/` },
+          { name: page.name, path: `/industries/${page.slug}/` },
         ]}
       />
       <div className="container-page py-8">
@@ -70,6 +87,13 @@ export default async function IndustryPage({ params }: { params: Promise<{ slug:
           </div>
         </section>
 
+        {tableRows.length > 0 && (
+          <section className="mt-10">
+            <h2 className="mb-3 text-xl font-bold text-ink">{page.shortName} software compared</h2>
+            <BestComparisonTable rows={tableRows} />
+          </section>
+        )}
+
         <div className="mt-10 space-y-8 prose-fsc max-w-3xl">
           {page.sections.map((s) => (
             <section key={s.heading}>
@@ -80,6 +104,13 @@ export default async function IndustryPage({ params }: { params: Promise<{ slug:
             </section>
           ))}
         </div>
+
+        {page.faqs && page.faqs.length > 0 && (
+          <section className="mt-12 max-w-3xl">
+            <h2 className="mb-4 text-xl font-bold text-ink">{page.shortName} software: frequently asked questions</h2>
+            <FaqList faqs={page.faqs} />
+          </section>
+        )}
 
         {page.relatedComparisons.length > 0 && (
           <section className="mt-10">
