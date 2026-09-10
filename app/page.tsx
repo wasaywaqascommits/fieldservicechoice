@@ -110,6 +110,20 @@ export default function HomePage() {
               </li>
             ))}
           </ul>
+          <p className="mt-5 text-ink-muted">
+            New to the category? Start with our guide to the{' '}
+            <Link
+              href="/best/field-service-management-software/"
+              className="font-medium text-brand-700 hover:underline"
+            >
+              best field service management software
+            </Link>
+            , or get matched to your business with the{' '}
+            <Link href="/find-software/" className="font-medium text-brand-700 hover:underline">
+              software finder
+            </Link>
+            .
+          </p>
         </div>
       </Section>
 

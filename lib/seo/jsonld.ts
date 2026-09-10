@@ -55,6 +55,22 @@ export function itemListJsonLd(products: Pick<Product, 'slug' | 'name'>[], listN
   };
 }
 
+/**
+ * FAQPage structured data. Answers are plain text (no markup) so they remain
+ * valid rich-result content.
+ */
+export function faqPageJsonLd(faqs: { question: string; answer: string }[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.question,
+      acceptedAnswer: { '@type': 'Answer', text: f.answer },
+    })),
+  };
+}
+
 export interface Crumb {
   name: string;
   path: string;

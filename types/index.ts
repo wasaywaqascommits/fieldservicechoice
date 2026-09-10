@@ -341,6 +341,8 @@ export interface BestPage {
   slug: string;
   h1: string;
   intro: string;
+  /** Optional expanded opening (2–3 short paragraphs) for deep-listicle pages. */
+  lead?: string[];
   /** How this shortlist was assembled. */
   methodologyNote: string;
   entries: {
@@ -349,6 +351,10 @@ export interface BestPage {
     bestForLabel: string;
     rationale: string;
   }[];
+  /** Optional buyer's-guide narrative sections (heading + body paragraphs). */
+  sections?: { heading: string; body: string[] }[];
+  /** Optional FAQ block; also emitted as FAQPage structured data. */
+  faqs?: { question: string; answer: string }[];
   published: boolean;
   seo?: SeoMeta;
 }
