@@ -185,6 +185,11 @@ export const BEST_PAGES: BestPage[] = [
     h1: 'Best Plumbing Field Service Software',
     intro:
       'Plumbing shops need fast emergency dispatch, clear estimates and invoicing, and — as they grow — a pricebook and service agreements. Commercial plumbers need job costing and project tools.',
+    lead: [
+      'Plumbing sits between two worlds, and the right software depends on which one you live in. Residential service plumbers run on speed: an emergency call needs a technician dispatched fast, a clear quote on site, and a way to get paid before the van leaves the driveway. Commercial and new-construction plumbers run on projects, where estimating depth, job costing and materials tracking matter far more than same-day dispatch.',
+      'Most plumbing businesses are a mix, but one side usually dominates — and that dominant side should drive your choice. A tool that is excellent for a fast residential repair operation can be badly underpowered for a commercial contractor billing progress payments on a six-month job, and vice versa.',
+      'The shortlist below spans both ends. The ordering is our independent editorial view; for a ranking matched to your residential/commercial mix and size, use the Finder.',
+    ],
     methodologyNote: METHODOLOGY_NOTE,
     entries: [
       { slug: 'jobber', position: 1, bestForLabel: 'Best for small residential plumbers', rationale: 'Quick quoting, dispatch and payments.' },
@@ -192,6 +197,62 @@ export const BEST_PAGES: BestPage[] = [
       { slug: 'servicetitan', position: 3, bestForLabel: 'Best for larger plumbing companies', rationale: 'Enterprise depth for established shops.' },
       { slug: 'workiz', position: 4, bestForLabel: 'Best for call-driven plumbers', rationale: 'Built-in phone and call tracking.' },
       { slug: 'simpro', position: 5, bestForLabel: 'Best for commercial plumbing', rationale: 'Project and job-costing depth.' },
+    ],
+    sections: [
+      {
+        heading: 'What plumbing software needs to do',
+        body: [
+          'For service plumbing, the essentials are fast emergency and on-call scheduling, clear estimates a technician can build in the home, invoicing and online payments, and strong customer communication so people know when the plumber is coming. As a shop grows, a flat-rate pricebook keeps pricing consistent across technicians, and service agreements turn one-off customers into recurring revenue.',
+          'For commercial and project-based plumbing, the priorities shift toward estimating depth, job costing that tracks labor and materials against each job, inventory, and progress billing. General field-service tools can handle lighter commercial work, but genuine project plumbing usually needs a platform built for it.',
+        ],
+      },
+      {
+        heading: 'How to choose plumbing software',
+        body: [
+          'Decide first whether you are primarily a residential service business or a commercial/project business, because that single answer removes half the market. Residential-heavy plumbers are usually best served by tools that speed up quoting, dispatch and getting paid — Jobber, Housecall Pro and Workiz are common fits. Commercial and project plumbers should prioritize estimating and job costing, where Simpro and the more enterprise platforms fit better.',
+          'Then weigh size and your must-haves: which accounting system you run, whether you need a flat-rate pricebook, and whether you sell service agreements. As with other trades, avoid buying enterprise depth before you have the volume and office staff to use it.',
+        ],
+      },
+      {
+        heading: 'Residential service versus commercial project work',
+        body: [
+          'A residential service plumber and a commercial plumbing contractor are effectively different businesses buying different software. Service operations win with fast, simple, mobile-first tools that get technicians to jobs and money in the bank quickly. Project operations win with estimating, job costing, materials and billing that hold up across long, complex jobs.',
+          'If you do both, choose for the side that carries most of your revenue and accept some compromise on the other, rather than picking a middle-of-the-road tool that does neither especially well.',
+        ],
+      },
+      {
+        heading: 'How we chose this shortlist',
+        body: [
+          'We profile each platform from official vendor sources and record when each fact was last checked. We do not fabricate prices or ratings; unverified facts are labeled as such. The ordering is our independent editorial read for a typical plumbing business, and commercial relationships never affect it.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is the best software for a small plumbing business?',
+        answer:
+          'Small, residential-focused plumbing businesses are usually best served by fast, mobile-first tools — Jobber for quick quoting, dispatch and payments, Housecall Pro when you also want booking and marketing, or Workiz for call-driven shops. Enterprise platforms are generally more than a small plumbing service business needs.',
+      },
+      {
+        question: 'What software is best for commercial plumbing?',
+        answer:
+          'Commercial and project-based plumbing needs estimating depth, job costing, materials tracking and progress billing, which points toward platforms built for project work such as Simpro, or the enterprise depth of ServiceTitan for larger operations. General residential-focused tools tend to be underpowered for genuine commercial project work.',
+      },
+      {
+        question: 'Do plumbers need a flat-rate pricebook?',
+        answer:
+          'A flat-rate pricebook helps most as a plumbing shop grows and adds technicians, because it keeps pricing consistent and lets technicians present clear options in the home. Solo and very small operations often manage well without one; if consistent pricing across a team is a pain point, treat pricebook depth as a priority in your shortlist.',
+      },
+      {
+        question: 'Which plumbing software handles emergency dispatch best?',
+        answer:
+          'Fast dispatch is a strength of the service-oriented platforms — Jobber, Housecall Pro and Workiz all handle same-day scheduling and dispatch well, and Workiz adds built-in call handling that phone-driven shops value. For high-volume dispatch in larger operations, ServiceTitan offers deeper dispatch-board tooling.',
+      },
+      {
+        question: 'How is this list different from your Fit Score?',
+        answer:
+          'This shortlist is our independent editorial view for a typical plumbing business. The Fit Score is personalized: it scores each platform against your specific residential/commercial mix, size, required features, accounting system and budget, and can exclude products that miss a hard requirement. The two can rank products differently, which is expected.',
+      },
     ],
     published: true,
   },
@@ -350,12 +411,72 @@ export const BEST_PAGES: BestPage[] = [
     h1: 'Best Field Service Software for 1–5 Technicians',
     intro:
       'At 1–5 technicians, the priorities are ease of use, fast setup and value. Enterprise depth is usually unnecessary; a clean, dependable all-rounder wins.',
+    lead: [
+      'At one to five technicians, most businesses are buying their first real field-service software — or replacing a patchwork of paper, spreadsheets, a calendar app and a separate invoicing tool. That context changes what matters. You are not comparing enterprise feature lists; you are looking for one dependable system that handles scheduling, quoting, invoicing and getting paid without a learning curve or an implementation project.',
+      'The two questions that decide most 1–5-technician purchases are simple: will your technicians actually use the mobile app, and is the monthly cost predictable as you add a person or two? A tool that nails those beats a more powerful platform that sits half-configured because nobody had time to set it up.',
+      'The picks below are the strongest fits at this size. The ordering is our independent editorial view; for a shortlist matched to your trade and budget, use the Finder.',
+    ],
     methodologyNote: METHODOLOGY_NOTE,
     entries: [
       { slug: 'jobber', position: 1, bestForLabel: 'Best overall', rationale: 'Ideal for small residential teams.' },
       { slug: 'workiz', position: 2, bestForLabel: 'Best for call-driven work', rationale: 'Phone and call tracking built in.' },
       { slug: 'servicem8', position: 3, bestForLabel: 'Best for Apple-first micro teams', rationale: 'Lightweight and inexpensive.' },
       { slug: 'tradify', position: 4, bestForLabel: 'Best for solo trades', rationale: 'Simple quote-to-invoice flow.' },
+    ],
+    sections: [
+      {
+        heading: 'Moving off paper and spreadsheets',
+        body: [
+          'For a team this size, the biggest win is usually consolidation: replacing a paper calendar, a notebook of customer details and a separate invoicing app with one system that connects them. The payoff is not a fancy feature — it is fewer dropped jobs, faster invoicing and a customer history you can actually find. Aim for a tool that covers the whole loop from booking a job to getting paid, so nothing lives outside the system.',
+          'Because this is often a first system, ease of migration matters. You do not need to import years of history perfectly; you need to be scheduling and invoicing new work within a day or two. Every tool on this list is designed for that kind of self-serve start.',
+        ],
+      },
+      {
+        heading: 'Solo operator versus a small crew',
+        body: [
+          'A true solo trade has slightly different needs than a two-to-five-technician crew. Solo operators benefit most from a fast quote-to-invoice flow and a light footprint — Tradify and ServiceM8 are built around exactly that, and ServiceM8 suits Apple-first operators who work mostly from an iPhone or iPad.',
+          'Once you have a few technicians, dispatch and shared scheduling become more important, and a broader all-rounder like Jobber tends to pull ahead. If your business runs on inbound calls — locksmiths, garage-door, appliance repair — Workiz’s built-in call tracking is a genuine advantage at this size.',
+        ],
+      },
+      {
+        heading: 'What you can safely skip at this size',
+        body: [
+          'At 1–5 technicians you can usually ignore the features that dominate enterprise comparisons: a deep flat-rate pricebook, consumer financing, multi-location controls, advanced job costing and heavy reporting. Paying for them now mostly buys complexity. Focus your budget on the core workflow and a mobile app your team likes, and revisit the heavier features only when a specific need actually appears.',
+        ],
+      },
+      {
+        heading: 'How we chose this shortlist',
+        body: [
+          'We profile each platform from official vendor sources and record when each fact was last checked. We do not fabricate prices or ratings; unverified facts are labeled as such. The ordering is our independent editorial read for a typical 1–5-technician business, and commercial relationships never affect it.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is the best field service software for a solo operator?',
+        answer:
+          'Solo trades usually want a fast, light quote-to-invoice flow rather than a broad platform. Tradify is built around exactly that, and ServiceM8 is a strong pick for Apple-first operators who work mostly from an iPhone or iPad. Jobber also works well solo if you expect to add technicians soon and want room to grow.',
+      },
+      {
+        question: 'Do I need field service software with just a few technicians?',
+        answer:
+          'If you are juggling a paper calendar, a separate invoicing tool and customer details in your phone, a single field-service system usually pays for itself quickly in fewer dropped jobs and faster invoicing. The goal at this size is consolidation and getting paid faster, not advanced features — so a simple, dependable tool is normally worth it.',
+      },
+      {
+        question: 'How much does field service software cost for a small team?',
+        answer:
+          'At 1–5 technicians, expect predictable per-user monthly pricing, with entry tiers aimed at small teams. Cost scales mainly with your number of users and the tier you choose. Where a vendor does not publish pricing we label it as unverified rather than estimate a figure — check current pricing directly before you commit.',
+      },
+      {
+        question: 'Which is easiest to set up for a small crew?',
+        answer:
+          'All the tools on this list are designed for self-serve onboarding, and most 1–5-technician teams can be scheduling and invoicing new work within a day or two. The best way to judge for your business is to run a couple of real jobs during a free trial and see which app your technicians take to fastest.',
+      },
+      {
+        question: 'Will I outgrow these tools if I add technicians?',
+        answer:
+          'Usually not for a while — these platforms comfortably support growing teams well beyond five technicians. You typically only outgrow them when a specific need appears, such as a flat-rate pricebook, financing, multi-location controls or deep job costing. Until then, adding enterprise software tends to add cost and complexity without a clear payoff.',
+      },
     ],
     published: true,
   },
