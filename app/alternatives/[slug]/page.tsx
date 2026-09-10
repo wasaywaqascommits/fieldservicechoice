@@ -3,7 +3,10 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { ALL_ALTERNATIVE_SLUGS, getAlternativePageBySlug, getProductBySlug } from '@/lib/database/content';
 import { buildMetadata } from '@/lib/seo/metadata';
+import { faqPageJsonLd, itemListJsonLd, jsonLdScript } from '@/lib/seo/jsonld';
+import { alternativesFaqs } from '@/lib/alternatives/faqs';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
+import { FaqList } from '@/components/best/FaqList';
 import { ProductLogo } from '@/components/products/ProductLogo';
 import { VendorLink } from '@/components/shared/VendorLink';
 import { AffiliateDisclosure } from '@/components/shared/AffiliateDisclosure';
@@ -32,8 +35,30 @@ export default async function AlternativesPage({ params }: { params: Promise<{ s
   const product = getProductBySlug(slug);
   if (!page || !product) notFound();
 
+  const resolvedAlts = page.alternatives
+    .map((alt) => {
+      const p = getProductBySlug(alt.slug);
+      return p ? { alt, product: p } : null;
+    })
+    .filter((r): r is { alt: (typeof page.alternatives)[number]; product: NonNullable<ReturnType<typeof getProductBySlug>> } => r !== null);
+  const altProducts = resolvedAlts.map((r) => r.product);
+  const faqs = alternativesFaqs(
+    product,
+    page,
+    resolvedAlts.map((r) => ({ name: r.product.name, bestFor: r.alt.bestFor })),
+  );
+
   return (
     <>
+      {altProducts.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={jsonLdScript(itemListJsonLd(altProducts, `Best ${product.name} alternatives`))}
+        />
+      )}
+      {faqs.length > 0 && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={jsonLdScript(faqPageJsonLd(faqs))} />
+      )}
       <Breadcrumbs
         crumbs={[
           { name: 'Home', path: '/' },
@@ -84,6 +109,13 @@ export default async function AlternativesPage({ params }: { params: Promise<{ s
             );
           })}
         </div>
+
+        {faqs.length > 0 && (
+          <div className="mt-12 max-w-3xl">
+            <h2 className="mb-4 text-xl font-bold text-ink">{product.name} alternatives: frequently asked questions</h2>
+            <FaqList faqs={faqs} />
+          </div>
+        )}
 
         <div className="mt-8">
           <AffiliateDisclosure />

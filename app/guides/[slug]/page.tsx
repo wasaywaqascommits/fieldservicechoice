@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { ALL_GUIDE_SLUGS, getGuideBySlug } from '@/lib/database/content';
 import { buildMetadata } from '@/lib/seo/metadata';
+import { articleJsonLd, jsonLdScript } from '@/lib/seo/jsonld';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { CTASection } from '@/components/shared/CTASection';
 
@@ -28,10 +29,21 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLdScript(
+          articleJsonLd({
+            headline: g.title,
+            description: g.intro.slice(0, 155),
+            path: `/guides/${g.slug}/`,
+            datePublished: g.publishedAt ?? undefined,
+            dateModified: g.updatedAt ?? undefined,
+          }),
+        )}
+      />
       <Breadcrumbs
         crumbs={[
           { name: 'Home', path: '/' },
-          { name: 'Guides', path: `/guides/${g.slug}/` },
           { name: g.title, path: `/guides/${g.slug}/` },
         ]}
       />

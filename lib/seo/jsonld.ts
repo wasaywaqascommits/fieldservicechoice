@@ -56,6 +56,31 @@ export function itemListJsonLd(products: Pick<Product, 'slug' | 'name'>[], listN
 }
 
 /**
+ * Article structured data for editorial guides. Author/publisher are the
+ * organization (we don't attribute to a fabricated individual).
+ */
+export function articleJsonLd(input: {
+  headline: string;
+  description: string;
+  path: string;
+  datePublished?: string;
+  dateModified?: string;
+}) {
+  const org = { '@type': 'Organization', name: SITE_NAME, url: SITE_URL };
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: input.headline,
+    description: input.description,
+    url: absoluteUrl(input.path),
+    ...(input.datePublished ? { datePublished: input.datePublished } : {}),
+    ...(input.dateModified ? { dateModified: input.dateModified } : {}),
+    author: org,
+    publisher: org,
+  };
+}
+
+/**
  * FAQPage structured data. Answers are plain text (no markup) so they remain
  * valid rich-result content.
  */
