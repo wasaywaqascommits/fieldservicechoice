@@ -8,7 +8,9 @@ import {
   getProductsBySlugs,
 } from '@/lib/database/content';
 import { buildMetadata } from '@/lib/seo/metadata';
-import { jsonLdScript, softwareApplicationJsonLd } from '@/lib/seo/jsonld';
+import { faqPageJsonLd, jsonLdScript, softwareApplicationJsonLd } from '@/lib/seo/jsonld';
+import { productFaqs } from '@/lib/products/faqs';
+import { FaqList } from '@/components/best/FaqList';
 import { INDUSTRY_LABELS } from '@/data/industries';
 import {
   COMPANY_SIZE_LABELS,
@@ -59,10 +61,20 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   const alternatives = getProductsBySlugs(product.alternatives);
   const comparisons = getComparisonsForProduct(product.slug);
   const sizeRange = `${COMPANY_SIZE_LABELS[product.companySizes[0]]} – ${COMPANY_SIZE_LABELS[product.companySizes[product.companySizes.length - 1]]}`;
+  const faqs = productFaqs(product, alternatives);
+
+  const qbSupported = (v: (typeof product.features)[keyof typeof product.features]) =>
+    v === 'available' || v === 'partial' || v === 'plan_dependent' || v === 'add_on';
+  const hasQbo = qbSupported(product.features.quickbooks_online);
+  const hasQbd = qbSupported(product.features.quickbooks_desktop);
+  const quickbooksFact = hasQbo && hasQbd ? 'Online & Desktop' : hasQbo ? 'Online' : hasQbd ? 'Desktop' : 'Not verified';
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={jsonLdScript(softwareApplicationJsonLd(product))} />
+      {faqs.length > 0 && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={jsonLdScript(faqPageJsonLd(faqs))} />
+      )}
       <Breadcrumbs
         crumbs={[
           { name: 'Home', path: '/' },
@@ -150,6 +162,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                 ['Free trial', product.pricing.freeTrial == null ? 'Not verified' : product.pricing.freeTrial ? 'Yes' : 'No'],
                 ['Mobile app', product.features.mobile_app === 'available' ? 'Yes' : 'Varies'],
                 ['API', product.features.api === 'available' ? 'Yes' : product.features.api === 'plan_dependent' ? 'Plan-dependent' : 'Not verified'],
+                ['QuickBooks', quickbooksFact],
                 ['Implementation', IMPLEMENTATION_LABELS[product.implementation]],
               ].map(([k, v]) => (
                 <div key={k} className="flex justify-between gap-4 px-4 py-2.5 text-sm">
@@ -272,6 +285,14 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                   </Link>
                 ))}
               </div>
+            </section>
+          )}
+
+          {/* FAQ */}
+          {faqs.length > 0 && (
+            <section>
+              <h2 className="mb-3 text-xl font-bold text-ink">{product.name} FAQ</h2>
+              <FaqList faqs={faqs} />
             </section>
           )}
 
