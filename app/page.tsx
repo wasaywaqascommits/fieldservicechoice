@@ -11,10 +11,12 @@ import { getProductBySlug } from '@/lib/database/content';
 import { Section, SectionHeading } from '@/components/ui/Section';
 import { ProductCard } from '@/components/products/ProductCard';
 import { CTASection } from '@/components/shared/CTASection';
+import { FitScoreExample } from '@/components/home/FitScoreExample';
+import { itemListJsonLd, jsonLdScript } from '@/lib/seo/jsonld';
 import { INDUSTRY_LABELS } from '@/data/industries';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Find the Right Field Service Software for Your Business | FieldServiceChoice',
+  title: 'Compare Field Service Software by Trade & Budget',
   description:
     'Compare leading field service platforms based on your trade, team size, workflows, integrations and budget. Independent, transparent recommendations — not vendor payouts.',
   path: '/',
@@ -75,8 +77,50 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* What is field service software (definitional / snippet-shaped) */}
+      <Section>
+        <div className="mx-auto max-w-3xl">
+          <SectionHeading eyebrow="The basics" title="What is field service software?" />
+          <p className="text-lg text-ink-soft">
+            Field service software (also called field service management, or FSM, software) is a
+            platform that helps trade and home-service businesses run the work their technicians do
+            in the field — scheduling and dispatching jobs, tracking technicians, quoting and
+            invoicing, taking payments, and keeping a full history for every customer.
+          </p>
+          <p className="mt-4 text-ink-muted">
+            The best fit depends on your trade, team size and how you work. Core capabilities to
+            weigh include:
+          </p>
+          <ul className="mt-4 grid gap-2 sm:grid-cols-2">
+            {[
+              ['Scheduling & dispatch', 'Assign and route jobs to the right technician.'],
+              ['Estimates & invoicing', 'Quote work and get paid faster.'],
+              ['Technician mobile app', 'Job details, notes and photos in the field — often offline.'],
+              ['GPS & routing', 'Live location tracking and optimized multi-stop routes.'],
+              ['Payments', 'Card and ACH processing, sometimes with consumer financing.'],
+              ['Accounting integration', 'Two-way sync with QuickBooks, Xero and others.'],
+            ].map(([term, desc]) => (
+              <li key={term} className="flex gap-2 text-sm text-ink-soft">
+                <span aria-hidden className="mt-0.5 text-brand-600">
+                  ✓
+                </span>
+                <span>
+                  <span className="font-semibold text-ink">{term}</span> — {desc}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </Section>
+
       {/* Popular software */}
       <Section tone="subtle">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={jsonLdScript(
+            itemListJsonLd(popular, 'Field service software platforms buyers compare most'),
+          )}
+        />
         <SectionHeading eyebrow="Popular software" title="The platforms buyers compare most" />
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {popular.map((p) => (
@@ -156,6 +200,14 @@ export default function HomePage() {
             </div>
           ))}
         </div>
+
+        {/* Real, build-time Fit Score output for a sample buyer */}
+        <div className="mt-12">
+          <p className="mb-5 text-center text-sm font-semibold uppercase tracking-wide text-brand-600">
+            What a Fit Score looks like
+          </p>
+          <FitScoreExample />
+        </div>
       </Section>
 
       {/* Why FieldServiceChoice */}
@@ -200,9 +252,35 @@ export default function HomePage() {
             against your specific requirements using a published, weighted methodology. Commercial
             relationships are never an input.
           </p>
-          <Link href="/methodology/" className="mt-5 inline-flex font-medium text-brand-700 hover:underline">
-            Read our full methodology →
-          </Link>
+
+          {/* Visible verification proof — every pricing fact carries a status label */}
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-2">
+            <span className="text-sm text-ink-muted">We label every pricing fact:</span>
+            <span className="chip border-positive-border bg-positive-bg px-3 py-1 text-xs font-medium text-positive-fg">
+              ✓ Verified
+            </span>
+            <span className="chip border-warning-border bg-warning-bg px-3 py-1 text-xs font-medium text-warning-fg">
+              Quote-based
+            </span>
+            <span className="chip border-slate-300 bg-white px-3 py-1 text-xs font-medium text-ink-soft">
+              Last checked, dated
+            </span>
+          </div>
+
+          <p className="mt-6 text-sm text-ink-muted">
+            Researched and maintained by the FieldServiceChoice editorial team.
+          </p>
+          <div className="mt-3 flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
+            <Link href="/methodology/" className="font-medium text-brand-700 hover:underline">
+              Full methodology →
+            </Link>
+            <Link href="/editorial-policy/" className="font-medium text-brand-700 hover:underline">
+              Editorial policy →
+            </Link>
+            <Link href="/data-verification/" className="font-medium text-brand-700 hover:underline">
+              How we verify data →
+            </Link>
+          </div>
         </div>
       </Section>
 

@@ -36,6 +36,25 @@ export function websiteJsonLd() {
   };
 }
 
+/**
+ * An ItemList of products (e.g. the homepage "platforms buyers compare most"
+ * list). Emits ordered ListItems pointing at each product profile so search
+ * engines can read the curated set as a structured collection.
+ */
+export function itemListJsonLd(products: Pick<Product, 'slug' | 'name'>[], listName: string) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: listName,
+    itemListElement: products.map((p, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: p.name,
+      url: absoluteUrl(`/products/${p.slug}/`),
+    })),
+  };
+}
+
 export interface Crumb {
   name: string;
   path: string;
