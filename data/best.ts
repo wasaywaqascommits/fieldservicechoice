@@ -104,6 +104,11 @@ export const BEST_PAGES: BestPage[] = [
     h1: 'Best HVAC Field Service Software',
     intro:
       'HVAC has demanding requirements: emergency dispatch, equipment history, maintenance agreements, a flat-rate pricebook and financing. The best choice depends on your size and residential/commercial mix.',
+    lead: [
+      'HVAC is one of the hardest trades to buy software for, because a single business runs two very different operations at once: reactive break/fix work — the no-cooling call in July that needs a technician today — and planned maintenance, where hundreds of seasonal tune-ups and membership visits have to be scheduled months ahead. The right platform has to do both well.',
+      'On top of that, HVAC technicians rely on equipment history in a way most trades do not. Knowing the make, model, serial number, install date and warranty status of the unit in front of them drives faster diagnoses and cleaner upsells, so a good HVAC system keeps that record against each piece of equipment, not just the customer.',
+      'This shortlist spans small residential shops through established multi-department companies. As always, the ordering is our independent editorial view — for a ranking matched to your size and residential/commercial mix, use the Finder.',
+    ],
     methodologyNote: METHODOLOGY_NOTE,
     entries: [
       { slug: 'servicetitan', position: 1, bestForLabel: 'Best for established HVAC companies', rationale: 'Deep pricebook, agreements, financing and reporting.' },
@@ -111,6 +116,67 @@ export const BEST_PAGES: BestPage[] = [
       { slug: 'jobber', position: 3, bestForLabel: 'Best for small HVAC teams', rationale: 'Simple, fast scheduling and invoicing.' },
       { slug: 'fieldedge', position: 4, bestForLabel: 'Best for QuickBooks Desktop shops', rationale: 'Service agreements and Desktop accounting ties.' },
       { slug: 'fieldpulse', position: 5, bestForLabel: 'Best for growing HVAC teams', rationale: 'Broad features at a mid-tier level.' },
+    ],
+    sections: [
+      {
+        heading: 'What HVAC software has to handle',
+        body: [
+          'Beyond the basics every field-service tool provides — scheduling, dispatch, a technician mobile app, estimates and invoicing — HVAC has a specific checklist. Emergency and same-day dispatch keeps the reactive side moving. Equipment and service history by unit gives technicians the context they need on site. Maintenance and membership agreements turn one-time customers into recurring revenue and predictable schedules.',
+          'The heavier end of the market adds a flat-rate pricebook with good/better/best options, point-of-sale consumer financing so a technician can close a system replacement in the driveway, and inventory or truck-stock tracking. Tight QuickBooks integration matters across the board — but note that QuickBooks Online and QuickBooks Desktop are supported differently from platform to platform.',
+        ],
+      },
+      {
+        heading: 'How to choose HVAC software for your business',
+        body: [
+          'Start with your size and your residential/commercial split. Small and residential-heavy teams usually win with tools that are fast to adopt and strong on scheduling, invoicing and customer communication. Established companies with office and dispatch staff can justify a heavier platform because the pricebook, agreements, financing and reporting pay back the larger implementation.',
+          'Then pin down two things that quietly decide the shortlist: which QuickBooks version you run, and whether you sell enough system replacements to need financing and a flat-rate pricebook. A shop that lives on Desktop accounting and closes replacements has very different non-negotiables than a residential service team that mostly does repairs and tune-ups.',
+        ],
+      },
+      {
+        heading: 'Small HVAC shop versus established company',
+        body: [
+          'For small and growing residential HVAC teams, Jobber, Housecall Pro and Workiz are common strong fits — quick to set up, good on the reactive side, and priced for smaller operations. FieldPulse sits a step up for teams that have outgrown starter tools but are not ready for enterprise weight.',
+          'Established HVAC companies, especially those running memberships, financing and a real pricebook, tend to look at ServiceTitan and FieldEdge. ServiceTitan brings the deepest pricebook, financing and reporting; FieldEdge is often the better fit for shops anchored to QuickBooks Desktop. Both cost more and take longer to implement, which is exactly why buying up too early is a common HVAC mistake.',
+        ],
+      },
+      {
+        heading: 'How we chose this shortlist',
+        body: [
+          'We profile each platform from official vendor sources — features, integrations, target company sizes and pricing model — and record when each fact was last checked. We do not invent prices or ratings; where a vendor does not publish a figure we label it as unverified. The ordering is our independent editorial read for a typical HVAC business, and commercial relationships never affect it.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is the best software for a small HVAC business?',
+        answer:
+          'Small residential HVAC teams are usually best served by tools that are fast to adopt and strong on scheduling, dispatch, invoicing and customer communication — Jobber and Housecall Pro are common strong fits, and Workiz suits phone-heavy shops. Enterprise platforms like ServiceTitan are generally more than a small shop needs and slower to implement.',
+      },
+      {
+        question: 'Which HVAC software has the best QuickBooks integration?',
+        answer:
+          'It depends on the version. Shops on QuickBooks Online are well served by Jobber and Housecall Pro; shops anchored to QuickBooks Desktop are usually better off with FieldEdge or Service Fusion, which have deeper Desktop ties. Confirm Online vs Desktop support before committing, because it varies meaningfully between platforms.',
+      },
+      {
+        question: 'Do I need a flat-rate pricebook and financing?',
+        answer:
+          'If you sell system replacements and want technicians to present consistent good/better/best pricing and close in the home, a flat-rate pricebook and point-of-sale financing are valuable — and push you toward platforms like ServiceTitan. If you mostly do repairs and maintenance, they matter far less and a lighter tool is usually the better value.',
+      },
+      {
+        question: 'What software is best for HVAC maintenance agreements?',
+        answer:
+          'Membership and maintenance-agreement management is a strength of the more established platforms — ServiceTitan and FieldEdge handle recurring agreements, visit scheduling and renewals well. Several mid-market tools support agreements at a lighter level, so if memberships are central to your model, treat depth here as a hard requirement.',
+      },
+      {
+        question: 'Is ServiceTitan worth it for a small HVAC company?',
+        answer:
+          'ServiceTitan is built for established and larger operations; its depth in pricebook, financing and reporting pays off when you have office and dispatch staff and enough volume to use it fully. For a small team, it usually means paying for — and implementing — more than you need. Many small shops are better served by a lighter platform until they grow into that depth.',
+      },
+      {
+        question: 'How is this list different from your Fit Score?',
+        answer:
+          'This shortlist is our independent editorial view for a typical HVAC business. The Fit Score is personalized: it scores each platform against your specific size, residential/commercial mix, required features, accounting system and budget, and can exclude products that miss a hard requirement. The two can rank products differently, which is expected.',
+      },
     ],
     published: true,
   },
@@ -134,6 +200,11 @@ export const BEST_PAGES: BestPage[] = [
     h1: 'Best Field Service Software for Small Businesses',
     intro:
       'Small field-service businesses value fast setup, ease of use and predictable cost over enterprise depth. These platforms are the strongest fits for owner-operators and small teams.',
+    lead: [
+      'For a small field-service business, the best software is rarely the one with the most features — it is the one your team will actually use from day one. At one to a handful of technicians, you do not have an office manager to run a three-month implementation or configure a complex pricebook. Speed of setup, a mobile app your crew likes, and predictable monthly cost matter more than enterprise depth you will never touch.',
+      'The good news is that this end of the market is well served. Several platforms are built specifically for owner-operators and small teams, covering scheduling, quoting, invoicing, payments and customer communication without a formal rollout. The risk is the opposite of what most buyers fear: not that you will outgrow a small-business tool, but that you will overbuy an enterprise platform and pay for complexity that slows you down.',
+      'The ordering below is our independent editorial view for a typical small business. For a shortlist matched to your trade, team size and budget, use the Finder.',
+    ],
     methodologyNote: METHODOLOGY_NOTE,
     entries: [
       { slug: 'jobber', position: 1, bestForLabel: 'Best overall for small business', rationale: 'Clean all-rounder that is quick to adopt.' },
@@ -142,6 +213,61 @@ export const BEST_PAGES: BestPage[] = [
       { slug: 'servicem8', position: 4, bestForLabel: 'Best for micro Apple-first teams', rationale: 'Light footprint, pay-as-you-grow.' },
       { slug: 'kickserv', position: 5, bestForLabel: 'Best budget option', rationale: 'Essentials at an accessible price.' },
     ],
+    sections: [
+      {
+        heading: 'What matters most at a small scale',
+        body: [
+          'For a small team the priorities invert compared with enterprise buyers. Ease of use comes first: if an owner-operator cannot set the tool up over a weekend and get technicians using it on Monday, it is the wrong tool. A dependable mobile app matters, because most of your team works from a phone, not a desk. And predictable, per-user pricing beats quote-based enterprise pricing that assumes you have a procurement process.',
+          'You still want the core workflow to be complete — scheduling, quoting, invoicing, online payments and customer notifications — because those are what get you paid faster and keep customers informed. What you generally do not need yet is a deep flat-rate pricebook, consumer financing, multi-location controls or advanced job costing. Paying for those before you need them is the most common small-business overspend.',
+        ],
+      },
+      {
+        heading: 'How to choose without overbuying',
+        body: [
+          'Pick the smallest tool that covers your real workflow, and lean on free trials. Almost every small-business platform offers one — use it to run a few real jobs end to end, from scheduling through getting paid, rather than judging on a feature list. The tool that feels effortless in a trial is usually the right answer.',
+          'Match the tool to how you actually work rather than to a trade label. Phone-driven businesses (locksmiths, garage-door, appliance repair) benefit from built-in call tracking, which is why Workiz suits them. Apple-first micro teams often like ServiceM8’s light footprint. Budget-first buyers can start with Kickserv’s essentials. And a clean, broad all-rounder like Jobber is a safe default when you are not sure.',
+        ],
+      },
+      {
+        heading: 'When you will actually outgrow these tools',
+        body: [
+          'Small-business platforms scale further than most owners expect — many businesses run on them well past their first dozen technicians. You typically outgrow them only when a specific need appears: a real flat-rate pricebook, consumer financing, multi-branch operations with granular roles, or deep commercial job costing. Until one of those becomes a genuine constraint, moving up usually adds cost and complexity without adding value.',
+        ],
+      },
+      {
+        heading: 'How we chose this shortlist',
+        body: [
+          'We profile each platform from official vendor sources and record when each fact was last checked. We do not fabricate prices or ratings; where a vendor does not publish a figure we label it as unverified. The ordering is our independent editorial read for a typical small field-service business, and commercial relationships never affect it.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is the best field service software for a small business?',
+        answer:
+          'For most small field-service businesses, Jobber is a strong all-round default — clean, quick to adopt and complete for the core workflow. Housecall Pro is a good alternative if marketing and customer experience are priorities, Workiz suits phone-driven trades, and Kickserv or ServiceM8 fit budget-conscious or micro Apple-first teams. Try two on a free trial with real jobs before deciding.',
+      },
+      {
+        question: 'How much should a small business expect to pay?',
+        answer:
+          'Small-business tools generally use predictable per-user monthly pricing, with entry tiers aimed at owner-operators and small teams and higher tiers unlocking marketing, automation and advanced features. Cost scales mainly with your number of users and the tier you need. Where a vendor does not publish pricing we label it as unverified rather than estimate.',
+      },
+      {
+        question: 'Is free field service software worth it?',
+        answer:
+          'Free plans and long trials are useful for testing and for the smallest operations, but they usually cap users, jobs or key features like online payments. For a working business, a modestly priced paid plan that covers scheduling, invoicing and payments end to end is normally better value than stretching a free tier that limits how you get paid.',
+      },
+      {
+        question: 'Will I outgrow small-business software as I scale?',
+        answer:
+          'Usually later than you expect. These platforms comfortably support growing teams, and you typically only outgrow them when a specific need appears — a flat-rate pricebook, consumer financing, multi-location controls or deep commercial job costing. Until one of those is a real constraint, moving to an enterprise platform tends to add cost and complexity without a clear payoff.',
+      },
+      {
+        question: 'Which small-business tool is easiest to set up?',
+        answer:
+          'The tools on this list are all designed for self-serve onboarding without a paid implementation, and most owner-operators can be live within days. The best way to judge ease of setup for your business is to run a couple of real jobs during a free trial — the one that feels effortless in practice is the right pick.',
+      },
+    ],
     published: true,
   },
   {
@@ -149,12 +275,73 @@ export const BEST_PAGES: BestPage[] = [
     h1: 'Best Field Service Software with QuickBooks Integration',
     intro:
       'QuickBooks integration is a top requirement for many service businesses. The right choice depends on whether you use QuickBooks Online or Desktop — support varies meaningfully between platforms.',
+    lead: [
+      'For a service business that already runs its books in QuickBooks, the accounting integration is not a nice-to-have — it is the feature that decides whether your team types every invoice twice. A clean, two-way sync keeps customers, invoices and payments consistent between the field software and your accounting, and it is worth prioritizing over almost any other integration.',
+      'The single most important thing to get right is which version of QuickBooks you run. QuickBooks Online and QuickBooks Desktop are different products, and field-service platforms support them very differently. A tool with an excellent QuickBooks Online sync may connect to Desktop only through a fragile workaround — or not at all — so a platform that is perfect for a QBO shop can be the wrong choice for a Desktop shop next door.',
+      'The ordering below is our independent editorial view. For a shortlist scored against your exact setup — including which QuickBooks version you use — run the Finder.',
+    ],
     methodologyNote: METHODOLOGY_NOTE,
     entries: [
       { slug: 'jobber', position: 1, bestForLabel: 'Best for QuickBooks Online (small teams)', rationale: 'Clean QBO sync for small residential businesses.' },
       { slug: 'service-fusion', position: 2, bestForLabel: 'Best for QuickBooks Desktop', rationale: 'Strong Desktop and Online support.' },
       { slug: 'fieldedge', position: 3, bestForLabel: 'Best for Desktop-centric trades', rationale: 'Deep QuickBooks Desktop integration.' },
       { slug: 'housecall-pro', position: 4, bestForLabel: 'Best for QBO + marketing', rationale: 'QBO sync with strong customer tools.' },
+    ],
+    sections: [
+      {
+        heading: 'QuickBooks Online vs QuickBooks Desktop: why it decides your shortlist',
+        body: [
+          'QuickBooks Online (QBO) is Intuit’s cloud product; QuickBooks Desktop (QBD) is the installed, locally hosted version many established trades have used for years. They are not interchangeable, and field-service platforms treat them differently. Most modern tools sync cleanly with QBO through a supported API; far fewer offer a genuinely deep Desktop integration, and some support Desktop only indirectly.',
+          'The practical consequence: identify your version before you shortlist anything. If you run QBO, tools like Jobber and Housecall Pro give you a clean sync and a wide field of options. If you run QBD — common in established HVAC, plumbing and electrical shops — your realistic choices narrow to platforms built around Desktop, such as FieldEdge and Service Fusion.',
+        ],
+      },
+      {
+        heading: 'What a good QuickBooks sync actually does',
+        body: [
+          'A strong integration is two-way and keeps the records that matter aligned automatically: customers, invoices, payments and, ideally, items or products. That removes double entry and the reconciliation errors that come with it. A weaker integration might push invoices one way only, sync on a delay, or require manual exports — which quietly recreates the work you were trying to eliminate.',
+          'When you evaluate a platform, confirm the direction of the sync, what objects it covers, and how often it runs. Two tools can both claim “QuickBooks integration” while offering very different depth, so treat the specifics as part of your buying decision rather than a checkbox.',
+        ],
+      },
+      {
+        heading: 'How to choose by your setup',
+        body: [
+          'For small QBO-based residential businesses, Jobber offers a clean, low-friction sync and is quick to adopt; Housecall Pro is a strong QBO alternative when you also want marketing and booking tools. For Desktop-centric shops, FieldEdge is built around deep QuickBooks Desktop ties, and Service Fusion supports both Desktop and Online well, making it a safe pick when you are mid-migration or unsure.',
+          'If you are actively moving from Desktop to Online, favor a platform that supports both so the field software is not the thing forcing — or blocking — your accounting migration.',
+        ],
+      },
+      {
+        heading: 'How we chose this shortlist',
+        body: [
+          'We profile each platform’s integrations from official vendor sources and record when each fact was last checked, and we label QuickBooks support by version where the distinction matters. We do not fabricate prices or ratings; unverified facts are labeled as such. The ordering is our independent editorial read, and commercial relationships never affect it.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Which field service software integrates best with QuickBooks?',
+        answer:
+          'It depends on your version. For QuickBooks Online, Jobber and Housecall Pro offer clean two-way syncs and are strong choices for small residential businesses. For QuickBooks Desktop, FieldEdge and Service Fusion are usually the better fit thanks to deeper Desktop integration. Always confirm Online vs Desktop support before committing.',
+      },
+      {
+        question: 'What is the difference between QuickBooks Online and Desktop for field service software?',
+        answer:
+          'QuickBooks Online is Intuit’s cloud product and is supported by most modern field-service tools through a standard API. QuickBooks Desktop is the installed version many established trades still use, and far fewer platforms integrate with it deeply. Because support differs so much, your version effectively narrows your software shortlist.',
+      },
+      {
+        question: 'Does Jobber sync with QuickBooks Desktop?',
+        answer:
+          'Jobber’s QuickBooks integration is focused on QuickBooks Online, where it offers a clean two-way sync. Shops that run QuickBooks Desktop are generally better served by platforms built around Desktop, such as FieldEdge or Service Fusion. If you are on Desktop, confirm current support directly before choosing.',
+      },
+      {
+        question: 'Can I use field service software if I am migrating from Desktop to Online?',
+        answer:
+          'Yes, and the safest approach is to choose a platform that supports both QuickBooks Desktop and Online — Service Fusion is one example — so the field software does not force or block your accounting migration. That lets you move your books on your own timeline rather than being pushed by the software.',
+      },
+      {
+        question: 'Is a QuickBooks integration better than using the software’s own accounting?',
+        answer:
+          'If you already run QuickBooks and your accountant works in it, a solid two-way QuickBooks sync is usually the better path — it keeps your books where they are while removing double entry. Field-service tools focus on operations, not full accounting, so most businesses keep QuickBooks as the system of record and integrate to it.',
+      },
     ],
     published: true,
   },
