@@ -57,11 +57,21 @@ export function PricingBlock({ product }: { product: Product }) {
               : ''}
           </p>
         </div>
+      ) : pricing.model === 'quote' || pricing.model === 'custom' ? (
+        <div className="mt-4 rounded-lg border border-slate-200 bg-surface-subtle p-4 text-sm">
+          <p className="font-semibold text-ink">Quote-based pricing</p>
+          <p className="mt-1 text-ink-soft">
+            {product.name} doesn&rsquo;t publish standard rates. Pricing is quoted per business and
+            typically scales with your team size, the modules you need, and implementation. Request a
+            quote for figures specific to your operation, or use our Finder to see whether it fits
+            your budget band.
+          </p>
+        </div>
       ) : (
         <div className="mt-4 rounded-lg border border-warning-border bg-warning-bg p-4 text-sm text-warning-fg">
-          {pricing.model === 'quote'
-            ? "This vendor uses custom, quote-based pricing. Contact the vendor for a quote specific to your business."
-            : 'We have not yet independently verified this vendor’s current pricing. Check the vendor’s pricing page for the latest plans and rates.'}
+          We haven&rsquo;t independently verified {product.name}&rsquo;s current pricing yet, so we
+          don&rsquo;t publish a figure we can&rsquo;t stand behind. Check {product.name}&rsquo;s
+          official pricing page for the latest plans and rates.
         </div>
       )}
     </div>
