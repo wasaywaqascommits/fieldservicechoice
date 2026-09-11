@@ -12,6 +12,7 @@ import { buildMetadata } from '@/lib/seo/metadata';
 import { faqPageJsonLd, jsonLdScript, softwareApplicationJsonLd } from '@/lib/seo/jsonld';
 import { productFaqs } from '@/lib/products/faqs';
 import { FaqList } from '@/components/best/FaqList';
+import { BestComparisonTable, type BestTableRow } from '@/components/best/BestComparisonTable';
 import { INDUSTRY_LABELS } from '@/data/industries';
 import {
   COMPANY_SIZE_LABELS,
@@ -64,6 +65,11 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   const alternatives = getProductsBySlugs(product.alternatives);
   const comparisons = getComparisonsForProduct(product.slug);
   const author = getDefaultAuthor();
+  const comparisonRows: BestTableRow[] = [product, ...alternatives.slice(0, 3)].map((p, i) => ({
+    position: i + 1,
+    bestForLabel: p.bestFor[0],
+    product: p,
+  }));
   const sizeRange = `${COMPANY_SIZE_LABELS[product.companySizes[0]]} – ${COMPANY_SIZE_LABELS[product.companySizes[product.companySizes.length - 1]]}`;
   const faqs = productFaqs(product, alternatives);
 
@@ -274,6 +280,14 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
               </p>
             </div>
           </section>
+
+          {/* How it compares to alternatives */}
+          {alternatives.length > 0 && (
+            <section>
+              <h2 className="mb-3 text-xl font-bold text-ink">How {product.name} compares to alternatives</h2>
+              <BestComparisonTable rows={comparisonRows} showRank={false} highlightSlug={product.slug} />
+            </section>
+          )}
 
           {/* Alternatives */}
           {alternatives.length > 0 && (
