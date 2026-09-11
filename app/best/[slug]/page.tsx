@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { ALL_BEST_SLUGS, getBestPageBySlug, getProductBySlug } from '@/lib/database/content';
+import { ALL_BEST_SLUGS, getBestPageBySlug, getDefaultAuthor, getProductBySlug } from '@/lib/database/content';
 import { buildMetadata } from '@/lib/seo/metadata';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { ProductLogo } from '@/components/products/ProductLogo';
@@ -12,6 +12,7 @@ import { FaqList } from '@/components/best/FaqList';
 import { COMPANY_SIZE_SHORT, pricingStatusLabel } from '@/lib/labels';
 import { faqPageJsonLd, itemListJsonLd, jsonLdScript } from '@/lib/seo/jsonld';
 import { CTASection } from '@/components/shared/CTASection';
+import { AuthorByline } from '@/components/shared/AuthorByline';
 
 export function generateStaticParams() {
   return ALL_BEST_SLUGS.map((slug) => ({ slug }));
@@ -43,6 +44,7 @@ export default async function BestPageView({ params }: { params: Promise<{ slug:
     { name: page.h1, path: `/best/${page.slug}/` },
   ];
 
+  const author = getDefaultAuthor();
   const sortedEntries = [...page.entries].sort((a, b) => a.position - b.position);
   const tableRows: BestTableRow[] = sortedEntries
     .map((entry) => {
@@ -68,6 +70,9 @@ export default async function BestPageView({ params }: { params: Promise<{ slug:
 
       <div className="container-page py-8">
         <h1 className="text-3xl font-bold tracking-tight text-ink sm:text-4xl">{page.h1}</h1>
+        <div className="mt-3">
+          <AuthorByline author={author} prefix="By" />
+        </div>
         <p className="mt-3 max-w-3xl text-ink-muted">{page.intro}</p>
         {page.lead && (
           <div className="mt-4 max-w-3xl space-y-3 text-ink-soft">

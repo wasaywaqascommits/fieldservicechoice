@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import {
   ALL_INDUSTRY_SLUGS,
   getComparisonBySlug,
+  getDefaultAuthor,
   getIndustryBySlug,
   getProductBySlug,
   getProductsBySlugs,
@@ -15,6 +16,7 @@ import { ProductCard } from '@/components/products/ProductCard';
 import { BestComparisonTable, type BestTableRow } from '@/components/best/BestComparisonTable';
 import { FaqList } from '@/components/best/FaqList';
 import { CTASection } from '@/components/shared/CTASection';
+import { AuthorByline } from '@/components/shared/AuthorByline';
 
 export function generateStaticParams() {
   return ALL_INDUSTRY_SLUGS.map((slug) => ({ slug }));
@@ -38,6 +40,7 @@ export default async function IndustryPage({ params }: { params: Promise<{ slug:
   if (!page) notFound();
 
   const products = getProductsBySlugs(page.recommendedProducts);
+  const author = getDefaultAuthor();
   const tableRows: BestTableRow[] = products.map((product, i) => ({
     position: i + 1,
     bestForLabel: product.bestFor[0],
@@ -64,6 +67,9 @@ export default async function IndustryPage({ params }: { params: Promise<{ slug:
       />
       <div className="container-page py-8">
         <h1 className="text-3xl font-bold tracking-tight text-ink sm:text-4xl">{page.name}</h1>
+        <div className="mt-3">
+          <AuthorByline author={author} prefix="By" />
+        </div>
         <p className="mt-3 max-w-3xl text-ink-muted">{page.intro}</p>
 
         <section className="mt-8">

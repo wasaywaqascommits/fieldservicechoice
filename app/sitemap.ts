@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next';
 import { SITE_URL } from '@/lib/env';
 import {
   getAlternativePages,
+  getAuthors,
   getBestPages,
   getComparisons,
   getGuides,
@@ -73,6 +74,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
+  const authorPages: MetadataRoute.Sitemap = getAuthors().map((a) => ({
+    url: url(`/authors/${a.slug}/`),
+    changeFrequency: 'yearly',
+    priority: 0.5,
+  }));
+
   // Pricing pages are only added once they carry verified plan data (spec §110).
   const pricingPages: MetadataRoute.Sitemap = products
     .filter((p) => p.pricing.plans.some((pl) => pl.verificationStatus === 'verified' && pl.monthlyPrice != null))
@@ -86,6 +93,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...alternativePages,
     ...bestPages,
     ...guidePages,
+    ...authorPages,
     ...pricingPages,
   ];
 }

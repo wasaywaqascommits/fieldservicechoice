@@ -46,6 +46,7 @@ export const FOOTER_COMPARISONS: NavLink[] = [
 export const FOOTER_COMPANY: NavLink[] = [
   { label: 'About', href: '/about/' },
   { label: 'Independence Pledge', href: '/independence/' },
+  { label: 'Meet the Editor', href: '/authors/abdul-wasay-waqas/' },
   { label: 'Contact', href: '/contact/' },
   { label: 'Partner With Us', href: '/partner-with-us/' },
 ];

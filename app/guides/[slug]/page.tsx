@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { ALL_GUIDE_SLUGS, getGuideBySlug } from '@/lib/database/content';
-import { buildMetadata } from '@/lib/seo/metadata';
+import { ALL_GUIDE_SLUGS, getDefaultAuthor, getGuideBySlug } from '@/lib/database/content';
+import { buildMetadata, absoluteUrl } from '@/lib/seo/metadata';
 import { articleJsonLd, jsonLdScript } from '@/lib/seo/jsonld';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
+import { AuthorByline } from '@/components/shared/AuthorByline';
 import { CTASection } from '@/components/shared/CTASection';
 
 export function generateStaticParams() {
@@ -26,6 +27,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
   const { slug } = await params;
   const g = getGuideBySlug(slug);
   if (!g) notFound();
+  const author = getDefaultAuthor();
 
   return (
     <>
@@ -38,6 +40,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             path: `/guides/${g.slug}/`,
             datePublished: g.publishedAt ?? undefined,
             dateModified: g.updatedAt ?? undefined,
+            author: { name: author.name, url: absoluteUrl(`/authors/${author.slug}/`) },
           }),
         )}
       />
@@ -49,9 +52,9 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
       />
       <article className="container-page py-8">
         <h1 className="max-w-3xl text-3xl font-bold tracking-tight text-ink sm:text-4xl">{g.title}</h1>
-        <p className="mt-2 text-xs text-ink-muted">
-          {g.updatedAt && <>Updated {g.updatedAt}</>}
-        </p>
+        <div className="mt-4">
+          <AuthorByline author={author} date={g.updatedAt} dateLabel="Updated" prefix="Written by" />
+        </div>
         <p className="mt-4 max-w-3xl text-lg text-ink-muted">{g.intro}</p>
 
         <div className="mt-8 max-w-3xl prose-fsc">

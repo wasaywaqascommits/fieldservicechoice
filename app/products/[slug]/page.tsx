@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import {
   ALL_PRODUCT_SLUGS,
   getComparisonsForProduct,
+  getDefaultAuthor,
   getProductBySlug,
   getProductsBySlugs,
 } from '@/lib/database/content';
@@ -28,6 +29,7 @@ import { LastVerified } from '@/components/products/VerificationBadge';
 import { VendorLink } from '@/components/shared/VendorLink';
 import { AffiliateDisclosure } from '@/components/shared/AffiliateDisclosure';
 import { CTASection } from '@/components/shared/CTASection';
+import { AuthorByline } from '@/components/shared/AuthorByline';
 
 export function generateStaticParams() {
   return ALL_PRODUCT_SLUGS.map((slug) => ({ slug }));
@@ -61,6 +63,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
 
   const alternatives = getProductsBySlugs(product.alternatives);
   const comparisons = getComparisonsForProduct(product.slug);
+  const author = getDefaultAuthor();
   const sizeRange = `${COMPANY_SIZE_LABELS[product.companySizes[0]]} – ${COMPANY_SIZE_LABELS[product.companySizes[product.companySizes.length - 1]]}`;
   const faqs = productFaqs(product, alternatives);
 
@@ -94,23 +97,24 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                 {product.name} Review: Pricing, Features, Pros, Cons &amp; Alternatives
               </h1>
               <p className="mt-2 max-w-2xl text-ink-muted">{product.description}</p>
-              <p className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-ink-muted">
-                <span>
-                  Independently reviewed by the{' '}
-                  <span className="font-medium text-ink-soft">FieldServiceChoice editorial team</span>
-                </span>
-                {product.verification.editorialReviewedAt && (
-                  <span>· Last reviewed {product.verification.editorialReviewedAt}</span>
-                )}
-                <span aria-hidden>·</span>
-                <Link href="/methodology/" className="font-medium text-brand-700 hover:underline">
-                  How we assess products
-                </Link>
-                <span aria-hidden>·</span>
-                <Link href="/independence/" className="font-medium text-brand-700 hover:underline">
-                  Our independence pledge
-                </Link>
-              </p>
+              <div className="mt-3">
+                <AuthorByline
+                  author={author}
+                  date={product.verification.editorialReviewedAt}
+                  dateLabel="Last reviewed"
+                  prefix="Reviewed by"
+                  avatarSize={28}
+                >
+                  <span aria-hidden className="text-ink-muted">·</span>
+                  <Link href="/methodology/" className="text-xs font-medium text-brand-700 hover:underline">
+                    How we assess products
+                  </Link>
+                  <span aria-hidden className="text-ink-muted">·</span>
+                  <Link href="/independence/" className="text-xs font-medium text-brand-700 hover:underline">
+                    Our independence pledge
+                  </Link>
+                </AuthorByline>
+              </div>
             </div>
           </div>
           <div className="flex shrink-0 flex-col gap-2">

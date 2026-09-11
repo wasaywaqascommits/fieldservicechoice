@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { buildMetadata } from '@/lib/seo/metadata';
 import { ContentPage } from '@/components/ui/ContentPage';
 import { CTASection } from '@/components/shared/CTASection';
@@ -42,6 +43,13 @@ export default function AboutPage() {
         <p>
           We build trust through methodology and usefulness, not fabricated social proof. We’re a
           new platform, and we’d rather earn your trust with transparency than inflated claims.
+        </p>
+        <h2>Who’s behind it</h2>
+        <p>
+          FieldServiceChoice is edited by{' '}
+          <Link href="/authors/abdul-wasay-waqas/">Abdul Wasay Waqas</Link>, an editor and SEO
+          specialist who researches the field service software market and sets the site’s editorial
+          and verification standards.
         </p>
       </ContentPage>
       <CTASection />

@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { ALL_COMPARISON_SLUGS, getComparisonBySlug, getProductBySlug } from '@/lib/database/content';
+import { ALL_COMPARISON_SLUGS, getComparisonBySlug, getDefaultAuthor, getProductBySlug } from '@/lib/database/content';
 import { buildMetadata } from '@/lib/seo/metadata';
 import { faqPageJsonLd, jsonLdScript } from '@/lib/seo/jsonld';
 import { comparisonFaqs } from '@/lib/comparisons/faqs';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { FaqList } from '@/components/best/FaqList';
 import { ProductLeadForm } from '@/components/products/ProductLeadForm';
+import { AuthorByline } from '@/components/shared/AuthorByline';
 import { ComparisonTable } from '@/components/comparison/ComparisonTable';
 import { ProductLogo } from '@/components/products/ProductLogo';
 import { VendorLink } from '@/components/shared/VendorLink';
@@ -55,6 +56,7 @@ export default async function ComparePage({ params }: { params: Promise<{ compar
   if (!a || !b) notFound();
 
   const faqs = comparisonFaqs(a, b, c);
+  const author = getDefaultAuthor();
 
   return (
     <>
@@ -77,6 +79,9 @@ export default async function ComparePage({ params }: { params: Promise<{ compar
         <h1 className="max-w-3xl text-3xl font-bold tracking-tight text-ink sm:text-4xl">
           {a.name} vs {b.name}: Which Is Better for Your Service Business?
         </h1>
+        <div className="mt-3">
+          <AuthorByline author={author} prefix="By" />
+        </div>
         <p className="mt-3 max-w-3xl text-ink-muted">{c.intro}</p>
 
         <div className="mt-8 grid gap-4 lg:grid-cols-3">

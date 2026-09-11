@@ -18,6 +18,7 @@ import {
   publishedComparisons,
 } from '@/data/comparisons';
 import { GUIDES, getGuide as _getGuide, publishedGuides } from '@/data/guides';
+import { AUTHOR_MAP, AUTHORS, DEFAULT_AUTHOR_SLUG, getAuthor as _getAuthor, publishedAuthors } from '@/data/authors';
 import {
   INDUSTRIES,
   getIndustry as _getIndustry,
@@ -26,6 +27,7 @@ import {
 import { PRODUCTS, getProduct as _getProduct, publishedProducts } from '@/data/products';
 import type {
   AlternativePage,
+  Author,
   BestPage,
   ComparisonPage,
   GuidePage,
@@ -96,6 +98,18 @@ export function getGuideBySlug(slug: string): GuidePage | undefined {
   return g && g.published ? g : undefined;
 }
 
+/* Authors ------------------------------------------------------------------- */
+export function getAuthors(): Author[] {
+  return publishedAuthors();
+}
+export function getAuthorBySlug(slug: string): Author | undefined {
+  const a = _getAuthor(slug);
+  return a && a.published ? a : undefined;
+}
+export function getDefaultAuthor(): Author {
+  return AUTHOR_MAP[DEFAULT_AUTHOR_SLUG];
+}
+
 /* Convenience for static params --------------------------------------------- */
 export const ALL_PRODUCT_SLUGS = PRODUCTS.filter((p) => p.published).map((p) => p.slug);
 export const ALL_COMPARISON_SLUGS = COMPARISONS.filter((c) => c.published).map((c) => c.slug);
@@ -103,3 +117,4 @@ export const ALL_INDUSTRY_SLUGS = INDUSTRIES.filter((i) => i.published).map((i) 
 export const ALL_BEST_SLUGS = BEST_PAGES.filter((b) => b.published).map((b) => b.slug);
 export const ALL_ALTERNATIVE_SLUGS = ALTERNATIVES.filter((a) => a.published).map((a) => a.slug);
 export const ALL_GUIDE_SLUGS = GUIDES.filter((g) => g.published).map((g) => g.slug);
+export const ALL_AUTHOR_SLUGS = AUTHORS.filter((a) => a.published).map((a) => a.slug);

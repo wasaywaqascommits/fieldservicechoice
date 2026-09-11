@@ -371,3 +371,23 @@ export interface GuidePage {
   published: boolean;
   seo?: SeoMeta;
 }
+
+/** A named author/editor for bylines, author profiles and Person structured data. */
+export interface Author {
+  slug: string;
+  name: string;
+  role: string;
+  /** One-line bio for bylines and cards. */
+  shortBio: string;
+  /** Full bio paragraphs for the profile page. */
+  bio: string[];
+  /** Initials for the fallback monogram avatar (e.g. "AW"). */
+  initials: string;
+  /** Brand color for the fallback monogram tile. */
+  avatarColor: string;
+  /** Optional real headshot path (e.g. /authors/name.jpg); falls back to initials. */
+  avatar?: string;
+  location?: string;
+  links: { linkedin?: string; email?: string };
+  published: boolean;
+}

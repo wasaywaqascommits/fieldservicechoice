@@ -1,6 +1,6 @@
 import { SITE_NAME, SITE_URL } from '@/lib/env';
 import { absoluteUrl } from './metadata';
-import type { Product } from '@/types';
+import type { Author, Product } from '@/types';
 
 /**
  * Structured data (spec §52).
@@ -65,6 +65,7 @@ export function articleJsonLd(input: {
   path: string;
   datePublished?: string;
   dateModified?: string;
+  author?: { name: string; url: string };
 }) {
   const org = { '@type': 'Organization', name: SITE_NAME, url: SITE_URL };
   return {
@@ -75,8 +76,23 @@ export function articleJsonLd(input: {
     url: absoluteUrl(input.path),
     ...(input.datePublished ? { datePublished: input.datePublished } : {}),
     ...(input.dateModified ? { dateModified: input.dateModified } : {}),
-    author: org,
+    author: input.author ? { '@type': 'Person', name: input.author.name, url: input.author.url } : org,
     publisher: org,
+  };
+}
+
+/** Person structured data for an author profile page (E-E-A-T). */
+export function personJsonLd(author: Author) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: author.name,
+    url: absoluteUrl(`/authors/${author.slug}/`),
+    jobTitle: author.role,
+    description: author.shortBio,
+    worksFor: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    ...(author.links.linkedin ? { sameAs: [author.links.linkedin] } : {}),
+    ...(author.avatar ? { image: absoluteUrl(author.avatar) } : {}),
   };
 }
 
