@@ -12,6 +12,7 @@ export const PRIMARY_NAV: NavLink[] = [
 ];
 
 export const RESOURCES_NAV: NavLink[] = [
+  { label: 'Independence Pledge', href: '/independence/' },
   { label: 'Methodology', href: '/methodology/' },
   { label: 'Data Verification', href: '/data-verification/' },
   { label: 'Editorial Policy', href: '/editorial-policy/' },
@@ -44,6 +45,7 @@ export const FOOTER_COMPARISONS: NavLink[] = [
 
 export const FOOTER_COMPANY: NavLink[] = [
   { label: 'About', href: '/about/' },
+  { label: 'Independence Pledge', href: '/independence/' },
   { label: 'Contact', href: '/contact/' },
   { label: 'Partner With Us', href: '/partner-with-us/' },
 ];

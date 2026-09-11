@@ -285,6 +285,9 @@ export default function HomePage() {
             Researched and maintained by the FieldServiceChoice editorial team.
           </p>
           <div className="mt-3 flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
+            <Link href="/independence/" className="font-medium text-brand-700 hover:underline">
+              Our Independence Pledge →
+            </Link>
             <Link href="/methodology/" className="font-medium text-brand-700 hover:underline">
               Full methodology →
             </Link>

@@ -23,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: url('/software/'), changeFrequency: 'weekly', priority: 0.9 },
     { url: url('/find-software/'), changeFrequency: 'monthly', priority: 0.9 },
     { url: url('/best/field-service-management-software/'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: url('/independence/'), changeFrequency: 'yearly', priority: 0.6 },
     { url: url('/methodology/'), changeFrequency: 'yearly', priority: 0.5 },
     { url: url('/data-verification/'), changeFrequency: 'yearly', priority: 0.4 },
     { url: url('/editorial-policy/'), changeFrequency: 'yearly', priority: 0.4 },
