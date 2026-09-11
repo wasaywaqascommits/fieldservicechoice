@@ -16,7 +16,7 @@ export default function IndependencePage() {
     <>
       <ContentPage
         title="Our Independence Pledge"
-        subtitle="Most field service software “comparison” sites are paid for by the vendors they rank. We aren’t — and here is exactly how we keep it that way."
+        subtitle="Most field service software “comparison” sites are paid for by the vendors they rank. We aren’t, and here is exactly how we keep it that way."
         crumbs={[
           { name: 'Home', path: '/' },
           { name: 'Independence Pledge', path: '/independence/' },
@@ -25,7 +25,7 @@ export default function IndependencePage() {
       >
         <p>
           Choosing field service software is a high-stakes, expensive decision, and the buyer
-          deserves guidance that works for <em>them</em> — not for whichever vendor paid the most.
+          deserves guidance that works for <em>them</em>, not for whichever vendor paid the most.
           This page is our public, standing commitment to that principle. If we ever break one of
           these promises, hold us to it.
         </p>
@@ -34,7 +34,7 @@ export default function IndependencePage() {
         <p>
           Vendor payments never influence our Fit Scores, our rankings, our shortlists, or our
           editorial recommendations. Our scoring engine is built so that it <strong>cannot</strong>{' '}
-          read a product’s commercial relationship with us — it only sees the buyer’s requirements
+          read a product’s commercial relationship with us, it only sees the buyer’s requirements
           and a product’s verified capabilities. A vendor cannot buy a higher score, a better
           placement, or a kinder verdict. See our{' '}
           <Link href="/affiliate-disclosure/">affiliate disclosure</Link> for exactly how we make
@@ -50,7 +50,7 @@ export default function IndependencePage() {
           worth more than a rating you have to trust blindly.
         </p>
 
-        <h2>3. We date every fact — and label what we haven’t verified.</h2>
+        <h2>3. We date every fact, and label what we haven’t verified.</h2>
         <p>
           Pricing and features change. So we stamp what we’ve verified with the date we checked it,
           against the vendor’s official sources, and we clearly label anything we{' '}
@@ -63,7 +63,7 @@ export default function IndependencePage() {
         <p>
           A recommendation you can trust has to be willing to say no. Every product profile includes
           who it’s a poor fit for, and our comparisons will tell you when the honest answer is
-          “neither — look elsewhere.” We are not here to sell you the most expensive platform; we’re
+          “neither, look elsewhere.” We are not here to sell you the most expensive platform; we’re
           here to help you avoid buying the wrong one.
         </p>
 
@@ -71,7 +71,7 @@ export default function IndependencePage() {
         <p>
           We recommend the right fit for your business whether or not we have a commercial
           relationship with that vendor. Where we might earn a referral fee, we disclose it plainly.
-          Our value is being right and being honest — not steering you toward a payout.
+          Our value is being right and being honest, not steering you toward a payout.
         </p>
 
         <h2>How we actually make money</h2>
@@ -79,15 +79,15 @@ export default function IndependencePage() {
           Transparency cuts both ways, so here it is: we may earn a referral fee when you choose to
           visit or sign up with some providers, and vendors can pay to receive qualified leads from
           buyers who explicitly opt in to be contacted. Neither of those ever changes a Fit Score,
-          a ranking, or a recommendation — that separation is the whole point of this pledge. If
+          a ranking, or a recommendation, that separation is the whole point of this pledge. If
           you’re a vendor, our terms are the same for everyone:{' '}
           <Link href="/partner-with-us/">partner with us</Link>.
         </p>
 
         <h2>Hold us accountable</h2>
         <p>
-          If you ever see something on this site that looks bought, biased, or out of date, tell us
-          — <Link href="/contact/">get in touch</Link>. Independence isn’t a slogan; it’s a standard
+          If you ever see something on this site that looks bought, biased, or out of date,{' '}
+          <Link href="/contact/">tell us</Link>. Independence isn’t a slogan; it’s a standard
           we expect to be measured against. Learn more about how we work in our{' '}
           <Link href="/editorial-policy/">editorial policy</Link> and{' '}
           <Link href="/about/">about page</Link>.

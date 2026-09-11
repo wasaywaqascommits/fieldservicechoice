@@ -7,7 +7,7 @@ import type { FinderAnswers } from '@/types/finder';
  * A REAL, build-time Fit Score example.
  *
  * These numbers are the actual output of the rules-based scoring engine
- * (`lib/scoring/engine.ts`) for the sample buyer below — not a mockup and not
+ * (`lib/scoring/engine.ts`) for the sample buyer below, not a mockup and not
  * hand-picked. The engine reads only buyer answers + editorial/feature data and
  * never touches commercial relationships (data-integrity invariant, spec §9).
  */
@@ -76,7 +76,7 @@ export function FitScoreExample() {
       </div>
 
       <p className="mt-5 text-center text-sm text-ink-muted">
-        This is one example — your matches are scored against{' '}
+        This is one example, your matches are scored against{' '}
         <span className="font-medium text-ink-soft">your own</span> trade, team size, integrations and
         budget.{' '}
         <Link href="/find-software/" className="font-medium text-brand-700 hover:underline">

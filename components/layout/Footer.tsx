@@ -38,7 +38,7 @@ export function Footer() {
               <span className="font-bold text-ink">FieldServiceChoice</span>
             </Link>
             <p className="mt-3 text-sm text-ink-muted">
-              Find the right field service software for your business — based on your trade, team
+              Find the right field service software for your business, based on your trade, team
               size, workflows and budget.
             </p>
           </div>

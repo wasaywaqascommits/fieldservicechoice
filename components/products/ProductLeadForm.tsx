@@ -15,7 +15,7 @@ function joinNames(names: string[]): string {
 
 /**
  * Vendor lead capture (reuses the /api/lead pipeline). Works for one product
- * (product page) or several (comparison page). There are no Finder answers —
+ * (product page) or several (comparison page). There are no Finder answers, 
  * just explicit, per-vendor consent. Nothing is sent to a vendor unless its box
  * is checked.
  */
@@ -102,8 +102,8 @@ export function ProductLeadForm({
         <h3 className="text-lg font-bold text-positive-fg">You&rsquo;re all set</h3>
         <p className="mt-2 text-sm text-ink-soft">
           {selectedNames.length > 0
-            ? `Thanks — we’ll pass your details to ${joinNames(selectedNames)} and they’ll reach out about pricing and demos.`
-            : 'Thanks — we’ve saved your request. Select a provider next time to have them reach out.'}
+            ? `Thanks, we’ll pass your details to ${joinNames(selectedNames)} and they’ll reach out about pricing and demos.`
+            : 'Thanks, we’ve saved your request. Select a provider next time to have them reach out.'}
         </p>
       </div>
     );
@@ -120,7 +120,7 @@ export function ProductLeadForm({
         <Field label="Business name (optional)" name="businessName" autoComplete="organization" />
       </div>
 
-      {/* Honeypot — hidden from humans, must stay empty. */}
+      {/* Honeypot, hidden from humans, must stay empty. */}
       <div aria-hidden className="hidden">
         <label>
           Company website

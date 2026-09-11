@@ -16,7 +16,7 @@ export default function TermsPage() {
       updated="2026-09-10"
     >
       <div className="rounded-lg border border-warning-border bg-warning-bg p-4 text-sm text-warning-fg">
-        This is a template terms of use provided for development. It is not legal advice — have it
+        This is a template terms of use provided for development. It is not legal advice, have it
         reviewed by qualified counsel before launch.
       </div>
       <h2>Acceptance of terms</h2>

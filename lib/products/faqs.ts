@@ -4,7 +4,7 @@ import { IMPLEMENTATION_LABELS, PRICING_MODEL_LABELS } from '@/lib/labels';
 /**
  * Data-generated product FAQs.
  *
- * Every answer is derived from the product's own editorial/feature data — we
+ * Every answer is derived from the product's own editorial/feature data, we
  * never fabricate pricing, ratings or capabilities. Where a fact is not
  * verified (e.g. pricing on a new platform), the answer says so honestly rather
  * than inventing a figure. Rendered visibly and emitted as FAQPage JSON-LD.
@@ -28,16 +28,16 @@ function costAnswer(product: Product): string {
   if (product.pricing.startingStatus === 'verified' || product.pricing.startingStatus === 'vendor_confirmed') {
     return `${name} uses a ${model} pricing model. See the pricing section above for the current details we have verified.`;
   }
-  return `We haven't independently verified ${name}'s current pricing yet, so we don't publish a figure we can't stand behind. It uses a ${model} model — check the vendor's pricing page for current numbers, and use our Finder to see whether it fits your budget band.`;
+  return `We haven't independently verified ${name}'s current pricing yet, so we don't publish a figure we can't stand behind. It uses a ${model} model. Check the vendor's pricing page for current numbers, and use our Finder to see whether it fits your budget band.`;
 }
 
 function quickbooksAnswer(product: Product): string {
   const name = product.name;
   const qbo = supported(product.features.quickbooks_online);
   const qbd = supported(product.features.quickbooks_desktop);
-  if (qbo && qbd) return `Yes — ${name} integrates with both QuickBooks Online and QuickBooks Desktop.`;
-  if (qbo) return `Yes — ${name} integrates with QuickBooks Online. We haven't confirmed dedicated QuickBooks Desktop support, so verify that directly if you run Desktop.`;
-  if (qbd) return `Yes — ${name} integrates with QuickBooks Desktop. Confirm QuickBooks Online support with the vendor if you run the cloud version.`;
+  if (qbo && qbd) return `Yes, ${name} integrates with both QuickBooks Online and QuickBooks Desktop.`;
+  if (qbo) return `Yes, ${name} integrates with QuickBooks Online. We haven't confirmed dedicated QuickBooks Desktop support, so verify that directly if you run Desktop.`;
+  if (qbd) return `Yes, ${name} integrates with QuickBooks Desktop. Confirm QuickBooks Online support with the vendor if you run the cloud version.`;
   return `We haven't confirmed a QuickBooks integration for ${name}. If accounting sync matters to you, verify current QuickBooks Online or Desktop support with the vendor before committing.`;
 }
 

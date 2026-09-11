@@ -28,19 +28,19 @@ export default function AboutPage() {
         <p>
           General software directories treat every category the same. We don’t. An HVAC company, a
           roofing contractor and a pest-control route business have genuinely different software
-          needs — and we evaluate products on those terms, by trade, team size, workflows,
+          needs, and we evaluate products on those terms, by trade, team size, workflows,
           integrations and budget.
         </p>
         <h2>How we’re different</h2>
         <ul>
           <li>A transparent, personalized Fit Score instead of generic star ratings.</li>
           <li>Trade-specific requirements, not word-swapped templates.</li>
-          <li>Verified, dated facts — and honesty about what we haven’t verified yet.</li>
+          <li>Verified, dated facts, and honesty about what we haven’t verified yet.</li>
           <li>Clear monetization disclosures, with no pay-for-ranking.</li>
         </ul>
         <h2>Our promise</h2>
         <p>
-          We build trust through methodology and usefulness — not fabricated social proof. We’re a
+          We build trust through methodology and usefulness, not fabricated social proof. We’re a
           new platform, and we’d rather earn your trust with transparency than inflated claims.
         </p>
       </ContentPage>

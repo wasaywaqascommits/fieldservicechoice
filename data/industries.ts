@@ -2,7 +2,7 @@ import type { IndustryPage, IndustrySlug } from '@/types';
 
 /**
  * Industry pages (spec §25). Each trade has genuinely different software
- * requirements — these are written per-trade, NOT word-swapped from a template.
+ * requirements, these are written per-trade, NOT word-swapped from a template.
  */
 export const INDUSTRIES: IndustryPage[] = [
   {
@@ -32,8 +32,8 @@ export const INDUSTRIES: IndustryPage[] = [
       {
         heading: 'By company size',
         body: [
-          'Solo and small residential teams are usually well served by Jobber, Housecall Pro or Workiz — fast to adopt, strong on scheduling, invoicing and customer communication.',
-          'Established and larger HVAC companies with office and dispatch staff tend to look at ServiceTitan, FieldEdge or FieldPulse, which add deeper pricebook, financing, agreements and reporting — at the cost of a larger implementation.',
+          'Solo and small residential teams are usually well served by Jobber, Housecall Pro or Workiz: fast to adopt, and strong on scheduling, invoicing and customer communication.',
+          'Established and larger HVAC companies with office and dispatch staff tend to look at ServiceTitan, FieldEdge or FieldPulse, which add deeper pricebook, financing, agreements and reporting at the cost of a larger implementation.',
         ],
       },
     ],
@@ -53,7 +53,7 @@ export const INDUSTRIES: IndustryPage[] = [
       {
         question: 'How much does HVAC field service software cost?',
         answer:
-          'Pricing ranges from modest per-user monthly plans for small-team tools to quote-based pricing for enterprise platforms like ServiceTitan, where cost depends on your size and modules. We label pricing as unverified rather than publish figures we have not confirmed — check the vendor for current numbers and use the Finder to match a budget band.',
+          'Pricing ranges from modest per-user monthly plans for small-team tools to quote-based pricing for enterprise platforms like ServiceTitan, where cost depends on your size and modules. We label pricing as unverified rather than publish figures we have not confirmed. Check the vendor for current numbers and use the Finder to match a budget band.',
       },
       {
         question: 'Which HVAC software integrates with QuickBooks?',
@@ -63,7 +63,7 @@ export const INDUSTRIES: IndustryPage[] = [
       {
         question: 'What HVAC software is best for maintenance agreements?',
         answer:
-          'Membership and maintenance-agreement management is a strength of the more established platforms — ServiceTitan and FieldEdge handle recurring agreements, visit scheduling and renewals well. If memberships are central to your revenue, treat depth here as a hard requirement when you compare options.',
+          'Membership and maintenance-agreement management is a strength of the more established platforms. ServiceTitan and FieldEdge handle recurring agreements, visit scheduling and renewals well. If memberships are central to your revenue, treat depth here as a hard requirement when you compare options.',
       },
     ],
     published: true,
@@ -73,7 +73,7 @@ export const INDUSTRIES: IndustryPage[] = [
     name: 'Plumbing Field Service Software',
     shortName: 'Plumbing',
     intro:
-      'Plumbing shops need fast emergency dispatch, clear estimates and invoicing, and — as they grow — a flat-rate pricebook and service agreements. Residential-heavy plumbers prioritize customer communication and online payments; commercial and new-construction plumbers care more about job costing and project management.',
+      'Plumbing shops need fast emergency dispatch, clear estimates and invoicing, and, as they grow, a flat-rate pricebook and service agreements. Residential-heavy plumbers prioritize customer communication and online payments; commercial and new-construction plumbers care more about job costing and project management.',
     keyRequirements: [
       'Emergency dispatch and on-call scheduling',
       'Flat-rate pricebook',
@@ -87,7 +87,7 @@ export const INDUSTRIES: IndustryPage[] = [
       {
         heading: 'Residential vs commercial plumbing',
         body: [
-          'Residential service plumbers benefit most from tools that speed up quoting, dispatch and getting paid — Jobber, Housecall Pro and Workiz are common choices.',
+          'Residential service plumbers benefit most from tools that speed up quoting, dispatch and getting paid. Jobber, Housecall Pro and Workiz are common choices.',
           'Commercial and project-based plumbers need job costing, inventory and project management; Simpro, BuildOps and ServiceTitan are more appropriate at that end.',
         ],
       },
@@ -113,12 +113,12 @@ export const INDUSTRIES: IndustryPage[] = [
       {
         question: 'How much does plumbing software cost?',
         answer:
-          'Small-team tools generally use predictable per-user monthly pricing, while enterprise and project platforms are often quote-based and depend on your size and modules. We label pricing as unverified rather than publish figures we have not confirmed — check the vendor and use the Finder to match your budget.',
+          'Small-team tools generally use predictable per-user monthly pricing, while enterprise and project platforms are often quote-based and depend on your size and modules. We label pricing as unverified rather than publish figures we have not confirmed. Check the vendor and use the Finder to match your budget.',
       },
       {
         question: 'Which plumbing software is best for emergency dispatch?',
         answer:
-          'Fast dispatch is a strength of the service-oriented platforms — Jobber, Housecall Pro and Workiz all handle same-day scheduling well, and Workiz adds built-in call handling that phone-driven shops value. Larger operations with high dispatch volume may prefer ServiceTitan’s deeper dispatch board.',
+          'Fast dispatch is a strength of the service-oriented platforms, Jobber, Housecall Pro and Workiz all handle same-day scheduling well, and Workiz adds built-in call handling that phone-driven shops value. Larger operations with high dispatch volume may prefer ServiceTitan’s deeper dispatch board.',
       },
     ],
     published: true,
@@ -158,7 +158,7 @@ export const INDUSTRIES: IndustryPage[] = [
       {
         question: 'What is the difference between service and project electrical software?',
         answer:
-          'Service work runs on fast scheduling, on-site quoting, invoicing and payments — a lightweight, mobile-first tool wins. Project and commercial work runs on estimating depth, job costing, materials tracking and progress billing across long jobs, which needs a platform built for projects. Most electrical businesses lean one way and should buy for that side.',
+          'Service work runs on fast scheduling, on-site quoting, invoicing and payments, a lightweight, mobile-first tool wins. Project and commercial work runs on estimating depth, job costing, materials tracking and progress billing across long jobs, which needs a platform built for projects. Most electrical businesses lean one way and should buy for that side.',
       },
       {
         question: 'What is the best software for commercial or project-based electrical work?',
@@ -168,7 +168,7 @@ export const INDUSTRIES: IndustryPage[] = [
       {
         question: 'How much does electrical field service software cost?',
         answer:
-          'Service-oriented tools generally use predictable per-user monthly pricing, while project and enterprise platforms are often quote-based depending on size and modules. We label pricing as unverified rather than publish unconfirmed figures — check the vendor and use the Finder to match your budget band.',
+          'Service-oriented tools generally use predictable per-user monthly pricing, while project and enterprise platforms are often quote-based depending on size and modules. We label pricing as unverified rather than publish unconfirmed figures. Check the vendor and use the Finder to match your budget band.',
       },
       {
         question: 'Which electrical software integrates with QuickBooks or Xero?',
@@ -217,17 +217,17 @@ export const INDUSTRIES: IndustryPage[] = [
       {
         question: 'Do general field service tools work for roofing?',
         answer:
-          'General FSM platforms can work well for smaller roofing service and repair work, where scheduling, quoting and invoicing are the priorities. For dedicated roofing production businesses with a real sales pipeline and project timelines, project-oriented tools like Simpro or BuildOps — or roofing-specific software — often fit better. Where a general tool is used, prioritize estimating, document management and job costing.',
+          'General FSM platforms can work well for smaller roofing service and repair work, where scheduling, quoting and invoicing are the priorities. For dedicated roofing production businesses with a real sales pipeline and project timelines, project-oriented tools like Simpro or BuildOps, or roofing-specific software, often fit better. Where a general tool is used, prioritize estimating, document management and job costing.',
       },
       {
         question: 'How much does roofing software cost?',
         answer:
-          'Pricing ranges from predictable per-user monthly plans for lighter tools to quote-based pricing for project and enterprise platforms, which depends on your size and modules. We label pricing as unverified rather than publish unconfirmed figures — check the vendor and use the Finder to match your budget.',
+          'Pricing ranges from predictable per-user monthly plans for lighter tools to quote-based pricing for project and enterprise platforms, which depends on your size and modules. We label pricing as unverified rather than publish unconfirmed figures. Check the vendor and use the Finder to match your budget.',
       },
       {
         question: 'What features matter most for roofing?',
         answer:
-          'The priorities shift toward CRM and sales pipeline, estimating and proposals, document and photo management, production/project workflows, and job costing — rather than recurring-visit scheduling. If insurance or production workflows are central to your business, weigh those capabilities heavily.',
+          'The priorities shift toward CRM and sales pipeline, estimating and proposals, document and photo management, production/project workflows, and job costing, rather than recurring-visit scheduling. If insurance or production workflows are central to your business, weigh those capabilities heavily.',
       },
     ],
     published: true,
@@ -276,12 +276,12 @@ export const INDUSTRIES: IndustryPage[] = [
       {
         question: 'How much does landscaping software cost?',
         answer:
-          'Landscaping tools generally use predictable per-user monthly pricing, with cost scaling by users and tier. We label pricing as unverified rather than publish figures we have not confirmed — check the vendor for current numbers and use the Finder to match your budget band.',
+          'Landscaping tools generally use predictable per-user monthly pricing, with cost scaling by users and tier. We label pricing as unverified rather than publish figures we have not confirmed. Check the vendor for current numbers and use the Finder to match your budget band.',
       },
       {
         question: 'Does landscaping software handle recurring billing?',
         answer:
-          'Yes — recurring and route billing is a core need for landscaping, and the platforms recommended here support repeating visits and recurring invoicing to keep revenue predictable. If subscription-style billing is central to your model, confirm the depth of recurring billing when you evaluate options.',
+          'Yes, recurring and route billing is a core need for landscaping, and the platforms recommended here support repeating visits and recurring invoicing to keep revenue predictable. If subscription-style billing is central to your model. Confirm the depth of recurring billing when you evaluate options.',
       },
     ],
     published: true,
@@ -325,12 +325,12 @@ export const INDUSTRIES: IndustryPage[] = [
       {
         question: 'Does pest control software track chemical and service records?',
         answer:
-          'Chemical and service records are important for compliance and for a clear service history per property. Coverage varies among general FSM tools, so if compliance documentation is central to your operation, confirm how a platform records applications and service history — or consider a dedicated pest-control system.',
+          'Chemical and service records are important for compliance and for a clear service history per property. Coverage varies among general FSM tools, so if compliance documentation is central to your operation. Confirm how a platform records applications and service history, or consider a dedicated pest-control system.',
       },
       {
         question: 'How much does pest control software cost?',
         answer:
-          'Pest control tools generally use predictable per-user monthly pricing, scaling by users and tier. We label pricing as unverified rather than publish unconfirmed figures — check the vendor for current numbers and use the Finder to match your budget band.',
+          'Pest control tools generally use predictable per-user monthly pricing, scaling by users and tier. We label pricing as unverified rather than publish unconfirmed figures. Check the vendor for current numbers and use the Finder to match your budget band.',
       },
       {
         question: 'Which pest control software is best for recurring billing?',

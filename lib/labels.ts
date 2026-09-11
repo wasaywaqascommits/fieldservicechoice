@@ -104,7 +104,7 @@ export const LEAD_STATUS_LABELS: Record<LeadStatus, string> = {
 
 /** A human summary of a product's starting-price status for cards. */
 export function pricingStatusLabel(model: PricingModel, status: VerificationStatus): string {
-  if (model === 'quote') return 'Quote-based — contact vendor';
+  if (model === 'quote') return 'Quote-based, contact vendor';
   if (status === 'verified' || status === 'vendor_confirmed') return 'Published pricing';
   if (status === 'not_disclosed') return 'Not publicly disclosed';
   return 'Pricing not yet verified';

@@ -7,7 +7,7 @@ import { CTASection } from '@/components/shared/CTASection';
 export const metadata: Metadata = buildMetadata({
   title: 'Our Methodology',
   description:
-    'How FieldServiceChoice researches, verifies and scores field service management software — including our transparent, weighted Fit Score and why vendor payments are never an input.',
+    'How FieldServiceChoice researches, verifies and scores field service management software, including our transparent, weighted Fit Score and why vendor payments are never an input.',
   path: '/methodology/',
 });
 
@@ -21,7 +21,7 @@ export default function MethodologyPage() {
     <>
       <ContentPage
         title="Our Methodology"
-        subtitle="How we research, verify and score field service software — and why commercial relationships never change our recommendations."
+        subtitle="How we research, verify and score field service software, and why commercial relationships never change our recommendations."
         crumbs={[{ name: 'Home', path: '/' }, { name: 'Methodology', path: '/methodology/' }]}
       >
         <h2>What we evaluate</h2>
@@ -35,8 +35,8 @@ export default function MethodologyPage() {
 
         <h2>How we research products</h2>
         <p>
-          We research each platform primarily from official vendor sources — pricing pages, product
-          documentation and integration directories — supplemented by independent research. Every
+          We research each platform primarily from official vendor sources, pricing pages, product
+          documentation and integration directories, supplemented by independent research. Every
           major fact is intended to carry a source, a source type, a verification status and a
           last-verified date. Where we have not verified something, we say so rather than guessing.
         </p>
@@ -46,7 +46,7 @@ export default function MethodologyPage() {
           The FieldServiceChoice Fit Score is a transparent, rules-based score from 0–100 that is
           personalized to your answers in the Finder. Each dimension is scored 0–100 and combined
           using the published weights below. The score you see for a product changes depending on
-          your business — it is not a generic star rating.
+          your business, it is not a generic star rating.
         </p>
         <div className="not-prose overflow-x-auto rounded-xl border border-slate-200">
           <table className="w-full text-sm">
@@ -67,7 +67,7 @@ export default function MethodologyPage() {
           </table>
         </div>
         <p>
-          Some requirements act as hard exclusions rather than score reductions — for example, if a
+          Some requirements act as hard exclusions rather than score reductions, for example, if a
           capability you mark as required is explicitly unavailable, or if a product does not serve
           your region. We explain why each product scored the way it did.
         </p>
@@ -82,7 +82,7 @@ export default function MethodologyPage() {
         <h2>How often data is updated</h2>
         <p>
           We review products on an ongoing basis and prioritize re-verifying the facts most likely
-          to change — pricing and integrations first.
+          to change, pricing and integrations first.
         </p>
 
         <h2>How vendor partnerships work</h2>

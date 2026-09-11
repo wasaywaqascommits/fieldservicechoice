@@ -21,7 +21,7 @@ export default function EditorialPolicyPage() {
       <h2>No pay-for-ranking</h2>
       <p>Vendors cannot buy a higher Fit Score, a better ranking, or a more favorable review. Commercial relationships are never an input to our scoring.</p>
       <h2>Clear sponsorship labels</h2>
-      <p>Where we have a commercial relationship, we disclose it clearly and close to the relevant recommendation — not only in the footer.</p>
+      <p>Where we have a commercial relationship, we disclose it clearly and close to the relevant recommendation, not only in the footer.</p>
       <h2>Corrections policy</h2>
       <p>If we get a fact wrong, we correct it promptly and update the verification date. Vendors and readers can request corrections via our contact page.</p>
       <h2>Vendor fact verification</h2>
@@ -29,7 +29,7 @@ export default function EditorialPolicyPage() {
       <h2>Source standards</h2>
       <p>We prioritize official vendor sources for facts about pricing, features and integrations, supplemented by independent research. We do not claim hands-on testing unless it actually occurred.</p>
       <h2>Updating policy</h2>
-      <p>We prioritize re-verifying the facts most likely to change — pricing and integrations first — and record when each was last checked.</p>
+      <p>We prioritize re-verifying the facts most likely to change, pricing and integrations first, and record when each was last checked.</p>
       <h2>Conflicts of interest</h2>
       <p>We recommend the right fit for the buyer even when there is no commercial relationship, and we disclose relationships transparently.</p>
       <h2>Affiliate disclosure</h2>

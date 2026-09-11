@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!p) return buildMetadata({ title: 'Not found', description: 'Not found', path: `/pricing/${slug}/`, noindex: true });
   return buildMetadata({
     title: `${p.name} Pricing`,
-    description: `${p.name} pricing overview — pricing model, what to expect, and how to get a current quote. We verify and date pricing; we never publish fabricated numbers.`,
+    description: `${p.name} pricing overview, pricing model, what to expect, and how to get a current quote. We verify and date pricing; we never publish fabricated numbers.`,
     path: `/pricing/${slug}/`,
     noindex: !isIndexable(slug),
     ogType: 'article',
@@ -54,7 +54,7 @@ export default async function PricingPage({ params }: { params: Promise<{ slug: 
         <p className="mt-3 max-w-3xl text-ink-muted">
           {p.name} uses {PRICING_MODEL_LABELS[p.pricing.model].toLowerCase()} pricing. Below is what
           we currently know. We only publish pricing figures we have independently verified and
-          dated — never estimates presented as fact.
+          dated, never estimates presented as fact.
         </p>
 
         <div className="mt-6 max-w-2xl">

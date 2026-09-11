@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'sw
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} — Find the Right Field Service Software`,
+    default: `${SITE_NAME}: Find the Right Field Service Software`,
     template: '%s',
   },
   description:

@@ -219,7 +219,7 @@ export function FinderClient({ initialAnswers }: { initialAnswers?: Partial<Find
       {step === 3 && (
         <div>
           <h2 className="mb-1 text-xl font-bold text-ink">What do you need most?</h2>
-          <p className="mb-4 text-sm text-ink-muted">Select all that apply — or skip if you’re not sure yet.</p>
+          <p className="mb-4 text-sm text-ink-muted">Select all that apply, or skip if you’re not sure yet.</p>
           <div className="flex flex-wrap gap-2">
             {FINDER_FEATURE_CHOICES.map((f) => {
               const active = features.includes(f);

@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!page || !product) return buildMetadata({ title: 'Not found', description: 'Not found', path: `/alternatives/${slug}/`, noindex: true });
   return buildMetadata({
     title: `Best ${product.name} Alternatives`,
-    description: `Looking for a ${product.name} alternative? Compare the best options by cost, implementation, business size and features — with independent Fit guidance.`,
+    description: `Looking for a ${product.name} alternative? Compare the best options by cost, implementation, business size and features, with independent Fit guidance.`,
     path: `/alternatives/${slug}/`,
     ogType: 'article',
   });

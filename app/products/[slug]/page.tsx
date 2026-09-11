@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!product) return buildMetadata({ title: 'Software not found', description: 'Not found', path: `/products/${slug}/`, noindex: true });
   return buildMetadata({
     title: `${product.name} Review: Pricing, Features, Pros & Cons`,
-    description: `${product.name} review — ${product.tagline} See who it's best for, key features, integrations, pricing status, trade-offs and alternatives.`,
+    description: `${product.name} review: ${product.tagline} See who it's best for, key features, integrations, pricing status, trade-offs and alternatives.`,
     path: `/products/${product.slug}/`,
     ogType: 'article',
   });

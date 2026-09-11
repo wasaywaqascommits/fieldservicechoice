@@ -38,12 +38,12 @@ export function PricingBlock({ product }: { product: Product }) {
                 <tr key={p.name}>
                   <td className="py-2 pr-4 font-medium text-ink">{p.name}</td>
                   <td className="py-2 pr-4 text-ink-soft">
-                    {p.monthlyPrice != null ? `$${p.monthlyPrice} ${p.currency}` : '—'}
+                    {p.monthlyPrice != null ? `$${p.monthlyPrice} ${p.currency}` : ', '}
                   </td>
                   <td className="py-2 text-ink-muted">
                     {p.includedUsers != null
                       ? `${p.includedUsers} user${p.includedUsers === 1 ? '' : 's'}`
-                      : p.notes ?? '—'}
+                      : p.notes ?? ', '}
                   </td>
                 </tr>
               ))}

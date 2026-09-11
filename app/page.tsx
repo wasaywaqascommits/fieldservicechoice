@@ -18,7 +18,7 @@ import { INDUSTRY_LABELS } from '@/data/industries';
 export const metadata: Metadata = buildMetadata({
   title: 'Compare Field Service Software by Trade & Budget',
   description:
-    'Compare leading field service platforms based on your trade, team size, workflows, integrations and budget. Independent, transparent recommendations — not vendor payouts.',
+    'Compare leading field service platforms based on your trade, team size, workflows, integrations and budget. Independent, transparent recommendations, not vendor payouts.',
   path: '/',
 });
 
@@ -56,7 +56,7 @@ export default function HomePage() {
           </div>
           <p className="mt-6 text-sm text-ink-muted">
             Independent comparisons · Transparent methodology · Recommendations based on your
-            business—not vendor payouts.
+            business, not vendor payouts.
           </p>
 
           {/* Lightweight Finder preview */}
@@ -84,7 +84,7 @@ export default function HomePage() {
           <p className="text-lg text-ink-soft">
             Field service software (also called field service management, or FSM, software) is a
             platform that helps trade and home-service businesses run the work their technicians do
-            in the field — scheduling and dispatching jobs, tracking technicians, quoting and
+            in the field, scheduling and dispatching jobs, tracking technicians, quoting and
             invoicing, taking payments, and keeping a full history for every customer.
           </p>
           <p className="mt-4 text-ink-muted">
@@ -95,7 +95,7 @@ export default function HomePage() {
             {[
               ['Scheduling & dispatch', 'Assign and route jobs to the right technician.'],
               ['Estimates & invoicing', 'Quote work and get paid faster.'],
-              ['Technician mobile app', 'Job details, notes and photos in the field — often offline.'],
+              ['Technician mobile app', 'Job details, notes and photos in the field, often offline.'],
               ['GPS & routing', 'Live location tracking and optimized multi-stop routes.'],
               ['Payments', 'Card and ACH processing, sometimes with consumer financing.'],
               ['Accounting integration', 'Two-way sync with QuickBooks, Xero and others.'],
@@ -105,7 +105,7 @@ export default function HomePage() {
                   ✓
                 </span>
                 <span>
-                  <span className="font-semibold text-ink">{term}</span> — {desc}
+                  <span className="font-semibold text-ink">{term}</span>, {desc}
                 </span>
               </li>
             ))}
@@ -118,7 +118,7 @@ export default function HomePage() {
             >
               best field service management software
             </Link>
-            , or get matched to your business with the{' '}
+           , or get matched to your business with the{' '}
             <Link href="/find-software/" className="font-medium text-brand-700 hover:underline">
               software finder
             </Link>
@@ -229,7 +229,7 @@ export default function HomePage() {
         <SectionHeading eyebrow="Why FieldServiceChoice" title="Built for buyers, not vendors" />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {[
-            ['Field-service specialization', 'We focus only on field service management — not every software category.'],
+            ['Field-service specialization', 'We focus only on field service management, not every software category.'],
             ['Transparent scoring', 'Our Fit Score methodology is published and explained on every match.'],
             ['Real trade-specific requirements', 'HVAC, plumbing, roofing and pest control are evaluated on their own terms.'],
             ['Pricing verification', 'We label what’s verified, what’s quote-based, and when it was last checked.'],
@@ -267,7 +267,7 @@ export default function HomePage() {
             relationships are never an input.
           </p>
 
-          {/* Visible verification proof — every pricing fact carries a status label */}
+          {/* Visible verification proof, every pricing fact carries a status label */}
           <div className="mt-6 flex flex-wrap items-center justify-center gap-2">
             <span className="text-sm text-ink-muted">We label every pricing fact:</span>
             <span className="chip border-positive-border bg-positive-bg px-3 py-1 text-xs font-medium text-positive-fg">

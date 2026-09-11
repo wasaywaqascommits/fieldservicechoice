@@ -16,7 +16,7 @@ export default function PrivacyPage() {
       updated="2026-09-10"
     >
       <div className="rounded-lg border border-warning-border bg-warning-bg p-4 text-sm text-warning-fg">
-        This is a template privacy policy provided for development. It is not legal advice — have it
+        This is a template privacy policy provided for development. It is not legal advice, have it
         reviewed by qualified counsel before launch.
       </div>
       <h2>Information we collect</h2>
@@ -28,8 +28,8 @@ export default function PrivacyPage() {
       </p>
       <h2>How we use information</h2>
       <p>
-        We use your information to provide personalized recommendations, to save your results, and —
-        only with your explicit, per-vendor consent — to introduce you to the software providers you
+        We use your information to provide personalized recommendations, to save your results, and, 
+        only with your explicit, per-vendor consent, to introduce you to the software providers you
         select. We do not sell your information, and we never share it with vendors you did not
         select.
       </p>

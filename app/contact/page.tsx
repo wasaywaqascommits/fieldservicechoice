@@ -6,7 +6,7 @@ import { NewsletterSignup } from '@/components/forms/NewsletterSignup';
 
 export const metadata: Metadata = buildMetadata({
   title: 'Contact FieldServiceChoice',
-  description: 'Get in touch with FieldServiceChoice — corrections, partnerships, press and general questions.',
+  description: 'Get in touch with FieldServiceChoice, corrections, partnerships, press and general questions.',
   path: '/contact/',
 });
 
@@ -14,14 +14,14 @@ export default function ContactPage() {
   return (
     <ContentPage
       title="Contact us"
-      subtitle="Questions, corrections, partnerships or press — we’d love to hear from you."
+      subtitle="Questions, corrections, partnerships or press, we’d love to hear from you."
       crumbs={[{ name: 'Home', path: '/' }, { name: 'Contact', path: '/contact/' }]}
     >
       <h2>General & corrections</h2>
       <p>
         For general questions or to request a correction to a product’s facts, email{' '}
         <a href="mailto:hello@fieldservicechoice.com">hello@fieldservicechoice.com</a>. We take data
-        accuracy seriously — see our <Link href="/data-verification/">data verification</Link> policy.
+        accuracy seriously. See our <Link href="/data-verification/">data verification</Link> policy.
       </p>
       <h2>Software vendors</h2>
       <p>

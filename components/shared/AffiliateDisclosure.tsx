@@ -1,6 +1,6 @@
 /**
  * Commercial disclosure shown close to recommendations with affiliate links
- * (spec §63 — not hidden only in the footer).
+ * (spec §63, not hidden only in the footer).
  */
 export function AffiliateDisclosure({ compact = false }: { compact?: boolean }) {
   if (compact) {

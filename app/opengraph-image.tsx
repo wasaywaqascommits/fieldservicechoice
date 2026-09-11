@@ -10,7 +10,7 @@ import { SITE_NAME } from '@/lib/env';
  * override via `buildMetadata({ image })`.
  */
 export const runtime = 'nodejs';
-export const alt = 'FieldServiceChoice — compare field service software by trade, team and budget';
+export const alt = 'FieldServiceChoice: compare field service software by trade, team and budget';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -55,7 +55,7 @@ export default function OpengraphImage() {
             Compare field service software by trade, team &amp; budget
           </div>
           <div style={{ display: 'flex', marginTop: 28, fontSize: 32, color: '#c7d7fe', maxWidth: 900 }}>
-            Independent Fit Scores and verified pricing — recommendations, not vendor payouts.
+            Independent Fit Scores and verified pricing. Recommendations, not vendor payouts.
           </div>
         </div>
 

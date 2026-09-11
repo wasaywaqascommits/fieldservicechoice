@@ -32,7 +32,7 @@ export function alternativesFaqs(
     faqs.push({
       question: `What is the best alternative to ${name}?`,
       answer: `The best ${name} alternative depends on why you're switching. Popular options include ${joinList(altNames)}.${
-        first ? ` ${first.name} is a common pick — best for ${lower(first.bestFor)}.` : ''
+        first ? ` ${first.name} is a common pick, best for ${lower(first.bestFor)}.` : ''
       } Use the Finder to match one to your trade, team size and budget.`,
     });
   }
@@ -40,13 +40,13 @@ export function alternativesFaqs(
   if (page.reasons.length > 0) {
     faqs.push({
       question: `Why do people look for a ${name} alternative?`,
-      answer: `Common reasons include ${joinList(page.reasons.map(lower))}. If one of these applies to you, another platform may fit better — which one depends on your specific requirements.`,
+      answer: `Common reasons include ${joinList(page.reasons.map(lower))}. If one of these applies to you, another platform may fit better, which one depends on your specific requirements.`,
     });
   }
 
   faqs.push({
     question: `Is there a cheaper alternative to ${name}?`,
-    answer: `We label pricing as unverified rather than guess, so we don't rank alternatives on price alone. Smaller-team tools are generally more affordable than enterprise platforms — use the Finder to filter by your budget band and see which ${name} alternatives fit.`,
+    answer: `We label pricing as unverified rather than guess, so we don't rank alternatives on price alone. Smaller-team tools are generally more affordable than enterprise platforms, use the Finder to filter by your budget band and see which ${name} alternatives fit.`,
   });
 
   if (alts.length > 0) {

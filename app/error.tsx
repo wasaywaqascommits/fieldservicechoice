@@ -13,7 +13,7 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
     <div className="container-page flex min-h-[60vh] flex-col items-center justify-center py-20 text-center">
       <h1 className="text-3xl font-bold text-ink">Something went wrong</h1>
       <p className="mt-3 max-w-md text-ink-muted">
-        An unexpected error occurred. Please try again — if it keeps happening, let us know.
+        An unexpected error occurred. Please try again. If it keeps happening, let us know.
       </p>
       <div className="mt-6 flex gap-3">
         <button type="button" onClick={reset} className="btn-primary">

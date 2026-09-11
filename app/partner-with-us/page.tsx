@@ -35,7 +35,7 @@ export default function PartnerPage() {
             </ul>
             <div className="rounded-lg border border-brand-200 bg-brand-50 p-4 text-sm text-ink-soft">
               <strong className="text-brand-800">Important:</strong> Partners cannot purchase
-              rankings or Fit Scores. Our recommendations stay independent — see our{' '}
+              rankings or Fit Scores. Our recommendations stay independent. See our{' '}
               <a href="/methodology/">methodology</a> and{' '}
               <a href="/editorial-policy/">editorial policy</a>.
             </div>

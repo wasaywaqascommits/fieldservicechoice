@@ -1,12 +1,12 @@
 import type { GuidePage } from '@/types';
 
-/** Editorial buying guides (spec §55 — buying-intent over generic content). */
+/** Editorial buying guides (spec §55, buying-intent over generic content). */
 export const GUIDES: GuidePage[] = [
   {
     slug: 'how-to-choose-field-service-software',
     title: 'How to Choose Field Service Software',
     intro:
-      'Choosing field service management software is less about finding the "best" product and more about matching a platform to your specific business — your trade, team size, workflows, integrations and budget. This guide walks through the decisions that actually determine fit.',
+      'Choosing field service management software is less about finding the "best" product and more about matching a platform to your specific business, your trade, team size, workflows, integrations and budget. This guide walks through the decisions that actually determine fit.',
     sections: [
       {
         heading: 'Start with your trade and work type',
@@ -24,7 +24,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Pin down your must-have capabilities',
         body: [
-          'List the handful of capabilities you genuinely cannot operate without — for example a flat-rate pricebook, service agreements, QuickBooks Desktop, or route optimization. These often eliminate options quickly.',
+          'List the handful of capabilities you genuinely cannot operate without, for example a flat-rate pricebook, service agreements, QuickBooks Desktop, or route optimization. These often eliminate options quickly.',
         ],
       },
       {
@@ -36,7 +36,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Be realistic about implementation',
         body: [
-          'Deeper platforms require more setup, data migration and training. Factor the rollout — not just the monthly price — into your decision.',
+          'Deeper platforms require more setup, data migration and training. Factor the rollout, not just the monthly price, into your decision.',
         ],
       },
     ],

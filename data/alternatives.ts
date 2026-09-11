@@ -25,7 +25,7 @@ export const ALTERNATIVES: AlternativePage[] = [
   {
     slug: 'jobber',
     intro:
-      'Jobber is an excellent small-business platform, but some teams need something different — more communication tooling, more mid-market depth, or a lighter/cheaper option. These alternatives cover the most common reasons teams look beyond Jobber.',
+      'Jobber is an excellent small-business platform, but some teams need something different, more communication tooling, more mid-market depth, or a lighter/cheaper option. These alternatives cover the most common reasons teams look beyond Jobber.',
     reasons: [
       'You need built-in phone / call tracking',
       'You are outgrowing small-business tooling',

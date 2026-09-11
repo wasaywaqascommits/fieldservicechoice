@@ -2,7 +2,7 @@ import type { ComparisonPage } from '@/types';
 
 /**
  * Curated head-to-head comparisons (spec §23). We deliberately DO NOT generate
- * every mathematical combination — only editorially meaningful matchups become
+ * every mathematical combination, only editorially meaningful matchups become
  * indexable pages.
  */
 export const COMPARISONS: ComparisonPage[] = [
@@ -27,7 +27,7 @@ export const COMPARISONS: ComparisonPage[] = [
       'You need deep job costing or inventory',
     ],
     sections: [
-      { heading: 'Pricing', body: ['Both use published tiered pricing. We show verified plan details on each product page as they are confirmed; until then, check the vendor pricing page directly.'] },
+      { heading: 'Pricing', body: ['Both use published tiered pricing. We show verified plan details on each product page as they are confirmed; until then. Check the vendor pricing page directly.'] },
       { heading: 'Scheduling & dispatch', body: ['Both handle small-team scheduling and dispatch well. Jobber is often praised for a clean, quick workflow; Housecall Pro is comparable and adds strong customer-facing touches.'] },
       { heading: 'Customer experience & marketing', body: ['Housecall Pro invests more in marketing automation, reviews and consumer booking. If growth through reputation and repeat business is your focus, that emphasis matters.'] },
       { heading: 'Best for HVAC / plumbing / landscaping', body: ['For small residential HVAC, plumbing and landscaping teams, either works. As you add commercial complexity, both start to reach their limits and a more advanced platform becomes worth evaluating.'] },
@@ -39,7 +39,7 @@ export const COMPARISONS: ComparisonPage[] = [
     productA: 'jobber',
     productB: 'workiz',
     intro:
-      'Jobber and Workiz both serve small service teams, but with different centers of gravity. Jobber is a clean all-rounder for residential home service. Workiz builds around communication — a built-in phone system and call tracking — which suits phone-driven trades.',
+      'Jobber and Workiz both serve small service teams, but with different centers of gravity. Jobber is a clean all-rounder for residential home service. Workiz builds around communication, a built-in phone system and call tracking, which suits phone-driven trades.',
     chooseA: ['You want a polished all-round operations tool', 'Residential home-service scheduling and invoicing is the core need', 'Ease of use is a top priority'],
     chooseB: ['Your business lives on inbound calls (locksmith, garage door, appliance repair)', 'You want call tracking and a phone system built in', 'Lead-to-job conversion is a focus'],
     chooseNeither: ['You need enterprise commercial workflows', 'You need deep project management or job costing'],

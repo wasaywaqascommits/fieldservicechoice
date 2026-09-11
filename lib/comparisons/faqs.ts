@@ -41,7 +41,7 @@ function cheaperAnswer(a: Product, b: Product): string {
   if (aQuote !== bQuote) {
     const publishes = aQuote ? b : a;
     const quotes = aQuote ? a : b;
-    return `${quotes.name} uses quote-based pricing, while ${publishes.name} uses a published per-user model — so for a small team ${publishes.name} is usually the more predictable cost. We label unverified figures rather than guess, so confirm current pricing with each vendor.`;
+    return `${quotes.name} uses quote-based pricing, while ${publishes.name} uses a published per-user model, so for a small team ${publishes.name} is usually the more predictable cost. We label unverified figures rather than guess, so confirm current pricing with each vendor.`;
   }
   return `We haven't independently verified current pricing for either ${a.name} or ${b.name}, so we don't publish figures we can't stand behind. Check each vendor's pricing page for current numbers, and use the Finder to see which fits your budget band.`;
 }
@@ -80,7 +80,7 @@ function quickbooksAnswer(a: Product, b: Product): string {
     }
   };
   const desktopNote =
-    ' If you run QuickBooks Desktop specifically, confirm dedicated Desktop support before choosing, as it is less common than Online.';
+    ' If you run QuickBooks Desktop specifically. Confirm dedicated Desktop support before choosing, as it is less common than Online.';
 
   const sa = qbState(a);
   const sb = qbState(b);

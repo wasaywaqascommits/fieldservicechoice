@@ -41,7 +41,7 @@ export function PartnerForm() {
   if (status === 'success') {
     return (
       <div className="card border-positive-border bg-positive-bg p-6">
-        <h3 className="text-lg font-bold text-positive-fg">Thanks — we’ll be in touch</h3>
+        <h3 className="text-lg font-bold text-positive-fg">Thanks, we’ll be in touch</h3>
         <p className="mt-2 text-sm text-ink-soft">
           We’ve received your inquiry and will reply to the email you provided.
         </p>

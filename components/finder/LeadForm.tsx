@@ -113,7 +113,7 @@ export function LeadForm({
     <form onSubmit={handleSubmit} onChange={onFirstInteract} className="card p-6">
       <h3 className="text-lg font-bold text-ink">Save your results & get pricing or demos</h3>
       <p className="mt-1 text-sm text-ink-muted">
-        Optional. We’ll only share your details with the providers you explicitly select below —
+        Optional. We’ll only share your details with the providers you explicitly select below, 
         never with everyone automatically.
       </p>
 
@@ -149,7 +149,7 @@ export function LeadForm({
         <Field label="State (optional)" name="state" autoComplete="address-level1" />
       </div>
 
-      {/* Honeypot — hidden from humans, must stay empty. */}
+      {/* Honeypot, hidden from humans, must stay empty. */}
       <div aria-hidden className="hidden">
         <label>
           Company website

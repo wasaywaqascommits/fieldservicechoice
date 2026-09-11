@@ -40,7 +40,7 @@ export default async function FindSoftwarePage({
           <FinderClient initialAnswers={initialAnswers} />
         </div>
 
-        {/* Crawlable context for SEO — this landing page is indexable (spec §47, §110). */}
+        {/* Crawlable context for SEO, this landing page is indexable (spec §47, §110). */}
         <div className="mx-auto mt-10 max-w-2xl prose-fsc text-sm">
           <h2 className="text-lg font-semibold text-ink">How the Finder works</h2>
           <p>

@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ compariso
   const b = getProductBySlug(c.productB);
   return buildMetadata({
     title: `${a?.name} vs ${b?.name}: Which Is Better for Your Business?`,
-    description: `${a?.name} vs ${b?.name} — pricing, features, implementation and best-fit differences to help you choose the right field service software.`,
+    description: `${a?.name} vs ${b?.name}, pricing, features, implementation and best-fit differences to help you choose the right field service software.`,
     path: `/compare/${c.slug}/`,
     ogType: 'article',
   });
@@ -136,7 +136,7 @@ export default async function ComparePage({ params }: { params: Promise<{ compar
           <h2 className="mb-1 text-xl font-bold text-ink">Get pricing &amp; demos for {a.name} and {b.name}</h2>
           <p className="mb-3 text-sm text-ink-muted">
             Still deciding? Have both vendors send pricing and set up a demo so you can compare them
-            directly. Pick one or both below — nothing is shared until you opt in.
+            directly. Pick one or both below, nothing is shared until you opt in.
           </p>
           <ProductLeadForm products={[a, b]} sourcePage={`compare:${c.slug}`} />
         </div>

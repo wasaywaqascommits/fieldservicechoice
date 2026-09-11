@@ -57,7 +57,7 @@ export function FinderResultCard({
                 {r.text}
               </li>
             ))}
-            {positives.length === 0 && <li className="text-ink-muted">—</li>}
+            {positives.length === 0 && <li className="text-ink-muted">, </li>}
           </ul>
         </div>
         <div>

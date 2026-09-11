@@ -13,7 +13,7 @@ export default function AffiliateDisclosurePage() {
   return (
     <ContentPage
       title="Affiliate Disclosure"
-      subtitle="How we make money — and how we keep it separate from our recommendations."
+      subtitle="How we make money, and how we keep it separate from our recommendations."
       crumbs={[{ name: 'Home', path: '/' }, { name: 'Affiliate Disclosure', path: '/affiliate-disclosure/' }]}
     >
       <p>
@@ -23,7 +23,7 @@ export default function AffiliateDisclosurePage() {
       </p>
       <p>
         <strong>These relationships do not influence our Fit Scores or editorial recommendations.</strong>{' '}
-        Our scoring engine does not read any commercial data — vendor payouts, affiliate status or
+        Our scoring engine does not read any commercial data, vendor payouts, affiliate status or
         partnership terms are never inputs. We recommend the right fit for your business even when we
         have no commercial relationship with the best option.
       </p>
@@ -34,7 +34,7 @@ export default function AffiliateDisclosurePage() {
         <li>You never pay more because you came through FieldServiceChoice.</li>
       </ul>
       <p>
-        For the full picture of how we research and score products, see our{' '}
+        For the full picture of how we research and score products. See our{' '}
         <a href="/methodology/">methodology</a> and <a href="/editorial-policy/">editorial policy</a>.
       </p>
     </ContentPage>

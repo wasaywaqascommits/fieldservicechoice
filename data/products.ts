@@ -252,7 +252,7 @@ export const PRODUCTS: Product[] = [
     vendorName: 'Workiz',
     tagline: 'Field service software with strong built-in phone and lead tracking.',
     description:
-      'Workiz targets small-to-mid service businesses with a focus on communication — built-in phone system, call tracking and messaging — alongside scheduling, dispatch, estimates and invoicing.',
+      'Workiz targets small-to-mid service businesses with a focus on communication, built-in phone system, call tracking and messaging, alongside scheduling, dispatch, estimates and invoicing.',
     website: 'https://workiz.com',
     logoMark: 'Wk',
     brandColor: '#00b3a4',
