@@ -19,7 +19,6 @@ export function organizationJsonLd() {
     url: SITE_URL,
     description:
       'Independent discovery, comparison and recommendation platform for Field Service Management software.',
-    sameAs: ['https://www.linkedin.com/in/abdul-wasay-waqas-seo/'],
   };
 }
 
