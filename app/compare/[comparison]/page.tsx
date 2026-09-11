@@ -7,6 +7,7 @@ import { faqPageJsonLd, jsonLdScript } from '@/lib/seo/jsonld';
 import { comparisonFaqs } from '@/lib/comparisons/faqs';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { FaqList } from '@/components/best/FaqList';
+import { ProductLeadForm } from '@/components/products/ProductLeadForm';
 import { ComparisonTable } from '@/components/comparison/ComparisonTable';
 import { ProductLogo } from '@/components/products/ProductLogo';
 import { VendorLink } from '@/components/shared/VendorLink';
@@ -129,6 +130,16 @@ export default async function ComparePage({ params }: { params: Promise<{ compar
             <FaqList faqs={faqs} />
           </div>
         )}
+
+        {/* Get pricing & demos for both (lead capture) */}
+        <div className="mt-12 max-w-3xl">
+          <h2 className="mb-1 text-xl font-bold text-ink">Get pricing &amp; demos for {a.name} and {b.name}</h2>
+          <p className="mb-3 text-sm text-ink-muted">
+            Still deciding? Have both vendors send pricing and set up a demo so you can compare them
+            directly. Pick one or both below — nothing is shared until you opt in.
+          </p>
+          <ProductLeadForm products={[a, b]} sourcePage={`compare:${c.slug}`} />
+        </div>
 
         <div className="mt-8">
           <AffiliateDisclosure />

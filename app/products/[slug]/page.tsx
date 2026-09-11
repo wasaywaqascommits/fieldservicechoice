@@ -318,7 +318,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
               they&rsquo;ll follow up about pricing and a demo. No spam, and nothing is shared until you
               opt in below.
             </p>
-            <ProductLeadForm product={product} />
+            <ProductLeadForm products={[product]} sourcePage={`product:${product.slug}`} />
           </section>
 
           {/* Sources */}

@@ -8,13 +8,27 @@ import { EVENTS, getSessionId, readAttribution, track } from '@/lib/analytics/ev
 const consentWording = (name: string) =>
   `Send my details to ${name} so they can contact me about pricing and demos.`;
 
+function joinNames(names: string[]): string {
+  if (names.length <= 1) return names[0] ?? '';
+  return `${names.slice(0, -1).join(', ')} or ${names[names.length - 1]}`;
+}
+
 /**
- * Product-scoped lead capture (reuses the /api/lead pipeline). Unlike the Finder
- * form there are no Finder answers — just this one vendor, with explicit consent.
- * Nothing is sent to the vendor unless the consent box is checked.
+ * Vendor lead capture (reuses the /api/lead pipeline). Works for one product
+ * (product page) or several (comparison page). There are no Finder answers —
+ * just explicit, per-vendor consent. Nothing is sent to a vendor unless its box
+ * is checked.
  */
-export function ProductLeadForm({ product }: { product: Product }) {
-  const [consented, setConsented] = useState(true);
+export function ProductLeadForm({
+  products,
+  sourcePage,
+}: {
+  products: Product[];
+  sourcePage: string;
+}) {
+  const [selected, setSelected] = useState<Record<string, boolean>>(
+    Object.fromEntries(products.map((p) => [p.slug, true])),
+  );
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
   const [errorMsg, setErrorMsg] = useState('');
   const [started, setStarted] = useState(false);
@@ -22,9 +36,16 @@ export function ProductLeadForm({ product }: { product: Product }) {
   function onFirstInteract() {
     if (!started) {
       setStarted(true);
-      track(EVENTS.leadFormStart, { source: `product:${product.slug}` });
+      track(EVENTS.leadFormStart, { source: sourcePage });
     }
   }
+
+  function toggle(slug: string) {
+    onFirstInteract();
+    setSelected((prev) => ({ ...prev, [slug]: !prev[slug] }));
+  }
+
+  const selectedNames = products.filter((p) => selected[p.slug]).map((p) => p.name);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -34,14 +55,13 @@ export function ProductLeadForm({ product }: { product: Product }) {
     const form = new FormData(e.currentTarget);
     const now = new Date().toISOString();
 
-    const consents: VendorConsent[] = [
-      {
-        productSlug: product.slug,
-        consented,
-        wordingShown: consentWording(product.name),
-        timestamp: now,
-      },
-    ];
+    const selectedVendors = products.filter((p) => selected[p.slug]).map((p) => p.slug);
+    const consents: VendorConsent[] = products.map((p) => ({
+      productSlug: p.slug,
+      consented: Boolean(selected[p.slug]),
+      wordingShown: consentWording(p.name),
+      timestamp: now,
+    }));
 
     const payload = {
       name: String(form.get('name') || ''),
@@ -50,10 +70,10 @@ export function ProductLeadForm({ product }: { product: Product }) {
       businessName: String(form.get('businessName') || ''),
       country: 'US',
       matchedProducts: [],
-      selectedVendors: consented ? [product.slug] : [],
+      selectedVendors,
       consents,
       attribution: { ...readAttribution(), sessionId: getSessionId() },
-      sourcePage: `product:${product.slug}`,
+      sourcePage,
       company_website_hp: String(form.get('company_website_hp') || ''),
     };
 
@@ -67,8 +87,8 @@ export function ProductLeadForm({ product }: { product: Product }) {
         const data = (await res.json().catch(() => ({}))) as { error?: string };
         throw new Error(data.error || 'Something went wrong. Please try again.');
       }
-      track(EVENTS.leadSubmit, { vendors: consented ? 1 : 0 });
-      if (consented) track(EVENTS.leadConsentVendor, { product: product.slug });
+      track(EVENTS.leadSubmit, { vendors: selectedVendors.length });
+      selectedVendors.forEach((slug) => track(EVENTS.leadConsentVendor, { product: slug }));
       setStatus('success');
     } catch (err) {
       setStatus('error');
@@ -81,13 +101,15 @@ export function ProductLeadForm({ product }: { product: Product }) {
       <div className="card border-positive-border bg-positive-bg p-6">
         <h3 className="text-lg font-bold text-positive-fg">You&rsquo;re all set</h3>
         <p className="mt-2 text-sm text-ink-soft">
-          {consented
-            ? `Thanks — we’ll pass your details to ${product.name} and they’ll reach out about pricing and demos.`
-            : 'Thanks — we’ve saved your request. You can revisit your matches any time via the Finder.'}
+          {selectedNames.length > 0
+            ? `Thanks — we’ll pass your details to ${joinNames(selectedNames)} and they’ll reach out about pricing and demos.`
+            : 'Thanks — we’ve saved your request. Select a provider next time to have them reach out.'}
         </p>
       </div>
     );
   }
+
+  const multi = products.length > 1;
 
   return (
     <form onSubmit={handleSubmit} onChange={onFirstInteract} className="card p-6">
@@ -106,18 +128,27 @@ export function ProductLeadForm({ product }: { product: Product }) {
         </label>
       </div>
 
-      <label className="mt-4 flex cursor-pointer items-start gap-3 rounded-lg border border-slate-200 p-3 hover:bg-surface-subtle">
-        <input
-          type="checkbox"
-          className="mt-0.5 h-4 w-4 rounded border-slate-300 text-brand-600 focus:ring-brand-500"
-          checked={consented}
-          onChange={() => {
-            onFirstInteract();
-            setConsented((v) => !v);
-          }}
-        />
-        <span className="text-sm text-ink-soft">{consentWording(product.name)}</span>
-      </label>
+      <fieldset className="mt-4">
+        {multi && (
+          <legend className="mb-2 text-sm font-semibold text-ink">Who can contact you?</legend>
+        )}
+        <div className="space-y-2">
+          {products.map((p) => (
+            <label
+              key={p.slug}
+              className="flex cursor-pointer items-start gap-3 rounded-lg border border-slate-200 p-3 hover:bg-surface-subtle"
+            >
+              <input
+                type="checkbox"
+                className="mt-0.5 h-4 w-4 rounded border-slate-300 text-brand-600 focus:ring-brand-500"
+                checked={Boolean(selected[p.slug])}
+                onChange={() => toggle(p.slug)}
+              />
+              <span className="text-sm text-ink-soft">{consentWording(p.name)}</span>
+            </label>
+          ))}
+        </div>
+      </fieldset>
 
       <p className="mt-3 text-xs text-ink-muted">
         By submitting, you agree to our{' '}
@@ -125,8 +156,8 @@ export function ProductLeadForm({ product }: { product: Product }) {
           Privacy Policy
         </a>
         .{' '}
-        {consented
-          ? `${product.name} will receive the details above.`
+        {selectedNames.length > 0
+          ? `${joinNames(selectedNames)} will receive the details above.`
           : 'No provider is selected, so we’ll only save your request.'}
       </p>
 
@@ -137,7 +168,11 @@ export function ProductLeadForm({ product }: { product: Product }) {
       )}
 
       <button type="submit" disabled={status === 'submitting'} className="btn-primary mt-4 w-full sm:w-auto">
-        {status === 'submitting' ? 'Sending…' : `Get pricing & demos from ${product.name}`}
+        {status === 'submitting'
+          ? 'Sending…'
+          : multi
+            ? 'Get pricing & demos'
+            : `Get pricing & demos from ${products[0].name}`}
       </button>
     </form>
   );
