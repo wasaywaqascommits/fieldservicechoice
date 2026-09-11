@@ -76,7 +76,7 @@ export const leadSchema = z.object({
   website: z.string().max(200).optional().or(z.literal('')),
   state: z.string().max(60).optional().or(z.literal('')),
   country: z.string().max(60).optional().or(z.literal('')),
-  answers: finderAnswersSchema,
+  answers: finderAnswersSchema.optional(),
   matchedProducts: z.array(z.object({ slug: z.string().max(80), score: z.number().min(0).max(100) })).max(20),
   selectedVendors: z.array(z.string().max(80)).max(20),
   consents: z.array(consentSchema).max(20),

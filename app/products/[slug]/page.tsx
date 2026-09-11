@@ -20,6 +20,7 @@ import {
 } from '@/lib/labels';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { ProductLogo } from '@/components/products/ProductLogo';
+import { ProductLeadForm } from '@/components/products/ProductLeadForm';
 import { PricingBlock } from '@/components/products/PricingBlock';
 import { FeatureTable } from '@/components/products/FeatureTable';
 import { SourceList } from '@/components/products/SourceList';
@@ -309,6 +310,17 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             </section>
           )}
 
+          {/* Get pricing & demos (lead capture) */}
+          <section id="get-pricing" className="scroll-mt-24">
+            <h2 className="mb-1 text-xl font-bold text-ink">Get pricing &amp; demos from {product.name}</h2>
+            <p className="mb-3 text-sm text-ink-muted">
+              Tell us a little about your business and we&rsquo;ll pass your details to {product.name};
+              they&rsquo;ll follow up about pricing and a demo. No spam, and nothing is shared until you
+              opt in below.
+            </p>
+            <ProductLeadForm product={product} />
+          </section>
+
           {/* Sources */}
           <section>
             <h2 className="mb-3 text-xl font-bold text-ink">Sources &amp; verification</h2>
@@ -327,11 +339,15 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         {/* Sidebar */}
         <aside className="lg:sticky lg:top-20 lg:h-fit">
           <div className="card p-5">
-            <h2 className="text-base font-bold text-ink">Is {product.name} right for you?</h2>
+            <h2 className="text-base font-bold text-ink">Interested in {product.name}?</h2>
             <p className="mt-2 text-sm text-ink-muted">
-              Get a personalized Fit Score based on your trade, team size, workflows and budget.
+              Get pricing and a demo direct from {product.name}, or see how it scores against your
+              specific business.
             </p>
-            <Link href={`/find-software/?industry=${product.industries[0]}`} className="btn-primary mt-4 w-full">
+            <Link href="#get-pricing" className="btn-primary mt-4 w-full">
+              Get pricing &amp; demos
+            </Link>
+            <Link href={`/find-software/?industry=${product.industries[0]}`} className="btn-secondary mt-2 w-full">
               Find my match
             </Link>
             <VendorLink
