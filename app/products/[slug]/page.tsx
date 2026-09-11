@@ -106,6 +106,10 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                 <Link href="/methodology/" className="font-medium text-brand-700 hover:underline">
                   How we assess products
                 </Link>
+                <span aria-hidden>·</span>
+                <Link href="/independence/" className="font-medium text-brand-700 hover:underline">
+                  Our independence pledge
+                </Link>
               </p>
             </div>
           </div>
