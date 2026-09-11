@@ -1,8 +1,11 @@
 import type {
   FeatureKey,
   Integration,
+  PricingModel,
   Product,
   ProductFeatureMatrix,
+  ProductPlan,
+  ProductPricing,
   Source,
   VerificationDates,
 } from '@/types';
@@ -51,7 +54,10 @@ function matrix(opts: {
   return m;
 }
 
-function officialSources(name: string, domain: string): Source[] {
+/** Date current published pricing was verified from official vendor sources. */
+const PRICING_VERIFIED = '2026-09-11';
+
+function officialSources(name: string, domain: string, pricingVerified = false): Source[] {
   return [
     {
       title: `${name} official website`,
@@ -64,8 +70,8 @@ function officialSources(name: string, domain: string): Source[] {
       title: `${name} pricing page`,
       url: `https://${domain}/pricing/`,
       type: 'official_pricing',
-      accessedAt: null,
-      verificationStatus: 'needs_verification',
+      accessedAt: pricingVerified ? PRICING_VERIFIED : null,
+      verificationStatus: pricingVerified ? 'verified' : 'needs_verification',
     },
     {
       title: `${name} integrations directory`,
@@ -75,6 +81,46 @@ function officialSources(name: string, domain: string): Source[] {
       verificationStatus: 'needs_verification',
     },
   ];
+}
+
+/** Verification dates with pricing verified today (features/integrations still pending). */
+function pricingVerifiedDates(): VerificationDates {
+  return { ...pending(), pricingVerifiedAt: PRICING_VERIFIED };
+}
+
+interface PlanOpts {
+  includedUsers?: number;
+  additionalUserPrice?: number;
+  trialDays?: number;
+  contract?: string;
+  notes?: string;
+  billingModel?: PricingModel;
+  sourceUrl: string;
+}
+
+/** A verified, dated pricing plan sourced from the vendor's official pricing page. */
+function plan(name: string, monthlyPrice: number | null, opts: PlanOpts): ProductPlan {
+  return {
+    name,
+    monthlyPrice,
+    annualPrice: null,
+    currency: 'USD',
+    billingModel: opts.billingModel ?? 'tiered',
+    includedUsers: opts.includedUsers ?? null,
+    additionalUserPrice: opts.additionalUserPrice ?? null,
+    setupFee: null,
+    trialDays: opts.trialDays ?? null,
+    contract: opts.contract ?? null,
+    isQuoteBased: false,
+    notes: opts.notes,
+    sourceUrl: opts.sourceUrl,
+    verificationStatus: 'verified',
+    verifiedAt: PRICING_VERIFIED,
+  };
+}
+
+function verifiedPricing(model: PricingModel, freeTrial: boolean | null, plans: ProductPlan[]): ProductPricing {
+  return { model, startingStatus: 'verified', freeTrial, plans };
 }
 
 const DISCLOSURE =
@@ -106,7 +152,12 @@ export const PRODUCTS: Product[] = [
     industries: ['hvac', 'plumbing', 'electrical', 'landscaping', 'cleaning', 'pool-service'],
     companySizes: ['solo', '2-5', '6-10', '11-25'],
     businessModels: ['residential', 'both', 'route'],
-    pricing: { model: 'tiered', startingStatus: 'needs_verification', freeTrial: null, plans: [] },
+    pricing: verifiedPricing('tiered', true, [
+      plan('Core', 29, { includedUsers: 1, additionalUserPrice: 29, trialDays: 14, contract: 'Billed annually', sourceUrl: 'https://www.getjobber.com/pricing/' }),
+      plan('Connect', 99, { includedUsers: 1, additionalUserPrice: 29, trialDays: 14, contract: 'Billed annually', sourceUrl: 'https://www.getjobber.com/pricing/' }),
+      plan('Grow', 149, { includedUsers: 1, additionalUserPrice: 29, trialDays: 14, contract: 'Billed annually', sourceUrl: 'https://www.getjobber.com/pricing/' }),
+      plan('Plus', 399, { includedUsers: 1, additionalUserPrice: 29, trialDays: 14, contract: 'Billed annually', sourceUrl: 'https://www.getjobber.com/pricing/' }),
+    ]),
     implementation: 'low',
     implementationNotes: 'Self-serve onboarding designed for owner-operators; most teams can go live quickly without a paid implementation.',
     features: matrix({
@@ -119,8 +170,8 @@ export const PRODUCTS: Product[] = [
     pros: ['Fast, low-friction onboarding', 'Clean, well-reviewed mobile app', 'Solid client communication and online booking'],
     tradeoffs: ['Limited depth for complex commercial job costing', 'Fewer enterprise administrative controls', 'Advanced marketing features sit in higher tiers'],
     alternatives: ['housecall-pro', 'workiz', 'fieldpulse', 'servicem8'],
-    sources: officialSources('Jobber', 'getjobber.com'),
-    verification: pending(),
+    sources: officialSources('Jobber', 'getjobber.com', true),
+    verification: pricingVerifiedDates(),
     commercial: { type: 'affiliate', affiliateLinkSlug: 'jobber', disclosure: DISCLOSURE },
     published: true,
   },
@@ -141,7 +192,11 @@ export const PRODUCTS: Product[] = [
     industries: ['hvac', 'plumbing', 'electrical', 'cleaning', 'pool-service'],
     companySizes: ['solo', '2-5', '6-10', '11-25', '26-50'],
     businessModels: ['residential', 'both'],
-    pricing: { model: 'tiered', startingStatus: 'needs_verification', freeTrial: null, plans: [] },
+    pricing: verifiedPricing('tiered', true, [
+      plan('Basic', 59, { includedUsers: 1, trialDays: 14, contract: 'Billed annually', sourceUrl: 'https://www.housecallpro.com/pricing/' }),
+      plan('Essentials', 149, { includedUsers: 5, additionalUserPrice: 100, trialDays: 14, contract: 'Billed annually', sourceUrl: 'https://www.housecallpro.com/pricing/' }),
+      plan('Max', 299, { includedUsers: 8, additionalUserPrice: 75, trialDays: 14, contract: 'Billed annually', sourceUrl: 'https://www.housecallpro.com/pricing/' }),
+    ]),
     implementation: 'low',
     implementationNotes: 'Primarily self-serve; higher tiers add onboarding assistance for larger teams.',
     features: matrix({
@@ -153,8 +208,8 @@ export const PRODUCTS: Product[] = [
     pros: ['Strong marketing and reputation tools', 'Consumer-friendly booking experience', 'Broad feature coverage for residential work'],
     tradeoffs: ['Less suited to complex commercial workflows', 'Some capabilities gated to higher tiers', 'Reporting depth trails enterprise platforms'],
     alternatives: ['jobber', 'workiz', 'fieldpulse', 'service-fusion'],
-    sources: officialSources('Housecall Pro', 'housecallpro.com'),
-    verification: pending(),
+    sources: officialSources('Housecall Pro', 'housecallpro.com', true),
+    verification: pricingVerifiedDates(),
     commercial: { type: 'affiliate', affiliateLinkSlug: 'housecall-pro', disclosure: DISCLOSURE },
     published: true,
   },
@@ -242,7 +297,7 @@ export const PRODUCTS: Product[] = [
     industries: ['hvac', 'plumbing', 'electrical', 'landscaping', 'commercial'],
     companySizes: ['2-5', '6-10', '11-25', '26-50'],
     businessModels: ['residential', 'commercial', 'both'],
-    pricing: { model: 'tiered', startingStatus: 'needs_verification', freeTrial: null, plans: [] },
+    pricing: { model: 'quote', startingStatus: 'not_disclosed', freeTrial: null, plans: [] },
     implementation: 'moderate',
     implementationNotes: 'Onboarding support available; broader feature set means a slightly larger setup than starter tools.',
     features: matrix({
@@ -276,7 +331,11 @@ export const PRODUCTS: Product[] = [
     industries: ['hvac', 'plumbing', 'electrical'],
     companySizes: ['2-5', '6-10', '11-25', '26-50'],
     businessModels: ['residential', 'commercial', 'both'],
-    pricing: { model: 'tiered', startingStatus: 'needs_verification', freeTrial: null, plans: [] },
+    pricing: verifiedPricing('tiered', null, [
+      plan('Starter', 208, { notes: 'Unlimited users', contract: 'Billed annually', sourceUrl: 'https://www.servicefusion.com/pricing/' }),
+      plan('Plus', 325, { notes: 'Unlimited users', contract: 'Billed annually', sourceUrl: 'https://www.servicefusion.com/pricing/' }),
+      plan('Pro', 533, { notes: 'Unlimited users', contract: 'Billed annually', sourceUrl: 'https://www.servicefusion.com/pricing/' }),
+    ]),
     implementation: 'moderate',
     implementationNotes: 'Guided onboarding available; QuickBooks setup is a common part of implementation.',
     features: matrix({
@@ -287,8 +346,8 @@ export const PRODUCTS: Product[] = [
     pros: ['Strong QuickBooks Online and Desktop support', 'Established, dependable feature set', 'Suited to office-driven dispatch'],
     tradeoffs: ['Interface feels less modern than newer rivals', 'Lighter marketing tools', 'Not built for enterprise scale'],
     alternatives: ['fieldpulse', 'kickserv', 'housecall-pro', 'fieldedge'],
-    sources: officialSources('Service Fusion', 'servicefusion.com'),
-    verification: pending(),
+    sources: officialSources('Service Fusion', 'servicefusion.com', true),
+    verification: pricingVerifiedDates(),
     commercial: { type: 'affiliate', affiliateLinkSlug: 'service-fusion', disclosure: DISCLOSURE },
     published: true,
   },
@@ -342,7 +401,11 @@ export const PRODUCTS: Product[] = [
     industries: ['hvac', 'plumbing', 'electrical', 'landscaping', 'cleaning'],
     companySizes: ['solo', '2-5', '6-10'],
     businessModels: ['residential', 'both'],
-    pricing: { model: 'tiered', startingStatus: 'needs_verification', freeTrial: null, plans: [] },
+    pricing: verifiedPricing('tiered', true, [
+      plan('Start', 60, { includedUsers: 5, trialDays: 30, contract: 'Month-to-month (annual billing saves 20%)', sourceUrl: 'https://www.kickserv.com/pricing/' }),
+      plan('Run', 119, { includedUsers: 10, trialDays: 30, contract: 'Month-to-month (annual billing saves 20%)', sourceUrl: 'https://www.kickserv.com/pricing/' }),
+      plan('Scale', 199, { includedUsers: 20, trialDays: 30, contract: 'Month-to-month (annual billing saves 20%)', sourceUrl: 'https://www.kickserv.com/pricing/' }),
+    ]),
     implementation: 'low',
     implementationNotes: 'Light, self-serve setup suited to very small teams.',
     features: matrix({
@@ -354,8 +417,8 @@ export const PRODUCTS: Product[] = [
     pros: ['Accessible pricing for small teams', 'Simple, quick to learn', 'QuickBooks integration'],
     tradeoffs: ['Lighter dispatch and pricebook', 'Not built for larger operations', 'Fewer advanced features'],
     alternatives: ['jobber', 'workiz', 'service-fusion', 'servicem8'],
-    sources: officialSources('Kickserv', 'kickserv.com'),
-    verification: pending(),
+    sources: officialSources('Kickserv', 'kickserv.com', true),
+    verification: pricingVerifiedDates(),
     commercial: { type: 'affiliate', affiliateLinkSlug: 'kickserv', disclosure: DISCLOSURE },
     published: true,
   },
@@ -376,7 +439,13 @@ export const PRODUCTS: Product[] = [
     industries: ['plumbing', 'electrical', 'hvac', 'cleaning'],
     companySizes: ['solo', '2-5', '6-10'],
     businessModels: ['residential', 'both'],
-    pricing: { model: 'tiered', startingStatus: 'needs_verification', freeTrial: null, plans: [] },
+    pricing: verifiedPricing('tiered', true, [
+      plan('Free', 0, { notes: 'Unlimited users · 30 jobs/mo', sourceUrl: 'https://www.servicem8.com/us/pricing' }),
+      plan('Starter', 29, { trialDays: 14, notes: 'Unlimited users · 50 jobs/mo', sourceUrl: 'https://www.servicem8.com/us/pricing' }),
+      plan('Growing', 79, { trialDays: 14, notes: 'Unlimited users · 150 jobs/mo', sourceUrl: 'https://www.servicem8.com/us/pricing' }),
+      plan('Premium', 149, { trialDays: 14, notes: 'Unlimited users · 500 jobs/mo', sourceUrl: 'https://www.servicem8.com/us/pricing' }),
+      plan('Premium Plus', 349, { trialDays: 14, notes: 'Unlimited users · 1,500+ jobs/mo', sourceUrl: 'https://www.servicem8.com/us/pricing' }),
+    ]),
     implementation: 'low',
     implementationNotes: 'Very light, self-serve setup; strongest on Apple devices.',
     features: matrix({
@@ -388,8 +457,8 @@ export const PRODUCTS: Product[] = [
     pros: ['Lightweight and inexpensive to start', 'Good mobile-first job flow', 'Pay-as-you-grow pricing style'],
     tradeoffs: ['Apple-centric experience', 'Lighter reporting', 'Not for larger operations'],
     alternatives: ['jobber', 'tradify', 'kickserv', 'workiz'],
-    sources: officialSources('ServiceM8', 'servicem8.com'),
-    verification: pending(),
+    sources: officialSources('ServiceM8', 'servicem8.com', true),
+    verification: pricingVerifiedDates(),
     commercial: { type: 'none', affiliateLinkSlug: null, disclosure: DISCLOSURE },
     published: true,
   },
@@ -575,7 +644,11 @@ export const PRODUCTS: Product[] = [
     industries: ['electrical', 'plumbing', 'hvac', 'other'],
     companySizes: ['solo', '2-5', '6-10'],
     businessModels: ['residential', 'both'],
-    pricing: { model: 'tiered', startingStatus: 'needs_verification', freeTrial: null, plans: [] },
+    pricing: verifiedPricing('per_user', true, [
+      plan('Lite', 47, { billingModel: 'per_user', trialDays: 14, notes: 'Per user · billed annually', sourceUrl: 'https://www.tradifyhq.com/us/pricing' }),
+      plan('Pro', 51, { billingModel: 'per_user', trialDays: 14, notes: 'Per user · billed annually', sourceUrl: 'https://www.tradifyhq.com/us/pricing' }),
+      plan('Plus', 61, { billingModel: 'per_user', trialDays: 14, notes: 'Per user · billed annually', sourceUrl: 'https://www.tradifyhq.com/us/pricing' }),
+    ]),
     implementation: 'low',
     implementationNotes: 'Light, self-serve setup suited to small teams and solo operators.',
     features: matrix({
@@ -587,8 +660,8 @@ export const PRODUCTS: Product[] = [
     pros: ['Simple and easy to adopt', 'Good quote-to-invoice workflow', 'QuickBooks and Xero support'],
     tradeoffs: ['Lighter dispatch and reporting', 'Not built for larger operations', 'Fewer advanced features'],
     alternatives: ['servicem8', 'jobber', 'kickserv', 'workiz'],
-    sources: officialSources('Tradify', 'tradifyhq.com'),
-    verification: pending(),
+    sources: officialSources('Tradify', 'tradifyhq.com', true),
+    verification: pricingVerifiedDates(),
     commercial: { type: 'affiliate', affiliateLinkSlug: 'tradify', disclosure: DISCLOSURE },
     published: true,
   },

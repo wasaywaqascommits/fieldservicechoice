@@ -93,6 +93,19 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                 {product.name} Review: Pricing, Features, Pros, Cons &amp; Alternatives
               </h1>
               <p className="mt-2 max-w-2xl text-ink-muted">{product.description}</p>
+              <p className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-ink-muted">
+                <span>
+                  Independently reviewed by the{' '}
+                  <span className="font-medium text-ink-soft">FieldServiceChoice editorial team</span>
+                </span>
+                {product.verification.editorialReviewedAt && (
+                  <span>· Last reviewed {product.verification.editorialReviewedAt}</span>
+                )}
+                <span aria-hidden>·</span>
+                <Link href="/methodology/" className="font-medium text-brand-700 hover:underline">
+                  How we assess products
+                </Link>
+              </p>
             </div>
           </div>
           <div className="flex shrink-0 flex-col gap-2">

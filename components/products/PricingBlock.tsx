@@ -41,12 +41,21 @@ export function PricingBlock({ product }: { product: Product }) {
                     {p.monthlyPrice != null ? `$${p.monthlyPrice} ${p.currency}` : '—'}
                   </td>
                   <td className="py-2 text-ink-muted">
-                    {p.includedUsers != null ? `${p.includedUsers} users` : p.notes ?? '—'}
+                    {p.includedUsers != null
+                      ? `${p.includedUsers} user${p.includedUsers === 1 ? '' : 's'}`
+                      : p.notes ?? '—'}
                   </td>
                 </tr>
               ))}
             </tbody>
           </table>
+          <p className="mt-3 text-xs text-ink-muted">
+            Monthly prices from {product.name}&rsquo;s official pricing page; billing basis (annual vs
+            month-to-month) varies by plan.
+            {product.verification.pricingVerifiedAt
+              ? ` Verified ${product.verification.pricingVerifiedAt}.`
+              : ''}
+          </p>
         </div>
       ) : (
         <div className="mt-4 rounded-lg border border-warning-border bg-warning-bg p-4 text-sm text-warning-fg">
