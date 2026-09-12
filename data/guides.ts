@@ -485,6 +485,426 @@ export const GUIDES: GuidePage[] = [
     published: true,
   },
   {
+    slug: 'field-service-work-order-management',
+    title: 'Work Order Management: The Backbone of Field Service',
+    category: 'Feature',
+    intro:
+      'A work order is the record of a single job, and managing those well is the difference between a business that runs smoothly and one that runs on memory and sticky notes. Here’s what work order management covers and what to look for.',
+    sections: [
+      {
+        heading: 'What a work order actually is',
+        body: [
+          'A work order is the full record of one job: who the customer is, what needs doing, who’s assigned, what was done, the parts used, and the outcome. In field service it’s the thread that ties a request to a completed, invoiced job, and it’s where the history lives when the same customer calls again next year.',
+        ],
+      },
+      {
+        heading: 'Why managing them matters',
+        body: [
+          'When work orders are scattered across texts, paper and someone’s memory, things get missed: a job nobody invoiced, a part that was never charged for, a follow-up that never happened. Good work order management keeps every job in one place with a clear status, so nothing is finished until it’s actually finished and billed.',
+        ],
+      },
+      {
+        heading: 'What software does',
+        body: [
+          'Field service software creates a work order the moment a job is booked and carries it through its whole life: assigned, scheduled, in progress, completed, invoiced. The technician updates it from the field with notes, photos and parts, and the office watches the status change in real time. Everything attaches to the customer and, in stronger tools, to the specific piece of equipment.',
+        ],
+      },
+      {
+        heading: 'What to look for',
+        body: [
+          'Look at how much of the job the work order captures (notes, photos, parts, signatures), how clearly you can see status across all your open jobs, and whether it links to equipment history for repeat customers. If you do commercial or contract work, custom fields and templates start to matter too.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'Field service dispatching explained', href: '/guides/field-service-dispatching/' },
+      { label: 'Best field service management software', href: '/best/field-service-management-software/' },
+      { label: 'Commusoft review', href: '/products/commusoft/' },
+      { label: 'Find your best-fit software', href: '/find-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'field-service-gps-tracking',
+    title: 'GPS and Technician Tracking in Field Service',
+    category: 'Feature',
+    intro:
+      'GPS tracking gets a mixed reaction: office teams love it, and some technicians bristle at it. Used well, it’s about dispatching smarter and keeping customers informed, not watching people. Here’s what it does and how to think about it.',
+    sections: [
+      {
+        heading: 'What it tracks',
+        body: [
+          'GPS tracking shows where your technicians or vehicles are in real time, usually on a map alongside the day’s jobs. Some tools track the phone, others tie into vehicle trackers. The point is to know who’s actually near the next job when plans change.',
+        ],
+      },
+      {
+        heading: 'Where it helps',
+        body: [
+          'The practical wins are dispatching and communication. When an emergency comes in, you can send the closest available technician instead of guessing. When a customer asks where their technician is, you can tell them, or better, the software sends an automatic on-my-way text with an arrival window. It also gives you honest numbers on drive time and time on site.',
+        ],
+      },
+      {
+        heading: 'The people side',
+        body: [
+          'It’s worth being straight with your team about why you’re using it. Framed as “we’ll stop sending you across town when someone closer is free, and cut the how-far-away calls,” it lands very differently than surveillance. The businesses that get the most from it treat it as a dispatch and customer-service tool, not a stopwatch.',
+        ],
+      },
+      {
+        heading: 'What to look for',
+        body: [
+          'Check whether tracking is live and tied into the dispatch board, whether customers get automatic arrival updates, and how it handles privacy outside working hours. If routing matters to you, look at how tracking feeds into route planning.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'Field service dispatching explained', href: '/guides/field-service-dispatching/' },
+      { label: 'Route optimization explained', href: '/guides/field-service-route-optimization/' },
+      { label: 'ServiceTitan review', href: '/products/servicetitan/' },
+      { label: 'Best field service management software', href: '/best/field-service-management-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'field-service-route-optimization',
+    title: 'Route Optimization for Field Service Teams',
+    category: 'Feature',
+    intro:
+      'For any business whose technicians drive between a lot of stops, route optimization is one of the clearest ways to fit more jobs into a day. Here’s what it does and which businesses it matters most for.',
+    sections: [
+      {
+        heading: 'What route optimization is',
+        body: [
+          'Route optimization works out the most efficient order to visit a set of jobs, taking distance and sometimes time windows and traffic into account. Instead of a technician zig-zagging across town, the software sequences the stops to cut drive time and fit in more visits.',
+        ],
+      },
+      {
+        heading: 'Who it matters most for',
+        body: [
+          'This is a big deal for route-dense work: landscaping and lawn care, pest control, cleaning, and any operation running dozens of short recurring visits a day. For a business doing a handful of longer service calls, it matters far less. Be honest about which one you are before you pay for it.',
+        ],
+      },
+      {
+        heading: 'What good routing does',
+        body: [
+          'Beyond ordering today’s stops, stronger tools plan recurring routes so the same regular visits fall into an efficient pattern week after week, and they re-optimize when jobs are added or cancelled. The saved time shows up as lower fuel costs and more jobs per technician per day, which is real money in a route business.',
+        ],
+      },
+      {
+        heading: 'What to look for',
+        body: [
+          'If routes are central, look for genuine multi-stop optimization rather than just a map view, support for recurring routes, and how it handles changes mid-day. Some all-in-one platforms include solid routing; very route-heavy operations sometimes add a specialist tool on top.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'Field service scheduling explained', href: '/guides/field-service-scheduling/' },
+      { label: 'Software for landscaping businesses', href: '/industries/landscaping/' },
+      { label: 'Best field service management software', href: '/best/field-service-management-software/' },
+      { label: 'Find your best-fit software', href: '/find-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'field-service-estimating',
+    title: 'Estimating and Quoting in Field Service',
+    category: 'Feature',
+    intro:
+      'The estimate is often the first real impression a customer gets of how you work, and a slow or sloppy one loses jobs. Here’s what estimating covers in field service and what separates a good quoting tool from a frustrating one.',
+    sections: [
+      {
+        heading: 'What estimating covers',
+        body: [
+          'An estimate, or quote, is your proposed price for work before it’s done. In field service that ranges from a quick number for a simple repair to a detailed multi-option proposal for a system replacement or a commercial project. The faster and clearer you can produce one, the more likely you are to win the job.',
+        ],
+      },
+      {
+        heading: 'Why speed and clarity win',
+        body: [
+          'Customers usually get a few quotes, and the one that arrives first and reads clearly has an edge. Building the estimate on the technician’s device, on site, while the problem is fresh, beats promising to send something over and then following up days later. Offering good, better and best options also lets the customer choose their level instead of just accepting or rejecting a single price.',
+        ],
+      },
+      {
+        heading: 'From estimate to invoice',
+        body: [
+          'The real payoff comes when an approved estimate turns into a scheduled job and then an invoice without anyone re-typing it. That’s where field service software pulls ahead of a generic document tool: the quote, the job and the invoice are the same record moving through stages.',
+        ],
+      },
+      {
+        heading: 'What to look for',
+        body: [
+          'Look at how fast a technician can build and send a quote from the field, whether it supports good/better/best and optional line items, and how smoothly an accepted quote becomes a job and an invoice. Commercial and project work also needs deeper estimating with materials and labor.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'Field service invoicing explained', href: '/guides/field-service-invoicing/' },
+      { label: 'Flat-rate pricebook explained', href: '/guides/flat-rate-pricebook/' },
+      { label: 'Simpro review', href: '/products/simpro/' },
+      { label: 'Best field service management software', href: '/best/field-service-management-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'field-service-service-agreements',
+    title: 'Service Agreements and Memberships: Recurring Revenue for the Trades',
+    category: 'Feature',
+    intro:
+      'Service agreements turn one-off customers into predictable, recurring revenue, and they’re one of the healthiest things a trades business can build. Here’s how they work and what your software needs to support them.',
+    sections: [
+      {
+        heading: 'What a service agreement is',
+        body: [
+          'A service agreement, often sold as a membership or maintenance plan, is a recurring arrangement where a customer pays for scheduled maintenance and usually some perks, like priority service or discounts. For HVAC it might be two tune-ups a year; for other trades it varies. The customer gets peace of mind, and you get recurring revenue and a reason to stay in touch.',
+        ],
+      },
+      {
+        heading: 'Why they’re worth building',
+        body: [
+          'Agreements smooth out the seasonal peaks and troughs that make service businesses stressful to run. They fill the slow months with booked maintenance visits, they raise the lifetime value of each customer, and members tend to call you first when something bigger goes wrong. A healthy membership base is one of the strongest signs of a durable service business.',
+        ],
+      },
+      {
+        heading: 'What software needs to handle',
+        body: [
+          'Running agreements by hand gets painful fast: remembering who’s due, scheduling hundreds of visits, billing on a recurring cycle, and tracking renewals. Good field service software manages the agreement itself, generates the maintenance visits on schedule, handles recurring billing, and flags renewals before they lapse.',
+        ],
+      },
+      {
+        heading: 'What to look for',
+        body: [
+          'If memberships are part of your plan, look closely at agreement management: recurring visit scheduling, recurring billing, renewal tracking, and reporting on your membership base. This is an area where the established platforms tend to be much deeper than the lightweight tools.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'Best HVAC field service software', href: '/best/hvac-field-service-software/' },
+      { label: 'Field service scheduling explained', href: '/guides/field-service-scheduling/' },
+      { label: 'ServiceTitan review', href: '/products/servicetitan/' },
+      { label: 'Find your best-fit software', href: '/find-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'field-service-inventory-management',
+    title: 'Inventory and Truck Stock in Field Service',
+    category: 'Feature',
+    intro:
+      'Parts that nobody tracked are money leaking out of a service business: stock that walks off trucks, jobs where the markup never made it onto the invoice, and second trips because the right part wasn’t on board. Here’s what inventory features do and who needs them.',
+    sections: [
+      {
+        heading: 'What it tracks',
+        body: [
+          'Inventory management keeps count of the parts and materials you hold, both in the warehouse and on each truck. Truck stock is the part that matters most in field service: knowing what’s on which van means you can send the technician who’s actually carrying the part, instead of sending someone who has to drive back for it.',
+        ],
+      },
+      {
+        heading: 'Why it pays off',
+        body: [
+          'Two things leak money without it. First, parts used on a job that never get charged to the customer, which quietly erodes your margin. Second, second trips, where a technician arrives, finds they don’t have the part, and has to come back another day. Tracking stock and tying parts to work orders closes both gaps: the part gets counted, charged and reordered.',
+        ],
+      },
+      {
+        heading: 'Who actually needs it',
+        body: [
+          'Be honest about your parts load. A business that mostly does labor, or buys materials per job, can get by with light or no inventory features. A business carrying significant stock across multiple trucks, or doing a lot of parts-heavy repairs, gets real value from proper tracking, including reorder points and usage reports.',
+        ],
+      },
+      {
+        heading: 'What to look for',
+        body: [
+          'If parts matter, look for truck-level stock tracking, parts tied to work orders so they flow onto the invoice, reorder alerts, and multi-location support if you run more than one warehouse. This is an area where the heavier platforms tend to be stronger than the simple tools.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'Field service work order management', href: '/guides/field-service-work-order-management/' },
+      { label: 'Simpro review', href: '/products/simpro/' },
+      { label: 'Best field service management software', href: '/best/field-service-management-software/' },
+      { label: 'Find your best-fit software', href: '/find-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'field-service-job-costing',
+    title: 'Job Costing: Knowing Which Jobs Actually Make Money',
+    category: 'Feature',
+    intro:
+      'Plenty of busy service businesses aren’t as profitable as they should be, and the reason is usually that nobody knows which jobs make money and which quietly lose it. Job costing is how you find out. Here’s what it means and what to look for.',
+    sections: [
+      {
+        heading: 'What job costing is',
+        body: [
+          'Job costing compares what a job brought in against what it actually cost to deliver: labor hours, parts, materials and any subcontractor or equipment cost. The result is the real profit on that job, not the estimate, and not revenue with the costs ignored.',
+        ],
+      },
+      {
+        heading: 'Why it matters more than it seems',
+        body: [
+          'Revenue hides a lot. A business can be flat out and still barely profitable because a handful of job types lose money every time and no one has measured it. Job costing turns that into numbers: you can see that a certain kind of work is underpriced, that a crew is slower than assumed, or that material waste is eating the margin. Then you can fix the price or stop taking the work.',
+        ],
+      },
+      {
+        heading: 'Where software fits',
+        body: [
+          'For job costing to be accurate, the costs have to be captured as the job happens: technician time logged, parts added to the work order, materials recorded. Field service software that captures all of that can roll it up into a real cost per job with little extra effort. Doing it by hand after the fact is so tedious that most businesses simply don’t, which is why they stay in the dark.',
+        ],
+      },
+      {
+        heading: 'What to look for',
+        body: [
+          'Look at whether the software captures labor, parts and materials against each job, whether it reports profit by job, job type and customer, and how much manual work it takes. Commercial and project businesses should treat deep job costing as close to essential.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'Field service software pricing explained', href: '/guides/field-service-software-pricing-explained/' },
+      { label: 'BuildOps review', href: '/products/buildops/' },
+      { label: 'Best field service management software', href: '/best/field-service-management-software/' },
+      { label: 'How to choose field service software', href: '/guides/how-to-choose-field-service-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'field-service-online-booking',
+    title: 'Online Booking for Field Service Businesses',
+    category: 'Feature',
+    intro:
+      'More customers want to book a service the way they book everything else, online, without a phone call. Online booking can win you jobs you’d otherwise miss, but it needs guardrails. Here’s how it works and what to watch for.',
+    sections: [
+      {
+        heading: 'What online booking does',
+        body: [
+          'Online booking lets a customer request or schedule a visit from your website or a link, picking a service and often a time slot, without calling your office. The request lands in your scheduling system ready to confirm or assign.',
+        ],
+      },
+      {
+        heading: 'Why it wins jobs',
+        body: [
+          'A lot of booking happens outside office hours, in the evening or at the weekend, when no one is answering the phone. A customer who can book then and there is a customer you keep; one who hits voicemail often calls the next company. For simpler, repeatable services it also saves your office the back-and-forth of scheduling by phone.',
+        ],
+      },
+      {
+        heading: 'Where it needs guardrails',
+        body: [
+          'Online booking works best for well-defined services where you know the rough time and price. For complex diagnostic work, a raw calendar slot can do more harm than good, so the stronger tools let you control which services are bookable, buffer travel time, and route requests for review before they’re locked in. The goal is to capture demand without wrecking your schedule.',
+        ],
+      },
+      {
+        heading: 'What to look for',
+        body: [
+          'Look at how much control you have over what’s bookable and when, whether bookings flow straight into your schedule, and whether it confirms automatically with the customer. Match the feature to your work: great for routine services, handle with care for complex ones.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'Field service scheduling explained', href: '/guides/field-service-scheduling/' },
+      { label: 'Housecall Pro review', href: '/products/housecall-pro/' },
+      { label: 'Best field service management software', href: '/best/field-service-management-software/' },
+      { label: 'Find your best-fit software', href: '/find-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'field-service-payments-and-financing',
+    title: 'Payments and Financing in Field Service',
+    category: 'Feature',
+    intro:
+      'Getting paid faster is one of the most direct ways software improves a service business, and for bigger jobs, offering financing can be the difference between a yes and a no. Here’s how payments and financing work in field service tools.',
+    sections: [
+      {
+        heading: 'Taking payment in the field',
+        body: [
+          'Integrated payments let a technician take a card or ACH payment on site, the moment the work is done, instead of mailing an invoice and waiting. The payment ties straight back to the job and the invoice, so nothing has to be reconciled by hand later. The practical effect is simple: you get paid sooner and chase fewer overdue invoices.',
+        ],
+      },
+      {
+        heading: 'The cost of convenience',
+        body: [
+          'Integrated payments carry processing fees, and the rates vary between platforms. For a high-volume business that difference adds up, so it’s worth checking the rate, not just that the feature exists. Some tools lock you into their own processor; others let you choose. Read that part closely before you commit.',
+        ],
+      },
+      {
+        heading: 'Consumer financing on bigger jobs',
+        body: [
+          'For large tickets, a system replacement or a major repair, consumer financing lets the customer pay over time while you get paid up front. For trades like HVAC, being able to offer financing at the point of sale measurably lifts close rates on expensive work, because the monthly number feels manageable even when the total doesn’t. It’s usually offered through a lender partner built into the software.',
+        ],
+      },
+      {
+        heading: 'What to look for',
+        body: [
+          'Check the processing rates, whether you can use your own processor, how cleanly payments reconcile back to invoices, and, if you sell big-ticket work, whether financing is available and through whom. The cheapest headline plan isn’t always the cheapest once payment fees are counted.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'Field service invoicing explained', href: '/guides/field-service-invoicing/' },
+      { label: 'Field service software pricing explained', href: '/guides/field-service-software-pricing-explained/' },
+      { label: 'Best HVAC field service software', href: '/best/hvac-field-service-software/' },
+      { label: 'Find your best-fit software', href: '/find-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'field-service-customer-portal',
+    title: 'Customer Portals in Field Service Software',
+    category: 'Feature',
+    intro:
+      'A customer portal gives your customers a place to see their history, approve quotes and pay invoices on their own time. It’s more common in commercial work than residential, and whether you need one depends on who you serve. Here’s the rundown.',
+    sections: [
+      {
+        heading: 'What a customer portal is',
+        body: [
+          'A customer portal is a secure area where your customers can log in and see their own information: past visits, upcoming appointments, quotes waiting for approval, and invoices to pay. It turns the relationship from a series of phone calls into something the customer can self-serve.',
+        ],
+      },
+      {
+        heading: 'Where it earns its keep',
+        body: [
+          'Portals matter most for commercial and property-management customers, who often manage many sites and want to see service history, approve work and pull invoices without calling you each time. For those accounts a good portal is a genuine selling point and cuts a lot of admin on both sides.',
+        ],
+      },
+      {
+        heading: 'Where it matters less',
+        body: [
+          'For everyday residential work, many homeowners won’t log into a portal; they’d rather get a text and a link to approve a quote or pay. So don’t over-weight this feature if you’re purely residential. The lighter tools often skip full portals in favor of simple text-and-link approvals, which is the right call for that audience.',
+        ],
+      },
+      {
+        heading: 'What to look for',
+        body: [
+          'If you serve commercial or property-management clients, look for a portal that exposes service history, quote approvals and invoice payment, ideally with multi-site support. If you’re residential, weigh it lightly and focus instead on smooth text-based approvals and payment links.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'Field service service agreements explained', href: '/guides/field-service-service-agreements/' },
+      { label: 'ServiceTrade review', href: '/products/servicetrade/' },
+      { label: 'Best field service management software', href: '/best/field-service-management-software/' },
+      { label: 'Find your best-fit software', href: '/find-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
     slug: 'how-to-choose-field-service-software',
     title: 'How to Choose Field Service Software',
     category: 'Buying guide',
