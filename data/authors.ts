@@ -17,10 +17,7 @@ export const AUTHORS: Author[] = [
     ],
     initials: 'AW',
     avatarColor: '#3f52e3',
-    // Headshot supplied by the author. To activate: save the photo to
-    // public/authors/abdul-wasay-waqas.jpg, then set:
-    // avatar: '/authors/abdul-wasay-waqas.jpg',
-    avatar: undefined,
+    avatar: '/authors/abdul-wasay-waqas.png',
     links: {
       linkedin: 'https://www.linkedin.com/in/abdul-wasay-waqas-seo/',
     },
