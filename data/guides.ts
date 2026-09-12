@@ -94,7 +94,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Where they cross over',
         body: [
-          'Both keep customer records, both log communication, and both can capture a lead. That shared ground is exactly why the two get mixed up. Many field service platforms include light CRM features, like a contact list, notes and a bit of marketing, and some CRMs bolt on scheduling. The real question is which job sits at the core, because that’s the one the tool does well.',
+          'Both keep customer records, both log communication, and both can capture a lead. That shared ground is exactly why the two get mixed up. Many field service platforms, Jobber and Housecall Pro among them, include light CRM features like a contact list, notes and basic marketing, and some CRMs bolt on scheduling. The real question is which job sits at the core, because that’s the one the tool does well and the other it only dabbles in.',
         ],
       },
       {
@@ -117,7 +117,7 @@ export const GUIDES: GuidePage[] = [
       { label: 'Best field service management software', href: '/best/field-service-management-software/' },
     ],
     publishedAt: '2026-09-12',
-    updatedAt: '2026-09-12',
+    updatedAt: '2026-09-13',
     published: true,
   },
   {
@@ -142,7 +142,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Where job management leans',
         body: [
-          'Job management often treats the job or project as the unit of work: quoting, tracking labor and materials against a job, job costing, and profit per project. It tends to fit trades where a job runs over days or weeks, like an electrical fit-out or a larger install, rather than a steady stream of short service calls.',
+          'Job management often treats the job or project as the unit of work: quoting, tracking labor and materials against a job, job costing, and profit per project. It tends to fit trades where a job runs over days or weeks, like an electrical fit-out or a larger install, rather than a steady stream of short service calls. Platforms like Simpro and BuildOps sit firmly on this end, with deeper estimating and job costing than a residential-focused tool.',
         ],
       },
       {
@@ -159,7 +159,7 @@ export const GUIDES: GuidePage[] = [
       { label: 'Find your best-fit software', href: '/find-software/' },
     ],
     publishedAt: '2026-09-12',
-    updatedAt: '2026-09-12',
+    updatedAt: '2026-09-13',
     published: true,
   },
   {
@@ -923,47 +923,59 @@ export const GUIDES: GuidePage[] = [
     title: 'How to Choose Field Service Software',
     category: 'Buying guide',
     intro:
-      'Choosing field service management software is less about finding the "best" product and more about matching a platform to your specific business, your trade, team size, workflows, integrations and budget. This guide walks through the decisions that actually determine fit.',
+      'Choosing field service software is less about finding the single best product and more about matching a platform to your business: your trade, your team size, the way you work, your integrations and your budget. This guide walks through the decisions that actually determine fit, and the traps that catch people.',
     sections: [
       {
         heading: 'Start with your trade and work type',
         body: [
-          'The single biggest driver of fit is what you do. Residential service, commercial service, route-based recurring work and project-based work each reward different software strengths.',
-          'A residential HVAC company and a commercial mechanical contractor can both call themselves "HVAC" and yet need very different tools. Be specific about your dominant work type before you shortlist.',
+          'The single biggest driver of fit is what you actually do. Residential service, commercial service, route-based recurring work and project work each reward different software strengths, and a tool that is excellent for one can be a poor fit for another.',
+          'A residential HVAC company and a commercial mechanical contractor can both call themselves HVAC and still need completely different tools. The residential shop wants fast scheduling, on-my-way texts and slick quoting; the commercial contractor wants project job costing, inventory and progress billing. Be specific about your dominant work type before you shortlist anything.',
         ],
       },
       {
         heading: 'Size the platform to your team',
         body: [
-          'Small teams usually win with fast-to-adopt tools; larger operations justify the depth and implementation of enterprise platforms. Buying "too much software" is a common and costly mistake for small teams.',
+          'Small teams usually win with fast-to-adopt tools that go live in days. Larger operations can justify the depth, and the multi-week implementation, of an enterprise platform. Buying more software than you need is one of the most common and costly mistakes in this category.',
+          'A useful rule: buy for where you will be in about eighteen months, not for today and not for some distant someday. That keeps you from both outgrowing a starter tool in a year and paying for enterprise features nobody touches.',
         ],
       },
       {
         heading: 'Pin down your must-have capabilities',
         body: [
-          'List the handful of capabilities you genuinely cannot operate without, for example a flat-rate pricebook, service agreements, QuickBooks Desktop, or route optimization. These often eliminate options quickly.',
+          'Write down the handful of things you genuinely cannot run the business without: a flat-rate pricebook, service agreements, QuickBooks Desktop sync, route optimization, strong inventory. These are the filters that shrink a long list fast, because plenty of otherwise good tools simply do not do one of them well.',
+          'Be honest about which are true must-haves versus nice-to-haves. A long wish list makes everything look inadequate; a short must-have list makes the real choices obvious.',
         ],
       },
       {
-        heading: 'Check integrations early',
+        heading: 'Check integrations early, especially accounting',
         body: [
-          'Accounting integration in particular (QuickBooks Online vs Desktop vs Xero) varies a lot between platforms and can be a deal-breaker. Verify it before you fall in love with a product.',
+          'Accounting is the integration that most often becomes a deal-breaker, and it is worth checking on day one. The big divide is QuickBooks Online versus QuickBooks Desktop. Several popular tools, Jobber among them, sync only with QuickBooks Online, while others like FieldEdge and Service Fusion are built with Desktop firmly in mind. If your books run on Desktop, that fact alone eliminates part of the market.',
+          'The same goes for Xero, payment processing and anything else your business already depends on. Verify current support with the vendor rather than trusting a feature-list checkmark, and do it before you fall for a demo.',
         ],
       },
       {
-        heading: 'Be realistic about implementation',
+        heading: 'Be realistic about implementation and total cost',
         body: [
-          'Deeper platforms require more setup, data migration and training. Factor the rollout, not just the monthly price, into your decision.',
+          'The monthly price is only part of the decision. Deeper platforms require data migration, configuration and training, and enterprise tools like ServiceTitan can carry implementation fees running into thousands of dollars and a rollout measured in weeks. On top of the subscription, most tools that take card payments add processing fees of roughly 2.9% plus 30 cents per transaction, which is a real cost at volume.',
+          'Add it up as a total: subscription, extra users, the add-ons you will actually use, processing fees and implementation. The cheapest sticker price is regularly not the cheapest tool to run.',
+        ],
+      },
+      {
+        heading: 'What a good demo looks like',
+        body: [
+          'When you get to demos, do not let the vendor drive a canned tour. Come with your two or three most common real jobs and ask them to walk each one through the system end to end, from booking to invoice. That is where you find out whether the tool fits how you actually work, rather than how the sales script wants to present it.',
+          'Ask directly who the tool is a poor fit for. An honest answer tells you more than any feature list, and a vendor who claims it is perfect for everyone is the one to be wary of.',
         ],
       },
     ],
     related: [
       { label: 'Find software matched to your business', href: '/find-software/' },
       { label: 'Field service software pricing, explained', href: '/guides/field-service-software-pricing-explained/' },
+      { label: 'What is field service management software', href: '/guides/what-is-field-service-management-software/' },
       { label: 'Best field service management software', href: '/best/field-service-management-software/' },
     ],
     publishedAt: '2026-09-10',
-    updatedAt: '2026-09-10',
+    updatedAt: '2026-09-13',
     published: true,
   },
   {
@@ -971,34 +983,49 @@ export const GUIDES: GuidePage[] = [
     title: 'Field Service Software Pricing, Explained',
     category: 'Buying guide',
     intro:
-      'Field service software pricing ranges from transparent per-user tiers to fully quote-based enterprise contracts. Understanding the pricing model helps you compare options fairly and avoid surprises.',
+      'Field service software pricing runs from transparent per-user tiers you can read off a web page to fully quote-based enterprise contracts you have to negotiate. Knowing the models, and the costs that sit outside the headline number, lets you compare options fairly and avoid nasty surprises after you sign.',
     sections: [
       {
-        heading: 'Common pricing models',
+        heading: 'The rough price bands',
         body: [
-          'Tiered / per-user pricing (common for small-business tools) scales with the number of users and the features you need. Quote-based pricing (common for enterprise platforms) requires a conversation and often reflects a larger implementation.',
+          'Pricing sorts into three broad bands. Starter plans for a single user tend to run about $29 to $60 a month (Jobber starts at $29, Housecall Pro at $59, both billed annually). Small-crew plans that add automation, online booking and five to ten users usually land between roughly $100 and $300 a month, depending on the tool and the tier. And enterprise platforms built for larger trades, ServiceTitan being the obvious example, are quote-based, with contractors widely reporting figures in the region of $245 to $400 per technician per month.',
+          'Treat these as orientation, not gospel. Vendors change prices, and the quote-based numbers are third-party reports, not official rates. But the bands are stable enough to tell you quickly whether a tool is in your world or not.',
         ],
       },
       {
-        heading: 'Watch for the total cost',
+        heading: 'How the pricing model changes the math',
         body: [
-          'Beyond the headline price, watch for payment processing fees, add-on modules, additional user costs, setup/implementation fees and contract length. The cheapest sticker price is not always the lowest total cost.',
+          'The billing model matters as much as the number. Per-user pricing (Tradify, for instance) is friendly for a solo operator but climbs with every seat you add. Flat pricing with unlimited users (Service Fusion) can be far cheaper for a bigger dispatch team, since the whole office and every technician are included. And a few tools price by something else entirely: ServiceM8 charges by the number of jobs per month rather than by users. Run the math at your actual headcount and job volume, because the cheapest model for a solo tradesperson can be the most expensive one for a fifteen-person shop.',
         ],
       },
       {
-        heading: 'Our approach to pricing data',
+        heading: 'The costs that are not on the pricing page',
         body: [
-          'We do not publish fabricated prices. Where a vendor publishes pricing, we verify and date it; where pricing is quote-based, we say so. Always confirm current pricing directly with the vendor before deciding.',
+          'The subscription is the floor, not the ceiling. Watch for four things. Payment processing: if you collect cards in-app, expect roughly 2.9% plus 30 cents per transaction and about 1% on ACH, on top of your plan. Add-on modules: phone systems, marketing, GPS and fleet tracking, and AI tools are often paid extras rather than part of the base. Extra users: many plans include a set number of seats and charge per head beyond that. And implementation: enterprise platforms can carry setup fees running from a few thousand dollars into the tens of thousands.',
+          'Add all of that to the sticker price before you compare. The lowest headline plan is regularly not the lowest total cost once processing and add-ons are counted.',
+        ],
+      },
+      {
+        heading: 'Why so many enterprise tools hide their price',
+        body: [
+          'If a platform makes you request a quote instead of showing a number, it is usually because the real cost depends on your size, the modules you pick and some negotiation, and because they want a sales conversation. That is not automatically a bad sign, but it does mean you should get everything in writing: the per-user or base rate, which modules are included versus extra, the implementation fee, and the contract length. During 2026 even some mid-market tools, Workiz among them, moved from published tiers to request-a-quote pricing, so this is worth checking fresh for any tool on your list.',
+        ],
+      },
+      {
+        heading: 'How we handle pricing data',
+        body: [
+          'We do not publish invented prices. Where a vendor publishes pricing, we verify it against the official page and date it. Where pricing is quote-based, we say so plainly and, if we cite a reported figure, we attribute it as a third-party estimate rather than dressing it up as official. Prices move, so whatever you read here or anywhere else, confirm the current number directly with the vendor before you decide.',
         ],
       },
     ],
     related: [
       { label: 'How to choose field service software', href: '/guides/how-to-choose-field-service-software/' },
+      { label: 'Field service payments and financing', href: '/guides/field-service-payments-and-financing/' },
       { label: 'Find software matched to your budget', href: '/find-software/' },
       { label: 'Best field service management software', href: '/best/field-service-management-software/' },
     ],
     publishedAt: '2026-09-10',
-    updatedAt: '2026-09-10',
+    updatedAt: '2026-09-13',
     published: true,
   },
 ];
