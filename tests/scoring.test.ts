@@ -112,11 +112,11 @@ describe('Hard exclusions (spec §10)', () => {
   });
 
   it('warns (does not exclude) when accounting integration is explicitly missing', () => {
-    // Housecall Pro marks quickbooks_desktop as not_available.
+    // Jobber marks quickbooks_desktop as not_available (verified: Jobber is QuickBooks Online only).
     const a = answers({ accounting: 'quickbooks_desktop', requiredFeatures: ['scheduling'] });
-    const hcp = scoreProduct(a, getProduct('housecall-pro')!);
-    expect(hcp.excluded).toBe(false);
-    expect(hcp.flags.some((f) => f.kind === 'warn')).toBe(true);
+    const jobber = scoreProduct(a, getProduct('jobber')!);
+    expect(jobber.excluded).toBe(false);
+    expect(jobber.flags.some((f) => f.kind === 'warn')).toBe(true);
   });
 });
 
