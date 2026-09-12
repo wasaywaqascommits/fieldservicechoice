@@ -236,8 +236,8 @@ export const PRODUCTS: Product[] = [
     businessModels: ['residential', 'both'],
     pricing: verifiedPricing('tiered', true, [
       plan('Basic', 59, { includedUsers: 1, trialDays: 14, contract: 'Billed annually', sourceUrl: 'https://www.housecallpro.com/pricing/' }),
-      plan('Essentials', 149, { includedUsers: 5, additionalUserPrice: 100, trialDays: 14, contract: 'Billed annually', sourceUrl: 'https://www.housecallpro.com/pricing/' }),
-      plan('Max', 299, { includedUsers: 8, additionalUserPrice: 75, trialDays: 14, contract: 'Billed annually', sourceUrl: 'https://www.housecallpro.com/pricing/' }),
+      plan('Essentials', 149, { includedUsers: 5, trialDays: 14, contract: 'Billed annually', sourceUrl: 'https://www.housecallpro.com/pricing/' }),
+      plan('Max', 299, { includedUsers: 8, additionalUserPrice: 35, trialDays: 14, contract: 'Billed annually', sourceUrl: 'https://www.housecallpro.com/pricing/' }),
     ]),
     implementation: 'low',
     implementationNotes: 'Primarily self-serve; higher tiers add onboarding assistance for larger teams.',
@@ -246,11 +246,34 @@ export const PRODUCTS: Product[] = [
       partial: ['service_agreements', 'recurring_jobs', 'pricebook', 'financing'],
     }),
     integrations: accounting(true, true, false),
-    pros: ['Strong marketing and reputation tools', 'Consumer-friendly booking experience', 'Broad feature coverage for residential work'],
-    tradeoffs: ['Less suited to complex commercial workflows', 'Some capabilities gated to higher tiers', 'Reporting depth trails enterprise platforms'],
+    pros: ['Strong marketing, reviews and reputation tools', 'Consumer-friendly online booking and Tap to Pay', 'Syncs both QuickBooks Online and Desktop'],
+    tradeoffs: ['Much of the power sits in paid add-ons', 'Less suited to complex commercial workflows', 'Reporting depth trails enterprise platforms'],
+    editorial: [
+      {
+        heading: 'Where Housecall Pro fits, in plain terms',
+        body: [
+          'Housecall Pro is built for residential home-service brands that compete on customer experience and marketing as much as on the work itself. Basic at $59 a month billed annually covers a single user and is really a starter tier; most teams land on Essentials at $149 for five users, and Max at $299 covers eight users with extra seats at $35 each. The 14-day trial needs no credit card.',
+          'If your accounting is the deciding factor, this is a point in its favor over some rivals: Housecall Pro syncs with both QuickBooks Online and QuickBooks Desktop, so a Desktop bookkeeper is not a blocker.',
+        ],
+      },
+      {
+        heading: 'The add-ons are where the bill grows',
+        body: [
+          'The plan price is the floor, not the ceiling. A lot of what makes Housecall Pro powerful lives in paid add-ons on top of the subscription: the built-in phone system, marketing campaigns, sales proposal and pipeline tools, payroll, and vehicle GPS or dashcams. None of that is wrong, but it means the honest cost is your plan plus the add-ons you will actually use, so price it that way rather than off the headline number.',
+          'As with any platform that collects card payments in-app, processing fees apply on top as well, so factor those in if you invoice heavily.',
+        ],
+      },
+      {
+        heading: 'What it is genuinely good at, and where it stops',
+        body: [
+          'The marketing, reviews and consumer booking experience are the strongest part of the package, and for a residential brand trying to win and keep customers, that is exactly the right emphasis. Postcard and email campaigns, automated review requests and a polished booking flow are all first-class here.',
+          'Where it stops is heavier operations: complex commercial workflows, deep inventory or project management, and enterprise multi-entity setups are not its home turf. If you are a growing residential company, that trade is fine. If you are moving into large commercial work, look higher up the range.',
+        ],
+      },
+    ],
     alternatives: ['jobber', 'workiz', 'fieldpulse', 'service-fusion'],
     sources: officialSources('Housecall Pro', 'housecallpro.com', { website: true, pricing: true, integrations: true }),
-    verification: verifiedDates({ pricing: true, integrations: true }),
+    verification: verifiedDates({ pricing: true, integrations: true, pricingOn: '2026-09-13', editorialOn: '2026-09-13' }),
     commercial: { type: 'affiliate', affiliateLinkSlug: 'housecall-pro', disclosure: DISCLOSURE },
     published: true,
   },
@@ -280,10 +303,33 @@ export const PRODUCTS: Product[] = [
     }),
     integrations: [...accounting(true, true, false), { name: 'Open API', category: 'automation', support: 'available' }],
     pros: ['Deep pricebook, financing and reporting', 'Strong dispatch and call-booking workflows', 'Scales to large, multi-department operations'],
-    tradeoffs: ['Higher cost and longer implementation', 'Overkill for very small teams', 'Requires office staff to use to its full potential'],
+    tradeoffs: ['Quote-based, and among the priciest in the category', 'Multi-week implementation with real setup fees', 'Overkill for very small teams'],
+    editorial: [
+      {
+        heading: 'What you are actually buying',
+        body: [
+          'ServiceTitan is the enterprise end of this market. The depth is real: a best-in-class flat-rate pricebook, mature dispatch and call-booking, built-in consumer financing, and reporting that larger trades genuinely run the business on. It is built for established residential and commercial companies that have dedicated office and dispatch staff to drive it.',
+          'That same depth is why it is the wrong tool for a two-person shop. The value only shows up when you have the volume and the team structure to use the dispatch board, the pricebook and the reporting the way they are meant to be used.',
+        ],
+      },
+      {
+        heading: 'What it really costs',
+        body: [
+          'ServiceTitan does not publish pricing, so anyone quoting you an exact number online is guessing. What is consistent across contractor reports is the shape of the cost, not a fixed figure. It is quoted per technician, and widely reported figures land somewhere around $245 to $400 per technician per month depending on size, modules and negotiation.',
+          'Two things push the real number higher than the per-tech rate suggests. First, implementation is a paid, structured project, commonly reported in the $5,000 to $15,000 range for smaller companies and higher for larger rollouts. Second, the platform is modular: Marketing Pro, Phones Pro, FleetPro and payment processing are added on, and office staff who need logins are seats too. Contractors running a ten-truck shop often describe an all-in monthly cost well into four or five figures once everything is switched on. Treat every number here as reported by third parties, then get a real quote for your own situation.',
+        ],
+      },
+      {
+        heading: 'Who should look, and who should not',
+        body: [
+          'If you are a larger, growth-focused trade that will actually use enterprise depth, and you can absorb a multi-week rollout and a serious budget, ServiceTitan is the most capable option in the category and often worth it.',
+          'If you are solo or a small team, want the lowest cost, or need to be live in days rather than weeks, this is not your tool, and forcing it will cost you money and momentum. Look at the mid-market and small-business platforms instead.',
+        ],
+      },
+    ],
     alternatives: ['fieldedge', 'buildops', 'simpro', 'workiz'],
     sources: officialSources('ServiceTitan', 'servicetitan.com', { website: true, integrations: true }),
-    verification: verifiedDates({ integrations: true }),
+    verification: verifiedDates({ integrations: true, editorialOn: '2026-09-13' }),
     commercial: { type: 'referral', affiliateLinkSlug: 'servicetitan', disclosure: DISCLOSURE },
     published: true,
   },
@@ -314,10 +360,32 @@ export const PRODUCTS: Product[] = [
     }),
     integrations: accounting(true, false, false),
     pros: ['Built-in phone system and call tracking', 'Good fit for lead-heavy trades', 'Straightforward to adopt'],
-    tradeoffs: ['Less depth for commercial job costing', 'Fewer enterprise controls', 'Reporting is lighter than enterprise tools'],
+    tradeoffs: ['Pricing now sits behind a quote request', 'Less depth for commercial job costing', 'Reporting is lighter than enterprise tools'],
+    editorial: [
+      {
+        heading: 'Where Workiz fits, in plain terms',
+        body: [
+          'Workiz is built for trades where the job starts with a phone call. Locksmiths, garage-door companies, appliance repair, junk removal and similar service businesses live and die on lead handling, and Workiz puts a built-in phone system, call tracking and messaging right next to the schedule. That tight loop from inbound call to booked job is the real reason to pick it over a more general tool.',
+          'If your business is not phone-driven, that headline strength matters less, and a broader all-in-one may serve you better.',
+        ],
+      },
+      {
+        heading: 'Pricing moved behind a quote',
+        body: [
+          'Worth knowing before you shortlist it: during 2026 Workiz shifted away from openly published tiers toward a request-pricing model, so the site now points you to a demo rather than a price. Last-published rates reported by third parties put the main plans roughly in the $225 to $325 a month range for a handful of users, with extra seats around $46 to $54, but those are not official and the model has changed, so treat them as a ballpark and confirm your own number directly.',
+        ],
+      },
+      {
+        heading: 'What it is good at, and where it stops',
+        body: [
+          'For lead-to-job conversion in a phone-heavy shop, Workiz is genuinely strong: you can see which marketing brings the calls, route them fast, and keep the whole conversation attached to the job. Adoption is straightforward and does not need a formal rollout.',
+          'Where it thins out is the heavier end: commercial job costing, granular enterprise controls and deep reporting are not its focus. Growing residential and light-commercial teams fit well; large commercial contractors will want more.',
+        ],
+      },
+    ],
     alternatives: ['jobber', 'housecall-pro', 'fieldpulse', 'kickserv'],
     sources: officialSources('Workiz', 'workiz.com', { website: true, integrations: true }),
-    verification: verifiedDates({ integrations: true }),
+    verification: verifiedDates({ integrations: true, editorialOn: '2026-09-13' }),
     commercial: { type: 'affiliate', affiliateLinkSlug: 'workiz', disclosure: DISCLOSURE },
     published: true,
   },
@@ -347,11 +415,33 @@ export const PRODUCTS: Product[] = [
       planDependent: ['api'],
     }),
     integrations: accounting(true, true, true),
-    pros: ['Broad feature coverage for the price band', 'Good for multi-trade contractors', 'Actively developed with a growing feature set'],
-    tradeoffs: ['Smaller brand footprint than incumbents', 'Some features still maturing', 'Not aimed at true enterprise'],
+    pros: ['Broad feature coverage for the price band', 'Syncs QuickBooks Online, Desktop and Xero', 'Actively developed with a growing feature set'],
+    tradeoffs: ['Quote-based, with no public pricing', 'Add-ons (VoIP, fleet, AI dispatch) cost extra', 'Some features still maturing'],
+    editorial: [
+      {
+        heading: 'Where FieldPulse fits, in plain terms',
+        body: [
+          'FieldPulse aims squarely at the gap between starter tools and enterprise platforms: growing, often multi-trade contractors who have outgrown a basic app but do not want the cost and rollout of the big systems. The breadth is the draw. It covers scheduling, estimating, invoicing, job costing and team management, and on the accounting side it syncs with QuickBooks Online, QuickBooks Desktop and Xero, which is unusually wide for this price band and a genuine advantage if your books do not live in QuickBooks Online.',
+        ],
+      },
+      {
+        heading: 'Pricing is quote-based, so read the add-ons',
+        body: [
+          'FieldPulse does not publish prices. It uses a per-seat quote with a base subscription plus paid add-ons, so you book a demo to get a real number. Contractor-reported figures give a rough sense of scale, somewhere around $99 a month for a small team up to $399 or more for larger crews before extras, but those are third-party estimates, not official rates.',
+          'The part to watch is the add-ons. Features like the VoIP phone system, AI dispatching and fleet tracking (commonly reported around $30 per vehicle per month) sit on top of the base, so when you get your quote, price it with the pieces you will actually switch on rather than the base alone.',
+        ],
+      },
+      {
+        heading: 'What it is good at, and where it stops',
+        body: [
+          'For a growing multi-trade shop, FieldPulse gives you a lot of functionality for the money and it is being actively developed, so the feature set keeps widening. That momentum is a real part of the pitch.',
+          'The trade-offs are a smaller brand footprint than the incumbents and a few areas that still feel like they are maturing. It is not built to be a true enterprise platform, so if you are heading into large, complex commercial operations, weigh it against the heavier tools before committing.',
+        ],
+      },
+    ],
     alternatives: ['jobber', 'housecall-pro', 'service-fusion', 'kickserv'],
     sources: officialSources('FieldPulse', 'fieldpulse.com', { website: true, integrations: true }),
-    verification: verifiedDates({ integrations: true }),
+    verification: verifiedDates({ integrations: true, editorialOn: '2026-09-13' }),
     commercial: { type: 'affiliate', affiliateLinkSlug: 'fieldpulse', disclosure: DISCLOSURE },
     published: true,
   },
@@ -384,11 +474,32 @@ export const PRODUCTS: Product[] = [
       partial: ['service_agreements', 'inventory', 'gps_tracking', 'job_costing'],
     }),
     integrations: accounting(true, true, false),
-    pros: ['Strong QuickBooks Online and Desktop support', 'Established, dependable feature set', 'Suited to office-driven dispatch'],
-    tradeoffs: ['Interface feels less modern than newer rivals', 'Lighter marketing tools', 'Not built for enterprise scale'],
+    pros: ['Flat pricing with unlimited users', 'Strong QuickBooks Online and Desktop support', 'Suited to office-driven dispatch'],
+    tradeoffs: ['Interface feels dated next to newer rivals', 'Lighter marketing tools', 'No free trial, demo only'],
+    editorial: [
+      {
+        heading: 'The pricing model is the real story',
+        body: [
+          'Most field service tools charge per user, so a bigger team means a bigger bill every month. Service Fusion does the opposite: its plans are flat and include unlimited users. Starter is $208 a month billed annually, Plus is $325, and Pro is $533, and you can add the whole office and every technician without the seat count moving the price.',
+          'That one design choice is why an established shop with a dozen or more people often lands here. Run the math against a per-seat competitor at your headcount and the flat model can come out dramatically cheaper. There is no free trial, so you evaluate it through a demo rather than a self-serve signup.',
+        ],
+      },
+      {
+        heading: 'Where it earns its keep',
+        body: [
+          'Service Fusion has been around a long time and it shows in the right ways: dependable scheduling and dispatch built for an office that runs the board, and genuinely strong QuickBooks support for both Online and Desktop, which matters because a lot of established trades still run Desktop. Inventory, job costing and integrated voice and text arrive on the Plus tier and up.',
+        ],
+      },
+      {
+        heading: 'Where it shows its age',
+        body: [
+          'The trade for that stability is polish. The interface feels dated next to the newest entrants, and the marketing and customer-experience tooling is lighter than the residential-focused brands. If a modern look and built-in marketing are high on your list, weigh that. If predictable operations and flat pricing for a full team matter more, it is a practical, proven choice.',
+        ],
+      },
+    ],
     alternatives: ['fieldpulse', 'kickserv', 'housecall-pro', 'fieldedge'],
     sources: officialSources('Service Fusion', 'servicefusion.com', { website: true, pricing: true, integrations: true }),
-    verification: verifiedDates({ pricing: true, integrations: true }),
+    verification: verifiedDates({ pricing: true, integrations: true, pricingOn: '2026-09-13', editorialOn: '2026-09-13' }),
     commercial: { type: 'affiliate', affiliateLinkSlug: 'service-fusion', disclosure: DISCLOSURE },
     published: true,
   },
@@ -418,10 +529,31 @@ export const PRODUCTS: Product[] = [
     }),
     integrations: accounting(true, true, false),
     pros: ['Deep QuickBooks Desktop integration', 'Strong service-agreement management', 'Flat-rate pricebook for the trades'],
-    tradeoffs: ['Quote-based pricing (less transparent)', 'Less oriented to QuickBooks-Online-only shops', 'UI less modern than newest entrants'],
+    tradeoffs: ['Quote-based pricing, so no public number', 'Built around QuickBooks Desktop, less so Online-only', 'UI less modern than newest entrants'],
+    editorial: [
+      {
+        heading: 'The QuickBooks Desktop specialist',
+        body: [
+          'FieldEdge has a clear identity: it is built for established HVAC, plumbing and electrical contractors whose back office runs on QuickBooks Desktop. Its two-way Desktop sync is deeper than most rivals bother with, and if that describes your accounting, it removes the single biggest headache in this whole category, keeping the field and the books in step without double entry.',
+          'The flip side is the same fact in reverse. If you are a cloud-only shop living entirely in QuickBooks Online, FieldEdge is less naturally your tool, and something built Online-first may fit better.',
+        ],
+      },
+      {
+        heading: 'Built for maintenance-driven trades',
+        body: [
+          'Beyond accounting, FieldEdge is strong where the mechanical trades make their steadier money: service agreements and a flat-rate pricebook. If recurring maintenance contracts are a real part of your business, managing them properly rather than by spreadsheet is where a lot of the value shows up.',
+        ],
+      },
+      {
+        heading: 'What to weigh',
+        body: [
+          'Pricing is quote-based, so you will not find a number on the site, expect to talk to sales and budget for a moderate, guided implementation that includes the QuickBooks setup. The interface is functional rather than flashy. For a Desktop-centric mechanical contractor that leans on maintenance agreements, that is a fair trade for the integration depth. For a lean, cloud-native startup, look elsewhere first.',
+        ],
+      },
+    ],
     alternatives: ['servicetitan', 'service-fusion', 'housecall-pro', 'simpro'],
     sources: officialSources('FieldEdge', 'fieldedge.com', { website: true, integrations: true }),
-    verification: verifiedDates({ integrations: true }),
+    verification: verifiedDates({ integrations: true, editorialOn: '2026-09-13' }),
     commercial: { type: 'referral', affiliateLinkSlug: 'fieldedge', disclosure: DISCLOSURE },
     published: true,
   },
@@ -455,11 +587,32 @@ export const PRODUCTS: Product[] = [
       notAvailable: ['financing', 'call_tracking'],
     }),
     integrations: accounting(true, true, true),
-    pros: ['Accessible pricing for small teams', 'Simple, quick to learn', 'QuickBooks integration'],
-    tradeoffs: ['Lighter dispatch and pricebook', 'Not built for larger operations', 'Fewer advanced features'],
+    pros: ['Accessible pricing for small teams', 'Generous 30-day free trial', 'Simple and quick to learn'],
+    tradeoffs: ['Lighter dispatch and pricebook', 'QuickBooks Desktop sync is a paid add-on', 'Not built for larger operations'],
+    editorial: [
+      {
+        heading: 'The budget-conscious starter',
+        body: [
+          'Kickserv is aimed at small service businesses that want the essentials done well without paying for depth they will never use. Start is $60 a month for five users, Run is $119 for ten, and Scale is $199 for twenty, and unusually for this category the free trial runs a full 30 days, which is long enough to actually run real jobs through it before you decide.',
+          'For an owner-operator or a small crew that mainly needs CRM, estimates, scheduling and invoicing with clean QuickBooks sync, it covers the bases at a friendly price.',
+        ],
+      },
+      {
+        heading: 'The details that affect the real cost',
+        body: [
+          'Two things are worth knowing before you sign up. First, if you run QuickBooks Desktop, that sync is a paid add-on (reported around $50 a month) on the Run tier and up, rather than being built into the base price, so factor it in. Second, Kickserv runs a Kickback program that discounts your subscription by 5% if you process a minimum amount of online payments each month, which can offset the cost if you already take card payments through it.',
+        ],
+      },
+      {
+        heading: 'Where it stops',
+        body: [
+          'The trade for that simplicity is depth. Dispatch and the pricebook are lighter than the trade-focused platforms, and it is not built to run a larger multi-crew operation. If you are growing fast or need advanced scheduling and pricebook tools, you will likely outgrow it, but for a small team watching the budget, that is rather the point.',
+        ],
+      },
+    ],
     alternatives: ['jobber', 'workiz', 'service-fusion', 'servicem8'],
     sources: officialSources('Kickserv', 'kickserv.com', { website: true, pricing: true, integrations: true }),
-    verification: verifiedDates({ pricing: true, integrations: true }),
+    verification: verifiedDates({ pricing: true, integrations: true, pricingOn: '2026-09-13', editorialOn: '2026-09-13' }),
     commercial: { type: 'affiliate', affiliateLinkSlug: 'kickserv', disclosure: DISCLOSURE },
     published: true,
   },
@@ -495,11 +648,32 @@ export const PRODUCTS: Product[] = [
       notAvailable: ['pricebook', 'financing'],
     }),
     integrations: accounting(true, false, true),
-    pros: ['Lightweight and inexpensive to start', 'Good mobile-first job flow', 'Pay-as-you-grow pricing style'],
-    tradeoffs: ['Apple-centric experience', 'Lighter reporting', 'Not for larger operations'],
+    pros: ['Priced by jobs, not users, so crews add for free', 'Free plan and a genuinely light footprint', 'Good mobile-first job flow'],
+    tradeoffs: ['Best on Apple devices, weaker on Android', 'Lighter reporting', 'Not for larger operations'],
+    editorial: [
+      {
+        heading: 'Priced by jobs, not by people',
+        body: [
+          'ServiceM8 does one thing differently that changes the whole calculation: it charges by how many jobs you run per month, not by how many users you have. Every plan includes unlimited users. There is a free tier for 30 jobs a month, then Starter at $29 for 50 jobs, Growing at $79 for 150, Premium at $149 for 500, and Premium Plus at $349 for 1,500 or more.',
+          'For a small team that runs a modest number of larger jobs, that model is unusually cheap, because you can put the whole crew on it without paying per seat. For a high-volume shop doing hundreds of small jobs, the job count is the thing to watch, since that is what moves you up the tiers.',
+        ],
+      },
+      {
+        heading: 'The Apple question',
+        body: [
+          'ServiceM8 was built Apple-first, and it is at its best on iPhones and iPads. There is web access, but if your technicians are on Android, this is the single biggest thing to test before committing, because the experience is not as complete there. For an iOS-based micro business, the mobile job flow is genuinely slick and quick to pick up.',
+        ],
+      },
+      {
+        heading: 'Where it stops',
+        body: [
+          'This is a light tool by design. Reporting is thinner than the bigger platforms, there is no flat-rate pricebook or financing, and it is not meant to run a large operation. On accounting it syncs with QuickBooks Online and Xero but not Desktop. For a solo operator or a small Apple-based trade that wants essentials without overhead, that is exactly the trade you want.',
+        ],
+      },
+    ],
     alternatives: ['jobber', 'tradify', 'kickserv', 'workiz'],
     sources: officialSources('ServiceM8', 'servicem8.com', { website: true, pricing: true, integrations: true }),
-    verification: verifiedDates({ pricing: true, integrations: true }),
+    verification: verifiedDates({ pricing: true, integrations: true, pricingOn: '2026-09-13', editorialOn: '2026-09-13' }),
     commercial: { type: 'none', affiliateLinkSlug: null, disclosure: DISCLOSURE },
     published: true,
   },
@@ -528,11 +702,31 @@ export const PRODUCTS: Product[] = [
       partial: ['crm', 'service_agreements', 'recurring_jobs', 'gps_tracking', 'payments'],
     }),
     integrations: accounting(true, false, true),
-    pros: ['Strong project and job costing', 'Good inventory management', 'Built for commercial complexity'],
-    tradeoffs: ['Higher implementation effort', 'Overkill for simple residential', 'Quote-based pricing'],
+    pros: ['Strong estimating, project and job costing', 'Genuinely deep inventory and catalog', 'Built for commercial and project complexity'],
+    tradeoffs: ['High implementation effort', 'Overkill for simple residential', 'Quote-based, no public pricing'],
+    editorial: [
+      {
+        heading: 'Built for the complicated jobs',
+        body: [
+          'Simpro is not a residential quick-job tool, and it does not try to be. It is built for commercial and project-based trades, the kind of work that involves multi-stage jobs, real material lists, progress billing and margins you have to actually manage. Its estimating, inventory and job costing go deeper than almost anything aimed at small residential shops, which is exactly why a project contractor would look at it and a two-person repair business would not.',
+        ],
+      },
+      {
+        heading: 'Where it stands out',
+        body: [
+          'The inventory and catalog handling is a genuine strength. If you carry significant stock, buy materials against jobs, and need to know the true cost and margin on complex work, this is the sort of tool that pays for itself by stopping the leaks. Multi-location support and solid reporting back that up for larger operations.',
+        ],
+      },
+      {
+        heading: 'What you are signing up for',
+        body: [
+          'Depth this heavy comes with a real rollout. Implementation is a structured, guided project, not a weekend, and pricing is quote-based, so you talk to sales rather than read a number off the page. On accounting it syncs with QuickBooks Online and Xero. For a commercial or project-driven trade that needs this, it is capable and worth the effort. For a simple residential operation, it is more system than the work requires.',
+        ],
+      },
+    ],
     alternatives: ['servicetitan', 'buildops', 'commusoft', 'fieldpulse'],
     sources: officialSources('Simpro', 'simprogroup.com', { website: true, integrations: true }),
-    verification: verifiedDates({ integrations: true }),
+    verification: verifiedDates({ integrations: true, editorialOn: '2026-09-13' }),
     commercial: { type: 'referral', affiliateLinkSlug: 'simpro', disclosure: DISCLOSURE },
     published: true,
   },
@@ -561,11 +755,31 @@ export const PRODUCTS: Product[] = [
       partial: ['crm', 'payments', 'gps_tracking', 'customer_notifications'],
     }),
     integrations: accounting(true, true, false),
-    pros: ['Built for commercial complexity', 'Combines service and project management', 'Modern, mobile-forward tooling'],
-    tradeoffs: ['Not aimed at residential SMBs', 'Quote-based pricing', 'Enterprise implementation commitment'],
+    pros: ['Modern interface, rare in commercial FSM', 'Combines service and project management', 'Built for commercial mechanical and electrical'],
+    tradeoffs: ['Not aimed at residential or small business', 'Quote-based, no free trial', 'Enterprise implementation commitment'],
+    editorial: [
+      {
+        heading: 'The modern option for commercial contractors',
+        body: [
+          'Most software built for serious commercial contractors feels like it was designed a decade ago. BuildOps is the counter-example: it targets commercial specialty trades, mechanical, HVAC and electrical at scale, and it does it with a genuinely modern, mobile-forward interface. For a commercial contractor whose technicians have quietly hated their old system for years, that alone is a real draw.',
+        ],
+      },
+      {
+        heading: 'Service and project in one place',
+        body: [
+          'The other part of the pitch is scope. Commercial contractors often run both recurring service work and larger projects, and historically that meant two systems that did not talk. BuildOps aims to hold both in one platform, with the service agreements, inventory, job costing and reporting that commercial operations actually need. When it fits, that consolidation is the main reason teams move.',
+        ],
+      },
+      {
+        heading: 'Who it is not for',
+        body: [
+          'This is squarely an enterprise-leaning commercial tool. There is no self-serve free trial, pricing is quote-based, and onboarding is a structured implementation. If you are a residential shop, a solo operator, or you want a low-cost starter tool, BuildOps is not the right call and will feel like too much. It earns its place with commercial specialty contractors that have the scale to use it.',
+        ],
+      },
+    ],
     alternatives: ['servicetitan', 'simpro', 'servicetrade', 'commusoft'],
     sources: officialSources('BuildOps', 'buildops.com', { website: true, integrations: true }),
-    verification: verifiedDates({ integrations: true }),
+    verification: verifiedDates({ integrations: true, editorialOn: '2026-09-13' }),
     commercial: { type: 'referral', affiliateLinkSlug: 'buildops', disclosure: DISCLOSURE },
     published: true,
   },
@@ -594,11 +808,31 @@ export const PRODUCTS: Product[] = [
       partial: ['payments', 'customer_notifications', 'job_costing', 'multi_location'],
     }),
     integrations: accounting(true, false, true),
-    pros: ['Strong planned-maintenance and contracts', 'Good multi-property handling', 'Solid accounting integrations'],
-    tradeoffs: ['Quote-based pricing', 'More than very small teams need', 'Setup requires planning maintenance workflows'],
+    pros: ['Strong planned-maintenance and service contracts', 'Handles many properties per client well', 'Solid QuickBooks Online and Xero sync'],
+    tradeoffs: ['Quote-based, no public pricing', 'More than very small teams need', 'Setup requires mapping your maintenance workflows'],
+    editorial: [
+      {
+        heading: 'The maintenance-contract specialist',
+        body: [
+          'Commusoft is built around a specific kind of business: one that lives on planned, recurring maintenance rather than one-off calls. If a big part of your revenue is service contracts, scheduled inspections and keeping many properties for the same client on track, this is a platform designed for exactly that, and it handles the recurring scheduling and contract management more thoroughly than general-purpose tools.',
+        ],
+      },
+      {
+        heading: 'Where it fits',
+        body: [
+          'The multi-property handling is a genuine differentiator. Commercial and property-management clients often have dozens of sites under one account, and keeping the service history, contracts and billing straight across all of them is where lighter tools fall down and Commusoft holds up. It syncs cleanly with QuickBooks Online and Xero on the accounting side.',
+        ],
+      },
+      {
+        heading: 'What to weigh',
+        body: [
+          'This is not a tool for a solo operator doing occasional jobs, and the value only appears once you have real maintenance workflows to run. Pricing is quote-based, and setup takes some planning because you are configuring how your contracts and planned maintenance actually work. For a maintenance-driven trade, that upfront effort is the point. For simple one-off residential work, it is more than you need.',
+        ],
+      },
+    ],
     alternatives: ['simpro', 'servicetrade', 'fieldedge', 'servicetitan'],
     sources: officialSources('Commusoft', 'commusoft.com', { website: true, integrations: true }),
-    verification: verifiedDates({ integrations: true }),
+    verification: verifiedDates({ integrations: true, editorialOn: '2026-09-13' }),
     commercial: { type: 'none', affiliateLinkSlug: null, disclosure: DISCLOSURE },
     published: true,
   },
@@ -627,11 +861,31 @@ export const PRODUCTS: Product[] = [
       partial: ['service_agreements', 'recurring_jobs', 'route_optimization', 'job_costing'],
     }),
     integrations: [...accounting(true, true, true), { name: 'Open API', category: 'automation', support: 'available' }],
-    pros: ['Highly configurable workflows', 'Broad integration and API support', 'Automation-friendly'],
-    tradeoffs: ['Configurability adds setup complexity', 'Quote-based pricing', 'Not a turnkey micro-business tool'],
+    pros: ['Highly configurable workflows', 'Broad integration and open API support', 'Strong automation for custom processes'],
+    tradeoffs: ['Configurability means more setup work', 'Quote-based, no public pricing', 'Not a turnkey micro-business tool'],
+    editorial: [
+      {
+        heading: 'Flexibility is the whole pitch',
+        body: [
+          'Zuper sells configurability. Where most field service tools ask you to work the way the software works, Zuper is built to be shaped around your process, with custom workflows, heavy automation and a broad integration and open-API layer. For a mid-market or enterprise team whose operations do not fit a standard template, that flexibility is the reason to look at it.',
+        ],
+      },
+      {
+        heading: 'Who it suits',
+        body: [
+          'It fits best where integration and automation matter: teams that need the field service system to plug into other business software and to automate steps that would otherwise be manual. On accounting it covers QuickBooks Online, Desktop and Xero, and the open API means the technical ceiling is high if you have the appetite to build against it.',
+        ],
+      },
+      {
+        heading: 'The cost of configurability',
+        body: [
+          'Flexibility is not free. The same configurability that makes Zuper powerful means setup is more involved than a turnkey tool, and the effort scales with how much you customize. Pricing is quote-based. If you are a small team that just wants something that works out of the box, this is more platform than you need. If you have specific workflows and the will to configure them, that is where it earns its place.',
+        ],
+      },
+    ],
     alternatives: ['servicetitan', 'simpro', 'buildops', 'fieldpulse'],
     sources: officialSources('Zuper', 'zuper.co', { website: true, integrations: true }),
-    verification: verifiedDates({ integrations: true }),
+    verification: verifiedDates({ integrations: true, editorialOn: '2026-09-13' }),
     commercial: { type: 'none', affiliateLinkSlug: null, disclosure: DISCLOSURE },
     published: true,
   },
@@ -660,11 +914,31 @@ export const PRODUCTS: Product[] = [
       partial: ['crm', 'inventory', 'payments', 'multi_location'],
     }),
     integrations: [...accounting(true, true, false), { name: 'Open API', category: 'automation', support: 'available' }],
-    pros: ['Strong for commercial inspections', 'Good customer-facing reporting', 'Service-history depth'],
-    tradeoffs: ['Not for residential SMBs', 'Quote-based pricing', 'Narrower focus by design'],
+    pros: ['Strong inspection and compliance workflows', 'Polished customer-facing reporting and portal', 'Deep service history for recurring accounts'],
+    tradeoffs: ['Not for residential or small shops', 'Quote-based, no public pricing', 'Deliberately narrow focus'],
+    editorial: [
+      {
+        heading: 'Focused on commercial inspections',
+        body: [
+          'ServiceTrade knows exactly who it is for: commercial mechanical contractors and, especially, fire and life-safety businesses that run on inspections. Where a general tool treats an inspection as just another job, ServiceTrade builds around the inspection and compliance workflow, the deficiencies it turns up, and the follow-on repair work that comes from it. For that kind of contractor, that focus is the point.',
+        ],
+      },
+      {
+        heading: 'The customer-facing side is the edge',
+        body: [
+          'Its standout strength is how it presents work back to the customer. The service history, the online reports and the customer portal are genuinely polished, which matters in commercial service where you are proving value to a facilities manager, not just fixing a unit. When a client can log in and see exactly what was inspected and what needs attention, renewals and repair approvals get easier.',
+        ],
+      },
+      {
+        heading: 'Know the boundaries',
+        body: [
+          'This is a deliberately narrow tool, and that is a feature, not a bug, for the right buyer. It is not built for residential shops, solo operators or simple one-off job businesses, and pricing is quote-based. If you are a commercial mechanical or life-safety contractor that lives on inspections and recurring accounts, it is one of the most focused options available. Outside that lane, a broader platform fits better.',
+        ],
+      },
+    ],
     alternatives: ['servicetitan', 'buildops', 'simpro', 'commusoft'],
     sources: officialSources('ServiceTrade', 'servicetrade.com', { website: true, integrations: true }),
-    verification: verifiedDates({ integrations: true }),
+    verification: verifiedDates({ integrations: true, editorialOn: '2026-09-13' }),
     commercial: { type: 'none', affiliateLinkSlug: null, disclosure: DISCLOSURE },
     published: true,
   },
@@ -686,9 +960,9 @@ export const PRODUCTS: Product[] = [
     companySizes: ['solo', '2-5', '6-10'],
     businessModels: ['residential', 'both'],
     pricing: verifiedPricing('per_user', true, [
-      plan('Lite', 47, { billingModel: 'per_user', trialDays: 14, notes: 'Per user · billed annually', sourceUrl: 'https://www.tradifyhq.com/us/pricing' }),
-      plan('Pro', 51, { billingModel: 'per_user', trialDays: 14, notes: 'Per user · billed annually', sourceUrl: 'https://www.tradifyhq.com/us/pricing' }),
-      plan('Plus', 61, { billingModel: 'per_user', trialDays: 14, notes: 'Per user · billed annually', sourceUrl: 'https://www.tradifyhq.com/us/pricing' }),
+      plan('Lite', 47, { billingModel: 'per_user', trialDays: 14, notes: 'Per user, per month', sourceUrl: 'https://www.tradifyhq.com/us/pricing' }),
+      plan('Pro', 51, { billingModel: 'per_user', trialDays: 14, notes: 'Per user, per month', sourceUrl: 'https://www.tradifyhq.com/us/pricing' }),
+      plan('Plus', 61, { billingModel: 'per_user', trialDays: 14, notes: 'Per user, per month', sourceUrl: 'https://www.tradifyhq.com/us/pricing' }),
     ]),
     implementation: 'low',
     implementationNotes: 'Light, self-serve setup suited to small teams and solo operators.',
@@ -698,11 +972,31 @@ export const PRODUCTS: Product[] = [
       notAvailable: ['financing', 'call_tracking'],
     }),
     integrations: accounting(true, false, true),
-    pros: ['Simple and easy to adopt', 'Good quote-to-invoice workflow', 'QuickBooks and Xero support'],
-    tradeoffs: ['Lighter dispatch and reporting', 'Not built for larger operations', 'Fewer advanced features'],
+    pros: ['Simple and quick to adopt', 'Clean quote-to-invoice workflow', 'QuickBooks Online and Xero support'],
+    tradeoffs: ['Priced per user, so it scales with headcount', 'Lighter dispatch and reporting', 'Not built for larger operations'],
+    editorial: [
+      {
+        heading: 'Simplicity is the selling point',
+        body: [
+          'Tradify is aimed at solo tradespeople and small teams who want to quote, schedule, track time and get paid without wrestling with software. It does the core loop, from quote to job to invoice, cleanly and without the clutter of features a one-person electrical or plumbing business will never touch. If you have avoided software because it felt like too much, this is the kind of tool built to change your mind.',
+        ],
+      },
+      {
+        heading: 'How the pricing works',
+        body: [
+          'Tradify charges per user: Lite is $47 a month per user, Pro is $51, and Plus, the most popular tier, is $61, each with a 14-day trial that includes all the features. Per-user pricing is friendly for a solo operator, but it is worth doing the math as you grow, because the bill rises with every seat you add rather than staying flat, which is the opposite of a tool like Service Fusion.',
+        ],
+      },
+      {
+        heading: 'Where it stops',
+        body: [
+          'The trade for that simplicity is depth. Dispatch and reporting are lighter than the trade platforms, and it is not designed to run a larger, office-driven operation. On accounting it syncs with QuickBooks Online and Xero. For a solo operator or a small crew that values ease of use above all, that is a fair and deliberate trade. If you are scaling toward a bigger dispatch team, plan to reassess.',
+        ],
+      },
+    ],
     alternatives: ['servicem8', 'jobber', 'kickserv', 'workiz'],
     sources: officialSources('Tradify', 'tradifyhq.com', { website: true, pricing: true, integrations: true }),
-    verification: verifiedDates({ pricing: true, integrations: true }),
+    verification: verifiedDates({ pricing: true, integrations: true, pricingOn: '2026-09-13', editorialOn: '2026-09-13' }),
     commercial: { type: 'affiliate', affiliateLinkSlug: 'tradify', disclosure: DISCLOSURE },
     published: true,
   },
