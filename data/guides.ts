@@ -149,6 +149,132 @@ export const GUIDES: GuidePage[] = [
     published: true,
   },
   {
+    slug: 'field-service-management-software-vs-erp',
+    title: 'Field Service Software vs ERP: Which Does Your Business Need?',
+    category: 'Field service basics',
+    intro:
+      'ERP and field service software both promise to run your operation from one place, and for a growing service business the line between them blurs fast. Here’s what each is really for, and when a trade or home-service company actually needs an ERP.',
+    sections: [
+      {
+        heading: 'What an ERP is',
+        body: [
+          'ERP stands for enterprise resource planning. It’s the backbone system large companies use to run finance, procurement, HR, inventory and manufacturing in one connected database. The whole idea is a single source of truth across departments that mostly don’t deal with customers directly.',
+          'Field service software lives at the front line instead: the schedule, the technician, the job and the invoice. It’s built for the work that happens at a customer’s property, not for running a factory floor or a corporate finance department.',
+        ],
+      },
+      {
+        heading: 'Where people get confused',
+        body: [
+          'The mix-up starts because both handle money and both hold a lot of operational data. A big field service platform can feel ERP-like once it’s tracking inventory, job costing and reporting, and some ERPs have a field service module bolted on. But the design goals are different, and that difference shows up in how usable each one is for a service crew.',
+        ],
+      },
+      {
+        heading: 'When a service business needs an ERP',
+        body: [
+          'Most trade and home-service businesses don’t need an ERP. You reach for one when the complexity outgrows field service software: multiple entities or locations with consolidated financials, real manufacturing or heavy warehousing, formal procurement, or a finance team that needs controls a service tool was never meant to provide.',
+          'That’s usually a far larger company than a typical HVAC, plumbing or electrical contractor. If you’re asking the question at all, the honest answer is often “not yet.”',
+        ],
+      },
+      {
+        heading: 'The setup that works for most',
+        body: [
+          'Plenty of mid-sized service companies run field service software for the work and QuickBooks or Xero for the books, then connect the two. That covers the operational side and the accounting without the cost and weight of a full ERP. If you eventually outgrow it, an ERP with a service module, or a service platform that integrates with your ERP, is the next step.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'What is field service management software?', href: '/guides/what-is-field-service-management-software/' },
+      { label: 'Field service software vs CRM', href: '/guides/field-service-management-software-vs-crm/' },
+      { label: 'Find your best-fit software', href: '/find-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'cloud-vs-on-premise-field-service-software',
+    title: 'Cloud vs On-Premise Field Service Software',
+    category: 'Field service basics',
+    intro:
+      'Almost every field service tool sold today is cloud-based, but the question still comes up, especially from shops that already run QuickBooks Desktop or older systems. Here’s the practical difference and what it means for your business.',
+    sections: [
+      {
+        heading: 'The basic difference',
+        body: [
+          'Cloud software runs on the vendor’s servers, and you use it through a browser and a mobile app. On-premise software (often shortened to on-prem) is installed on a computer or server you own and maintain. With cloud, the vendor handles updates, backups and uptime. With on-prem, that’s on you.',
+        ],
+      },
+      {
+        heading: 'Why the market moved to cloud',
+        body: [
+          'Field work is mobile by nature. A technician needs the job details and the ability to update a job from a phone at the customer’s house, and that’s exactly what cloud plus a mobile app delivers. Cloud also means no server to babysit, automatic updates, and access from anywhere, which is why nearly all modern field service platforms are cloud-only.',
+        ],
+      },
+      {
+        heading: 'Where on-premise still shows up',
+        body: [
+          'The most common brush with on-prem for a service business is QuickBooks Desktop. It’s desktop accounting software, and syncing it with a cloud field service tool needs a small sync agent running on a Windows machine. That isn’t the field service software being on-prem, but it’s the closest most shops get, and it’s worth knowing if your books live in Desktop.',
+          'A few very large or security-sensitive organizations still prefer self-hosted systems for control. For the vast majority of trades, that trade-off isn’t worth the maintenance burden.',
+        ],
+      },
+      {
+        heading: 'What to actually check',
+        body: [
+          'Since your field service tool will almost certainly be cloud-based, the practical questions are about reliability and access. Does the mobile app work offline when there’s no signal? How does it handle your accounting, especially QuickBooks Desktop if that’s what you run? And who owns your data, and can you export it? Those matter far more than the cloud-versus-on-prem label itself.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'What is field service management software?', href: '/guides/what-is-field-service-management-software/' },
+      { label: 'Best field service software with QuickBooks', href: '/best/field-service-software-with-quickbooks/' },
+      { label: 'Find your best-fit software', href: '/find-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'all-in-one-vs-point-solutions-field-service',
+    title: 'All-in-One vs Point Solutions for Field Service',
+    category: 'Field service basics',
+    intro:
+      'Should you run one platform that does everything, or stitch together specialist tools that each do one thing well? Both approaches are common in field service, and the right call depends on your size and how demanding any single part of your operation is.',
+    sections: [
+      {
+        heading: 'What each approach means',
+        body: [
+          'An all-in-one platform tries to cover the whole operation under one login: scheduling, dispatch, estimates, invoicing, payments, CRM and often marketing. A point solution, sometimes called best-of-breed, is a specialist you connect to the rest of your stack, for example a dedicated routing tool, a standalone estimating app, or a separate marketing platform.',
+        ],
+      },
+      {
+        heading: 'The case for all-in-one',
+        body: [
+          'For most small and mid-sized service businesses, all-in-one wins. One system means one place to learn, one support line, and data that already flows between scheduling, invoicing and the customer record without you wiring up integrations. Fewer moving parts is a real advantage when you don’t have an office team to manage software.',
+        ],
+      },
+      {
+        heading: 'The case for point solutions',
+        body: [
+          'Best-of-breed earns its place when one part of your operation is unusually demanding and the all-in-one tools fall short there. A business that lives or dies on route density might want a specialist routing engine. A sales-heavy operation might want a real marketing platform. The cost is more integrations to maintain and more places for data to drift out of sync.',
+        ],
+      },
+      {
+        heading: 'How to decide',
+        body: [
+          'Start all-in-one unless you have a specific, painful reason not to. If one workflow is clearly underserved and it’s central to your revenue, add a specialist for that single thing and keep everything else in your core platform. Bolting on specialists everywhere, too early, usually creates more admin than it saves.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'What is field service management software?', href: '/guides/what-is-field-service-management-software/' },
+      { label: 'How to choose field service software', href: '/guides/how-to-choose-field-service-software/' },
+      { label: 'Best field service management software', href: '/best/field-service-management-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
     slug: 'how-to-choose-field-service-software',
     title: 'How to Choose Field Service Software',
     category: 'Buying guide',
