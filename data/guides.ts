@@ -7,7 +7,7 @@ export const GUIDES: GuidePage[] = [
     title: 'What Is Field Service Management Software?',
     category: 'Field service basics',
     intro:
-      'If you run a trade or home-service business, you have probably seen the term field service management software, often shortened to FSM software. This guide explains what it is, what it actually does day to day, and how to tell whether your business is ready for it. No jargon.',
+      'If you run a trade or home-service business, you have probably seen the term field service management software, usually shortened to FSM software. This guide covers what it is, what it actually does day to day, what it tends to cost, and how to tell whether your business is ready for it yet.',
     sections: [
       {
         heading: 'The short answer',
@@ -25,10 +25,17 @@ export const GUIDES: GuidePage[] = [
         ],
       },
       {
+        heading: 'What it actually costs',
+        body: [
+          'Pricing sorts into three rough bands. Starter plans for a single user run around $29 to $50 a month (Jobber’s entry plan is $29 billed annually, for example). Small-crew plans that add automation, online booking and five to ten users tend to land between $100 and $200 a month. And the enterprise platforms built for larger trades, ServiceTitan being the obvious one, are quote-based, so you talk to sales rather than read a price off a page.',
+          'Two costs sit outside that subscription and catch people out. First, payment processing: if you collect card payments through the software, expect roughly 2.9% plus 30 cents per card transaction and about 1% on ACH, on top of your plan. For a business invoicing tens of thousands a month, that is a real line item. Second, implementation. The small-business tools are self-serve and you can be live in days; the enterprise platforms involve data migration and training and a multi-week rollout, which is a cost in both money and attention.',
+        ],
+      },
+      {
         heading: 'Who it’s for, and who can wait',
         body: [
           'With two or three people and a light job load, a calendar and a simple invoicing tool might still be enough. FSM software starts to pay off once the moving parts slip through the cracks: calls that never get returned, technicians double-booked, invoices going out a week late, or a customer asking about a repair nobody wrote down.',
-          'It’s also worth it sooner if you sell maintenance agreements, or if your books live in QuickBooks, because keeping those in sync by hand quietly eats hours every week.',
+          'It’s also worth it sooner if you sell maintenance agreements, or if your books live in QuickBooks, because keeping those in sync by hand quietly eats hours every week. One caveat worth checking early: if your accounting runs on QuickBooks Desktop rather than Online, your options narrow fast, because several popular tools sync only with the Online version. Confirm that before you fall for a demo.',
         ],
       },
       {
@@ -46,10 +53,17 @@ export const GUIDES: GuidePage[] = [
         ],
       },
       {
+        heading: 'What most buyers get wrong',
+        body: [
+          'The most common and expensive mistake is buying a big enterprise platform before you need it, then paying for months of setup and features nobody touches. The mirror image is just as costly: picking the cheapest starter tool, outgrowing it in a year, and going through a painful data migration you could have skipped. Buy for where you will be in eighteen months, not for today and not for some distant someday.',
+          'The other trap is shopping by feature list. Every vendor’s list looks complete on paper. What actually matters is whether the two or three things you do most often are genuinely good, and whether the tool fits how your team already works. A long feature list you never use is not value, it is just a higher bill.',
+        ],
+      },
+      {
         heading: 'How to start without overbuying',
         body: [
-          'The most common and expensive mistake is buying a big enterprise platform before you need it, then paying for months of setup and features nobody touches. Start from your actual pain instead. Write down the three or four things that hurt most today, and shortlist tools that fix those well.',
-          'From there, our software finder scores platforms against your trade, team size, budget and must-have integrations, and our best-of guides give an editorial shortlist for common situations. Either is a good next step once you know what you need.',
+          'Start from your actual pain, not a feature comparison. Write down the three or four things that hurt most today, the jobs that slip, the invoices that lag, the calls you keep fielding, and shortlist tools that fix those well.',
+          'From there, our software finder scores platforms against your trade, team size, budget and must-have integrations, and our best-of guides give an editorial shortlist for common situations. Either is a good next step once you know what you actually need.',
         ],
       },
     ],
@@ -60,7 +74,7 @@ export const GUIDES: GuidePage[] = [
       { label: 'How to choose field service software', href: '/guides/how-to-choose-field-service-software/' },
     ],
     publishedAt: '2026-09-12',
-    updatedAt: '2026-09-12',
+    updatedAt: '2026-09-13',
     published: true,
   },
   {

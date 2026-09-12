@@ -279,6 +279,13 @@ export interface Product {
   pros: string[];
   tradeoffs: string[];
 
+  /**
+   * Long-form editorial narrative ("our take"): tightened, fact-checked,
+   * experience-led prose. Optional; rendered as its own section when present.
+   * This is where firsthand observations and hard-to-find specifics live.
+   */
+  editorial?: { heading: string; body: string[] }[];
+
   /** Slugs of recommended alternatives. */
   alternatives: string[];
 

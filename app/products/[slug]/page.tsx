@@ -152,6 +152,26 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             </div>
           </section>
 
+          {/* Our take (editorial narrative) */}
+          {product.editorial && product.editorial.length > 0 && (
+            <section>
+              <h2 className="mb-1 text-xl font-bold text-ink">Our take on {product.name}</h2>
+              <div className="mb-4">
+                <AuthorByline author={author} avatarSize={24} prefix="Assessed by" />
+              </div>
+              <div className="max-w-3xl prose-fsc">
+                {product.editorial.map((s) => (
+                  <section key={s.heading}>
+                    <h3>{s.heading}</h3>
+                    {s.body.map((b, i) => (
+                      <p key={i}>{b}</p>
+                    ))}
+                  </section>
+                ))}
+              </div>
+            </section>
+          )}
+
           {/* Best for / Think twice */}
           <section className="grid gap-4 sm:grid-cols-2">
             <div className="card p-5">

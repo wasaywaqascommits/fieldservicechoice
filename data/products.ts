@@ -91,10 +91,18 @@ function officialSources(name: string, domain: string, v: VerifiedSources = {}):
 }
 
 /** Verification dates, with the given facts marked verified on their dates. */
-function verifiedDates(v: { pricing?: boolean; integrations?: boolean } = {}): VerificationDates {
+function verifiedDates(
+  v: {
+    pricing?: boolean;
+    integrations?: boolean;
+    /** Per-product overrides when a single product was re-verified on a later date. */
+    pricingOn?: string;
+    editorialOn?: string;
+  } = {},
+): VerificationDates {
   return {
-    ...pending(),
-    ...(v.pricing ? { pricingVerifiedAt: PRICING_VERIFIED } : {}),
+    ...pending(v.editorialOn),
+    ...(v.pricing ? { pricingVerifiedAt: v.pricingOn ?? PRICING_VERIFIED } : {}),
     ...(v.integrations ? { integrationsVerifiedAt: INTEGRATIONS_VERIFIED } : {}),
   };
 }
@@ -152,22 +160,22 @@ export const PRODUCTS: Product[] = [
     vendorName: 'Jobber Software',
     tagline: 'Popular all-in-one field service software for small home-service teams.',
     description:
-      'Jobber is a widely adopted operations platform aimed at small and growing home-service businesses. It combines scheduling, quoting, invoicing, client communication and online payments in a package designed to be quick to adopt without a formal implementation project.',
+      'Jobber is an all-in-one platform for small and growing home-service businesses. It puts scheduling, quoting, invoicing, client messaging and online payments in one place, and it is built to go live in days rather than through a formal implementation project.',
     website: 'https://getjobber.com',
     logoMark: 'Jb',
     brandColor: '#1f7a4d',
-    bestFor: ['Small residential home-service teams', 'Owner-operators scaling to a handful of crews', 'Businesses wanting simple scheduling, quoting and invoicing'],
+    bestFor: ['Small residential home-service teams', 'Owner-operators scaling to a handful of crews', 'Teams that want scheduling, quoting and invoicing without a rollout project'],
     notIdealFor: ['Enterprise HVAC/plumbing with complex commercial job costing', 'Multi-branch operations needing granular role controls', 'Teams needing an advanced flat-rate pricebook'],
     verdict:
-      'A strong default for small residential service businesses that value fast setup and a clean mobile experience over deep enterprise configurability.',
+      'The strong default for small residential service teams that want fast setup and a clean mobile app over deep enterprise configurability.',
     industries: ['hvac', 'plumbing', 'electrical', 'landscaping', 'cleaning', 'pool-service'],
     companySizes: ['solo', '2-5', '6-10', '11-25'],
     businessModels: ['residential', 'both', 'route'],
     pricing: verifiedPricing('tiered', true, [
       plan('Core', 29, { includedUsers: 1, additionalUserPrice: 29, trialDays: 14, contract: 'Billed annually', sourceUrl: 'https://www.getjobber.com/pricing/' }),
-      plan('Connect', 99, { includedUsers: 1, additionalUserPrice: 29, trialDays: 14, contract: 'Billed annually', sourceUrl: 'https://www.getjobber.com/pricing/' }),
-      plan('Grow', 149, { includedUsers: 1, additionalUserPrice: 29, trialDays: 14, contract: 'Billed annually', sourceUrl: 'https://www.getjobber.com/pricing/' }),
-      plan('Plus', 399, { includedUsers: 1, additionalUserPrice: 29, trialDays: 14, contract: 'Billed annually', sourceUrl: 'https://www.getjobber.com/pricing/' }),
+      plan('Connect', 99, { includedUsers: 5, additionalUserPrice: 29, trialDays: 14, contract: 'Billed annually', sourceUrl: 'https://www.getjobber.com/pricing/' }),
+      plan('Grow', 149, { includedUsers: 10, additionalUserPrice: 29, trialDays: 14, contract: 'Billed annually', sourceUrl: 'https://www.getjobber.com/pricing/' }),
+      plan('Plus', 399, { includedUsers: 15, additionalUserPrice: 29, trialDays: 14, contract: 'Billed annually', sourceUrl: 'https://www.getjobber.com/pricing/' }),
     ]),
     implementation: 'low',
     implementationNotes: 'Self-serve onboarding designed for owner-operators; most teams can go live quickly without a paid implementation.',
@@ -178,11 +186,34 @@ export const PRODUCTS: Product[] = [
       notAvailable: ['quickbooks_desktop', 'route_optimization'],
     }),
     integrations: accounting(true, false, false),
-    pros: ['Fast, low-friction onboarding', 'Clean, well-reviewed mobile app', 'Solid client communication and online booking'],
-    tradeoffs: ['Limited depth for complex commercial job costing', 'Fewer enterprise administrative controls', 'Advanced marketing features sit in higher tiers'],
+    pros: ['Live in days with self-serve setup', 'Clean mobile app field teams actually use', 'Strong client messaging, online booking and payments'],
+    tradeoffs: ['No advanced flat-rate pricebook', 'Thin commercial job costing and multi-branch controls', 'Syncs QuickBooks Online only, no Desktop'],
+    editorial: [
+      {
+        heading: 'Where Jobber fits, in plain terms',
+        body: [
+          'Jobber is built for small residential home-service teams that want to be running this week, not after a rollout project. Core starts at $29 a month billed annually with a single user, but the tier most teams actually land on is Connect at $99, which includes five users and the automation that earns its keep: appointment reminders, automated follow-ups and online booking. Grow ($149) adds quoting tools and ten users, and Plus ($399) covers fifteen. Extra seats are $29 each on every tier.',
+          'The free trial runs 14 days, needs no credit card, and gives you the Grow feature set, so you can test the tools from the upper tiers before you decide which one you actually need.',
+        ],
+      },
+      {
+        heading: 'The costs that are not on the pricing page',
+        body: [
+          'The subscription is only part of the bill. If you collect payment through Jobber, card transactions run 2.9% plus 30 cents and ACH is 1%. That is normal for the category, but it adds up: a business invoicing $50,000 a month is paying roughly $1,500 a month in processing on top of the plan, so weigh that against any platform whose headline price looks higher.',
+          'The other thing to sort out before you sign up is accounting. Jobber syncs with QuickBooks Online but not QuickBooks Desktop. If your bookkeeper still runs Desktop, that is the single biggest compatibility question to answer first, because there is no native workaround inside Jobber.',
+        ],
+      },
+      {
+        heading: 'What it is genuinely good at, and where it stops',
+        body: [
+          'The mobile app is the part field teams tend to actually like, and the client communication around it (on-my-way texts, online booking, automated follow-ups) is a real strength for residential work where the customer experience wins the repeat job.',
+          'Where it stops is depth. There is no advanced flat-rate pricebook, commercial job costing is thin, and the administrative controls are not built for multi-branch operations. If you are a growing residential team, that is a fair trade and Jobber is a strong default. If you are moving toward commercial or enterprise work, you will outgrow it, and that is by design rather than a flaw.',
+        ],
+      },
+    ],
     alternatives: ['housecall-pro', 'workiz', 'fieldpulse', 'servicem8'],
     sources: officialSources('Jobber', 'getjobber.com', { website: true, pricing: true, integrations: true }),
-    verification: verifiedDates({ pricing: true, integrations: true }),
+    verification: verifiedDates({ pricing: true, integrations: true, pricingOn: '2026-09-13', editorialOn: '2026-09-13' }),
     commercial: { type: 'affiliate', affiliateLinkSlug: 'jobber', disclosure: DISCLOSURE },
     published: true,
   },
