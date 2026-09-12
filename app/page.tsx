@@ -29,7 +29,13 @@ export default function HomePage() {
   const popular = getProductsBySlugs(POPULAR_SLUGS);
   const industries = getIndustries();
   const comparisons = getComparisons().slice(0, 6);
-  const guides = getGuides();
+  const homeGuideSlugs = [
+    'what-is-field-service-management-software',
+    'field-service-management-software-vs-crm',
+    'how-to-choose-field-service-software',
+    'field-service-software-pricing-explained',
+  ];
+  const guides = getGuides().filter((g) => homeGuideSlugs.includes(g.slug));
 
   return (
     <>

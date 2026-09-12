@@ -275,6 +275,216 @@ export const GUIDES: GuidePage[] = [
     published: true,
   },
   {
+    slug: 'field-service-dispatching',
+    title: 'Field Service Dispatching: What It Is and How to Get It Right',
+    category: 'Feature',
+    intro:
+      'Dispatching is where a lot of service businesses win or lose the day. This guide explains what dispatching actually means in field service, why it’s so easy to get wrong, and what to look for in software that handles it well.',
+    sections: [
+      {
+        heading: 'What dispatching means',
+        body: [
+          'Dispatching is the act of assigning a job to a technician and getting them to the right place, at the right time, with the right information. In a small shop it might be one person with a phone and a whiteboard. As you grow it becomes a live puzzle: who’s free, who’s closest, who has the skills and parts for this job, and what happens when an emergency jumps the queue.',
+        ],
+      },
+      {
+        heading: 'Why it’s hard to do well',
+        body: [
+          'The trouble is that the plan never survives contact with the day. A no-show frees up a slot, a two-hour job turns into four, a priority call lands at 11am. Good dispatching is really about handling change quickly without dropping anyone. Done badly, you get idle technicians, missed appointments, and customers left waiting with no update.',
+        ],
+      },
+      {
+        heading: 'How software helps',
+        body: [
+          'A dispatch board shows every technician and every job on one screen, usually as a drag-and-drop schedule you can rearrange in seconds. The better tools factor in location and skills, send the job straight to the technician’s phone, and fire off an automatic “on my way” text to the customer. GPS tracking shows where crews actually are, so you’re dispatching from reality rather than a guess.',
+        ],
+      },
+      {
+        heading: 'What to look for',
+        body: [
+          'If dispatch is your pain point, weigh how fast you can reassign a job, whether the technician gets full job details and history on mobile, and whether customers are kept in the loop automatically. High-volume operations should look hardest at the dispatch board and routing. You can compare how each platform handles this in our reviews and shortlists.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'Field service scheduling explained', href: '/guides/field-service-scheduling/' },
+      { label: 'Best field service management software', href: '/best/field-service-management-software/' },
+      { label: 'ServiceTitan review', href: '/products/servicetitan/' },
+      { label: 'Find your best-fit software', href: '/find-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'field-service-scheduling',
+    title: 'Field Service Scheduling: What It Is and How to Do It Well',
+    category: 'Feature',
+    intro:
+      'Scheduling sounds simple until you’re juggling a dozen technicians, recurring visits and last-minute emergencies. Here’s what scheduling means in field service, where it usually breaks down, and what good scheduling software actually does.',
+    sections: [
+      {
+        heading: 'What scheduling covers',
+        body: [
+          'Scheduling is planning who does what, and when. In field service that means matching jobs to technicians across a day or a week, balancing new bookings against recurring maintenance visits, and leaving enough slack for the emergency that always seems to land at the worst moment.',
+        ],
+      },
+      {
+        heading: 'Where it breaks down',
+        body: [
+          'Most scheduling pain comes from two places: not seeing the whole picture, and not being able to change it fast. A paper calendar or a shared spreadsheet can’t show you at a glance who’s overbooked and who’s idle, and it can’t rearrange itself when a job runs long. That’s how you end up with technicians sitting around while customers wait.',
+        ],
+      },
+      {
+        heading: 'What software does',
+        body: [
+          'A good scheduler gives you a calendar you can drag jobs around on, color-coded by technician or job type, with recurring jobs that repeat automatically so seasonal maintenance doesn’t rely on someone’s memory. It pushes each visit to the technician’s phone and, in stronger tools, warns you about conflicts and gaps before they turn into a problem.',
+        ],
+      },
+      {
+        heading: 'What to look for',
+        body: [
+          'Look at how quickly you can move a job, whether recurring and route-based work is easy to set up, and how well the schedule syncs to the mobile app your technicians actually use. If you run recurring maintenance, that support matters more than almost anything else.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'Field service dispatching explained', href: '/guides/field-service-dispatching/' },
+      { label: 'Best field service management software', href: '/best/field-service-management-software/' },
+      { label: 'Jobber review', href: '/products/jobber/' },
+      { label: 'Find your best-fit software', href: '/find-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'field-service-invoicing',
+    title: 'Field Service Invoicing: Getting Paid Faster',
+    category: 'Feature',
+    intro:
+      'The gap between finishing a job and getting paid is where a lot of service businesses quietly lose money. This guide covers what invoicing looks like in field service and how the right software shortens that gap.',
+    sections: [
+      {
+        heading: 'The problem with manual invoicing',
+        body: [
+          'When invoicing happens back at the office, often at night or on the weekend, it drifts. A job finishes Tuesday and the invoice goes out the following Monday, if it goes out at all. Every day of delay is a day longer until you’re paid, and the occasional job slips through and never gets billed.',
+        ],
+      },
+      {
+        heading: 'How field service invoicing works',
+        body: [
+          'Field service software turns a completed job into an invoice directly, often on the technician’s phone before they leave the driveway. The line items, the customer and the pricing are already there from the job, so there’s no re-typing. Many tools also take card or ACH payment on the spot, which is the single biggest lever for getting paid faster.',
+        ],
+      },
+      {
+        heading: 'Where accounting fits',
+        body: [
+          'The invoice shouldn’t live in a silo. The better setups sync invoices and payments into QuickBooks or Xero automatically, so your books stay current without anyone entering the same numbers twice. If your accounting runs on QuickBooks Desktop, check that support specifically, because it varies between platforms.',
+        ],
+      },
+      {
+        heading: 'What to look for',
+        body: [
+          'Weigh how fast a technician can invoice and collect in the field, whether payments are built in, and how cleanly it syncs with your accounting. Getting those three right is usually worth more to cash flow than any other single feature.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'Field service scheduling explained', href: '/guides/field-service-scheduling/' },
+      { label: 'Best field service software with QuickBooks', href: '/best/field-service-software-with-quickbooks/' },
+      { label: 'Housecall Pro review', href: '/products/housecall-pro/' },
+      { label: 'Find your best-fit software', href: '/find-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'flat-rate-pricebook',
+    title: 'Flat-Rate Pricebook: Consistent Pricing for the Trades',
+    category: 'Feature',
+    intro:
+      'A flat-rate pricebook is one of the features that separates a growing trades business from a struggling one. Here’s what it is, why it matters, and which businesses actually need one.',
+    sections: [
+      {
+        heading: 'What a flat-rate pricebook is',
+        body: [
+          'A flat-rate pricebook is a catalog of your common jobs and repairs, each with a set price, so a technician quotes the same number for the same work no matter who they are or how the day is going. It usually includes good, better and best options, so a customer chooses their level rather than just hearing one price.',
+        ],
+      },
+      {
+        heading: 'Why it matters',
+        body: [
+          'Without one, pricing lives in your senior technicians’ heads, which means it walks out the door when they do and shifts from job to job. A pricebook makes quoting consistent, faster, and easy to hand to a newer technician. The good/better/best format also tends to lift the average ticket, because customers often choose up when they’re given the choice.',
+        ],
+      },
+      {
+        heading: 'Who needs one',
+        body: [
+          'Flat-rate pricing earns its keep for trades that do a lot of repeatable repairs and replacements, HVAC and plumbing especially. If most of your work is custom or project-based, a full pricebook matters less than solid estimating. Match the feature to how repeatable your work really is.',
+        ],
+      },
+      {
+        heading: 'What to look for',
+        body: [
+          'If a pricebook is central for you, look at how deep and editable it is, whether it supports good/better/best presentation on the technician’s device, and whether it ties into financing for bigger tickets. This is an area where the enterprise platforms tend to pull ahead of the lighter tools.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'Field service invoicing explained', href: '/guides/field-service-invoicing/' },
+      { label: 'Best HVAC field service software', href: '/best/hvac-field-service-software/' },
+      { label: 'ServiceTitan review', href: '/products/servicetitan/' },
+      { label: 'Find your best-fit software', href: '/find-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'field-service-technician-mobile-app',
+    title: 'The Technician Mobile App: Why It Makes or Breaks Adoption',
+    category: 'Feature',
+    intro:
+      'You can buy the most powerful field service platform on the market, but if your technicians won’t use the app, none of it matters. Here’s why the mobile app is the feature that quietly decides whether the software sticks.',
+    sections: [
+      {
+        heading: 'Why the app is the real product',
+        body: [
+          'For the office, field service software is a dashboard. For your technicians, it’s the app in their pocket, and that’s where the work actually happens. If the app is slow, confusing, or missing the details they need, they’ll go back to calling the office and writing on paper, and the whole system falls apart.',
+        ],
+      },
+      {
+        heading: 'What a good app does in the field',
+        body: [
+          'A strong mobile app gives the technician the full job in one place: address and directions, customer and equipment history, the tasks to do, and room for notes and photos. It lets them build a quote, invoice and take payment on site, and capture a signature. The best ones keep working offline and sync once the signal comes back, which matters in basements and rural service areas.',
+        ],
+      },
+      {
+        heading: 'Offline is not optional for some trades',
+        body: [
+          'If your technicians regularly work where there’s no signal, offline support moves from nice-to-have to essential. Without it, an app that looks great in the demo becomes useless the moment someone’s in a mechanical room with no bars. Ask about offline specifically, and test it rather than taking it on faith.',
+        ],
+      },
+      {
+        heading: 'What to look for',
+        body: [
+          'Judge the app the way your technicians will. Is it fast? Is everything they need one or two taps away? Does it work offline, and does it run well on the phones they already carry, Android as well as iPhone? The office features matter, but adoption is won or lost on the app.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'Field service dispatching explained', href: '/guides/field-service-dispatching/' },
+      { label: 'Best field service software for 1–5 technicians', href: '/best/field-service-software-for-1-5-technicians/' },
+      { label: 'ServiceM8 review', href: '/products/servicem8/' },
+      { label: 'Find your best-fit software', href: '/find-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
     slug: 'how-to-choose-field-service-software',
     title: 'How to Choose Field Service Software',
     category: 'Buying guide',
