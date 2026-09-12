@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { ALL_GUIDE_SLUGS, getDefaultAuthor, getGuideBySlug } from '@/lib/database/content';
 import { buildMetadata, absoluteUrl } from '@/lib/seo/metadata';
@@ -51,7 +52,18 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         ]}
       />
       <article className="container-page py-8">
-        <h1 className="max-w-3xl text-3xl font-bold tracking-tight text-ink sm:text-4xl">{g.title}</h1>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={`/guides/${g.slug}/opengraph-image`}
+          alt={g.title}
+          width={1200}
+          height={630}
+          className="mb-6 aspect-[40/21] w-full rounded-2xl border border-slate-200 object-cover"
+        />
+        {g.category && (
+          <p className="text-xs font-semibold uppercase tracking-wide text-brand-700">{g.category}</p>
+        )}
+        <h1 className="mt-1 max-w-3xl text-3xl font-bold tracking-tight text-ink sm:text-4xl">{g.title}</h1>
         <div className="mt-4">
           <AuthorByline author={author} date={g.updatedAt} dateLabel="Updated" prefix="Written by" />
         </div>
@@ -67,6 +79,21 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             </section>
           ))}
         </div>
+
+        {g.related && g.related.length > 0 && (
+          <div className="mt-10 max-w-3xl border-t border-slate-200 pt-6">
+            <h2 className="text-lg font-bold text-ink">Keep reading</h2>
+            <ul className="mt-3 grid gap-2 sm:grid-cols-2">
+              {g.related.map((r) => (
+                <li key={r.href}>
+                  <Link href={r.href} className="font-medium text-brand-700 hover:underline">
+                    {r.label} →
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </article>
 
       <CTASection />

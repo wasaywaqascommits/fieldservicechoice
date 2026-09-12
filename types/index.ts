@@ -364,8 +364,12 @@ export interface BestPage {
 export interface GuidePage {
   slug: string;
   title: string;
+  /** Short category label shown as an eyebrow and on the featured image. */
+  category?: string;
   intro: string;
   sections: { heading: string; body: string[] }[];
+  /** Contextual internal links, shown as a "Related" block (outer -> core pages). */
+  related?: { label: string; href: string }[];
   publishedAt: IsoDate;
   updatedAt: IsoDate;
   published: boolean;
