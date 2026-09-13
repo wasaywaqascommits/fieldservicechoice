@@ -316,7 +316,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'What to look for',
         body: [
-          'If dispatch is your pain point, weigh how fast you can reassign a job, whether the technician gets full job details and history on mobile, and whether customers are kept in the loop automatically. High-volume operations should look hardest at the dispatch board and routing. You can compare how each platform handles this in our reviews and shortlists.',
+          'If dispatch is your pain point, weigh how fast you can reassign a job, whether the technician gets full job details and history on mobile, and whether customers are kept in the loop automatically. Depth varies a lot: the enterprise platforms like ServiceTitan have the most sophisticated dispatch boards for busy multi-technician operations, while lighter tools like Jobber handle small-team dispatch cleanly without the overhead. High-volume operations should look hardest at the board and routing.',
         ],
       },
     ],
@@ -358,7 +358,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'What to look for',
         body: [
-          'Look at how quickly you can move a job, whether recurring and route-based work is easy to set up, and how well the schedule syncs to the mobile app your technicians actually use. If you run recurring maintenance, that support matters more than almost anything else.',
+          'Look at how quickly you can move a job, whether recurring and route-based work is easy to set up, and how well the schedule syncs to the mobile app your technicians actually use. Most small-business tools like Jobber and Housecall Pro handle recurring jobs well; if maintenance contracts are core to your revenue, that support matters more than almost anything else.',
         ],
       },
     ],
@@ -388,7 +388,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'How field service invoicing works',
         body: [
-          'Field service software turns a completed job into an invoice directly, often on the technician’s phone before they leave the driveway. The line items, the customer and the pricing are already there from the job, so there’s no re-typing. Many tools also take card or ACH payment on the spot, which is the single biggest lever for getting paid faster.',
+          'Field service software turns a completed job into an invoice directly, often on the technician’s phone before they leave the driveway. The line items, the customer and the pricing are already there from the job, so there’s no re-typing. Many tools also take card or ACH payment on the spot, which is the single biggest lever for getting paid faster. Just budget for the processing fee: in-app card payments typically run around 2.9% plus 30 cents per transaction, with ACH nearer 1%, on top of your subscription.',
         ],
       },
       {
@@ -442,7 +442,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'What to look for',
         body: [
-          'If a pricebook is central for you, look at how deep and editable it is, whether it supports good/better/best presentation on the technician’s device, and whether it ties into financing for bigger tickets. This is an area where the enterprise platforms tend to pull ahead of the lighter tools.',
+          'If a pricebook is central for you, look at how deep and editable it is, whether it supports good/better/best presentation on the technician’s device, and whether it ties into financing for bigger tickets. This is where the enterprise platforms pull well ahead: ServiceTitan’s pricebook is the category benchmark, while lighter tools like Jobber offer little or none, so if flat-rate pricing is a must-have it will shape your whole shortlist.',
         ],
       },
     ],
@@ -484,7 +484,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'What to look for',
         body: [
-          'Judge the app the way your technicians will. Is it fast? Is everything they need one or two taps away? Does it work offline, and does it run well on the phones they already carry, Android as well as iPhone? The office features matter, but adoption is won or lost on the app.',
+          'Judge the app the way your technicians will. Is it fast? Is everything they need one or two taps away? Does it work offline, and does it run well on the phones they already carry, Android as well as iPhone? That last point is a real gotcha: ServiceM8, for instance, is built Apple-first and is weaker on Android, so if your crews are on Android, test it on their actual phones before you commit. The office features matter, but adoption is won or lost on the app.',
         ],
       },
     ],
@@ -526,7 +526,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'What to look for',
         body: [
-          'Look at how much of the job the work order captures (notes, photos, parts, signatures), how clearly you can see status across all your open jobs, and whether it links to equipment history for repeat customers. If you do commercial or contract work, custom fields and templates start to matter too.',
+          'Look at how much of the job the work order captures (notes, photos, parts, signatures), how clearly you can see status across all your open jobs, and whether it links to equipment history for repeat customers. If you do commercial or contract work, custom fields and templates start to matter too, and the commercial-focused platforms like Commusoft and ServiceTrade tend to go deepest on multi-property work orders and equipment history.',
         ],
       },
     ],
@@ -568,7 +568,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'What to look for',
         body: [
-          'Check whether tracking is live and tied into the dispatch board, whether customers get automatic arrival updates, and how it handles privacy outside working hours. If routing matters to you, look at how tracking feeds into route planning.',
+          'Check whether tracking is live and tied into the dispatch board, whether customers get automatic arrival updates, and how it handles privacy outside working hours. Watch the pricing too: some platforms include basic GPS, while others sell it as a paid add-on (Housecall Pro’s vehicle GPS and dashcams, for instance), so confirm what is in the base plan. If routing matters to you, look at how tracking feeds into route planning.',
         ],
       },
     ],
@@ -652,7 +652,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'What to look for',
         body: [
-          'Look at how fast a technician can build and send a quote from the field, whether it supports good/better/best and optional line items, and how smoothly an accepted quote becomes a job and an invoice. Commercial and project work also needs deeper estimating with materials and labor.',
+          'Look at how fast a technician can build and send a quote from the field, whether it supports good/better/best and optional line items, and how smoothly an accepted quote becomes a job and an invoice. Match the depth to your work: residential tools like Jobber and Housecall Pro focus on fast good/better/best quotes, while commercial and project tools like Simpro go much deeper on materials-and-labor estimating for jobs that run over weeks.',
         ],
       },
     ],
@@ -694,7 +694,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'What to look for',
         body: [
-          'If memberships are part of your plan, look closely at agreement management: recurring visit scheduling, recurring billing, renewal tracking, and reporting on your membership base. This is an area where the established platforms tend to be much deeper than the lightweight tools.',
+          'If memberships are part of your plan, look closely at agreement management: recurring visit scheduling, recurring billing, renewal tracking, and reporting on your membership base. This is an area where the established platforms pull ahead: ServiceTitan and FieldEdge handle full membership programs well, while lighter tools like Jobber support agreements only partially, so if recurring revenue is central, treat this depth as a hard requirement.',
         ],
       },
     ],
@@ -736,7 +736,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'What to look for',
         body: [
-          'If parts matter, look for truck-level stock tracking, parts tied to work orders so they flow onto the invoice, reorder alerts, and multi-location support if you run more than one warehouse. This is an area where the heavier platforms tend to be stronger than the simple tools.',
+          'If parts matter, look for truck-level stock tracking, parts tied to work orders so they flow onto the invoice, reorder alerts, and multi-location support if you run more than one warehouse. Depth varies sharply here: commercial and project platforms like Simpro and ServiceTitan go deep on inventory and catalog handling, while lighter residential tools track little or nothing, so if you carry real stock this feature alone can narrow your shortlist.',
         ],
       },
     ],
@@ -778,7 +778,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'What to look for',
         body: [
-          'Look at whether the software captures labor, parts and materials against each job, whether it reports profit by job, job type and customer, and how much manual work it takes. Commercial and project businesses should treat deep job costing as close to essential.',
+          'Look at whether the software captures labor, parts and materials against each job, whether it reports profit by job, job type and customer, and how much manual work it takes. Commercial and project businesses should treat deep job costing as close to essential, and the commercial platforms like BuildOps and Simpro are built for it, while residential tools such as Jobber offer only partial job costing.',
         ],
       },
     ],
@@ -820,7 +820,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'What to look for',
         body: [
-          'Look at how much control you have over what’s bookable and when, whether bookings flow straight into your schedule, and whether it confirms automatically with the customer. Match the feature to your work: great for routine services, handle with care for complex ones.',
+          'Look at how much control you have over what’s bookable and when, whether bookings flow straight into your schedule, and whether it confirms automatically with the customer. Residential-focused tools tend to do this best, Housecall Pro in particular is known for a polished consumer booking experience, so if online booking is central to how you win work, weigh that. Match the feature to your work: great for routine services, handle with care for complex ones.',
         ],
       },
     ],
@@ -850,7 +850,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'The cost of convenience',
         body: [
-          'Integrated payments carry processing fees, and the rates vary between platforms. For a high-volume business that difference adds up, so it’s worth checking the rate, not just that the feature exists. Some tools lock you into their own processor; others let you choose. Read that part closely before you commit.',
+          'Integrated payments carry processing fees, typically around 2.9% plus 30 cents per card transaction and roughly 1% on ACH, and the exact rates vary between platforms. For a high-volume business that difference adds up fast: a shop invoicing $50,000 a month can pay well over $1,000 a month in processing alone, so check the rate, not just that the feature exists. Some tools lock you into their own processor; others let you choose. Read that part closely before you commit.',
         ],
       },
       {
@@ -904,7 +904,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'What to look for',
         body: [
-          'If you serve commercial or property-management clients, look for a portal that exposes service history, quote approvals and invoice payment, ideally with multi-site support. If you’re residential, weigh it lightly and focus instead on smooth text-based approvals and payment links.',
+          'If you serve commercial or property-management clients, look for a portal that exposes service history, quote approvals and invoice payment, ideally with multi-site support. This is a strength of the commercial platforms in particular, ServiceTrade’s customer-facing portal and reporting are a genuine standout for inspection-driven work. If you’re residential, weigh it lightly and focus instead on smooth text-based approvals and payment links.',
         ],
       },
     ],
