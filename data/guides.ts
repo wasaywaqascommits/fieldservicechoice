@@ -1779,6 +1779,216 @@ export const GUIDES: GuidePage[] = [
     updatedAt: '2026-09-13',
     published: true,
   },
+  {
+    slug: 'field-service-software-accounting-integrations',
+    title: 'Field Service Software and Accounting: How the Integrations Really Work',
+    category: 'Integration',
+    intro:
+      'The accounting integration is the one that decides whether your books stay clean or you re-type every invoice by hand. It is also the integration people get wrong most often, because the details vary sharply between platforms. Here is the honest landscape.',
+    sections: [
+      {
+        heading: 'The one distinction that matters most',
+        body: [
+          'QuickBooks Online and QuickBooks Desktop are different products, and field service tools support them differently. This is the single fact that eliminates options fastest. Jobber, Workiz, ServiceM8, Simpro and Tradify sync with the Online version but not Desktop. Housecall Pro, Service Fusion, FieldEdge, ServiceTitan and BuildOps handle Desktop too. If your books run on Desktop, that fact alone removes a chunk of the market, so settle it before you fall for a demo.',
+        ],
+      },
+      {
+        heading: 'Where Xero fits',
+        body: [
+          'If you run Xero rather than QuickBooks, your shortlist looks different again. Tools with solid Xero support include FieldPulse, ServiceM8, Simpro, Kickserv and Tradify, while some of the most established US platforms lean QuickBooks-first and support Xero lightly or not at all. Xero users should treat it as a hard requirement and confirm it directly, because a checkmark on a feature grid does not tell you how deep the sync goes.',
+        ],
+      },
+      {
+        heading: 'What a good sync actually moves',
+        body: [
+          'A proper accounting integration keeps a few things in step without double entry: customers, invoices, payments and often your product and price list. The value is simple, the same numbers never get typed twice, so the books stay current on their own. Before you switch it on, decide which direction each record flows and where the master copy lives, so you are not editing the same customer in two systems and creating duplicates.',
+        ],
+      },
+      {
+        heading: 'Test it before you trust it',
+        body: [
+          'A sync that looks fine on the feature list can still misbehave in practice, duplicate entries and failed syncs are a genuine, commonly reported complaint even on tools that advertise the integration. Push a handful of real invoices and payments through during a free trial and confirm they land in your accounting correctly, mapped to the right accounts, with no duplicates. Verifying it on your own data is the check that saves the most pain later.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'How to connect field service software to QuickBooks', href: '/guides/how-to-connect-field-service-software-to-quickbooks/' },
+      { label: 'Field service software and Xero', href: '/guides/field-service-software-and-xero/' },
+      { label: 'Best field service software with QuickBooks', href: '/best/field-service-software-with-quickbooks/' },
+      { label: 'Find your best-fit software', href: '/find-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'field-service-software-and-xero',
+    title: 'Field Service Software That Works With Xero',
+    category: 'Integration',
+    intro:
+      'Most field service software is built QuickBooks-first, so if your books run on Xero, your options narrow and it pays to know which tools genuinely support it. Here is how Xero integration works in field service and which platforms do it well.',
+    sections: [
+      {
+        heading: 'Why Xero users have to look harder',
+        body: [
+          'A lot of the best-known US field service platforms grew up around QuickBooks, so Xero support ranges from deep to nonexistent. That does not mean you are short of good options, it means you cannot assume. Treat Xero as a hard requirement on your shortlist and confirm it directly with each vendor, rather than trusting a feature-grid tick that might cover only a shallow or one-way sync.',
+        ],
+      },
+      {
+        heading: 'Tools with solid Xero support',
+        body: [
+          'Several strong platforms sync with Xero, and they span the range of business sizes. FieldPulse and Kickserv cover Xero alongside QuickBooks; ServiceM8 and Tradify pair Xero with QuickBooks Online and suit smaller and Apple-based trades; and Simpro brings Xero support to the commercial and project end. So whether you are a solo operator or a commercial contractor, there is a Xero-friendly option in your size band.',
+        ],
+      },
+      {
+        heading: 'What the sync should handle',
+        body: [
+          'A good Xero integration keeps customers, invoices and payments in step automatically, so a job invoiced in the field lands in Xero without anyone re-keying it. Check whether it also syncs your items or price list, and which direction contacts flow, so you are not maintaining the same customer in two places. Clarify that before go-live rather than cleaning up duplicates after.',
+        ],
+      },
+      {
+        heading: 'Prove it on your own data',
+        body: [
+          'As with any accounting sync, the only real test is your own invoices. During a free trial, push a few genuine jobs through to Xero and confirm they arrive correctly coded, with payments matched and no duplicates. A sync that advertises well but stumbles on your actual data is exactly the surprise you want to catch before you commit, not after.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'Field service software and accounting integrations', href: '/guides/field-service-software-accounting-integrations/' },
+      { label: 'ServiceM8 review', href: '/products/servicem8/' },
+      { label: 'Tradify review', href: '/products/tradify/' },
+      { label: 'Find your best-fit software', href: '/find-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'field-service-software-payment-processing',
+    title: 'Payment Processing in Field Service Software: What to Check',
+    category: 'Integration',
+    intro:
+      'Taking card and ACH payments through your field service software is one of the fastest ways to get paid, but the way processing is built in varies, and so does what it costs you. Here is what to look at before you rely on it.',
+    sections: [
+      {
+        heading: 'How in-app payments work',
+        body: [
+          'Most modern platforms include a built-in payment layer, often their own branded product, so a technician can take a card or ACH payment on site and have it tie straight back to the job and invoice. The upside is real: you get paid on the spot instead of mailing a bill and waiting, and nothing has to be reconciled by hand. It is one of the biggest cash-flow levers the software offers.',
+        ],
+      },
+      {
+        heading: 'Know the real rate',
+        body: [
+          'Convenience has a price, and it is worth reading. In-app card payments typically run around 2.9% plus 30 cents per transaction, with ACH nearer 1%. That is standard for the category, but at volume it adds up fast: a business invoicing $50,000 a month can pay well over $1,000 a month in processing alone, on top of the subscription. Factor that into any comparison, because a cheaper plan with a higher processing rate can cost more overall.',
+        ],
+      },
+      {
+        heading: 'Can you bring your own processor?',
+        body: [
+          'This is the question people forget to ask. Some platforms lock you into their own payment processor, so you take their rate whether you like it or not. Others let you connect an outside processor such as Stripe or your existing merchant account. If you already have a good rate or a processor you trust, confirm you can keep it before you sign, because switching later is a hassle.',
+        ],
+      },
+      {
+        heading: 'Financing for the big tickets',
+        body: [
+          'For large jobs, a system replacement or a major repair, look at whether the platform offers point-of-sale consumer financing through a lender partner. For trades like HVAC, letting a customer spread the cost measurably lifts close rates on expensive work, because a manageable monthly figure lands better than a large total. If you sell big tickets, treat financing as part of the payments question, not an afterthought.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'Payments and financing in field service', href: '/guides/field-service-payments-and-financing/' },
+      { label: 'How to get paid faster in a service business', href: '/guides/how-to-get-paid-faster-field-service/' },
+      { label: 'Field service software pricing explained', href: '/guides/field-service-software-pricing-explained/' },
+      { label: 'Find your best-fit software', href: '/find-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'field-service-software-and-zapier',
+    title: 'Connecting Field Service Software to the Rest of Your Tools',
+    category: 'Integration',
+    intro:
+      'No field service platform does everything, so sooner or later you will want it to talk to another tool, a lead source, a marketing app, a spreadsheet. Zapier and open APIs are how that happens. Here is what is realistic and what to check.',
+    sections: [
+      {
+        heading: 'Two ways tools connect',
+        body: [
+          'There are broadly two routes. A native integration is one the vendor built and maintains for a specific partner, which tends to be the most reliable. Beyond that, many platforms connect through Zapier, a middle layer that links thousands of apps without code, or through an open API for custom work. Zapier covers most everyday needs; an API matters when you have a developer and a specific job to automate.',
+        ],
+      },
+      {
+        heading: 'What people actually automate',
+        body: [
+          'The useful automations are usually mundane and high-value: a web-form lead creating a customer or job automatically, a completed job triggering a review request or a marketing follow-up, or job data flowing into a spreadsheet or dashboard you already use. Start from the manual step that annoys you most and see whether a connection removes it, rather than automating for its own sake.',
+        ],
+      },
+      {
+        heading: 'Where an open API earns its place',
+        body: [
+          'If you have unusual workflows or your own systems, an open API is the difference between bending your business to the software and bending the software to your business. Platforms like ServiceTitan and Zuper lean into configurability and API access for exactly this reason. It is overkill for a small residential shop, but for a larger or more technical operation it is a real deciding factor.',
+        ],
+      },
+      {
+        heading: 'Do not over-connect',
+        body: [
+          'A caution worth stating: every integration is one more thing that can break and one more place your data can drift out of sync. For most small and mid-sized businesses, an all-in-one platform that already covers the core is simpler and safer than stitching together a dozen specialists. Add connections to fix a specific, painful gap, not to build a clever machine that needs constant babysitting.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'All-in-one vs point solutions for field service', href: '/guides/all-in-one-vs-point-solutions-field-service/' },
+      { label: 'ServiceTitan review', href: '/products/servicetitan/' },
+      { label: 'Zuper review', href: '/products/zuper/' },
+      { label: 'Find your best-fit software', href: '/find-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'field-service-software-marketing-integrations',
+    title: 'Marketing Integrations in Field Service Software',
+    category: 'Integration',
+    intro:
+      'Winning the next job is a marketing problem as much as an operations one, and where your field service software connects to reviews, email and lead sources decides how much of that runs on its own. Here is what to look for on the marketing side.',
+    sections: [
+      {
+        heading: 'Reviews are the highest-value connection',
+        body: [
+          'For a home-service business, online reviews are the storefront, and the software that automates review requests at the end of every job compounds a real advantage over time. Some residential-focused platforms bake this in, Housecall Pro is a well-known example, so the request fires automatically the moment a job is marked complete. If reputation drives your leads, weigh this heavily.',
+        ],
+      },
+      {
+        heading: 'Email and campaign tools',
+        body: [
+          'Staying in front of past customers is where a lot of repeat revenue hides. Look at whether the platform includes email and campaign tools or connects cleanly to something like Mailchimp, so your customer list actually gets used rather than sitting idle. Be clear about what is included versus a paid add-on, because marketing modules are a common place the base price quietly grows.',
+        ],
+      },
+      {
+        heading: 'Tracking where leads come from',
+        body: [
+          'You cannot double down on what works if you do not know what works. Call tracking and lead-source tagging tell you which marketing actually produces booked jobs. Communication-focused tools like Workiz build this in, and it turns marketing spend from a guess into a measured decision. For lead-heavy trades, this is one of the most useful integrations there is.',
+        ],
+      },
+      {
+        heading: 'Match the depth to how you grow',
+        body: [
+          'Be honest about how much marketing you will really run. A referral-driven business does not need a full campaign suite, and paying for one is waste. A business trying to grow through reviews, repeat email and paid leads should treat marketing integration as a core requirement, not a nice-to-have. Buy for the way you actually win work.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'How to get more customer reviews', href: '/guides/how-to-get-more-customer-reviews/' },
+      { label: 'Online booking for field service', href: '/guides/field-service-online-booking/' },
+      { label: 'Housecall Pro review', href: '/products/housecall-pro/' },
+      { label: 'Workiz review', href: '/products/workiz/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
 ];
 
 export const GUIDE_MAP: Record<string, GuidePage> = Object.fromEntries(
