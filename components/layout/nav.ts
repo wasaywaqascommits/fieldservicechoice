@@ -17,6 +17,7 @@ export const RESOURCES_NAV: NavLink[] = [
   { label: 'Data Verification', href: '/data-verification/' },
   { label: 'Editorial Policy', href: '/editorial-policy/' },
   { label: 'Buying Guides', href: '/guides/how-to-choose-field-service-software/' },
+  { label: 'Glossary', href: '/glossary/' },
 ];
 
 export const INDUSTRY_NAV: NavLink[] = [
