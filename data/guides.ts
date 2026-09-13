@@ -701,8 +701,11 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Who it matters most for',
         body: [
-          'This is a big deal for route-dense work: landscaping and lawn care, pest control, cleaning, and any operation running dozens of short recurring visits a day. For a business doing a handful of longer service calls, it matters far less. Be honest about which one you are before you pay for it.',
+          'This is a big deal for route-dense work: [landscaping](/industries/landscaping/) and lawn care, [pest control](/industries/pest-control/), [cleaning](/industries/cleaning/), and any operation running dozens of short recurring visits a day. For a business doing a handful of longer service calls, it matters far less. Be honest about which one you are before you pay for it.',
         ],
+        callout: {
+          text: 'For a route business, the day’s route is not admin. It is the single biggest lever on how many jobs each truck can do.',
+        },
       },
       {
         heading: 'What good routing does',
@@ -713,7 +716,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'What to look for',
         body: [
-          'If routes are central, look for genuine multi-stop optimization rather than just a map view, support for recurring routes, and how it handles changes mid-day. Some all-in-one platforms include solid routing; very route-heavy operations sometimes add a specialist tool on top.',
+          'If routes are central, look for genuine multi-stop optimization rather than just a map view, support for recurring routes, and how it handles changes mid-day. Some all-in-one platforms include solid routing; very route-heavy operations sometimes [add a specialist tool on top](/guides/all-in-one-vs-point-solutions-field-service/).',
         ],
       },
     ],
@@ -743,13 +746,16 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Why speed and clarity win',
         body: [
-          'Customers usually get a few quotes, and the one that arrives first and reads clearly has an edge. Building the estimate on the technician’s device, on site, while the problem is fresh, beats promising to send something over and then following up days later. Offering good, better and best options also lets the customer choose their level instead of just accepting or rejecting a single price.',
+          'Customers usually get a few quotes, and the one that arrives first and reads clearly has an edge. Building the estimate on the technician’s device, on site, while the problem is fresh, beats promising to send something over and then following up days later. Offering [good, better and best options](/guides/flat-rate-pricebook/) also lets the customer choose their level instead of just accepting or rejecting a single price.',
         ],
+        callout: {
+          text: 'The quote that arrives first, on site, while the problem is still fresh usually wins the job.',
+        },
       },
       {
         heading: 'From estimate to invoice',
         body: [
-          'The real payoff comes when an approved estimate turns into a scheduled job and then an invoice without anyone re-typing it. That’s where field service software pulls ahead of a generic document tool: the quote, the job and the invoice are the same record moving through stages.',
+          'The real payoff comes when an approved estimate turns into a scheduled job and then an [invoice](/guides/field-service-invoicing/) without anyone re-typing it. That’s where field service software pulls ahead of a generic document tool: the quote, the job and the invoice are the same record moving through stages.',
         ],
       },
       {
@@ -785,19 +791,22 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Why they’re worth building',
         body: [
-          'Agreements smooth out the seasonal peaks and troughs that make service businesses stressful to run. They fill the slow months with booked maintenance visits, they raise the lifetime value of each customer, and members tend to call you first when something bigger goes wrong. A healthy membership base is one of the strongest signs of a durable service business.',
+          'Agreements smooth out the seasonal peaks and troughs that make service businesses stressful to run. They fill the slow months with booked maintenance visits, they raise the lifetime value of each customer, and members tend to call you first when something bigger goes wrong.',
         ],
+        callout: {
+          text: 'A healthy membership base is one of the strongest signs of a durable service business, and one of the hardest things for a competitor to take from you.',
+        },
       },
       {
         heading: 'What software needs to handle',
         body: [
-          'Running agreements by hand gets painful fast: remembering who’s due, scheduling hundreds of visits, billing on a recurring cycle, and tracking renewals. Good field service software manages the agreement itself, generates the maintenance visits on schedule, handles recurring billing, and flags renewals before they lapse.',
+          'Running agreements by hand gets painful fast: remembering who’s due, [scheduling](/guides/field-service-scheduling/) hundreds of visits, billing on a recurring cycle, and tracking renewals. Good field service software manages the agreement itself, generates the maintenance visits on schedule, handles recurring billing, and flags renewals before they lapse. When you are ready, here is [how to set up a membership program](/guides/how-to-set-up-service-agreements/).',
         ],
       },
       {
         heading: 'What to look for',
         body: [
-          'If memberships are part of your plan, look closely at agreement management: recurring visit scheduling, recurring billing, renewal tracking, and reporting on your membership base. This is an area where the established platforms pull ahead: ServiceTitan and FieldEdge handle full membership programs well, while lighter tools like Jobber support agreements only partially, so if recurring revenue is central, treat this depth as a hard requirement.',
+          'If memberships are part of your plan, look closely at agreement management: recurring visit scheduling, recurring billing, renewal tracking, and reporting on your membership base. This is an area where the established platforms pull ahead: [ServiceTitan](/products/servicetitan/) and [FieldEdge](/products/fieldedge/) handle full membership programs well, while lighter tools like [Jobber](/products/jobber/) support agreements only partially, so if recurring revenue is central, treat this depth as a hard requirement.',
         ],
       },
     ],
@@ -827,8 +836,11 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Why it pays off',
         body: [
-          'Two things leak money without it. First, parts used on a job that never get charged to the customer, which quietly erodes your margin. Second, second trips, where a technician arrives, finds they don’t have the part, and has to come back another day. Tracking stock and tying parts to work orders closes both gaps: the part gets counted, charged and reordered.',
+          'Two things leak money without it. First, parts used on a job that never get charged to the customer, which quietly erodes your margin. Second, [second trips](/guides/how-to-improve-first-time-fix-rate/), where a technician arrives, finds they don’t have the part, and has to come back another day. Tracking stock and tying parts to [work orders](/guides/field-service-work-order-management/) closes both gaps: the part gets counted, charged and reordered.',
         ],
+        callout: {
+          text: 'Parts that nobody tracked are just margin walking off the truck.',
+        },
       },
       {
         heading: 'Who actually needs it',
@@ -839,7 +851,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'What to look for',
         body: [
-          'If parts matter, look for truck-level stock tracking, parts tied to work orders so they flow onto the invoice, reorder alerts, and multi-location support if you run more than one warehouse. Depth varies sharply here: commercial and project platforms like Simpro and ServiceTitan go deep on inventory and catalog handling, while lighter residential tools track little or nothing, so if you carry real stock this feature alone can narrow your shortlist.',
+          'If parts matter, look for truck-level stock tracking, parts tied to work orders so they flow onto the invoice, reorder alerts, and multi-location support if you run more than one warehouse. Depth varies sharply here: commercial and project platforms like [Simpro](/products/simpro/) and [ServiceTitan](/products/servicetitan/) go deep on inventory and catalog handling, while lighter residential tools track little or nothing, so if you carry real stock this feature alone can narrow your shortlist.',
         ],
       },
     ],
@@ -869,19 +881,22 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Why it matters more than it seems',
         body: [
-          'Revenue hides a lot. A business can be flat out and still barely profitable because a handful of job types lose money every time and no one has measured it. Job costing turns that into numbers: you can see that a certain kind of work is underpriced, that a crew is slower than assumed, or that material waste is eating the margin. Then you can fix the price or stop taking the work.',
+          'Revenue hides a lot. A business can be flat out and still barely profitable because a handful of job types lose money every time and no one has measured it. Job costing turns that into numbers: you can see that a certain kind of work is underpriced, that a crew is slower than assumed, or that material waste is eating the margin. Then you can [fix the price](/guides/how-to-price-a-service-call/) or stop taking the work.',
         ],
+        callout: {
+          text: 'Being busy and being profitable are not the same thing, and only job costing tells you which one you are.',
+        },
       },
       {
         heading: 'Where software fits',
         body: [
-          'For job costing to be accurate, the costs have to be captured as the job happens: technician time logged, parts added to the work order, materials recorded. Field service software that captures all of that can roll it up into a real cost per job with little extra effort. Doing it by hand after the fact is so tedious that most businesses simply don’t, which is why they stay in the dark.',
+          'For job costing to be accurate, the costs have to be captured as the job happens: technician time logged, parts added to the [work order](/guides/field-service-work-order-management/), materials recorded. Field service software that captures all of that can roll it up into a real cost per job with little extra effort. Doing it by hand after the fact is so tedious that most businesses simply don’t, which is why they stay in the dark.',
         ],
       },
       {
         heading: 'What to look for',
         body: [
-          'Look at whether the software captures labor, parts and materials against each job, whether it reports profit by job, job type and customer, and how much manual work it takes. Commercial and project businesses should treat deep job costing as close to essential, and the commercial platforms like BuildOps and Simpro are built for it, while residential tools such as Jobber offer only partial job costing.',
+          'Look at whether the software captures labor, parts and materials against each job, whether it reports profit by job, job type and customer, and how much manual work it takes. Commercial and project businesses should treat deep job costing as close to essential, and the commercial platforms like [BuildOps](/products/buildops/) and [Simpro](/products/simpro/) are built for it, while residential tools such as [Jobber](/products/jobber/) offer only partial job costing. Here is [how to track job profitability](/guides/how-to-track-job-profitability/) once you have the data.',
         ],
       },
     ],
@@ -911,8 +926,11 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Why it wins jobs',
         body: [
-          'A lot of booking happens outside office hours, in the evening or at the weekend, when no one is answering the phone. A customer who can book then and there is a customer you keep; one who hits voicemail often calls the next company. For simpler, repeatable services it also saves your office the back-and-forth of scheduling by phone.',
+          'A lot of booking happens outside office hours, in the evening or at the weekend, when no one is answering the phone. For simpler, repeatable services it also saves your office the back-and-forth of [scheduling](/guides/field-service-scheduling/) by phone.',
         ],
+        callout: {
+          text: 'A customer who can book at 9pm is a customer you keep. One who hits voicemail often just calls the next company.',
+        },
       },
       {
         heading: 'Where it needs guardrails',
@@ -923,7 +941,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'What to look for',
         body: [
-          'Look at how much control you have over what’s bookable and when, whether bookings flow straight into your schedule, and whether it confirms automatically with the customer. Residential-focused tools tend to do this best, Housecall Pro in particular is known for a polished consumer booking experience, so if online booking is central to how you win work, weigh that. Match the feature to your work: great for routine services, handle with care for complex ones.',
+          'Look at how much control you have over what’s bookable and when, whether bookings flow straight into your schedule, and whether it confirms automatically with the customer. Residential-focused tools tend to do this best, [Housecall Pro](/products/housecall-pro/) in particular is known for a polished consumer booking experience, so if online booking is central to how you win work, weigh that. Match the feature to your work: great for routine services, handle with care for complex ones.',
         ],
       },
     ],
@@ -947,20 +965,32 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Taking payment in the field',
         body: [
-          'Integrated payments let a technician take a card or ACH payment on site, the moment the work is done, instead of mailing an invoice and waiting. The payment ties straight back to the job and the invoice, so nothing has to be reconciled by hand later. The practical effect is simple: you get paid sooner and chase fewer overdue invoices.',
+          'Integrated payments let a technician take a card or ACH payment on site, the moment the work is done, instead of [mailing an invoice](/guides/field-service-invoicing/) and waiting. The payment ties straight back to the job and the invoice, so nothing has to be reconciled by hand later. The practical effect is simple: you [get paid sooner](/guides/how-to-get-paid-faster-field-service/) and chase fewer overdue invoices.',
         ],
       },
       {
         heading: 'The cost of convenience',
         body: [
-          'Integrated payments carry processing fees, typically around 2.9% plus 30 cents per card transaction and roughly 1% on ACH, and the exact rates vary between platforms. For a high-volume business that difference adds up fast: a shop invoicing $50,000 a month can pay well over $1,000 a month in processing alone, so check the rate, not just that the feature exists. Some tools lock you into their own processor; others let you choose. Read that part closely before you commit.',
+          'Integrated payments carry [processing fees](/guides/field-service-software-payment-processing/), typically around 2.9% plus 30 cents per card transaction and roughly 1% on ACH, and the exact rates vary between platforms. For a high-volume business that difference adds up fast, so check the rate, not just that the feature exists. Some tools lock you into their own processor; others let you choose. Read that part closely before you commit.',
         ],
+        chart: {
+          title: 'Roughly what card processing costs each month',
+          caption: 'At about 2.9% per card transaction, plus 30 cents each. On top of your subscription; ACH is cheaper at around 1%.',
+          bars: [
+            { label: '$10,000 invoiced by card', value: 290, valueLabel: '~$290/mo' },
+            { label: '$50,000 invoiced by card', value: 1450, valueLabel: '~$1,450/mo' },
+            { label: '$100,000 invoiced by card', value: 2900, valueLabel: '~$2,900/mo' },
+          ],
+        },
       },
       {
         heading: 'Consumer financing on bigger jobs',
         body: [
-          'For large tickets, a system replacement or a major repair, consumer financing lets the customer pay over time while you get paid up front. For trades like HVAC, being able to offer financing at the point of sale measurably lifts close rates on expensive work, because the monthly number feels manageable even when the total doesn’t. It’s usually offered through a lender partner built into the software.',
+          'For large tickets, a system replacement or a major repair, consumer financing lets the customer pay over time while you get paid up front. For trades like [HVAC](/industries/hvac/), being able to offer financing at the point of sale measurably lifts close rates on expensive work, because the monthly number feels manageable even when the total doesn’t. It’s usually offered through a lender partner built into the software.',
         ],
+        callout: {
+          text: 'On a big-ticket job, being able to offer financing is often the difference between a yes and a maybe.',
+        },
       },
       {
         heading: 'What to look for',
@@ -995,8 +1025,11 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Where it earns its keep',
         body: [
-          'Portals matter most for commercial and property-management customers, who often manage many sites and want to see service history, approve work and pull invoices without calling you each time. For those accounts a good portal is a genuine selling point and cuts a lot of admin on both sides.',
+          'Portals matter most for commercial and property-management customers, who often manage many sites and want to see [service history](/guides/field-service-work-order-management/), approve work and pull invoices without calling you each time. For those accounts a good portal is a genuine selling point and cuts a lot of admin on both sides.',
         ],
+        callout: {
+          text: 'For a homeowner, a text with a payment link beats a login every time. For a facilities manager with forty sites, the opposite is true.',
+        },
       },
       {
         heading: 'Where it matters less',
@@ -1007,7 +1040,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'What to look for',
         body: [
-          'If you serve commercial or property-management clients, look for a portal that exposes service history, quote approvals and invoice payment, ideally with multi-site support. This is a strength of the commercial platforms in particular, ServiceTrade’s customer-facing portal and reporting are a genuine standout for inspection-driven work. If you’re residential, weigh it lightly and focus instead on smooth text-based approvals and payment links.',
+          'If you serve commercial or property-management clients, look for a portal that exposes service history, quote approvals and invoice payment, ideally with multi-site support. This is a strength of the commercial platforms in particular, [ServiceTrade](/products/servicetrade/)’s customer-facing portal and reporting are a genuine standout for inspection-driven work. If you’re residential, weigh it lightly and focus instead on smooth text-based approvals and payment links.',
         ],
       },
     ],
