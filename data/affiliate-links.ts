@@ -20,19 +20,42 @@ export interface AffiliateLink {
   notes?: string;
 }
 
+/**
+ * Approved, signed affiliate/referral tracking URLs, keyed by product slug.
+ * Add a product here once its program is live; the value overrides the default
+ * (the vendor's own website) for every outbound CTA site-wide, because all
+ * vendor links render through the /go/[slug] tracking endpoint.
+ */
+const AFFILIATE_OVERRIDES: Record<
+  string,
+  { destinationUrl: string; programName?: string; effectiveDate?: string }
+> = {
+  servicetitan: {
+    destinationUrl: 'https://join.servicetitan.com/mzXG1Dk',
+    programName: 'ServiceTitan referral',
+    effectiveDate: '2026-09-14',
+  },
+};
+
 export const AFFILIATE_LINKS: AffiliateLink[] = Object.values(PRODUCT_MAP)
   .filter((p) => p.commercial.affiliateLinkSlug)
-  .map((p) => ({
-    slug: p.commercial.affiliateLinkSlug as string,
-    programName: `${p.name} referral`,
-    // Placeholder = the vendor's own site. Replace with approved tracking URL.
-    destinationUrl: p.website,
-    campaign: null,
-    effectiveDate: null,
-    expirationDate: null,
-    active: true,
-    notes: 'Placeholder destination (vendor website). Replace with approved affiliate/referral tracking URL in admin.',
-  }));
+  .map((p) => {
+    const slug = p.commercial.affiliateLinkSlug as string;
+    const override = AFFILIATE_OVERRIDES[slug];
+    return {
+      slug,
+      programName: override?.programName ?? `${p.name} referral`,
+      // Approved tracking URL when signed, otherwise the vendor's own site.
+      destinationUrl: override?.destinationUrl ?? p.website,
+      campaign: null,
+      effectiveDate: override?.effectiveDate ?? null,
+      expirationDate: null,
+      active: true,
+      notes: override
+        ? 'Approved affiliate/referral tracking URL.'
+        : 'Placeholder destination (vendor website). Replace with approved affiliate/referral tracking URL.',
+    };
+  });
 
 export const AFFILIATE_MAP: Record<string, AffiliateLink> = Object.fromEntries(
   AFFILIATE_LINKS.map((a) => [a.slug, a]),
