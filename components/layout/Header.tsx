@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { PRIMARY_NAV, RESOURCES_NAV } from './nav';
+import { LogoMark } from '@/components/shared/Logo';
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -12,9 +13,7 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur">
       <div className="container-page flex h-16 items-center justify-between gap-4">
         <Link href="/" className="flex items-center gap-2" aria-label="FieldServiceChoice home">
-          <span className="grid h-8 w-8 place-items-center rounded-lg bg-brand-600 text-sm font-bold text-white">
-            FS
-          </span>
+          <LogoMark className="h-8 w-auto" />
           <span className="text-lg font-bold tracking-tight text-ink">
             FieldService<span className="text-brand-600">Choice</span>
           </span>

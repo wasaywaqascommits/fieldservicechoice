@@ -60,23 +60,10 @@ export default function OpengraphImage() {
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center', fontSize: 34, fontWeight: 700 }}>
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              width: 52,
-              height: 52,
-              borderRadius: 12,
-              backgroundColor: '#ffffff',
-              color: '#3f52e3',
-              fontSize: 30,
-              fontWeight: 800,
-              marginRight: 18,
-            }}
-          >
-            FS
-          </div>
+          <svg width={52} height={62} viewBox="0 0 40 48" style={{ marginRight: 18 }} xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 46C11 33 5 27 5 18A15 15 0 1 1 35 18C35 27 29 33 20 46Z" fill="#ffffff" />
+            <path d="M12.5 18.5L17.5 23.5L27.5 12" fill="none" stroke="#3f52e3" strokeWidth={4} strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
           {SITE_NAME}
         </div>
       </div>

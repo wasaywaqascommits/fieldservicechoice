@@ -7,6 +7,7 @@ import {
   INDUSTRY_NAV,
   type NavLink,
 } from './nav';
+import { LogoMark } from '@/components/shared/Logo';
 
 function FooterColumn({ title, links }: { title: string; links: NavLink[] }) {
   return (
@@ -32,9 +33,7 @@ export function Footer() {
         <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-6">
           <div className="col-span-2 lg:col-span-1">
             <Link href="/" className="flex items-center gap-2">
-              <span className="grid h-8 w-8 place-items-center rounded-lg bg-brand-600 text-sm font-bold text-white">
-                FS
-              </span>
+              <LogoMark className="h-8 w-auto" />
               <span className="font-bold text-ink">FieldServiceChoice</span>
             </Link>
             <p className="mt-3 text-sm text-ink-muted">
