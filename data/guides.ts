@@ -100,27 +100,40 @@ export const GUIDES: GuidePage[] = [
         heading: 'What each one is built to do',
         body: [
           'A CRM, short for customer relationship management, is built around the relationship and the sale. It tracks leads, contacts, deals and follow-ups, and it’s at its best helping a sales team move a prospect toward a signature.',
-          'Field service software is built around the job. Its center of gravity is booking a visit, dispatching a technician, doing the work, and getting paid. Customer records exist, but they sit next to the schedule, the invoice and the service history rather than a sales pipeline.',
+          'Field service software is built around the job. Its center of gravity is booking a visit, [dispatching a technician](/guides/field-service-dispatching/), doing the work, and getting paid. Customer records exist, but they sit next to the schedule, the [invoice](/guides/field-service-invoicing/) and the service history rather than a sales pipeline.',
         ],
+        table: {
+          caption: 'The overlap is real, but the center of gravity is different.',
+          headings: ['', 'Field service software', 'CRM'],
+          rows: [
+            ['Built around', 'The job: schedule to invoice', 'The relationship and the sale'],
+            ['Core features', 'Scheduling, dispatch, invoicing', 'Leads, deals, pipeline, follow-ups'],
+            ['Buy it when', 'Missed jobs and slow invoicing hurt', 'Leads go cold and quotes are not chased'],
+            ['Examples', '[Jobber](/products/jobber/), [Housecall Pro](/products/housecall-pro/)', 'Salesforce, HubSpot'],
+          ],
+        },
       },
       {
         heading: 'Where they cross over',
         body: [
-          'Both keep customer records, both log communication, and both can capture a lead. That shared ground is exactly why the two get mixed up. Many field service platforms, Jobber and Housecall Pro among them, include light CRM features like a contact list, notes and basic marketing, and some CRMs bolt on scheduling. The real question is which job sits at the core, because that’s the one the tool does well and the other it only dabbles in.',
+          'Both keep customer records, both log communication, and both can capture a lead. That shared ground is exactly why the two get mixed up. Many field service platforms, [Jobber](/products/jobber/) and [Housecall Pro](/products/housecall-pro/) among them, include light CRM features like a contact list, notes and basic marketing, and some CRMs bolt on scheduling. The real question is which job sits at the core, because that’s the one the tool does well and the other it only dabbles in.',
         ],
       },
       {
         heading: 'Which one a service business needs',
         body: [
-          'If your day is defined by technicians, appointments and invoices, start with field service software. It covers the customer-record basics you need, and it handles the operational reality a generic CRM was never designed for, like assigning the nearest available technician or pushing a finished job straight into QuickBooks.',
+          'If your day is defined by technicians, appointments and invoices, start with field service software. It covers the customer-record basics you need, and it handles the operational reality a generic CRM was never designed for, like assigning the nearest available technician or [pushing a finished job straight into QuickBooks](/guides/how-to-connect-field-service-software-to-quickbooks/).',
           'A dedicated CRM makes sense when a real sales process is the bottleneck: long deal cycles, a sales team working leads, or high-value quotes that need nurturing over weeks. Larger operations often run both and connect them, with the CRM owning the pipeline and the field service platform owning the work.',
         ],
       },
       {
         heading: 'A simple rule of thumb',
         body: [
-          'Ask where your business loses money today. If it’s missed appointments, slow invoicing and jobs falling through the cracks, that’s a field service problem. If it’s leads going cold and quotes never followed up, that’s a CRM problem. Buy for the pain you have now, not the one you might have later.',
+          'Ask where your business loses money today. If it’s missed appointments, slow invoicing and jobs falling through the cracks, that’s a field service problem. If it’s leads going cold and quotes never followed up, that’s a CRM problem.',
         ],
+        callout: {
+          text: 'Buy for the pain you have now, not the one you might have later.',
+        },
       },
     ],
     related: [
@@ -154,15 +167,27 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Where job management leans',
         body: [
-          'Job management often treats the job or project as the unit of work: quoting, tracking labor and materials against a job, job costing, and profit per project. It tends to fit trades where a job runs over days or weeks, like an electrical fit-out or a larger install, rather than a steady stream of short service calls. Platforms like Simpro and BuildOps sit firmly on this end, with deeper estimating and job costing than a residential-focused tool.',
+          'Job management often treats the job or project as the unit of work: quoting, tracking labor and materials against a job, [job costing](/guides/field-service-job-costing/), and profit per project. It tends to fit trades where a job runs over days or weeks, like an electrical fit-out or a larger install, rather than a steady stream of short service calls. Platforms like [Simpro](/products/simpro/) and [BuildOps](/products/buildops/) sit firmly on this end, with deeper estimating and job costing than a residential-focused tool.',
         ],
+        table: {
+          caption: 'Same daily overlap, different center of gravity.',
+          headings: ['', 'Field service', 'Job management'],
+          rows: [
+            ['Unit of work', 'The visit', 'The job or project'],
+            ['Leans into', '[Dispatch](/guides/field-service-dispatching/), mobile, [routing](/guides/field-service-route-optimization/), recurring', 'Estimating, labor and materials, [job costing](/guides/field-service-job-costing/)'],
+            ['Fits', 'Many short visits on the road', 'Fewer, longer projects'],
+            ['Examples', '[Jobber](/products/jobber/), [Housecall Pro](/products/housecall-pro/)', '[Simpro](/products/simpro/), [BuildOps](/products/buildops/)'],
+          ],
+        },
       },
       {
         heading: 'How to choose between them',
         body: [
           'Picture your typical week. If it’s a high volume of short visits with technicians on the road, weigh the field service strengths: dispatch, mobile, routing and recurring service. If it’s fewer, longer projects where staying on top of labor, materials and margin is the real test, weigh the job management strengths: estimating depth and job costing.',
-          'Most tools do some of both. Decide which side carries most of your revenue, buy for that, and accept a little compromise on the other.',
         ],
+        callout: {
+          text: 'Most tools do some of both. Decide which side carries most of your revenue, buy for that, and accept a little compromise on the other.',
+        },
       },
     ],
     related: [
@@ -191,20 +216,33 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Where people get confused',
         body: [
-          'The mix-up starts because both handle money and both hold a lot of operational data. A big field service platform can feel ERP-like once it’s tracking inventory, job costing and reporting, and some ERPs have a field service module bolted on. But the design goals are different, and that difference shows up in how usable each one is for a service crew.',
+          'The mix-up starts because both handle money and both hold a lot of operational data. A big field service platform can feel ERP-like once it’s tracking [inventory](/guides/field-service-inventory-management/), [job costing](/guides/field-service-job-costing/) and reporting, and some ERPs have a field service module bolted on. But the design goals are different, and that difference shows up in how usable each one is for a service crew.',
         ],
+        table: {
+          caption: 'Two different jobs, often confused because both touch money and data.',
+          headings: ['', 'Field service software', 'ERP'],
+          rows: [
+            ['Runs', 'The front line: jobs, technicians, invoices', 'The whole company: finance, HR, procurement'],
+            ['Built for', 'Work at the customer’s property', 'A cross-department single source of truth'],
+            ['Right when', 'You run service or trade operations', 'Multi-entity finance, manufacturing, warehousing'],
+            ['Typical user', 'HVAC, plumbing, electrical contractors', 'Large enterprises'],
+          ],
+        },
       },
       {
         heading: 'When a service business needs an ERP',
         body: [
           'Most trade and home-service businesses don’t need an ERP. You reach for one when the complexity outgrows field service software: multiple entities or locations with consolidated financials, real manufacturing or heavy warehousing, formal procurement, or a finance team that needs controls a service tool was never meant to provide.',
-          'That’s usually a far larger company than a typical HVAC, plumbing or electrical contractor. If you’re asking the question at all, the honest answer is often “not yet.”',
+          'That’s usually a far larger company than a typical HVAC, plumbing or electrical contractor.',
         ],
+        callout: {
+          text: 'If you’re asking whether you need an ERP at all, the honest answer is usually not yet.',
+        },
       },
       {
         heading: 'The setup that works for most',
         body: [
-          'Plenty of mid-sized service companies run field service software for the work and QuickBooks or Xero for the books, then connect the two. That covers the operational side and the accounting without the cost and weight of a full ERP. If you eventually outgrow it, an ERP with a service module, or a service platform that integrates with your ERP, is the next step.',
+          'Plenty of mid-sized service companies run field service software for the work and [QuickBooks or Xero](/guides/field-service-software-accounting-integrations/) for the books, then connect the two. That covers the operational side and the accounting without the cost and weight of a full ERP. If you eventually outgrow it, an ERP with a service module, or a service platform that integrates with your ERP, is the next step.',
         ],
       },
     ],
@@ -229,17 +267,27 @@ export const GUIDES: GuidePage[] = [
         body: [
           'Cloud software runs on the vendor’s servers, and you use it through a browser and a mobile app. On-premise software (often shortened to on-prem) is installed on a computer or server you own and maintain. With cloud, the vendor handles updates, backups and uptime. With on-prem, that’s on you.',
         ],
+        table: {
+          caption: 'Nearly all modern field service tools are cloud; on-prem lingers mainly in accounting.',
+          headings: ['', 'Cloud', 'On-premise'],
+          rows: [
+            ['Runs on', 'The vendor’s servers', 'A server you own and maintain'],
+            ['Updates and backups', 'Handled by the vendor', 'Your responsibility'],
+            ['Access', 'Any browser or mobile app, anywhere', 'Usually on-site only'],
+            ['Field and mobile use', 'Built for it', 'Limited'],
+          ],
+        },
       },
       {
         heading: 'Why the market moved to cloud',
         body: [
-          'Field work is mobile by nature. A technician needs the job details and the ability to update a job from a phone at the customer’s house, and that’s exactly what cloud plus a mobile app delivers. Cloud also means no server to babysit, automatic updates, and access from anywhere, which is why nearly all modern field service platforms are cloud-only.',
+          'Field work is mobile by nature. A technician needs the job details and the ability to update a job from [a phone at the customer’s house](/guides/field-service-technician-mobile-app/), and that’s exactly what cloud plus a mobile app delivers. Cloud also means no server to babysit, automatic updates, and access from anywhere, which is why nearly all modern field service platforms are cloud-only.',
         ],
       },
       {
         heading: 'Where on-premise still shows up',
         body: [
-          'The most common brush with on-prem for a service business is QuickBooks Desktop. It’s desktop accounting software, and syncing it with a cloud field service tool needs a small sync agent running on a Windows machine. That isn’t the field service software being on-prem, but it’s the closest most shops get, and it’s worth knowing if your books live in Desktop.',
+          'The most common brush with on-prem for a service business is [QuickBooks Desktop](/guides/how-to-connect-field-service-software-to-quickbooks/). It’s desktop accounting software, and syncing it with a cloud field service tool needs a small sync agent running on a Windows machine. That isn’t the field service software being on-prem, but it’s the closest most shops get, and it’s worth knowing if your books live in Desktop.',
           'A few very large or security-sensitive organizations still prefer self-hosted systems for control. For the vast majority of trades, that trade-off isn’t worth the maintenance burden.',
         ],
       },
@@ -269,26 +317,39 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'What each approach means',
         body: [
-          'An all-in-one platform tries to cover the whole operation under one login: scheduling, dispatch, estimates, invoicing, payments, CRM and often marketing. A point solution, sometimes called best-of-breed, is a specialist you connect to the rest of your stack, for example a dedicated routing tool, a standalone estimating app, or a separate marketing platform.',
+          'An all-in-one platform tries to cover the whole operation under one login: [scheduling](/guides/field-service-scheduling/), [dispatch](/guides/field-service-dispatching/), estimates, invoicing, payments, CRM and often marketing. A point solution, sometimes called best-of-breed, is a specialist you connect to the rest of your stack, for example a dedicated [routing tool](/guides/field-service-route-optimization/), a standalone estimating app, or a separate marketing platform.',
         ],
+        table: {
+          caption: 'Most small and mid-sized businesses are better off starting all-in-one.',
+          headings: ['', 'All-in-one', 'Point solutions'],
+          rows: [
+            ['What it is', 'One platform for the whole operation', 'Specialist tools you connect together'],
+            ['Strength', 'One login, data flows on its own', 'Best-in-class at one job'],
+            ['Cost', 'A few features may be shallow', 'More integrations to maintain and sync'],
+            ['Best for', 'Most small and mid-sized teams', 'One workflow that is unusually demanding'],
+          ],
+        },
       },
       {
         heading: 'The case for all-in-one',
         body: [
-          'For most small and mid-sized service businesses, all-in-one wins. One system means one place to learn, one support line, and data that already flows between scheduling, invoicing and the customer record without you wiring up integrations. Fewer moving parts is a real advantage when you don’t have an office team to manage software.',
+          'For most small and mid-sized service businesses, all-in-one wins. One system means one place to learn, one support line, and data that already flows between scheduling, invoicing and the customer record without you [wiring up integrations](/guides/field-service-software-and-zapier/). Fewer moving parts is a real advantage when you don’t have an office team to manage software.',
         ],
       },
       {
         heading: 'The case for point solutions',
         body: [
-          'Best-of-breed earns its place when one part of your operation is unusually demanding and the all-in-one tools fall short there. A business that lives or dies on route density might want a specialist routing engine. A sales-heavy operation might want a real marketing platform. The cost is more integrations to maintain and more places for data to drift out of sync.',
+          'Best-of-breed earns its place when one part of your operation is unusually demanding and the all-in-one tools fall short there. A business that lives or dies on [route density](/guides/field-service-route-optimization/) might want a specialist routing engine. A sales-heavy operation might want a real marketing platform. The cost is more integrations to maintain and more places for data to drift out of sync.',
         ],
       },
       {
         heading: 'How to decide',
         body: [
-          'Start all-in-one unless you have a specific, painful reason not to. If one workflow is clearly underserved and it’s central to your revenue, add a specialist for that single thing and keep everything else in your core platform. Bolting on specialists everywhere, too early, usually creates more admin than it saves.',
+          'If one workflow is clearly underserved and it’s central to your revenue, add a specialist for that single thing and keep everything else in your core platform. Bolting on specialists everywhere, too early, usually creates more admin than it saves.',
         ],
+        callout: {
+          text: 'Start all-in-one unless you have a specific, painful reason not to.',
+        },
       },
     ],
     related: [
