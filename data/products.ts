@@ -1107,6 +1107,32 @@ export const PRODUCTS: Product[] = [
   },
 ];
 
+/**
+ * Slugs with a self-hosted, licensed vendor logo in public/logos/<slug>.png.
+ * Attaching here keeps the render path (ProductLogo) simple and falls back to
+ * the branded tile automatically for any product not in this set.
+ */
+const PRODUCTS_WITH_LOGOS = new Set([
+  'jobber',
+  'housecall-pro',
+  'servicetitan',
+  'workiz',
+  'fieldpulse',
+  'service-fusion',
+  'fieldedge',
+  'kickserv',
+  'servicem8',
+  'simpro',
+  'buildops',
+  'commusoft',
+  'zuper',
+  'servicetrade',
+  'tradify',
+]);
+for (const p of PRODUCTS) {
+  if (PRODUCTS_WITH_LOGOS.has(p.slug)) p.logoImage = `/logos/${p.slug}.png`;
+}
+
 export const PRODUCT_MAP: Record<string, Product> = Object.fromEntries(
   PRODUCTS.map((p) => [p.slug, p]),
 );
