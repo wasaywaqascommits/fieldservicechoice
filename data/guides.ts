@@ -1208,7 +1208,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Get clear on why you are moving',
         body: [
-          'Before you look at a single new tool, write down the two or three things your current software cannot do that are actually costing you money: no flat-rate pricebook, no QuickBooks Desktop sync, reporting you cannot trust, a mobile app the crew refuses to use. That list is your shortlist filter and your success test. If a new platform does not fix those, switching is just pain for its own sake.',
+          'Before you look at a single new tool, write down the two or three things your current software cannot do that are actually costing you money: no [flat-rate pricebook](/guides/flat-rate-pricebook/), no [QuickBooks Desktop sync](/guides/how-to-connect-field-service-software-to-quickbooks/), reporting you cannot trust, a [mobile app](/guides/field-service-technician-mobile-app/) the crew refuses to use. That list is your shortlist filter and your success test. If a new platform does not fix those, switching is just pain for its own sake.',
         ],
       },
       {
@@ -1227,7 +1227,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Run a parallel period, then cut over',
         body: [
-          'Do not flip the whole business overnight. Pick a slow week, load the new system, and run a small batch of real jobs through it end to end while the old system is still there as a safety net. Fix what breaks, train the crew on the mobile app, and only then set a hard cut-over date. Keep read-only access to the old system for a few months so you can look up history.',
+          'Do not flip the whole business overnight. Pick a slow week, load the new system, and run a small batch of real jobs through it end to end while the old system is still there as a safety net. Fix what breaks, [train the crew](/guides/how-to-get-team-to-use-field-service-software/) on the mobile app, and only then set a hard cut-over date. Keep read-only access to the old system for a few months so you can look up history.',
         ],
       },
       {
@@ -1235,6 +1235,9 @@ export const GUIDES: GuidePage[] = [
         body: [
           'The first two weeks on any new system are slower, always. Technicians grumble, quotes take longer, and it feels like a mistake. That dip is normal and temporary. Warn the team it is coming, push through it, and measure against the problem list you wrote at the start. If the new tool is fixing those, the lift arrives within a month or two.',
         ],
+        callout: {
+          text: 'The first two weeks on any new system feel like a mistake. Warn the team, push through, and judge it against your problem list, not your first Monday.',
+        },
       },
     ],
     related: [
@@ -1263,8 +1266,21 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Price from real costs, not guesses',
         body: [
-          'For each task, work out your true cost: the labor hours it actually takes, the parts and materials, and a fair share of your overhead (truck, insurance, office, tools). Then add your target profit margin. The number that comes out is your flat rate. Pricing from a competitor is how you quietly lose money, because you do not know their costs, only yours.',
+          'For each task, work out your true cost: the labor hours it actually takes, the parts and materials, and a fair share of your overhead (truck, insurance, office, tools). Then add your target profit margin. The number that comes out is your flat rate. Our guide to [pricing a service call](/guides/how-to-price-a-service-call/) walks through the cost-per-hour math in more detail.',
         ],
+        table: {
+          caption: 'An illustrative build-up for a single task. Use your own numbers, not these.',
+          headings: ['Component', 'What goes in', 'Notes'],
+          rows: [
+            ['Labor', 'The hours the task really takes', 'Cost per hour, not just the wage'],
+            ['Parts and materials', 'What you pay, plus markup', 'Track this so it reaches the invoice'],
+            ['Overhead share', 'Truck, insurance, office, tools', 'Spread across your billable hours'],
+            ['Profit margin', 'Your target, added on top', 'Built in, not hoped for at year-end'],
+          ],
+        },
+        callout: {
+          text: 'Price from your own costs, never a competitor’s. You know yours; you are only guessing at theirs.',
+        },
       },
       {
         heading: 'Build in good, better and best',
@@ -1275,7 +1291,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Put it on the technician’s device',
         body: [
-          'A pricebook in a binder gets ignored. The point is that a technician taps a task on their phone and the price, description and options appear instantly, so the quote is consistent and takes seconds. This is where software matters: ServiceTitan and FieldEdge are known for deep, presentable pricebooks, while lighter tools like Jobber have little or none, so if a pricebook is central, let that shape your software choice.',
+          'A pricebook in a binder gets ignored. The point is that a technician taps a task on their phone and the price, description and options appear instantly, so the quote is consistent and takes seconds. This is where software matters: [ServiceTitan](/products/servicetitan/) and [FieldEdge](/products/fieldedge/) are known for deep, presentable pricebooks, while lighter tools like [Jobber](/products/jobber/) have little or none, so if a pricebook is central, let that shape your software choice.',
         ],
       },
       {
@@ -1307,11 +1323,14 @@ export const GUIDES: GuidePage[] = [
         body: [
           'The biggest single lever is a reminder the customer actually sees. An automated text the day before, and again a couple of hours out, dramatically cuts the number of people who forget or drift off. Doing this by hand does not scale, which is why it matters that your software sends reminders on its own once the job is booked. Almost every modern tool does this, so use it.',
         ],
+        callout: {
+          text: 'A missed appointment costs you twice: the job you did not do, and the slot you could have filled with it.',
+        },
       },
       {
         heading: 'Send a real on-my-way message',
         body: [
-          'The window between the booking and the technician arriving is where trust wobbles. An automatic on-my-way text with a genuine arrival window, ideally tied to GPS so it is accurate, keeps the customer home and reduces the how-far-away phone calls that eat your office time. It is a small touch that measurably reduces both no-shows and complaints.',
+          'The window between the booking and the technician arriving is where trust wobbles. An automatic on-my-way text with a genuine arrival window, ideally tied to [GPS](/guides/field-service-gps-tracking/) so it is accurate, keeps the customer home and reduces the how-far-away phone calls that eat your office time. It is a small touch that measurably reduces both no-shows and complaints.',
         ],
       },
       {
@@ -1323,7 +1342,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Tighten your arrival windows',
         body: [
-          'A four-hour window tells the customer their time does not matter, and they wander off. Narrower windows, made possible by better scheduling and live technician tracking, keep people available and set a professional tone. If your current tool cannot support tight windows and live updates, that is a sign the scheduling and dispatch side is worth upgrading.',
+          'A four-hour window tells the customer their time does not matter, and they wander off. Narrower windows, made possible by better [scheduling](/guides/field-service-scheduling/) and live technician tracking, keep people available and set a professional tone. If your current tool cannot support tight windows and live updates, that is a sign the scheduling and [dispatch](/guides/field-service-dispatching/) side is worth upgrading.',
         ],
       },
     ],
@@ -1353,8 +1372,11 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Judge the app the way they will',
         body: [
-          'Adoption is won or lost on the mobile app, not the office dashboard. If it is slow, buried in taps, or does not work in a basement with no signal, the crew will abandon it and you cannot blame them. Test the real app on the real phones your team carries, Android as well as iPhone, before you commit, and treat a clunky app as a reason to walk away.',
+          'Adoption is won or lost on the [mobile app](/guides/field-service-technician-mobile-app/), not the office dashboard. If it is slow, buried in taps, or does not work in a basement with no signal, the crew will abandon it and you cannot blame them. Test the real app on the real phones your team carries, Android as well as iPhone, before you commit, and treat a clunky app as a reason to walk away.',
         ],
+        callout: {
+          text: 'Adoption, not the feature list, decides whether the software ever pays off. The crew has to choose the app over paper every single day.',
+        },
       },
       {
         heading: 'Train short, then train again',
@@ -1371,7 +1393,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Show them what is in it for them',
         body: [
-          'Frame the change around the technician, not the office. Less driving because dispatch sends the closest person, no chasing the office for job details, quotes and invoices done on site so they are not doing paperwork at home. When the crew sees the app makes their own day easier, adoption stops being a fight.',
+          'Frame the change around the technician, not the office. Less driving because [dispatch sends the closest person](/guides/field-service-dispatching/), no chasing the office for job details, [quotes](/guides/field-service-estimating/) and [invoices](/guides/field-service-invoicing/) done on site so they are not doing paperwork at home. When the crew sees the app makes their own day easier, adoption stops being a fight.',
         ],
       },
     ],
@@ -1407,7 +1429,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Automate the visits and the billing',
         body: [
-          'This is where a program lives or dies. Once you have more than a handful of members, remembering who is due, scheduling the visits and billing on a cycle by hand becomes unmanageable. You need software that stores the agreement, generates the maintenance visits on schedule, handles recurring billing, and flags renewals before they lapse. The established platforms like ServiceTitan and FieldEdge are strong here; lighter tools often support agreements only partially, so check this closely if memberships are the plan.',
+          'This is where a program lives or dies. Once you have more than a handful of members, remembering who is due, [scheduling the visits](/guides/field-service-scheduling/) and billing on a cycle by hand becomes unmanageable. You need software that stores the agreement, generates the maintenance visits on schedule, handles recurring billing, and flags renewals before they lapse. The established platforms like [ServiceTitan](/products/servicetitan/) and [FieldEdge](/products/fieldedge/) are strong here; lighter tools often support agreements only partially, so check this closely if memberships are the plan.',
         ],
       },
       {
@@ -1415,6 +1437,9 @@ export const GUIDES: GuidePage[] = [
         body: [
           'The best moment to sign a member is right after a technician has done good work in their home. Train the crew to offer the plan on site, in plain terms: the maintenance that keeps the system healthy, plus priority and a discount, for a predictable monthly or annual fee. A simple sign-up on the technician’s device, then and there, converts far better than a follow-up email nobody opens.',
         ],
+        callout: {
+          text: 'The best moment to sign a member is right after a technician has done good work in their home, not in a follow-up email nobody opens.',
+        },
       },
       {
         heading: 'Track renewals like revenue',
@@ -1443,13 +1468,25 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Know which QuickBooks you run',
         body: [
-          'This is the whole ballgame. QuickBooks Online and QuickBooks Desktop are different products, and field service tools support them differently. Many popular platforms, Jobber among them, sync only with Online. Others, like FieldEdge and Service Fusion, are built with Desktop firmly in mind. Before anything else, confirm your field service tool supports your exact version, because Online support does not mean Desktop support.',
+          'This is the whole ballgame. QuickBooks Online and QuickBooks Desktop are different products, and field service tools support them differently. Many popular platforms, [Jobber](/products/jobber/) among them, sync only with Online. Others, like [FieldEdge](/products/fieldedge/) and [Service Fusion](/products/service-fusion/), are built with Desktop firmly in mind. Before anything else, confirm your field service tool supports your exact version, because Online support does not mean Desktop support.',
         ],
+        table: {
+          caption: 'Confirm your exact version before you shortlist; support varies by tool.',
+          headings: ['', 'QuickBooks Online', 'QuickBooks Desktop'],
+          rows: [
+            ['How it syncs', 'Cloud to cloud, straightforward', 'Via a small sync agent on a Windows PC'],
+            ['Tool support', 'Broad; most tools have it', 'Narrower; confirm it specifically'],
+            ['Strong fits', '[Jobber](/products/jobber/), [Housecall Pro](/products/housecall-pro/)', '[FieldEdge](/products/fieldedge/), [Service Fusion](/products/service-fusion/)'],
+          ],
+        },
+        callout: {
+          text: 'Online support does not mean Desktop support. Sort out which QuickBooks you run before you fall for a demo.',
+        },
       },
       {
         heading: 'Understand what actually syncs',
         body: [
-          'A good integration keeps a few things in step automatically: customers, invoices, payments and sometimes your product and price list. Decide which direction each flows and where the record of truth lives, so you are not editing the same customer in two places. Get clear on this before you turn it on, rather than untangling duplicates afterward.',
+          'A good integration keeps a few things in step automatically: customers, [invoices](/guides/field-service-invoicing/), payments and sometimes your product and price list. Decide which direction each flows and where the record of truth lives, so you are not editing the same customer in two places. Get clear on this before you turn it on, rather than untangling duplicates afterward.',
         ],
       },
       {
