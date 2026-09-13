@@ -1563,6 +1563,222 @@ export const GUIDES: GuidePage[] = [
     updatedAt: '2026-09-13',
     published: true,
   },
+  {
+    slug: 'do-you-need-field-service-software',
+    title: 'Do You Actually Need Field Service Software Yet?',
+    category: 'Buying guide',
+    intro:
+      'Not every service business needs a dedicated platform, and buying one too early wastes money and effort. The honest answer to whether you need it depends less on your size than on where things are slipping. Here is how to tell.',
+    sections: [
+      {
+        heading: 'When a calendar and QuickBooks are still fine',
+        body: [
+          'If you are one or two people, running a modest number of jobs, and nothing is falling through the cracks, you probably do not need dedicated software yet. A shared calendar, a phone, and a simple invoicing tool can carry a very small operation for a surprisingly long time. There is no prize for buying a platform before the pain is real, and plenty of downside in paying for one you barely use.',
+        ],
+      },
+      {
+        heading: 'The signs you have outgrown it',
+        body: [
+          'The moment to look seriously is when the moving parts start slipping. Calls that never get returned. Technicians double-booked, or idle while customers wait. Invoices going out a week late, or the occasional job that never gets billed at all. Someone asking about a repair from last year that nobody wrote down. If two or three of those sound familiar, a spreadsheet is no longer helping you, it is quietly costing you.',
+        ],
+      },
+      {
+        heading: 'Two triggers that move the timeline up',
+        body: [
+          'Two things make software worth it sooner than headcount alone would suggest. First, selling maintenance agreements or memberships: tracking who is due, scheduling the visits and billing on a cycle by hand becomes unmanageable fast. Second, accounting friction: if you are re-typing every invoice into QuickBooks or Xero, a tool that syncs automatically pays for itself in reclaimed hours. Either one can justify the move even at a small size.',
+        ],
+      },
+      {
+        heading: 'What it realistically costs to start',
+        body: [
+          'The barrier is lower than many owners assume. Entry plans for a single user run around $29 to $60 a month, and a couple of tools even offer a free tier for very low job volume. So the question is rarely can I afford it, it is whether the time and money you are losing to missed jobs and late invoices now is bigger than a modest monthly plan. Usually, once the pain has started, it is.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'What is field service management software?', href: '/guides/what-is-field-service-management-software/' },
+      { label: 'How to choose field service software', href: '/guides/how-to-choose-field-service-software/' },
+      { label: 'Best field service software for 1–5 technicians', href: '/best/field-service-software-for-1-5-technicians/' },
+      { label: 'Find your best-fit software', href: '/find-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'field-service-software-contracts-what-to-watch',
+    title: 'Field Service Software Contracts: What to Watch Before You Sign',
+    category: 'Buying guide',
+    intro:
+      'The demo is exciting, the salesperson is friendly, and the contract is where the surprises hide. In field service software, the terms you skim past are exactly the ones that cost real money later. Here is what to read closely before you sign.',
+    sections: [
+      {
+        heading: 'The length of the commitment',
+        body: [
+          'Small-business tools tend to offer month-to-month or annual billing, which keeps your risk low. Enterprise platforms are a different story: multi-year contracts are common, and some users report being locked into three-year terms. The longer the commitment, the more certain you need to be before you sign, because backing out is where the pain starts.',
+        ],
+      },
+      {
+        heading: 'Early-exit fees',
+        body: [
+          'This is the term that catches people hardest. On the heavier platforms, leaving early can trigger significant penalties: contractors have reported being quoted anywhere from a few thousand dollars into five figures to exit a contract before it runs out. Ask the exit question directly during the sales process, get the number in writing, and treat a vague or evasive answer as a warning in itself.',
+        ],
+      },
+      {
+        heading: 'Auto-renewal and price increases',
+        body: [
+          'Many contracts renew automatically unless you cancel within a specific window, and quite a few reserve the right to raise your price each year, commonly in the region of eight to twelve percent. Some also treat a late payment, sometimes only a little over a week late, as a contractual default. None of this is necessarily a deal-breaker, but you need to know it going in rather than discovering it on renewal day.',
+        ],
+      },
+      {
+        heading: 'What is included versus what is an add-on',
+        body: [
+          'The base price is rarely the real price. Phone systems, marketing, GPS and fleet tracking, extra users and payment processing are frequently paid extras stacked on top. Before you sign, get an itemized quote of everything you will actually switch on, so the number you commit to is the number you will pay, not the headline that got you in the door.',
+        ],
+      },
+      {
+        heading: 'Your data and your exit',
+        body: [
+          'Ask two questions that protect your future self: can you export your own data, customers, history, invoices, if you leave, and in what format? A platform that makes it hard to get your data out is a platform that is betting you will never leave. Knowing the exit is clean makes the whole commitment safer.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'How to choose field service software', href: '/guides/how-to-choose-field-service-software/' },
+      { label: 'Field service software pricing explained', href: '/guides/field-service-software-pricing-explained/' },
+      { label: 'ServiceTitan review', href: '/products/servicetitan/' },
+      { label: 'Find your best-fit software', href: '/find-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'field-service-software-implementation-what-to-expect',
+    title: 'Field Service Software Implementation: What to Expect',
+    category: 'Buying guide',
+    intro:
+      'The monthly price is only half the cost of new software. The other half is implementation, the time, effort and sometimes money it takes to get live, and underestimating it is how rollouts stall. Here is what to expect so you can plan for it.',
+    sections: [
+      {
+        heading: 'Two very different worlds',
+        body: [
+          'Implementation splits sharply by the kind of tool. Small-business platforms are self-serve: you can sign up, import your customers and be running real jobs within days, with little or no cost beyond the subscription. Enterprise platforms are a project: structured onboarding, data migration and training, a rollout measured in weeks, and setup fees that can run from a few thousand dollars into the tens of thousands. Know which world your shortlist is in before you commit.',
+        ],
+      },
+      {
+        heading: 'The work that is yours, not the vendor’s',
+        body: [
+          'Even a smooth implementation asks something of you. Someone has to clean and export your existing data, decide how your services and pricing map into the new system, and configure the workflows to match how you actually work. The vendor guides it, but the decisions and the tidy-up are yours, so budget internal time, not just money, for it.',
+        ],
+      },
+      {
+        heading: 'Accounting is the step that bites',
+        body: [
+          'The part of setup that most often goes wrong is the accounting connection, especially with QuickBooks Desktop, which needs a sync agent on a Windows machine and a specific order of operations. Get this configured and tested early with real invoices, because discovering it does not work after go-live is the classic implementation disaster.',
+        ],
+      },
+      {
+        heading: 'Plan for the dip',
+        body: [
+          'Every rollout has a slow patch in the first couple of weeks while the team learns the tool. That dip is normal and temporary, not a sign you chose wrong. The businesses that come through it well warn the crew it is coming, run a small batch of real jobs before the full cut-over, and retire the old way on a set date so people cannot quietly drift back to paper.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'How to switch field service software', href: '/guides/how-to-switch-field-service-software/' },
+      { label: 'How to connect field service software to QuickBooks', href: '/guides/how-to-connect-field-service-software-to-quickbooks/' },
+      { label: 'How to get your team to use new software', href: '/guides/how-to-get-team-to-use-field-service-software/' },
+      { label: 'Find your best-fit software', href: '/find-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'free-field-service-software',
+    title: 'Free Field Service Software: What You Actually Get',
+    category: 'Buying guide',
+    intro:
+      'Free field service software sounds like the obvious place to start, and for the right business it genuinely is. But free comes in a few different shapes, and knowing which is which saves you from a nasty surprise later. Here is the honest picture.',
+    sections: [
+      {
+        heading: 'Free trial is not the same as a free plan',
+        body: [
+          'The first thing to sort out is which kind of free you are looking at. Most platforms offer a free trial, typically 14 to 30 days, which is a full-featured test drive that ends. A genuine free plan, one you can stay on indefinitely, is much rarer. Both are useful, but they answer different questions: a trial tells you if the tool fits, a free plan tells you if you can run on it long term.',
+        ],
+      },
+      {
+        heading: 'Where a real free plan exists',
+        body: [
+          'Genuine free tiers do exist at the very small end. ServiceM8, for example, has a free plan capped at a low number of jobs per month, which suits a true micro operation or someone dipping a toe in. These plans are deliberately limited, on job volume, users or features, so they work as a starting point, not a destination, and you should expect to pay once you grow past the cap.',
+        ],
+      },
+      {
+        heading: 'Use the trial like a real test, not a demo',
+        body: [
+          'A free trial is worth far more if you run real jobs through it rather than clicking around. Put a few genuine bookings, quotes and invoices through it, test the mobile app on your technicians’ actual phones, and if accounting matters, sync a real invoice to QuickBooks or Xero and confirm it lands correctly. That is how you find the deal-breakers while it still costs you nothing.',
+        ],
+      },
+      {
+        heading: 'When free stops being worth it',
+        body: [
+          'Free is a fine place to start and a poor place to get stuck. The moment the job cap, the missing features or the lack of proper support starts costing you more in lost time than a paid plan would cost in money, the free option has done its job and it is time to move up. Treat it as a first step, not a permanent home for a growing business.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'ServiceM8 review', href: '/products/servicem8/' },
+      { label: 'Do you actually need field service software yet?', href: '/guides/do-you-need-field-service-software/' },
+      { label: 'Field service software pricing explained', href: '/guides/field-service-software-pricing-explained/' },
+      { label: 'Best field service software for 1–5 technicians', href: '/best/field-service-software-for-1-5-technicians/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'is-field-service-software-worth-it',
+    title: 'Is Field Service Software Worth It? How to Judge the Return',
+    category: 'Buying guide',
+    intro:
+      'Field service software is a real monthly cost, and it is fair to ask whether it pays for itself. For most businesses past a certain size it does, but the return comes from specific places. Here is how to judge it honestly for your own operation.',
+    sections: [
+      {
+        heading: 'Where the money actually comes back',
+        body: [
+          'The return is not magic, it is a handful of concrete gains. You get paid faster because invoicing and payment happen on site instead of a week later. You bill for work that used to slip through unrecorded. You fit more jobs into a day through tighter scheduling and less wasted driving. And you cut the second trips that cost you a drive and a labor hour for no extra revenue. Add those up and the number is usually bigger than the subscription.',
+        ],
+      },
+      {
+        heading: 'The soft gains that are still real',
+        body: [
+          'Some of the value does not show up on an invoice but matters all the same: fewer missed appointments and angry how-far-away calls, a more professional impression that wins repeat work, and hours of office admin handed back to you every week. These are harder to put a number on, but any owner who has made the switch will tell you they are real.',
+        ],
+      },
+      {
+        heading: 'Do the math for your own shop',
+        body: [
+          'Judge it against your own figures, not a vendor’s claim. Roughly what are you losing now to late or missed invoicing, second trips and idle time in a month? Compare that to the true monthly cost of the tool, subscription plus the add-ons and processing fees you will actually use. For most businesses past a couple of technicians, the losses dwarf the plan. For a very small, tidy operation, it can genuinely be too early.',
+        ],
+      },
+      {
+        heading: 'When it is not worth it (yet)',
+        body: [
+          'Being honest cuts both ways. If you are tiny, well organized, and nothing is slipping, the return may not be there yet, and forcing an enterprise platform onto a small team is a common way to spend a lot for value you cannot use. The tool is worth it when it fixes problems you actually have, sized to the business you actually run, not the one you imagine you might become.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'Do you actually need field service software yet?', href: '/guides/do-you-need-field-service-software/' },
+      { label: 'Field service software pricing explained', href: '/guides/field-service-software-pricing-explained/' },
+      { label: 'How to track job profitability', href: '/guides/how-to-track-job-profitability/' },
+      { label: 'Find your best-fit software', href: '/find-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
 ];
 
 export const GUIDE_MAP: Record<string, GuidePage> = Object.fromEntries(
