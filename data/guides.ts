@@ -2080,13 +2080,25 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'The one distinction that matters most',
         body: [
-          'QuickBooks Online and QuickBooks Desktop are different products, and field service tools support them differently. This is the single fact that eliminates options fastest. Jobber, Workiz, ServiceM8, Simpro and Tradify sync with the Online version but not Desktop. Housecall Pro, Service Fusion, FieldEdge, ServiceTitan and BuildOps handle Desktop too. If your books run on Desktop, that fact alone removes a chunk of the market, so settle it before you fall for a demo.',
+          'QuickBooks Online and QuickBooks Desktop are different products, and field service tools support them differently. This is the single fact that eliminates options fastest. [Jobber](/products/jobber/), Workiz, [ServiceM8](/products/servicem8/), Simpro and Tradify sync with the Online version but not Desktop. [Housecall Pro](/products/housecall-pro/), [Service Fusion](/products/service-fusion/), [FieldEdge](/products/fieldedge/), ServiceTitan and BuildOps handle Desktop too. If your books run on Desktop, that fact alone removes a chunk of the market, so [settle it before you fall for a demo](/guides/how-to-connect-field-service-software-to-quickbooks/).',
         ],
+        table: {
+          caption: 'Accounting support varies sharply. Confirm your exact version with the vendor.',
+          headings: ['Your accounting', 'Tools that support it', 'Notes'],
+          rows: [
+            ['QuickBooks Online', '[Jobber](/products/jobber/), [Housecall Pro](/products/housecall-pro/), and most others', 'The broadest support'],
+            ['QuickBooks Desktop', '[FieldEdge](/products/fieldedge/), [Service Fusion](/products/service-fusion/), [ServiceTitan](/products/servicetitan/)', 'Narrower; needs a sync agent'],
+            ['Xero', '[FieldPulse](/products/fieldpulse/), [ServiceM8](/products/servicem8/), [Tradify](/products/tradify/), [Simpro](/products/simpro/)', 'A QuickBooks-first market, so verify'],
+          ],
+        },
+        callout: {
+          text: 'Online support does not mean Desktop support. This one distinction eliminates options faster than any feature on the list.',
+        },
       },
       {
         heading: 'Where Xero fits',
         body: [
-          'If you run Xero rather than QuickBooks, your shortlist looks different again. Tools with solid Xero support include FieldPulse, ServiceM8, Simpro, Kickserv and Tradify, while some of the most established US platforms lean QuickBooks-first and support Xero lightly or not at all. Xero users should treat it as a hard requirement and confirm it directly, because a checkmark on a feature grid does not tell you how deep the sync goes.',
+          'If you run [Xero](/guides/field-service-software-and-xero/) rather than QuickBooks, your shortlist looks different again. Tools with solid Xero support include FieldPulse, ServiceM8, Simpro, Kickserv and Tradify, while some of the most established US platforms lean QuickBooks-first and support Xero lightly or not at all. Xero users should treat it as a hard requirement and confirm it directly, because a checkmark on a feature grid does not tell you how deep the sync goes.',
         ],
       },
       {
@@ -2130,6 +2142,18 @@ export const GUIDES: GuidePage[] = [
         body: [
           'Several strong platforms sync with Xero, and they span the range of business sizes. FieldPulse and Kickserv cover Xero alongside QuickBooks; ServiceM8 and Tradify pair Xero with QuickBooks Online and suit smaller and Apple-based trades; and Simpro brings Xero support to the commercial and project end. So whether you are a solo operator or a commercial contractor, there is a Xero-friendly option in your size band.',
         ],
+        table: {
+          caption: 'Xero-friendly options across the range of business sizes.',
+          headings: ['Business size', 'Xero-friendly options'],
+          rows: [
+            ['Solo or small, Apple-based', '[ServiceM8](/products/servicem8/), [Tradify](/products/tradify/)'],
+            ['Growing multi-trade', '[FieldPulse](/products/fieldpulse/), [Kickserv](/products/kickserv/)'],
+            ['Commercial or project', '[Simpro](/products/simpro/)'],
+          ],
+        },
+        callout: {
+          text: 'Treat Xero as a hard requirement and confirm it directly. A feature-grid tick does not tell you how deep the sync goes.',
+        },
       },
       {
         heading: 'What the sync should handle',
@@ -2172,6 +2196,17 @@ export const GUIDES: GuidePage[] = [
         body: [
           'Convenience has a price, and it is worth reading. In-app card payments typically run around 2.9% plus 30 cents per transaction, with ACH nearer 1%. That is standard for the category, but at volume it adds up fast: a business invoicing $50,000 a month can pay well over $1,000 a month in processing alone, on top of the subscription. Factor that into any comparison, because a cheaper plan with a higher processing rate can cost more overall.',
         ],
+        table: {
+          caption: 'Typical in-app processing rates. Confirm the exact figure with the vendor.',
+          headings: ['Method', 'Typical rate', 'Best for'],
+          rows: [
+            ['Card', 'About 2.9% plus 30 cents per transaction', 'Convenience, most customer payments'],
+            ['ACH / bank transfer', 'About 1%', 'Larger invoices where the fee matters'],
+          ],
+        },
+        callout: {
+          text: 'A cheaper plan with a higher processing rate can cost more overall. Read the rate, not just the sticker price.',
+        },
       },
       {
         heading: 'Can you bring your own processor?',
@@ -2182,7 +2217,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Financing for the big tickets',
         body: [
-          'For large jobs, a system replacement or a major repair, look at whether the platform offers point-of-sale consumer financing through a lender partner. For trades like HVAC, letting a customer spread the cost measurably lifts close rates on expensive work, because a manageable monthly figure lands better than a large total. If you sell big tickets, treat financing as part of the payments question, not an afterthought.',
+          'For large jobs, a system replacement or a major repair, look at whether the platform offers point-of-sale [consumer financing](/guides/field-service-payments-and-financing/) through a lender partner. For trades like [HVAC](/industries/hvac/), letting a customer spread the cost measurably lifts close rates on expensive work, because a manageable monthly figure lands better than a large total. If you sell big tickets, treat financing as part of the payments question, not an afterthought.',
         ],
       },
     ],
@@ -2208,24 +2243,36 @@ export const GUIDES: GuidePage[] = [
         body: [
           'There are broadly two routes. A native integration is one the vendor built and maintains for a specific partner, which tends to be the most reliable. Beyond that, many platforms connect through Zapier, a middle layer that links thousands of apps without code, or through an open API for custom work. Zapier covers most everyday needs; an API matters when you have a developer and a specific job to automate.',
         ],
+        table: {
+          caption: 'Three ways your tools connect, from most to least turnkey.',
+          headings: ['Method', 'What it is', 'Best when'],
+          rows: [
+            ['Native integration', 'Built and maintained by the vendor', 'A named partner you both support'],
+            ['Zapier', 'A no-code middle layer to thousands of apps', 'Everyday automations, no developer'],
+            ['Open API', 'Custom code against the platform', 'Unusual workflows and a developer on hand'],
+          ],
+        },
       },
       {
         heading: 'What people actually automate',
         body: [
-          'The useful automations are usually mundane and high-value: a web-form lead creating a customer or job automatically, a completed job triggering a review request or a marketing follow-up, or job data flowing into a spreadsheet or dashboard you already use. Start from the manual step that annoys you most and see whether a connection removes it, rather than automating for its own sake.',
+          'The useful automations are usually mundane and high-value: a web-form lead creating a customer or job automatically, a completed job triggering a [review request or a marketing follow-up](/guides/field-service-software-marketing-integrations/), or job data flowing into a spreadsheet or dashboard you already use. Start from the manual step that annoys you most and see whether a connection removes it, rather than automating for its own sake.',
         ],
       },
       {
         heading: 'Where an open API earns its place',
         body: [
-          'If you have unusual workflows or your own systems, an open API is the difference between bending your business to the software and bending the software to your business. Platforms like ServiceTitan and Zuper lean into configurability and API access for exactly this reason. It is overkill for a small residential shop, but for a larger or more technical operation it is a real deciding factor.',
+          'If you have unusual workflows or your own systems, an open API is the difference between bending your business to the software and bending the software to your business. Platforms like [ServiceTitan](/products/servicetitan/) and [Zuper](/products/zuper/) lean into configurability and API access for exactly this reason. It is overkill for a small residential shop, but for a larger or more technical operation it is a real deciding factor.',
         ],
       },
       {
         heading: 'Do not over-connect',
         body: [
-          'A caution worth stating: every integration is one more thing that can break and one more place your data can drift out of sync. For most small and mid-sized businesses, an all-in-one platform that already covers the core is simpler and safer than stitching together a dozen specialists. Add connections to fix a specific, painful gap, not to build a clever machine that needs constant babysitting.',
+          'For most small and mid-sized businesses, an [all-in-one platform](/guides/all-in-one-vs-point-solutions-field-service/) that already covers the core is simpler and safer than stitching together a dozen specialists. Add connections to fix a specific, painful gap, not to build a clever machine that needs constant babysitting.',
         ],
+        callout: {
+          text: 'Every integration is one more thing that can break. Add one to fix a real pain, not to build a clever machine that needs babysitting.',
+        },
       },
     ],
     related: [
@@ -2248,8 +2295,11 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Reviews are the highest-value connection',
         body: [
-          'For a home-service business, online reviews are the storefront, and the software that automates review requests at the end of every job compounds a real advantage over time. Some residential-focused platforms bake this in, Housecall Pro is a well-known example, so the request fires automatically the moment a job is marked complete. If reputation drives your leads, weigh this heavily.',
+          'For a home-service business, online reviews are the storefront, and the software that [automates review requests](/guides/how-to-get-more-customer-reviews/) at the end of every job compounds a real advantage over time. Some residential-focused platforms bake this in, [Housecall Pro](/products/housecall-pro/) is a well-known example, so the request fires automatically the moment a job is marked complete. If reputation drives your leads, weigh this heavily.',
         ],
+        callout: {
+          text: 'For a home-service business, your recent reviews are the storefront. The software that asks for one after every job quietly compounds an edge.',
+        },
       },
       {
         heading: 'Email and campaign tools',
@@ -2260,7 +2310,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Tracking where leads come from',
         body: [
-          'You cannot double down on what works if you do not know what works. Call tracking and lead-source tagging tell you which marketing actually produces booked jobs. Communication-focused tools like Workiz build this in, and it turns marketing spend from a guess into a measured decision. For lead-heavy trades, this is one of the most useful integrations there is.',
+          'You cannot double down on what works if you do not know what works. Call tracking and lead-source tagging tell you which marketing actually produces booked jobs. Communication-focused tools like [Workiz](/products/workiz/) build this in, and it turns marketing spend from a guess into a measured decision. For lead-heavy trades, this is one of the most useful integrations there is.',
         ],
       },
       {
