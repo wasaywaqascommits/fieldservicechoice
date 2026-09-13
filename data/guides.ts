@@ -383,13 +383,16 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'How software helps',
         body: [
-          'A dispatch board shows every technician and every job on one screen, usually as a drag-and-drop schedule you can rearrange in seconds. The better tools factor in location and skills, send the job straight to the technician’s phone, and fire off an automatic “on my way” text to the customer. GPS tracking shows where crews actually are, so you’re dispatching from reality rather than a guess.',
+          'A dispatch board shows every technician and every job on one screen, usually as a drag-and-drop schedule you can rearrange in seconds. The better tools factor in location and skills, send the job straight to the technician’s phone, and fire off an automatic [on-my-way text](/guides/how-to-reduce-no-shows-field-service/) to the customer. [GPS tracking](/guides/field-service-gps-tracking/) shows where crews actually are, so you’re dispatching from reality rather than a guess.',
         ],
+        callout: {
+          text: 'Dispatch is not about the perfect morning plan. It is about how fast you recover when the day breaks it.',
+        },
       },
       {
         heading: 'What to look for',
         body: [
-          'If dispatch is your pain point, weigh how fast you can reassign a job, whether the technician gets full job details and history on mobile, and whether customers are kept in the loop automatically. Depth varies a lot: the enterprise platforms like ServiceTitan have the most sophisticated dispatch boards for busy multi-technician operations, while lighter tools like Jobber handle small-team dispatch cleanly without the overhead. High-volume operations should look hardest at the board and routing.',
+          'If dispatch is your pain point, weigh how fast you can reassign a job, whether the technician gets full job details and history on mobile, and whether customers are kept in the loop automatically. Depth varies a lot: the enterprise platforms like [ServiceTitan](/products/servicetitan/) have the most sophisticated dispatch boards for busy multi-technician operations, while lighter tools like [Jobber](/products/jobber/) handle small-team dispatch cleanly without the overhead. High-volume operations should look hardest at the board and [routing](/guides/field-service-route-optimization/).',
         ],
       },
     ],
@@ -425,14 +428,17 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'What software does',
         body: [
-          'A good scheduler gives you a calendar you can drag jobs around on, color-coded by technician or job type, with recurring jobs that repeat automatically so seasonal maintenance doesn’t rely on someone’s memory. It pushes each visit to the technician’s phone and, in stronger tools, warns you about conflicts and gaps before they turn into a problem.',
+          'A good scheduler gives you a calendar you can drag jobs around on, color-coded by technician or job type, with recurring jobs that repeat automatically so [seasonal maintenance](/guides/field-service-service-agreements/) doesn’t rely on someone’s memory. It pushes each visit to the [technician’s phone](/guides/field-service-technician-mobile-app/) and, in stronger tools, warns you about conflicts and gaps before they turn into a problem.',
         ],
       },
       {
         heading: 'What to look for',
         body: [
-          'Look at how quickly you can move a job, whether recurring and route-based work is easy to set up, and how well the schedule syncs to the mobile app your technicians actually use. Most small-business tools like Jobber and Housecall Pro handle recurring jobs well; if maintenance contracts are core to your revenue, that support matters more than almost anything else.',
+          'Look at how quickly you can move a job, whether recurring and route-based work is easy to set up, and how well the schedule syncs to the [mobile app](/guides/field-service-technician-mobile-app/) your technicians actually use. Most small-business tools like [Jobber](/products/jobber/) and [Housecall Pro](/products/housecall-pro/) handle recurring jobs well; if maintenance contracts are core to your revenue, that support matters more than almost anything else.',
         ],
+        callout: {
+          text: 'The test of a scheduler is not how it looks on a quiet Monday. It is how fast you can rearrange it when Wednesday falls apart.',
+        },
       },
     ],
     related: [
@@ -461,20 +467,23 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'How field service invoicing works',
         body: [
-          'Field service software turns a completed job into an invoice directly, often on the technician’s phone before they leave the driveway. The line items, the customer and the pricing are already there from the job, so there’s no re-typing. Many tools also take card or ACH payment on the spot, which is the single biggest lever for getting paid faster. Just budget for the processing fee: in-app card payments typically run around 2.9% plus 30 cents per transaction, with ACH nearer 1%, on top of your subscription.',
+          'Field service software turns a completed job into an invoice directly, often on the technician’s phone before they leave the driveway. The line items, the customer and the pricing are already there from the job, so there’s no re-typing. Many tools also [take card or ACH payment on the spot](/guides/how-to-get-paid-faster-field-service/), which is the single biggest lever for getting paid faster. Just budget for the [processing fee](/guides/field-service-software-payment-processing/): in-app card payments typically run around 2.9% plus 30 cents per transaction, with ACH nearer 1%, on top of your subscription.',
         ],
       },
       {
         heading: 'Where accounting fits',
         body: [
-          'The invoice shouldn’t live in a silo. The better setups sync invoices and payments into QuickBooks or Xero automatically, so your books stay current without anyone entering the same numbers twice. If your accounting runs on QuickBooks Desktop, check that support specifically, because it varies between platforms.',
+          'The invoice shouldn’t live in a silo. The better setups [sync invoices and payments into QuickBooks or Xero](/guides/field-service-software-accounting-integrations/) automatically, so your books stay current without anyone entering the same numbers twice. If your accounting runs on [QuickBooks Desktop](/guides/how-to-connect-field-service-software-to-quickbooks/), check that support specifically, because it varies between platforms.',
         ],
       },
       {
         heading: 'What to look for',
         body: [
-          'Weigh how fast a technician can invoice and collect in the field, whether payments are built in, and how cleanly it syncs with your accounting. Getting those three right is usually worth more to cash flow than any other single feature.',
+          'Weigh how fast a technician can invoice and collect in the field, whether payments are built in, and how cleanly it syncs with your accounting.',
         ],
+        callout: {
+          text: 'Getting invoicing, on-site payment and accounting sync right does more for cash flow than any other single feature.',
+        },
       },
     ],
     related: [
@@ -499,23 +508,35 @@ export const GUIDES: GuidePage[] = [
         body: [
           'A flat-rate pricebook is a catalog of your common jobs and repairs, each with a set price, so a technician quotes the same number for the same work no matter who they are or how the day is going. It usually includes good, better and best options, so a customer chooses their level rather than just hearing one price.',
         ],
+        table: {
+          caption: 'An illustrative good/better/best layout. You set your own prices from your real costs, see how to build a pricebook.',
+          headings: ['Option', 'What it covers', 'Why customers pick it'],
+          rows: [
+            ['Good', 'The essential repair', 'Lowest price, fixes the problem today'],
+            ['Better', 'Repair plus an upgraded part or longer warranty', 'More peace of mind for a bit more'],
+            ['Best', 'Full replacement or the premium option', 'Longest-term value and fewer future callbacks'],
+          ],
+        },
       },
       {
         heading: 'Why it matters',
         body: [
-          'Without one, pricing lives in your senior technicians’ heads, which means it walks out the door when they do and shifts from job to job. A pricebook makes quoting consistent, faster, and easy to hand to a newer technician. The good/better/best format also tends to lift the average ticket, because customers often choose up when they’re given the choice.',
+          'Without one, pricing lives in your senior technicians’ heads, which means it walks out the door when they do and shifts from job to job. A pricebook makes quoting consistent, faster, and easy to hand to a newer technician.',
         ],
+        callout: {
+          text: 'Priced right, a good/better/best menu lifts your average ticket without anyone having to sell harder.',
+        },
       },
       {
         heading: 'Who needs one',
         body: [
-          'Flat-rate pricing earns its keep for trades that do a lot of repeatable repairs and replacements, HVAC and plumbing especially. If most of your work is custom or project-based, a full pricebook matters less than solid estimating. Match the feature to how repeatable your work really is.',
+          'Flat-rate pricing earns its keep for trades that do a lot of repeatable repairs and replacements, HVAC and plumbing especially. If most of your work is custom or project-based, a full pricebook matters less than solid [estimating](/guides/field-service-estimating/). Match the feature to how repeatable your work really is.',
         ],
       },
       {
         heading: 'What to look for',
         body: [
-          'If a pricebook is central for you, look at how deep and editable it is, whether it supports good/better/best presentation on the technician’s device, and whether it ties into financing for bigger tickets. This is where the enterprise platforms pull well ahead: ServiceTitan’s pricebook is the category benchmark, while lighter tools like Jobber offer little or none, so if flat-rate pricing is a must-have it will shape your whole shortlist.',
+          'If a pricebook is central for you, look at how deep and editable it is, whether it supports good/better/best presentation on the technician’s device, and whether it ties into [financing for bigger tickets](/guides/field-service-payments-and-financing/). This is where the enterprise platforms pull well ahead: [ServiceTitan](/products/servicetitan/)’s pricebook is the category benchmark, while lighter tools like [Jobber](/products/jobber/) offer little or none, so if flat-rate pricing is a must-have it will shape your whole shortlist. When you are ready, here is [how to build one](/guides/how-to-build-a-flat-rate-pricebook/).',
         ],
       },
     ],
@@ -545,8 +566,11 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'What a good app does in the field',
         body: [
-          'A strong mobile app gives the technician the full job in one place: address and directions, customer and equipment history, the tasks to do, and room for notes and photos. It lets them build a quote, invoice and take payment on site, and capture a signature. The best ones keep working offline and sync once the signal comes back, which matters in basements and rural service areas.',
+          'A strong mobile app gives the technician the full job in one place: address and directions, customer and equipment history, the tasks to do, and room for notes and photos. It lets them build a [quote](/guides/field-service-estimating/), [invoice](/guides/field-service-invoicing/) and take payment on site, and capture a signature. The best ones keep working offline and sync once the signal comes back, which matters in basements and rural service areas.',
         ],
+        callout: {
+          text: 'You are not really buying the office dashboard. You are buying whether the crew still opens the app on job number seven.',
+        },
       },
       {
         heading: 'Offline is not optional for some trades',
@@ -581,7 +605,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'What a work order actually is',
         body: [
-          'A work order is the full record of one job: who the customer is, what needs doing, who’s assigned, what was done, the parts used, and the outcome. In field service it’s the thread that ties a request to a completed, invoiced job, and it’s where the history lives when the same customer calls again next year.',
+          'A work order is the full record of one job: who the customer is, what needs doing, who’s assigned, what was done, the parts used, and the outcome. In field service it’s the thread that ties a request to a completed, [invoiced job](/guides/field-service-invoicing/), and it’s where the history lives when the same customer calls again next year.',
         ],
       },
       {
@@ -589,6 +613,9 @@ export const GUIDES: GuidePage[] = [
         body: [
           'When work orders are scattered across texts, paper and someone’s memory, things get missed: a job nobody invoiced, a part that was never charged for, a follow-up that never happened. Good work order management keeps every job in one place with a clear status, so nothing is finished until it’s actually finished and billed.',
         ],
+        callout: {
+          text: 'A job is not done when the work is done. It is done when it is recorded, invoiced and paid.',
+        },
       },
       {
         heading: 'What software does',
@@ -629,7 +656,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Where it helps',
         body: [
-          'The practical wins are dispatching and communication. When an emergency comes in, you can send the closest available technician instead of guessing. When a customer asks where their technician is, you can tell them, or better, the software sends an automatic on-my-way text with an arrival window. It also gives you honest numbers on drive time and time on site.',
+          'The practical wins are [dispatching](/guides/field-service-dispatching/) and communication. When an emergency comes in, you can send the closest available technician instead of guessing. When a customer asks where their technician is, you can tell them, or better, the software sends an automatic [on-my-way text](/guides/how-to-reduce-no-shows-field-service/) with an arrival window. It also gives you honest numbers on drive time and time on site.',
         ],
       },
       {
@@ -637,11 +664,14 @@ export const GUIDES: GuidePage[] = [
         body: [
           'It’s worth being straight with your team about why you’re using it. Framed as “we’ll stop sending you across town when someone closer is free, and cut the how-far-away calls,” it lands very differently than surveillance. The businesses that get the most from it treat it as a dispatch and customer-service tool, not a stopwatch.',
         ],
+        callout: {
+          text: 'Sold to the crew as a stopwatch, GPS breeds resentment. Sold as smarter dispatch and fewer where-are-you calls, it earns its place.',
+        },
       },
       {
         heading: 'What to look for',
         body: [
-          'Check whether tracking is live and tied into the dispatch board, whether customers get automatic arrival updates, and how it handles privacy outside working hours. Watch the pricing too: some platforms include basic GPS, while others sell it as a paid add-on (Housecall Pro’s vehicle GPS and dashcams, for instance), so confirm what is in the base plan. If routing matters to you, look at how tracking feeds into route planning.',
+          'Check whether tracking is live and tied into the [dispatch board](/guides/field-service-dispatching/), whether customers get automatic arrival updates, and how it handles privacy outside working hours. Watch the pricing too: some platforms include basic GPS, while others sell it as a paid add-on ([Housecall Pro](/products/housecall-pro/)’s vehicle GPS and dashcams, for instance), so confirm what is in the base plan. If routing matters to you, look at how tracking feeds into [route planning](/guides/field-service-route-optimization/).',
         ],
       },
     ],
