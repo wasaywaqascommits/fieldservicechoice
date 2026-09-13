@@ -1305,6 +1305,264 @@ export const GUIDES: GuidePage[] = [
     updatedAt: '2026-09-13',
     published: true,
   },
+  {
+    slug: 'how-to-price-a-service-call',
+    title: 'How to Price a Service Call So You Actually Make Money',
+    category: 'How-to guide',
+    intro:
+      'Plenty of busy service businesses are not as profitable as they should be, and it usually starts with pricing that was set by gut feel or by copying a competitor. Here is how to price a service call from your real numbers, so every job earns its keep.',
+    sections: [
+      {
+        heading: 'Know your true cost per hour',
+        body: [
+          'You cannot price work until you know what an hour actually costs you to deliver. That is not just the technician’s wage. Add payroll taxes and benefits, the truck and fuel, insurance, tools, software, and a share of the office and owner time that keeps the whole thing running. Divide your total monthly costs by your billable hours and you get a real cost per hour, and it is almost always higher than owners expect.',
+        ],
+      },
+      {
+        heading: 'Add the margin you need to survive',
+        body: [
+          'Your price has to cover that cost and leave a genuine profit on top, not just break even. Decide the net margin the business needs to grow and pay you properly, then build it into the rate rather than hoping it shows up at the end of the year. A job that only covers costs is a job that kept you busy and made you nothing.',
+        ],
+      },
+      {
+        heading: 'Move from hourly to flat-rate where you can',
+        body: [
+          'Billing by the hour punishes you for being fast and makes customers nervous about an open-ended bill. For repeatable work, price the job, not the clock. Build a flat-rate pricebook from your cost-per-hour and typical times, so a technician quotes the same clear number every time and a faster crew earns more, not less. This is one of the biggest profitability levers a trades business has.',
+        ],
+      },
+      {
+        heading: 'Do not anchor to your competitor',
+        body: [
+          'Pricing off the company down the road is guessing with someone else’s numbers. You do not know their costs, their efficiency or their margins, so matching their price can quietly commit you to losing money on every job. Price from your own costs first, then sanity-check against the market, not the other way around.',
+        ],
+      },
+      {
+        heading: 'Check the reality with job costing',
+        body: [
+          'Once you are pricing deliberately, confirm it is working. Job costing compares what each job brought in against what it truly cost, so you can see which work is underpriced and fix it. If you are not tracking that yet, it is the next step, because pricing without measuring the outcome is just a better class of guessing.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'How to build a flat-rate pricebook', href: '/guides/how-to-build-a-flat-rate-pricebook/' },
+      { label: 'Job costing explained', href: '/guides/field-service-job-costing/' },
+      { label: 'Estimating and quoting in field service', href: '/guides/field-service-estimating/' },
+      { label: 'Find your best-fit software', href: '/find-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'how-to-get-paid-faster-field-service',
+    title: 'How to Get Paid Faster in a Service Business',
+    category: 'How-to guide',
+    intro:
+      'The gap between finishing a job and having the money in your account is where a lot of service businesses quietly strangle their own cash flow. Closing that gap is mostly about changing when and how you invoice. Here is how to get paid faster.',
+    sections: [
+      {
+        heading: 'Invoice on site, not on Sunday night',
+        body: [
+          'The single biggest delay is invoicing that happens back at the office days after the work. Every day between finishing and sending is a day added to when you get paid, and the occasional job slips through and never gets billed at all. Invoicing from the technician’s phone before they leave the driveway removes that gap entirely, and the details are already there from the job, so there is nothing to re-type.',
+        ],
+      },
+      {
+        heading: 'Take payment before you leave',
+        body: [
+          'An invoice sent is not the same as money received. The strongest lever is collecting on the spot: card or ACH payment on the technician’s device the moment the work is signed off. It turns a receivable you have to chase into cash in hand. Just factor in the processing cost, typically around 2.9% plus 30 cents per card transaction and roughly 1% on ACH, and price with that in mind.',
+        ],
+      },
+      {
+        heading: 'Make paying effortless for the customer',
+        body: [
+          'People pay fast when it is easy and slow when it is a chore. Send the invoice as a text or email with a payment link they can tap, rather than a paper bill they have to dig out a checkbook for. Offer the payment methods they actually use. Every bit of friction you remove shortens the time to payment.',
+        ],
+      },
+      {
+        heading: 'Automate the follow-up on what is owed',
+        body: [
+          'For the invoices that do go unpaid, do not rely on remembering to chase them. Good software shows you what is outstanding at a glance and sends automatic reminders on the ones that age past their due date. Consistent, automatic nudges collect far more than sporadic manual ones, and they do it without anyone feeling like the office villain.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'Field service invoicing explained', href: '/guides/field-service-invoicing/' },
+      { label: 'Payments and financing in field service', href: '/guides/field-service-payments-and-financing/' },
+      { label: 'Housecall Pro review', href: '/products/housecall-pro/' },
+      { label: 'Find your best-fit software', href: '/find-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'how-to-improve-first-time-fix-rate',
+    title: 'How to Improve Your First-Time Fix Rate',
+    category: 'How-to guide',
+    intro:
+      'A second trip is one of the most expensive things a service business does: you pay for the drive and the labor twice and earn once, and the customer remembers the delay, not the fix. Raising your first-time fix rate is where real efficiency lives. Here is how.',
+    sections: [
+      {
+        heading: 'Send the technician in informed',
+        body: [
+          'A lot of second trips are booked blind. If the technician arrives without the equipment history, the model and serial number, or notes from the last visit, they diagnose from scratch and often discover they needed a part they did not bring. Full job and equipment history on the mobile app, before they knock, is the first and biggest fix.',
+        ],
+      },
+      {
+        heading: 'Get the right parts on the truck',
+        body: [
+          'The classic second trip is arriving, finding the fault, and not having the part. Truck-stock inventory that tracks what is on each van, tied to the kind of work booked, means you can send the technician who is actually carrying what the job needs. For parts-heavy trades, this alone moves the number materially.',
+        ],
+      },
+      {
+        heading: 'Match the job to the right technician',
+        body: [
+          'Skills-based dispatch matters more than pure proximity. Sending the nearest technician is no good if they cannot do the work. When your dispatch board factors in who has the skills and the parts for a specific job, not just who is closest, more jobs get finished on the first visit. That is a scheduling and dispatch capability worth prioritizing.',
+        ],
+      },
+      {
+        heading: 'Capture what happened for next time',
+        body: [
+          'First-time fix compounds when every visit feeds the next. Notes, photos and the parts used, captured on site and attached to the customer and the equipment, mean the next technician (or the same one next year) starts informed instead of blind. Measure the rate, too: if your software can report first-time fix, watch it, because what you measure is what improves.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'Inventory and truck stock in field service', href: '/guides/field-service-inventory-management/' },
+      { label: 'Field service dispatching explained', href: '/guides/field-service-dispatching/' },
+      { label: 'Work order management', href: '/guides/field-service-work-order-management/' },
+      { label: 'Find your best-fit software', href: '/find-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'how-to-optimize-field-service-routes',
+    title: 'How to Optimize Routes for a Field Service Team',
+    category: 'How-to guide',
+    intro:
+      'For any business whose technicians drive between a lot of stops, the route is a cost you pay every single day in fuel and lost hours. Tightening it is one of the clearest ways to fit more work into the same day. Here is how to actually do it.',
+    sections: [
+      {
+        heading: 'Decide whether routing is really your problem',
+        body: [
+          'Be honest about your work first. Route optimization is a big deal for route-dense trades, landscaping, pest control, cleaning, and anyone running dozens of short recurring visits a day. If you do a handful of longer service calls, drive time is a smaller slice of the day and the payoff is modest. Spend your effort where it moves the number.',
+        ],
+      },
+      {
+        heading: 'Cluster work by geography',
+        body: [
+          'The simplest win is to stop scattering a technician across town. Group jobs by area so a day’s stops sit near each other, and hold recurring visits in a sensible geographic pattern week to week. Even before any clever software, clustering by zone cuts drive time noticeably.',
+        ],
+      },
+      {
+        heading: 'Let the software sequence the stops',
+        body: [
+          'Real route optimization does more than show pins on a map: it works out the most efficient order to visit a set of stops, accounting for distance and, in stronger tools, time windows and traffic. For recurring routes it plans the whole pattern and re-optimizes when a job is added or cancelled. If routes are central to your business, insist on genuine multi-stop optimization, not just a map view.',
+        ],
+      },
+      {
+        heading: 'Feed it accurate, live locations',
+        body: [
+          'Routing is only as good as the data under it. Live GPS on your vehicles or technicians lets you re-route around a cancellation or an emergency using where people actually are, not where the morning plan assumed they would be. The combination of good sequencing and live location is what turns routing from a nice map into saved fuel and extra jobs.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'Route optimization explained', href: '/guides/field-service-route-optimization/' },
+      { label: 'GPS and technician tracking', href: '/guides/field-service-gps-tracking/' },
+      { label: 'Software for landscaping businesses', href: '/industries/landscaping/' },
+      { label: 'Find your best-fit software', href: '/find-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'how-to-get-more-customer-reviews',
+    title: 'How to Get More Customer Reviews for Your Service Business',
+    category: 'How-to guide',
+    intro:
+      'For a home-service business, online reviews are the storefront: they decide who calls you before anyone speaks to you. Getting a steady stream of them is a system, not luck. Here is how to build one that runs mostly on its own.',
+    sections: [
+      {
+        heading: 'Ask at the moment of relief',
+        body: [
+          'Timing is everything. The best time to ask for a review is right after you have solved the customer’s problem, when the relief and goodwill are highest. Wait a week and the feeling fades and the request gets ignored. Train technicians to mention it on the way out, and back that up with an automated request that goes out the same day the job is marked complete.',
+        ],
+      },
+      {
+        heading: 'Remove every bit of friction',
+        body: [
+          'People want to help but will not hunt for the right page. Send a text or email with a direct link straight to the review form, so leaving one takes seconds, not a search. The easier you make it, the higher the share of happy customers who actually follow through. Automation that fires the link at the right moment is what makes this consistent instead of occasional.',
+        ],
+      },
+      {
+        heading: 'Catch problems before they become reviews',
+        body: [
+          'A quiet way to protect your rating is to give unhappy customers a private route to reach you before they reach the public. A quick follow-up that asks how the visit went surfaces the dissatisfied few, so you can make it right directly rather than reading about it in a one-star review. This is about fixing genuine problems fast, not hiding them.',
+        ],
+      },
+      {
+        heading: 'Make it part of the workflow, not a project',
+        body: [
+          'Review generation works when it is automatic and forgettable, not a campaign someone has to remember to run. Tools built around residential service, Housecall Pro is a well-known example, bake review requests into the end-of-job flow so they happen every time without anyone thinking about it. That consistency, job after job, is what compounds into a wall of recent reviews.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'Online booking for field service', href: '/guides/field-service-online-booking/' },
+      { label: 'Housecall Pro review', href: '/products/housecall-pro/' },
+      { label: 'Best field service management software', href: '/best/field-service-management-software/' },
+      { label: 'Find your best-fit software', href: '/find-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'how-to-track-job-profitability',
+    title: 'How to Track Job Profitability (and Fix What Is Losing Money)',
+    category: 'How-to guide',
+    intro:
+      'Being busy and being profitable are not the same thing, and the gap between them is usually a few job types that lose money every time while nobody is looking. Tracking profitability by job is how you find them. Here is how to set it up.',
+    sections: [
+      {
+        heading: 'Capture costs as the job happens',
+        body: [
+          'Job costing only works if the costs are recorded while the work is live, not reconstructed from memory later. That means technician time logged against the job, parts added to the work order, and materials recorded on site. If capturing this is a manual chore done after the fact, it simply will not happen, which is exactly why most businesses stay in the dark about which jobs pay.',
+        ],
+      },
+      {
+        heading: 'Compare revenue to true cost, job by job',
+        body: [
+          'Profit is what the job brought in minus what it actually cost to deliver: labor, parts, materials, and any subcontractor or equipment cost. Not the estimate, and not revenue with the costs waved away. Seeing that real number per job is what turns a vague sense that some work is not worth it into a fact you can act on.',
+        ],
+      },
+      {
+        heading: 'Look at profit by job type and customer',
+        body: [
+          'The insight usually lives in the patterns. Group your job costing by type of work and by customer, and the losers jump out: a certain service that is underpriced, a crew that is slower than assumed, a big account whose discount has quietly eaten the margin. Reporting that slices profit this way is worth prioritizing if profitability is the question you care about.',
+        ],
+      },
+      {
+        heading: 'Then fix the price or drop the work',
+        body: [
+          'Measurement is only useful if it changes something. Once you can see which work loses money, you have two honest choices: raise the price until it makes sense, or stop taking that work and put the capacity toward jobs that pay. Commercial and project businesses should treat this as essential; the platforms built for them, like Simpro and BuildOps, are strong on job costing, while lighter residential tools track it only partially.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'Job costing explained', href: '/guides/field-service-job-costing/' },
+      { label: 'How to price a service call', href: '/guides/how-to-price-a-service-call/' },
+      { label: 'Simpro review', href: '/products/simpro/' },
+      { label: 'Field service software pricing explained', href: '/guides/field-service-software-pricing-explained/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
 ];
 
 export const GUIDE_MAP: Record<string, GuidePage> = Object.fromEntries(
