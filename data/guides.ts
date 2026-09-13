@@ -1808,8 +1808,11 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'When a calendar and QuickBooks are still fine',
         body: [
-          'If you are one or two people, running a modest number of jobs, and nothing is falling through the cracks, you probably do not need dedicated software yet. A shared calendar, a phone, and a simple invoicing tool can carry a very small operation for a surprisingly long time. There is no prize for buying a platform before the pain is real, and plenty of downside in paying for one you barely use.',
+          'If you are one or two people, running a modest number of jobs, and nothing is falling through the cracks, you probably do not need dedicated software yet. A shared calendar, a phone, and a simple invoicing tool can carry a very small operation for a surprisingly long time.',
         ],
+        callout: {
+          text: 'There is no prize for buying a platform before the pain is real, and plenty of downside in paying for one you barely use.',
+        },
       },
       {
         heading: 'The signs you have outgrown it',
@@ -1820,13 +1823,13 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Two triggers that move the timeline up',
         body: [
-          'Two things make software worth it sooner than headcount alone would suggest. First, selling maintenance agreements or memberships: tracking who is due, scheduling the visits and billing on a cycle by hand becomes unmanageable fast. Second, accounting friction: if you are re-typing every invoice into QuickBooks or Xero, a tool that syncs automatically pays for itself in reclaimed hours. Either one can justify the move even at a small size.',
+          'Two things make software worth it sooner than headcount alone would suggest. First, selling [maintenance agreements or memberships](/guides/field-service-service-agreements/): tracking who is due, scheduling the visits and billing on a cycle by hand becomes unmanageable fast. Second, accounting friction: if you are re-typing every invoice into [QuickBooks or Xero](/guides/field-service-software-accounting-integrations/), a tool that syncs automatically pays for itself in reclaimed hours. Either one can justify the move even at a small size.',
         ],
       },
       {
         heading: 'What it realistically costs to start',
         body: [
-          'The barrier is lower than many owners assume. Entry plans for a single user run around $29 to $60 a month, and a couple of tools even offer a free tier for very low job volume. So the question is rarely can I afford it, it is whether the time and money you are losing to missed jobs and late invoices now is bigger than a modest monthly plan. Usually, once the pain has started, it is.',
+          'The barrier is lower than many owners assume. Entry plans for a single user run around $29 to $60 a month, and a couple of tools even offer a [free tier](/guides/free-field-service-software/) for very low job volume. So the question is rarely can I afford it, it is whether the time and money you are losing to missed jobs and late invoices now is bigger than a modest monthly plan. Usually, once the pain has started, it is.',
         ],
       },
     ],
@@ -1850,14 +1853,28 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'The length of the commitment',
         body: [
-          'Small-business tools tend to offer month-to-month or annual billing, which keeps your risk low. Enterprise platforms are a different story: multi-year contracts are common, and some users report being locked into three-year terms. The longer the commitment, the more certain you need to be before you sign, because backing out is where the pain starts.',
+          'Small-business tools tend to offer month-to-month or annual billing, which keeps your risk low. Enterprise platforms are a different story: multi-year contracts are common, and some [ServiceTitan](/products/servicetitan/) users report being locked into three-year terms. The longer the commitment, the more certain you need to be before you sign, because backing out is where the pain starts.',
         ],
+        table: {
+          caption: 'The five terms worth reading closely before you sign.',
+          headings: ['Term', 'What to ask', 'Watch for'],
+          rows: [
+            ['Commitment length', 'Month-to-month, annual, or multi-year?', 'Multi-year lock-ins on enterprise tools'],
+            ['Early-exit fee', 'What does it cost to leave early?', 'Quotes from thousands into five figures'],
+            ['Auto-renewal', 'When must I cancel to avoid renewing?', 'Auto-renewal plus 8 to 12% annual rises'],
+            ['Included vs add-ons', 'What is actually in the base price?', 'Phone, marketing, GPS, extra users on top'],
+            ['Data export', 'Can I export my data if I leave?', 'A hard exit means you are locked in'],
+          ],
+        },
       },
       {
         heading: 'Early-exit fees',
         body: [
           'This is the term that catches people hardest. On the heavier platforms, leaving early can trigger significant penalties: contractors have reported being quoted anywhere from a few thousand dollars into five figures to exit a contract before it runs out. Ask the exit question directly during the sales process, get the number in writing, and treat a vague or evasive answer as a warning in itself.',
         ],
+        callout: {
+          text: 'Ask what it costs to leave, during the sales process. A vague answer about the exit is itself the answer.',
+        },
       },
       {
         heading: 'Auto-renewal and price increases',
@@ -1868,7 +1885,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'What is included versus what is an add-on',
         body: [
-          'The base price is rarely the real price. Phone systems, marketing, GPS and fleet tracking, extra users and payment processing are frequently paid extras stacked on top. Before you sign, get an itemized quote of everything you will actually switch on, so the number you commit to is the number you will pay, not the headline that got you in the door.',
+          'The base price is rarely the real price. Phone systems, marketing, GPS and fleet tracking, extra users and [payment processing](/guides/field-service-software-payment-processing/) are frequently paid extras stacked on top. Before you sign, get an itemized quote of everything you will actually switch on, so the number you commit to is the number you will pay, not the headline that got you in the door. Our [pricing guide](/guides/field-service-software-pricing-explained/) covers the full picture.',
         ],
       },
       {
@@ -1900,17 +1917,30 @@ export const GUIDES: GuidePage[] = [
         body: [
           'Implementation splits sharply by the kind of tool. Small-business platforms are self-serve: you can sign up, import your customers and be running real jobs within days, with little or no cost beyond the subscription. Enterprise platforms are a project: structured onboarding, data migration and training, a rollout measured in weeks, and setup fees that can run from a few thousand dollars into the tens of thousands. Know which world your shortlist is in before you commit.',
         ],
+        table: {
+          caption: 'Which world your shortlist is in shapes the whole rollout.',
+          headings: ['', 'Small-business tools', 'Enterprise platforms'],
+          rows: [
+            ['Setup', 'Self-serve signup', 'Structured, guided onboarding'],
+            ['Time to live', 'Days', 'Weeks'],
+            ['Setup fee', 'Little or none', 'Thousands into tens of thousands'],
+            ['Your effort', 'Import customers and start', 'Data migration, config and training'],
+          ],
+        },
       },
       {
         heading: 'The work that is yours, not the vendor’s',
         body: [
           'Even a smooth implementation asks something of you. Someone has to clean and export your existing data, decide how your services and pricing map into the new system, and configure the workflows to match how you actually work. The vendor guides it, but the decisions and the tidy-up are yours, so budget internal time, not just money, for it.',
         ],
+        callout: {
+          text: 'Budget internal time, not just money. The vendor guides the rollout, but the decisions and the clean-up are yours.',
+        },
       },
       {
         heading: 'Accounting is the step that bites',
         body: [
-          'The part of setup that most often goes wrong is the accounting connection, especially with QuickBooks Desktop, which needs a sync agent on a Windows machine and a specific order of operations. Get this configured and tested early with real invoices, because discovering it does not work after go-live is the classic implementation disaster.',
+          'The part of setup that most often goes wrong is the accounting connection, especially with [QuickBooks Desktop](/guides/how-to-connect-field-service-software-to-quickbooks/), which needs a sync agent on a Windows machine and a specific order of operations. Get this configured and tested early with real invoices, because discovering it does not work after go-live is the classic implementation disaster.',
         ],
       },
       {
@@ -1942,24 +1972,37 @@ export const GUIDES: GuidePage[] = [
         body: [
           'The first thing to sort out is which kind of free you are looking at. Most platforms offer a free trial, typically 14 to 30 days, which is a full-featured test drive that ends. A genuine free plan, one you can stay on indefinitely, is much rarer. Both are useful, but they answer different questions: a trial tells you if the tool fits, a free plan tells you if you can run on it long term.',
         ],
+        table: {
+          caption: 'Two different kinds of free that answer different questions.',
+          headings: ['', 'Free trial', 'Free plan'],
+          rows: [
+            ['How long', 'Usually 14 to 30 days', 'Indefinite'],
+            ['Features', 'Full-featured', 'Deliberately limited'],
+            ['It answers', 'Does the tool fit?', 'Can I run on it long term?'],
+            ['Common example', 'Most platforms offer one', '[ServiceM8](/products/servicem8/) free tier'],
+          ],
+        },
       },
       {
         heading: 'Where a real free plan exists',
         body: [
-          'Genuine free tiers do exist at the very small end. ServiceM8, for example, has a free plan capped at a low number of jobs per month, which suits a true micro operation or someone dipping a toe in. These plans are deliberately limited, on job volume, users or features, so they work as a starting point, not a destination, and you should expect to pay once you grow past the cap.',
+          'Genuine free tiers do exist at the very small end. [ServiceM8](/products/servicem8/), for example, has a free plan capped at a low number of jobs per month, which suits a true micro operation or someone dipping a toe in. These plans are deliberately limited, on job volume, users or features, so they work as a starting point, not a destination, and you should expect to pay once you grow past the cap.',
         ],
       },
       {
         heading: 'Use the trial like a real test, not a demo',
         body: [
-          'A free trial is worth far more if you run real jobs through it rather than clicking around. Put a few genuine bookings, quotes and invoices through it, test the mobile app on your technicians’ actual phones, and if accounting matters, sync a real invoice to QuickBooks or Xero and confirm it lands correctly. That is how you find the deal-breakers while it still costs you nothing.',
+          'A free trial is worth far more if you run real jobs through it rather than clicking around. Put a few genuine bookings, quotes and invoices through it, test the [mobile app](/guides/field-service-technician-mobile-app/) on your technicians’ actual phones, and if accounting matters, [sync a real invoice to QuickBooks or Xero](/guides/how-to-connect-field-service-software-to-quickbooks/) and confirm it lands correctly. That is how you find the deal-breakers while it still costs you nothing.',
         ],
       },
       {
         heading: 'When free stops being worth it',
         body: [
-          'Free is a fine place to start and a poor place to get stuck. The moment the job cap, the missing features or the lack of proper support starts costing you more in lost time than a paid plan would cost in money, the free option has done its job and it is time to move up. Treat it as a first step, not a permanent home for a growing business.',
+          'The moment the job cap, the missing features or the lack of proper support starts costing you more in lost time than a paid plan would cost in money, the free option has done its job and it is time to move up. Treat it as a first step, not a permanent home for a growing business.',
         ],
+        callout: {
+          text: 'Free is a fine place to start and a poor place to get stuck.',
+        },
       },
     ],
     related: [
@@ -1982,8 +2025,18 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Where the money actually comes back',
         body: [
-          'The return is not magic, it is a handful of concrete gains. You get paid faster because invoicing and payment happen on site instead of a week later. You bill for work that used to slip through unrecorded. You fit more jobs into a day through tighter scheduling and less wasted driving. And you cut the second trips that cost you a drive and a labor hour for no extra revenue. Add those up and the number is usually bigger than the subscription.',
+          'The return is not magic, it is a handful of concrete gains. You [get paid faster](/guides/how-to-get-paid-faster-field-service/) because invoicing and payment happen on site instead of a week later. You bill for work that used to slip through unrecorded. You fit more jobs into a day through [tighter scheduling](/guides/field-service-scheduling/) and less wasted driving. And you cut the [second trips](/guides/how-to-improve-first-time-fix-rate/) that cost you a drive and a labor hour for no extra revenue. Add those up and the number is usually bigger than the subscription.',
         ],
+        table: {
+          caption: 'Add these gains against the true monthly cost of the tool.',
+          headings: ['Gain', 'Where it shows up'],
+          rows: [
+            ['Paid faster', 'Invoicing and payment on site, not a week later'],
+            ['Fewer missed bills', 'Jobs that used to slip through get invoiced'],
+            ['More jobs per day', 'Tighter scheduling and less wasted driving'],
+            ['Fewer second trips', 'The right parts and info on the first visit'],
+          ],
+        },
       },
       {
         heading: 'The soft gains that are still real',
@@ -1994,14 +2047,17 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Do the math for your own shop',
         body: [
-          'Judge it against your own figures, not a vendor’s claim. Roughly what are you losing now to late or missed invoicing, second trips and idle time in a month? Compare that to the true monthly cost of the tool, subscription plus the add-ons and processing fees you will actually use. For most businesses past a couple of technicians, the losses dwarf the plan. For a very small, tidy operation, it can genuinely be too early.',
+          'Judge it against your own figures, not a vendor’s claim. Roughly what are you losing now to late or missed invoicing, second trips and idle time in a month? Compare that to the true monthly cost of the tool, subscription plus the add-ons and [processing fees](/guides/field-service-software-payment-processing/) you will actually use. For most businesses past a couple of technicians, the losses dwarf the plan. For a very small, tidy operation, it can genuinely be too early. If you want to measure it properly, [track job profitability](/guides/how-to-track-job-profitability/) once you are running.',
         ],
       },
       {
         heading: 'When it is not worth it (yet)',
         body: [
-          'Being honest cuts both ways. If you are tiny, well organized, and nothing is slipping, the return may not be there yet, and forcing an enterprise platform onto a small team is a common way to spend a lot for value you cannot use. The tool is worth it when it fixes problems you actually have, sized to the business you actually run, not the one you imagine you might become.',
+          'Being honest cuts both ways. If you are tiny, well organized, and nothing is slipping, the return may not be there yet, and forcing an enterprise platform onto a small team is a common way to spend a lot for value you cannot use.',
         ],
+        callout: {
+          text: 'The tool is worth it when it fixes problems you actually have, sized to the business you run, not the one you imagine you might become.',
+        },
       },
     ],
     related: [
