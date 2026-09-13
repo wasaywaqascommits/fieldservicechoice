@@ -377,13 +377,35 @@ export interface BestPage {
   seo?: SeoMeta;
 }
 
+/**
+ * A structured article section. `body` paragraphs support inline links written
+ * as [label](/path/). Optional blocks (table, callout, chart, image) render
+ * after the paragraphs when present, so plain heading+body sections still work.
+ */
+export interface GuideSection {
+  heading: string;
+  body: string[];
+  /** A comparison/data table with a header row. */
+  table?: { caption?: string; headings: string[]; rows: string[][] };
+  /** A pull-quote or key-takeaway callout. */
+  callout?: { text: string; source?: string };
+  /** A simple horizontal bar chart rendered as on-brand HTML (license-safe). */
+  chart?: {
+    title?: string;
+    caption?: string;
+    bars: { label: string; value: number; valueLabel?: string }[];
+  };
+  /** An internally hosted image (e.g. a generated diagram); never a stock photo. */
+  image?: { src: string; alt: string; caption?: string };
+}
+
 export interface GuidePage {
   slug: string;
   title: string;
   /** Short category label shown as an eyebrow and on the featured image. */
   category?: string;
   intro: string;
-  sections: { heading: string; body: string[] }[];
+  sections: GuideSection[];
   /** Contextual internal links, shown as a "Related" block (outer -> core pages). */
   related?: { label: string; href: string }[];
   publishedAt: IsoDate;

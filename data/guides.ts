@@ -19,17 +19,26 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'What it does day to day',
         body: [
-          'Most of the value comes from a few everyday jobs. Scheduling and dispatch put the right technician on the right job at the right time, and let you shuffle things when a cancellation or an emergency lands. A mobile app gives technicians the job details, customer history and directions on their phone, usually with an offline option for basements and rural areas where the signal drops.',
-          'On the money side, the software builds estimates, turns approved work into invoices, and takes card or ACH payment on the spot. Automated “on my way” texts cut down on missed appointments. And a proper customer record holds the full history of every visit, so the next technician isn’t starting from zero.',
-          'Bigger operations lean on the heavier features: a flat-rate pricebook so every technician quotes the same number, membership or service agreements that bring in recurring revenue, inventory and truck-stock tracking, and reporting that shows where the money is really being made.',
+          'Most of the value comes from a few everyday jobs. [Scheduling](/guides/field-service-scheduling/) and [dispatch](/guides/field-service-dispatching/) put the right technician on the right job at the right time, and let you shuffle things when a cancellation or an emergency lands. A [mobile app](/guides/field-service-technician-mobile-app/) gives technicians the job details, customer history and directions on their phone, usually with an offline option for basements and rural areas where the signal drops.',
+          'On the money side, the software builds [estimates](/guides/field-service-estimating/), turns approved work into [invoices](/guides/field-service-invoicing/), and takes card or ACH payment on the spot. Automated “on my way” texts cut down on missed appointments. And a proper customer record holds the full history of every visit, so the next technician isn’t starting from zero.',
+          'Bigger operations lean on the heavier features: a [flat-rate pricebook](/guides/flat-rate-pricebook/) so every technician quotes the same number, [service agreements](/guides/field-service-service-agreements/) that bring in recurring revenue, [inventory and truck-stock tracking](/guides/field-service-inventory-management/), and reporting that shows where the money is really being made.',
         ],
       },
       {
         heading: 'What it actually costs',
         body: [
-          'Pricing sorts into three rough bands. Starter plans for a single user run around $29 to $50 a month (Jobber’s entry plan is $29 billed annually, for example). Small-crew plans that add automation, online booking and five to ten users tend to land between $100 and $200 a month. And the enterprise platforms built for larger trades, ServiceTitan being the obvious one, are quote-based, so you talk to sales rather than read a price off a page.',
-          'Two costs sit outside that subscription and catch people out. First, payment processing: if you collect card payments through the software, expect roughly 2.9% plus 30 cents per card transaction and about 1% on ACH, on top of your plan. For a business invoicing tens of thousands a month, that is a real line item. Second, implementation. The small-business tools are self-serve and you can be live in days; the enterprise platforms involve data migration and training and a multi-week rollout, which is a cost in both money and attention.',
+          'Pricing sorts into three rough bands. Starter plans for a single user run around $29 to $50 a month ([Jobber](/products/jobber/)’s entry plan is $29 billed annually, for example). Small-crew plans that add automation, online booking and five to ten users tend to land between $100 and $200 a month. And the enterprise platforms built for larger trades, [ServiceTitan](/products/servicetitan/) being the obvious one, are quote-based, so you talk to sales rather than read a price off a page.',
+          'Two costs sit outside that subscription and catch people out. First, payment processing: if you collect card payments through the software, expect roughly 2.9% plus 30 cents per card transaction and about 1% on ACH, on top of your plan. For a business invoicing tens of thousands a month, that is a real line item. Second, implementation. The small-business tools are self-serve and you can be live in days; the enterprise platforms involve data migration and training and a multi-week rollout, which is a cost in both money and attention. Our [pricing guide](/guides/field-service-software-pricing-explained/) breaks all of this down.',
         ],
+        chart: {
+          title: 'Typical monthly price bands',
+          caption: 'Indicative starting points, not exact quotes. See verified pricing on each product page. Enterprise is quoted per technician.',
+          bars: [
+            { label: 'Starter (1 user)', value: 50, valueLabel: '$29–$50/mo' },
+            { label: 'Small crew (5–10 users)', value: 200, valueLabel: '$100–$200/mo' },
+            { label: 'Enterprise (per technician)', value: 400, valueLabel: '$245–$400/tech' },
+          ],
+        },
       },
       {
         heading: 'Who it’s for, and who can wait',
@@ -58,6 +67,9 @@ export const GUIDES: GuidePage[] = [
           'The most common and expensive mistake is buying a big enterprise platform before you need it, then paying for months of setup and features nobody touches. The mirror image is just as costly: picking the cheapest starter tool, outgrowing it in a year, and going through a painful data migration you could have skipped. Buy for where you will be in eighteen months, not for today and not for some distant someday.',
           'The other trap is shopping by feature list. Every vendor’s list looks complete on paper. What actually matters is whether the two or three things you do most often are genuinely good, and whether the tool fits how your team already works. A long feature list you never use is not value, it is just a higher bill.',
         ],
+        callout: {
+          text: 'Buy for where you will be in about eighteen months, not for today and not for some distant someday.',
+        },
       },
       {
         heading: 'How to start without overbuying',
@@ -949,16 +961,28 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Check integrations early, especially accounting',
         body: [
-          'Accounting is the integration that most often becomes a deal-breaker, and it is worth checking on day one. The big divide is QuickBooks Online versus QuickBooks Desktop. Several popular tools, Jobber among them, sync only with QuickBooks Online, while others like FieldEdge and Service Fusion are built with Desktop firmly in mind. If your books run on Desktop, that fact alone eliminates part of the market.',
-          'The same goes for Xero, payment processing and anything else your business already depends on. Verify current support with the vendor rather than trusting a feature-list checkmark, and do it before you fall for a demo.',
+          'Accounting is the integration that most often becomes a deal-breaker, and it is worth checking on day one. The big divide is QuickBooks Online versus QuickBooks Desktop. Several popular tools, [Jobber](/products/jobber/) among them, sync only with QuickBooks Online, while others like [FieldEdge](/products/fieldedge/) and [Service Fusion](/products/service-fusion/) are built with Desktop firmly in mind. If your books run on Desktop, that fact alone eliminates part of the market.',
+          'The same goes for Xero, payment processing and anything else your business already depends on. Verify current support with the vendor rather than trusting a feature-list checkmark, and do it before you fall for a demo. Our [accounting integrations guide](/guides/field-service-software-accounting-integrations/) covers who supports what.',
         ],
+        table: {
+          caption: 'Confirm the exact version with the vendor; support varies and changes.',
+          headings: ['Your accounting', 'What to know', 'Strong fits'],
+          rows: [
+            ['QuickBooks Online', 'Most tools support it', '[Jobber](/products/jobber/), [Housecall Pro](/products/housecall-pro/)'],
+            ['QuickBooks Desktop', 'Fewer tools; confirm Desktop specifically', '[FieldEdge](/products/fieldedge/), [Service Fusion](/products/service-fusion/)'],
+            ['Xero', 'A QuickBooks-first market, so verify it', '[Tradify](/products/tradify/), [ServiceM8](/products/servicem8/)'],
+          ],
+        },
       },
       {
         heading: 'Be realistic about implementation and total cost',
         body: [
-          'The monthly price is only part of the decision. Deeper platforms require data migration, configuration and training, and enterprise tools like ServiceTitan can carry implementation fees running into thousands of dollars and a rollout measured in weeks. On top of the subscription, most tools that take card payments add processing fees of roughly 2.9% plus 30 cents per transaction, which is a real cost at volume.',
+          'The monthly price is only part of the decision. Deeper platforms require data migration, configuration and training, and enterprise tools like [ServiceTitan](/products/servicetitan/) can carry implementation fees running into thousands of dollars and a rollout measured in weeks. On top of the subscription, most tools that take card payments add processing fees of roughly 2.9% plus 30 cents per transaction, which is a real cost at volume.',
           'Add it up as a total: subscription, extra users, the add-ons you will actually use, processing fees and implementation. The cheapest sticker price is regularly not the cheapest tool to run.',
         ],
+        callout: {
+          text: 'Ask a vendor directly who their tool is a poor fit for. An honest answer tells you more than any feature list, and anyone who claims it is perfect for everyone is the one to be wary of.',
+        },
       },
       {
         heading: 'What a good demo looks like',
@@ -988,22 +1012,44 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'The rough price bands',
         body: [
-          'Pricing sorts into three broad bands. Starter plans for a single user tend to run about $29 to $60 a month (Jobber starts at $29, Housecall Pro at $59, both billed annually). Small-crew plans that add automation, online booking and five to ten users usually land between roughly $100 and $300 a month, depending on the tool and the tier. And enterprise platforms built for larger trades, ServiceTitan being the obvious example, are quote-based, with contractors widely reporting figures in the region of $245 to $400 per technician per month.',
+          'Pricing sorts into three broad bands. Starter plans for a single user tend to run about $29 to $60 a month ([Jobber](/products/jobber/) starts at $29, [Housecall Pro](/products/housecall-pro/) at $59, both billed annually). Small-crew plans that add automation, online booking and five to ten users usually land between roughly $100 and $300 a month, depending on the tool and the tier. And enterprise platforms built for larger trades, [ServiceTitan](/products/servicetitan/) being the obvious example, are quote-based, with contractors widely reporting figures in the region of $245 to $400 per technician per month.',
           'Treat these as orientation, not gospel. Vendors change prices, and the quote-based numbers are third-party reports, not official rates. But the bands are stable enough to tell you quickly whether a tool is in your world or not.',
         ],
       },
       {
         heading: 'How the pricing model changes the math',
         body: [
-          'The billing model matters as much as the number. Per-user pricing (Tradify, for instance) is friendly for a solo operator but climbs with every seat you add. Flat pricing with unlimited users (Service Fusion) can be far cheaper for a bigger dispatch team, since the whole office and every technician are included. And a few tools price by something else entirely: ServiceM8 charges by the number of jobs per month rather than by users. Run the math at your actual headcount and job volume, because the cheapest model for a solo tradesperson can be the most expensive one for a fifteen-person shop.',
+          'The billing model matters as much as the number. Per-user pricing ([Tradify](/products/tradify/), for instance) is friendly for a solo operator but climbs with every seat you add. Flat pricing with unlimited users ([Service Fusion](/products/service-fusion/)) can be far cheaper for a bigger dispatch team, since the whole office and every technician are included. And a few tools price by something else entirely: [ServiceM8](/products/servicem8/) charges by the number of jobs per month rather than by users. Run the math at your actual headcount and job volume, because the cheapest model for a solo tradesperson can be the most expensive one for a fifteen-person shop.',
         ],
+        table: {
+          caption: 'Match the billing model to your size, not the headline price.',
+          headings: ['Model', 'How you are billed', 'Cheapest when', 'Example'],
+          rows: [
+            ['Per user', 'Per seat, per month', 'You are solo or a very small team', '[Tradify](/products/tradify/)'],
+            ['Flat / unlimited users', 'One flat plan fee', 'You have a bigger office and field team', '[Service Fusion](/products/service-fusion/)'],
+            ['Per job', 'By jobs handled per month', 'You run a low volume of larger jobs', '[ServiceM8](/products/servicem8/)'],
+            ['Quote-based', 'Custom quote by size and modules', 'You need enterprise depth', '[ServiceTitan](/products/servicetitan/)'],
+          ],
+        },
       },
       {
         heading: 'The costs that are not on the pricing page',
         body: [
-          'The subscription is the floor, not the ceiling. Watch for four things. Payment processing: if you collect cards in-app, expect roughly 2.9% plus 30 cents per transaction and about 1% on ACH, on top of your plan. Add-on modules: phone systems, marketing, GPS and fleet tracking, and AI tools are often paid extras rather than part of the base. Extra users: many plans include a set number of seats and charge per head beyond that. And implementation: enterprise platforms can carry setup fees running from a few thousand dollars into the tens of thousands.',
+          'The subscription is the floor, not the ceiling. Watch for four things. [Payment processing](/guides/field-service-software-payment-processing/): if you collect cards in-app, expect roughly 2.9% plus 30 cents per transaction and about 1% on ACH, on top of your plan. Add-on modules: phone systems, marketing, GPS and fleet tracking, and AI tools are often paid extras rather than part of the base. Extra users: many plans include a set number of seats and charge per head beyond that. And implementation: enterprise platforms can carry setup fees running from a few thousand dollars into the tens of thousands.',
           'Add all of that to the sticker price before you compare. The lowest headline plan is regularly not the lowest total cost once processing and add-ons are counted.',
         ],
+        chart: {
+          title: 'Roughly what card processing costs each month',
+          caption: 'At about 2.9% per card transaction (plus 30 cents each), before ACH, which is cheaper at around 1%. This is on top of your subscription.',
+          bars: [
+            { label: '$10,000 invoiced by card', value: 290, valueLabel: '~$290/mo' },
+            { label: '$50,000 invoiced by card', value: 1450, valueLabel: '~$1,450/mo' },
+            { label: '$100,000 invoiced by card', value: 2900, valueLabel: '~$2,900/mo' },
+          ],
+        },
+        callout: {
+          text: 'The lowest headline plan is regularly not the cheapest tool to run once processing and add-ons are counted.',
+        },
       },
       {
         heading: 'Why so many enterprise tools hide their price',

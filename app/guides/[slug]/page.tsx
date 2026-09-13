@@ -6,6 +6,7 @@ import { buildMetadata, absoluteUrl } from '@/lib/seo/metadata';
 import { articleJsonLd, jsonLdScript } from '@/lib/seo/jsonld';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { AuthorByline } from '@/components/shared/AuthorByline';
+import { GuideSections } from '@/components/guides/GuideContent';
 import { CTASection } from '@/components/shared/CTASection';
 
 export function generateStaticParams() {
@@ -69,16 +70,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         </div>
         <p className="mt-4 max-w-3xl text-lg text-ink-muted">{g.intro}</p>
 
-        <div className="mt-8 max-w-3xl prose-fsc">
-          {g.sections.map((s) => (
-            <section key={s.heading}>
-              <h2>{s.heading}</h2>
-              {s.body.map((b, i) => (
-                <p key={i}>{b}</p>
-              ))}
-            </section>
-          ))}
-        </div>
+        <GuideSections sections={g.sections} />
 
         {g.related && g.related.length > 0 && (
           <div className="mt-10 max-w-3xl border-t border-slate-200 pt-6">
