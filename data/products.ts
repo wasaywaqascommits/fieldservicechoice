@@ -210,6 +210,13 @@ export const PRODUCTS: Product[] = [
           'Where it stops is depth. There is no advanced flat-rate pricebook, commercial job costing is thin, and the administrative controls are not built for multi-branch operations. If you are a growing residential team, that is a fair trade and Jobber is a strong default. If you are moving toward commercial or enterprise work, you will outgrow it, and that is by design rather than a flaw.',
         ],
       },
+      {
+        heading: 'What users consistently report',
+        body: [
+          'Across the major review platforms Jobber sits around 4.5 out of 5, and the praise is remarkably consistent: an easy all-in-one that small teams adopt fast, a quoting-to-invoicing flow people genuinely like, and a support team that gets singled out again and again as responsive and helpful.',
+          'The recurring complaints are just as consistent. Reporting is basic, so if you want metrics like first-time-fix rate or customer lifetime value you will feel the ceiling quickly. The map and routing view frustrates people. And because it is built for service calls rather than multi-phase projects, you cannot run several invoices under one job. The jump past five users also comes up a lot as the point where the price starts to sting.',
+        ],
+      },
     ],
     alternatives: ['housecall-pro', 'workiz', 'fieldpulse', 'servicem8'],
     sources: officialSources('Jobber', 'getjobber.com', { website: true, pricing: true, integrations: true }),
@@ -270,6 +277,13 @@ export const PRODUCTS: Product[] = [
           'Where it stops is heavier operations: complex commercial workflows, deep inventory or project management, and enterprise multi-entity setups are not its home turf. If you are a growing residential company, that trade is fine. If you are moving into large commercial work, look higher up the range.',
         ],
       },
+      {
+        heading: 'What users consistently report',
+        body: [
+          'On Capterra Housecall Pro rates highly, around 4.7, and owners of five-to-fifteen-technician residential shops report real gains in scheduling, payments and customer engagement. The customer-facing polish is what fans point to.',
+          'The complaints are worth taking seriously, and its Trustpilot score has slipped over the past couple of years. The single most common one is cost creep: people sign up near $149 and find themselves closer to $300 or $400 a few months later after switching on add-ons they assumed were included. Support wait times, aggressive sales outreach and occasional billing problems also recur, and it is a weak fit for project-based and solo operators.',
+        ],
+      },
     ],
     alternatives: ['jobber', 'workiz', 'fieldpulse', 'service-fusion'],
     sources: officialSources('Housecall Pro', 'housecallpro.com', { website: true, pricing: true, integrations: true }),
@@ -324,6 +338,13 @@ export const PRODUCTS: Product[] = [
         body: [
           'If you are a larger, growth-focused trade that will actually use enterprise depth, and you can absorb a multi-week rollout and a serious budget, ServiceTitan is the most capable option in the category and often worth it.',
           'If you are solo or a small team, want the lowest cost, or need to be live in days rather than weeks, this is not your tool, and forcing it will cost you money and momentum. Look at the mid-market and small-business platforms instead.',
+        ],
+      },
+      {
+        heading: 'What users consistently report',
+        body: [
+          'Users credit ServiceTitan as a genuinely comprehensive system that centralizes scheduling, dispatch, inventory and finance in one place, and larger shops that use it fully tend to defend it strongly.',
+          'The complaints are almost all about commitment and cost rather than capability. Contracts are typically multi-year with steep early-exit fees (users report being quoted thousands of dollars to leave), there is no free trial, onboarding is long, and support can be slow. Technicians also report the mobile app crashing and losing data offline. The clear takeaway from reviews: negotiate hard and get every contract term in writing before you sign.',
         ],
       },
     ],
@@ -382,6 +403,13 @@ export const PRODUCTS: Product[] = [
           'Where it thins out is the heavier end: commercial job costing, granular enterprise controls and deep reporting are not its focus. Growing residential and light-commercial teams fit well; large commercial contractors will want more.',
         ],
       },
+      {
+        heading: 'What users consistently report',
+        body: [
+          'On the review sites Workiz rates well, around 4.4 to 4.6, and the phone-driven features are what fans single out: call masking and recording, automated client reminders, online booking and AI call answering.',
+          'The louder warnings show up on Trustpilot, where the recurring themes are billing that continues after a cancellation request, long delays porting a business phone number back out, and shifting account managers. The practical advice from users is sound and worth following: start month-to-month, get the cancellation process confirmed in writing, and do not port your main business number over until you are sure you are staying.',
+        ],
+      },
     ],
     alternatives: ['jobber', 'housecall-pro', 'fieldpulse', 'kickserv'],
     sources: officialSources('Workiz', 'workiz.com', { website: true, integrations: true }),
@@ -436,6 +464,13 @@ export const PRODUCTS: Product[] = [
         body: [
           'For a growing multi-trade shop, FieldPulse gives you a lot of functionality for the money and it is being actively developed, so the feature set keeps widening. That momentum is a real part of the pitch.',
           'The trade-offs are a smaller brand footprint than the incumbents and a few areas that still feel like they are maturing. It is not built to be a true enterprise platform, so if you are heading into large, complex commercial operations, weigh it against the heavier tools before committing.',
+        ],
+      },
+      {
+        heading: 'What users consistently report',
+        body: [
+          'FieldPulse rates very highly on the review sites, around 4.8, with consistent praise for an intuitive all-in-one, the guided job-stage checklists that keep technicians consistent, US-based support and hands-on onboarding, and a genuinely usable offline mode.',
+          'Two complaints recur. The hidden pricing frustrates people who want to compare on paper before a sales call. And, importantly if accounting drives your choice, several reviewers single out the QuickBooks Desktop sync as unreliable, creating duplicate entries and needing manual fixes. So while FieldPulse does support Desktop, treat that sync as something to test hard during the trial rather than assume, especially if your books live in Desktop.',
         ],
       },
     ],
@@ -496,6 +531,13 @@ export const PRODUCTS: Product[] = [
           'The trade for that stability is polish. The interface feels dated next to the newest entrants, and the marketing and customer-experience tooling is lighter than the residential-focused brands. If a modern look and built-in marketing are high on your list, weigh that. If predictable operations and flat pricing for a full team matter more, it is a practical, proven choice.',
         ],
       },
+      {
+        heading: 'What users consistently report',
+        body: [
+          'Users like Service Fusion for easy setup, responsive support, customizable invoicing and, above all, the flat unlimited-user pricing, which several reviewers call the best-value part of the platform for a growing team.',
+          'The recurring complaints center on performance and the app. Search and saves slow down as your job volume climbs, the Android app rates far below the iOS one, inventory management is widely called weak, and there is no offline mode at all. If your crews are Android-heavy or regularly work without signal, weigh those two points carefully before committing.',
+        ],
+      },
     ],
     alternatives: ['fieldpulse', 'kickserv', 'housecall-pro', 'fieldedge'],
     sources: officialSources('Service Fusion', 'servicefusion.com', { website: true, pricing: true, integrations: true }),
@@ -548,6 +590,13 @@ export const PRODUCTS: Product[] = [
         heading: 'What to weigh',
         body: [
           'Pricing is quote-based, so you will not find a number on the site, expect to talk to sales and budget for a moderate, guided implementation that includes the QuickBooks setup. The interface is functional rather than flashy. For a Desktop-centric mechanical contractor that leans on maintenance agreements, that is a fair trade for the integration depth. For a lean, cloud-native startup, look elsewhere first.',
+        ],
+      },
+      {
+        heading: 'What users consistently report',
+        body: [
+          'FieldEdge is repeatedly named the go-to for established HVAC shops running on QuickBooks Desktop, and users value the two-way Desktop sync, call-source and maintenance-agreement tracking, and the Coolfront flat-rate pricing.',
+          'The complaints are notable precisely because accounting is its headline strength. Several reviewers report QuickBooks sync glitches and data issues, along with system downtime that can lock out both office and field, an aging mobile experience, no free trial, an annual contract, and limited custom reporting. The sensible move from those reviews: test the Desktop sync on your own data during evaluation rather than taking the integration on faith.',
         ],
       },
     ],
@@ -607,6 +656,13 @@ export const PRODUCTS: Product[] = [
         heading: 'Where it stops',
         body: [
           'The trade for that simplicity is depth. Dispatch and the pricebook are lighter than the trade-focused platforms, and it is not built to run a larger multi-crew operation. If you are growing fast or need advanced scheduling and pricebook tools, you will likely outgrow it, but for a small team watching the budget, that is rather the point.',
+        ],
+      },
+      {
+        heading: 'What users consistently report',
+        body: [
+          'Kickserv earns solid marks, around 4.4 with roughly 88 percent satisfaction, for being easy to learn, a clean calendar view, and useful customer-facing touches like seeing when an invoice or estimate has been opened.',
+          'The complaints are the ones you would expect from a budget tool: reporting is basic, the workflows are not very flexible for unusual businesses, the mobile app can be glitchy and slow, and the interface feels dated next to newer, AI-driven platforms. The QuickBooks Desktop add-on fee also comes up as a transparency gripe. For a small team that wants the essentials cheaply, most reviewers still find the trade worth it.',
         ],
       },
     ],
@@ -670,6 +726,13 @@ export const PRODUCTS: Product[] = [
           'This is a light tool by design. Reporting is thinner than the bigger platforms, there is no flat-rate pricebook or financing, and it is not meant to run a large operation. On accounting it syncs with QuickBooks Online and Xero but not Desktop. For a solo operator or a small Apple-based trade that wants essentials without overhead, that is exactly the trade you want.',
         ],
       },
+      {
+        heading: 'What users consistently report',
+        body: [
+          'ServiceM8 users praise a smooth, simple interface, real-time tracking, and on-site quoting and invoicing that fit how field technicians actually work, especially on the polished iOS app.',
+          'The consistent knocks are a slow, clunky invoicing flow, a reliance on a solid internet connection, and above all the weak Android story. A lighter Android app arrived in 2024 and expanded in 2025, but the vendor still steers main technicians toward iPhones, so an Android-first crew should test it thoroughly before committing rather than assume parity with the iOS experience.',
+        ],
+      },
     ],
     alternatives: ['jobber', 'tradify', 'kickserv', 'workiz'],
     sources: officialSources('ServiceM8', 'servicem8.com', { website: true, pricing: true, integrations: true }),
@@ -721,6 +784,13 @@ export const PRODUCTS: Product[] = [
         heading: 'What you are signing up for',
         body: [
           'Depth this heavy comes with a real rollout. Implementation is a structured, guided project, not a weekend, and pricing is quote-based, so you talk to sales rather than read a number off the page. On accounting it syncs with QuickBooks Online and Xero. For a commercial or project-driven trade that needs this, it is capable and worth the effort. For a simple residential operation, it is more system than the work requires.',
+        ],
+      },
+      {
+        heading: 'What users consistently report',
+        body: [
+          'Where Simpro fits, larger commercial and project contractors, users value the depth: strong scheduling, real inventory, and job costing that holds up on multi-stage work, with good initial contact from the vendor.',
+          'The complaints cluster in two places. Implementation is heavy, with time-consuming data transfer and configuration and an interface that feels dated (forget to save and you can lose work). And the contracts are firm, with reported multi-year lock-ins, annual increases and exit fees. Tellingly, the negative reviews concentrate among small two-to-ten-person shops that were simply too small for it, which is a size-fit warning more than a quality one.',
         ],
       },
     ],
@@ -776,6 +846,13 @@ export const PRODUCTS: Product[] = [
           'This is squarely an enterprise-leaning commercial tool. There is no self-serve free trial, pricing is quote-based, and onboarding is a structured implementation. If you are a residential shop, a solo operator, or you want a low-cost starter tool, BuildOps is not the right call and will feel like too much. It earns its place with commercial specialty contractors that have the scale to use it.',
         ],
       },
+      {
+        heading: 'What users consistently report',
+        body: [
+          'Commercial contractors like that BuildOps is built for their world without the residential clutter, that it centralizes service and project work in one system, and that the support team is responsive through onboarding and troubleshooting.',
+          'The trade-offs are a steep learning curve, a mobile interface some reviewers find cluttered, and a cost that feels high for smaller teams. Setup typically runs four to eight weeks and pricing is quote-only. Reviewers are clear about the sweet spot: commercial mechanical and specialty shops around several million dollars in revenue and up, where the depth pays for the effort.',
+        ],
+      },
     ],
     alternatives: ['servicetitan', 'simpro', 'servicetrade', 'commusoft'],
     sources: officialSources('BuildOps', 'buildops.com', { website: true, integrations: true }),
@@ -827,6 +904,13 @@ export const PRODUCTS: Product[] = [
         heading: 'What to weigh',
         body: [
           'This is not a tool for a solo operator doing occasional jobs, and the value only appears once you have real maintenance workflows to run. Pricing is quote-based, and setup takes some planning because you are configuring how your contracts and planned maintenance actually work. For a maintenance-driven trade, that upfront effort is the point. For simple one-off residential work, it is more than you need.',
+        ],
+      },
+      {
+        heading: 'What users consistently report',
+        body: [
+          'Commusoft rates very highly, around 94 percent satisfaction, with maintenance-driven contractors, who praise the end-to-end job flow, planned-maintenance scheduling, an offline mobile app and strong support, all without a six-figure implementation.',
+          'The cautions are contractual and worth reading closely. Pricing is not public, the 12-month term auto-renews with the right to raise prices annually, and users note strict terms (falling only a little late on an invoice can be treated as a default). Fleet GPS and advanced pipeline management cost extra, so map out which add-ons you will actually need before you sign the contract.',
         ],
       },
     ],
@@ -882,6 +966,13 @@ export const PRODUCTS: Product[] = [
           'Flexibility is not free. The same configurability that makes Zuper powerful means setup is more involved than a turnkey tool, and the effort scales with how much you customize. Pricing is quote-based. If you are a small team that just wants something that works out of the box, this is more platform than you need. If you have specific workflows and the will to configure them, that is where it earns its place.',
         ],
       },
+      {
+        heading: 'What users consistently report',
+        body: [
+          'Zuper users highlight flexible scheduling, real-time technician tracking, strong configurability and Salesforce integration, and a support team that is praised particularly during implementation.',
+          'The complaints match the flexible-but-not-turnkey positioning: a steep learning curve and an interface some find non-intuitive, mobile sync delays, clunky reporting, and a sense that it is expensive for what you get versus alternatives. The user community is smaller than the big platforms too, so there is less peer knowledge to lean on when you hit a wall. Review counts are modest, so weigh these as directional.',
+        ],
+      },
     ],
     alternatives: ['servicetitan', 'simpro', 'buildops', 'fieldpulse'],
     sources: officialSources('Zuper', 'zuper.co', { website: true, integrations: true }),
@@ -933,6 +1024,13 @@ export const PRODUCTS: Product[] = [
         heading: 'Know the boundaries',
         body: [
           'This is a deliberately narrow tool, and that is a feature, not a bug, for the right buyer. It is not built for residential shops, solo operators or simple one-off job businesses, and pricing is quote-based. If you are a commercial mechanical or life-safety contractor that lives on inspections and recurring accounts, it is one of the most focused options available. Outside that lane, a broader platform fits better.',
+        ],
+      },
+      {
+        heading: 'What users consistently report',
+        body: [
+          'ServiceTrade rates highly, around 92 percent satisfaction, with commercial and fire-protection contractors, who praise an intuitive interface, strong recurring-service and inspection setup, and real-time visibility between office and field.',
+          'The recurring complaints are about stability and flexibility: some users feel updates ship under-tested, customization in forms and reports is limited, and a few single out the Inspection Manager as having grown less reliable over time. Cost also climbs as you add advanced features. It is at its best when your work genuinely is inspection-driven commercial service, which is exactly who it is built for.',
         ],
       },
     ],
@@ -991,6 +1089,13 @@ export const PRODUCTS: Product[] = [
         heading: 'Where it stops',
         body: [
           'The trade for that simplicity is depth. Dispatch and reporting are lighter than the trade platforms, and it is not designed to run a larger, office-driven operation. On accounting it syncs with QuickBooks Online and Xero. For a solo operator or a small crew that values ease of use above all, that is a fair and deliberate trade. If you are scaling toward a bigger dispatch team, plan to reassess.',
+        ],
+      },
+      {
+        heading: 'What users consistently report',
+        body: [
+          'Tradify rates extremely well, around 4.8 across thousands of reviews, with owners singling out how much faster quoting becomes (jobs that used to take 30 to 45 minutes dropping under 10), a mobile app technicians pick up without training, and one-to-one phone onboarding that new users appreciate.',
+          'The limits are about scale, not quality. Per-user pricing means the cost rises directly with headcount, reporting is not deep enough for larger operations, and HVAC firms with complex service agreements want more custom fields than it offers. It is built for small crews, and the reviews reflect exactly that fit.',
         ],
       },
     ],
