@@ -263,6 +263,12 @@ export interface Product {
   logoMark: string;
   /** Brand color used for the placeholder logo tile. */
   brandColor: string;
+  /**
+   * Path to a real, licensed vendor logo (e.g. /logos/jobber.svg). When set,
+   * it renders in place of the initials tile, contained on a white tile at the
+   * site's standard sizes. Leave undefined to fall back to the branded tile.
+   */
+  logoImage?: string;
 
   bestFor: string[];
   notIdealFor: string[];
