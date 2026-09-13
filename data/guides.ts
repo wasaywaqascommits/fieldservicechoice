@@ -1028,6 +1028,283 @@ export const GUIDES: GuidePage[] = [
     updatedAt: '2026-09-13',
     published: true,
   },
+  {
+    slug: 'how-to-switch-field-service-software',
+    title: 'How to Switch Field Service Software Without Losing Your Mind',
+    category: 'How-to guide',
+    intro:
+      'Changing the system your whole business runs on is nerve-wracking, which is why plenty of shops stay on a tool they have outgrown for years. Done in the right order, a switch is manageable. Here is the sequence that keeps a migration from turning into a disaster.',
+    sections: [
+      {
+        heading: 'Get clear on why you are moving',
+        body: [
+          'Before you look at a single new tool, write down the two or three things your current software cannot do that are actually costing you money: no flat-rate pricebook, no QuickBooks Desktop sync, reporting you cannot trust, a mobile app the crew refuses to use. That list is your shortlist filter and your success test. If a new platform does not fix those, switching is just pain for its own sake.',
+        ],
+      },
+      {
+        heading: 'Export and clean your data first',
+        body: [
+          'Your customer list, job history, open invoices and price list are the assets you are moving. Export them from your current system early, while you still have access, and clean them up: dedupe customers, fix obvious errors, and delete the junk you do not need to carry over. A migration is the one good chance you will get to start with tidy data, so take it.',
+          'Confirm what the new vendor can actually import. Most will bring in customers and basic history from a spreadsheet; deep job history and attachments are harder. Ask specifically, and get it in writing, rather than assuming everything transfers.',
+        ],
+      },
+      {
+        heading: 'Sort out accounting before you commit',
+        body: [
+          'The most common migration trap is accounting. If your books run on QuickBooks Desktop, confirm the new tool syncs with Desktop, not just Online, because several popular platforms are Online-only. Test the sync with a handful of real invoices during the trial and check they land correctly in your books. This is the single check that saves the most heartache later.',
+        ],
+      },
+      {
+        heading: 'Run a parallel period, then cut over',
+        body: [
+          'Do not flip the whole business overnight. Pick a slow week, load the new system, and run a small batch of real jobs through it end to end while the old system is still there as a safety net. Fix what breaks, train the crew on the mobile app, and only then set a hard cut-over date. Keep read-only access to the old system for a few months so you can look up history.',
+        ],
+      },
+      {
+        heading: 'Expect a dip, then a lift',
+        body: [
+          'The first two weeks on any new system are slower, always. Technicians grumble, quotes take longer, and it feels like a mistake. That dip is normal and temporary. Warn the team it is coming, push through it, and measure against the problem list you wrote at the start. If the new tool is fixing those, the lift arrives within a month or two.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'How to choose field service software', href: '/guides/how-to-choose-field-service-software/' },
+      { label: 'How to get your team to use new software', href: '/guides/how-to-get-team-to-use-field-service-software/' },
+      { label: 'Best field service software with QuickBooks', href: '/best/field-service-software-with-quickbooks/' },
+      { label: 'Find your best-fit software', href: '/find-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'how-to-build-a-flat-rate-pricebook',
+    title: 'How to Build a Flat-Rate Pricebook That Actually Works',
+    category: 'How-to guide',
+    intro:
+      'A flat-rate pricebook makes every technician quote the same price for the same work, protects your margin, and speeds up selling. Building one feels daunting, but it comes down to a clear method. Here is how to put one together from scratch.',
+    sections: [
+      {
+        heading: 'Start with your most common jobs',
+        body: [
+          'Do not try to price everything at once. Pull your last few months of jobs and list the twenty or thirty tasks you do most often. Those handful of repeat jobs are where a pricebook pays off fastest, and they usually cover the large majority of your work. You can add the long tail later.',
+        ],
+      },
+      {
+        heading: 'Price from real costs, not guesses',
+        body: [
+          'For each task, work out your true cost: the labor hours it actually takes, the parts and materials, and a fair share of your overhead (truck, insurance, office, tools). Then add your target profit margin. The number that comes out is your flat rate. Pricing from a competitor is how you quietly lose money, because you do not know their costs, only yours.',
+        ],
+      },
+      {
+        heading: 'Build in good, better and best',
+        body: [
+          'For anything with options, offer three versions: a basic fix, a mid-tier option, and a premium one. Customers who are only ever shown one price can accept or decline. Customers shown three choose a level, and a meaningful share choose up, which lifts your average ticket without any hard selling. This is one of the highest-return moves a trades business can make.',
+        ],
+      },
+      {
+        heading: 'Put it on the technician’s device',
+        body: [
+          'A pricebook in a binder gets ignored. The point is that a technician taps a task on their phone and the price, description and options appear instantly, so the quote is consistent and takes seconds. This is where software matters: ServiceTitan and FieldEdge are known for deep, presentable pricebooks, while lighter tools like Jobber have little or none, so if a pricebook is central, let that shape your software choice.',
+        ],
+      },
+      {
+        heading: 'Review it on a schedule',
+        body: [
+          'A pricebook is not set-and-forget. Parts costs move, wages rise, and a rate you set last year may now be underwater. Put a recurring reminder in the calendar, quarterly is sensible, to review your costs and update the numbers. A pricebook that drifts out of date quietly erodes the margin it was built to protect.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'Flat-rate pricebook explained', href: '/guides/flat-rate-pricebook/' },
+      { label: 'Estimating and quoting in field service', href: '/guides/field-service-estimating/' },
+      { label: 'Best HVAC field service software', href: '/best/hvac-field-service-software/' },
+      { label: 'ServiceTitan review', href: '/products/servicetitan/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'how-to-reduce-no-shows-field-service',
+    title: 'How to Reduce No-Shows and Missed Appointments',
+    category: 'How-to guide',
+    intro:
+      'A missed appointment is money gone twice: the job you did not do, and the slot you could have filled. Most no-shows are preventable with a few simple habits and the automation to make them stick. Here is how to cut them down.',
+    sections: [
+      {
+        heading: 'Confirm the appointment automatically',
+        body: [
+          'The biggest single lever is a reminder the customer actually sees. An automated text the day before, and again a couple of hours out, dramatically cuts the number of people who forget or drift off. Doing this by hand does not scale, which is why it matters that your software sends reminders on its own once the job is booked. Almost every modern tool does this, so use it.',
+        ],
+      },
+      {
+        heading: 'Send a real on-my-way message',
+        body: [
+          'The window between the booking and the technician arriving is where trust wobbles. An automatic on-my-way text with a genuine arrival window, ideally tied to GPS so it is accurate, keeps the customer home and reduces the how-far-away phone calls that eat your office time. It is a small touch that measurably reduces both no-shows and complaints.',
+        ],
+      },
+      {
+        heading: 'Make rescheduling easy, not silent',
+        body: [
+          'People who cannot easily reschedule often just do not answer the door. Give them a simple way to move the appointment, a reply to the text, a link, a quick call, so a conflict becomes a rebooked job rather than a wasted trip. Capturing the reschedule is far better than losing the slot entirely.',
+        ],
+      },
+      {
+        heading: 'Tighten your arrival windows',
+        body: [
+          'A four-hour window tells the customer their time does not matter, and they wander off. Narrower windows, made possible by better scheduling and live technician tracking, keep people available and set a professional tone. If your current tool cannot support tight windows and live updates, that is a sign the scheduling and dispatch side is worth upgrading.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'Field service scheduling explained', href: '/guides/field-service-scheduling/' },
+      { label: 'Field service dispatching explained', href: '/guides/field-service-dispatching/' },
+      { label: 'GPS and technician tracking', href: '/guides/field-service-gps-tracking/' },
+      { label: 'Find your best-fit software', href: '/find-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'how-to-get-team-to-use-field-service-software',
+    title: 'How to Get Your Team to Actually Use New Software',
+    category: 'How-to guide',
+    intro:
+      'The best field service platform is worthless if your technicians quietly go back to paper and phone calls. Adoption, not features, is what decides whether the investment pays off. Here is how to get the crew genuinely using the tool.',
+    sections: [
+      {
+        heading: 'Involve the crew before you buy',
+        body: [
+          'Technicians resent software that lands on them by decree. Bring one or two respected people from the field into the demos and let them poke at the mobile app before you sign. They will spot deal-breakers you would miss, and, just as important, they become the champions who help everyone else over the hump instead of leading the resistance.',
+        ],
+      },
+      {
+        heading: 'Judge the app the way they will',
+        body: [
+          'Adoption is won or lost on the mobile app, not the office dashboard. If it is slow, buried in taps, or does not work in a basement with no signal, the crew will abandon it and you cannot blame them. Test the real app on the real phones your team carries, Android as well as iPhone, before you commit, and treat a clunky app as a reason to walk away.',
+        ],
+      },
+      {
+        heading: 'Train short, then train again',
+        body: [
+          'One long training session before go-live does not stick. Do a short, hands-on session focused only on what a technician does every day, book, navigate, add notes and photos, quote, invoice, then come back a week or two later once real questions have surfaced. Little and often beats one firehose day nobody remembers.',
+        ],
+      },
+      {
+        heading: 'Remove the old fallback',
+        body: [
+          'As long as paper tickets and the office phone still work, some people will keep using them, and your data stays half in the system and half out. Once the crew is trained and past the first wobble, retire the old way on a set date. It sounds harsh, but a clean cut-over is what actually forces adoption and gets you the complete data the software promised.',
+        ],
+      },
+      {
+        heading: 'Show them what is in it for them',
+        body: [
+          'Frame the change around the technician, not the office. Less driving because dispatch sends the closest person, no chasing the office for job details, quotes and invoices done on site so they are not doing paperwork at home. When the crew sees the app makes their own day easier, adoption stops being a fight.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'The technician mobile app', href: '/guides/field-service-technician-mobile-app/' },
+      { label: 'How to switch field service software', href: '/guides/how-to-switch-field-service-software/' },
+      { label: 'Best field service software for 1–5 technicians', href: '/best/field-service-software-for-1-5-technicians/' },
+      { label: 'Find your best-fit software', href: '/find-software/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'how-to-set-up-service-agreements',
+    title: 'How to Set Up a Service Agreement or Membership Program',
+    category: 'How-to guide',
+    intro:
+      'A membership program turns one-off customers into recurring revenue and fills your slow months with booked work. Building one is mostly a matter of getting the offer and the mechanics right. Here is how to stand one up.',
+    sections: [
+      {
+        heading: 'Design an offer worth paying for',
+        body: [
+          'Start with what the customer gets. A typical plan bundles scheduled maintenance (for HVAC, often two tune-ups a year) with perks that reduce their risk and reward loyalty: priority scheduling, a discount on repairs, no overtime fees, a longer labor warranty. The plan has to feel like clear value to them, not just a subscription that benefits you, or it will not sell.',
+        ],
+      },
+      {
+        heading: 'Price it so the math works both ways',
+        body: [
+          'Price the plan so the recurring fee covers the maintenance visits and leaves a modest margin, then let the real return come from what memberships drive: members call you first, they approve repairs faster, and they replace equipment with you when the time comes. Do not price the maintenance at a loss hoping to make it back later, but do value the relationship, not just the two visits.',
+        ],
+      },
+      {
+        heading: 'Automate the visits and the billing',
+        body: [
+          'This is where a program lives or dies. Once you have more than a handful of members, remembering who is due, scheduling the visits and billing on a cycle by hand becomes unmanageable. You need software that stores the agreement, generates the maintenance visits on schedule, handles recurring billing, and flags renewals before they lapse. The established platforms like ServiceTitan and FieldEdge are strong here; lighter tools often support agreements only partially, so check this closely if memberships are the plan.',
+        ],
+      },
+      {
+        heading: 'Sell it at the kitchen table',
+        body: [
+          'The best moment to sign a member is right after a technician has done good work in their home. Train the crew to offer the plan on site, in plain terms: the maintenance that keeps the system healthy, plus priority and a discount, for a predictable monthly or annual fee. A simple sign-up on the technician’s device, then and there, converts far better than a follow-up email nobody opens.',
+        ],
+      },
+      {
+        heading: 'Track renewals like revenue',
+        body: [
+          'A membership base only compounds if people renew. Watch your renewal rate the way you watch sales, reach out before plans lapse, and treat a slipping renewal number as an early warning. A healthy, growing membership base is one of the strongest signs of a durable service business, so give it the attention it deserves.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'Service agreements and memberships explained', href: '/guides/field-service-service-agreements/' },
+      { label: 'Field service scheduling explained', href: '/guides/field-service-scheduling/' },
+      { label: 'Best HVAC field service software', href: '/best/hvac-field-service-software/' },
+      { label: 'ServiceTitan review', href: '/products/servicetitan/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
+  {
+    slug: 'how-to-connect-field-service-software-to-quickbooks',
+    title: 'How to Connect Field Service Software to QuickBooks',
+    category: 'How-to guide',
+    intro:
+      'Getting your field service software and QuickBooks talking to each other is the difference between clean books and typing every invoice twice. The setup is straightforward once you understand the one distinction that trips everyone up. Here is how to get it right.',
+    sections: [
+      {
+        heading: 'Know which QuickBooks you run',
+        body: [
+          'This is the whole ballgame. QuickBooks Online and QuickBooks Desktop are different products, and field service tools support them differently. Many popular platforms, Jobber among them, sync only with Online. Others, like FieldEdge and Service Fusion, are built with Desktop firmly in mind. Before anything else, confirm your field service tool supports your exact version, because Online support does not mean Desktop support.',
+        ],
+      },
+      {
+        heading: 'Understand what actually syncs',
+        body: [
+          'A good integration keeps a few things in step automatically: customers, invoices, payments and sometimes your product and price list. Decide which direction each flows and where the record of truth lives, so you are not editing the same customer in two places. Get clear on this before you turn it on, rather than untangling duplicates afterward.',
+        ],
+      },
+      {
+        heading: 'The Desktop setup is a little different',
+        body: [
+          'QuickBooks Desktop is not cloud software, so syncing it with a cloud field service tool usually means running a small sync agent on a Windows machine that is left on. It works well when configured correctly, but it is a real setup step, not a switch you flip. Some tools also require you to create employees or items in QuickBooks first, so follow the vendor’s order of operations rather than improvising.',
+        ],
+      },
+      {
+        heading: 'Test with a few real invoices',
+        body: [
+          'Do not trust the integration until you have watched it work. Push a handful of real invoices and payments through and confirm they land in QuickBooks correctly, mapped to the right accounts, with no duplicates. This is worth doing during a free trial, because a buggy sync is a common and genuine complaint even on tools that advertise the integration, so verify it on your own data before you rely on it.',
+        ],
+      },
+    ],
+    related: [
+      { label: 'Field service invoicing explained', href: '/guides/field-service-invoicing/' },
+      { label: 'Cloud vs on-premise field service software', href: '/guides/cloud-vs-on-premise-field-service-software/' },
+      { label: 'Best field service software with QuickBooks', href: '/best/field-service-software-with-quickbooks/' },
+      { label: 'FieldEdge review', href: '/products/fieldedge/' },
+    ],
+    publishedAt: '2026-09-13',
+    updatedAt: '2026-09-13',
+    published: true,
+  },
 ];
 
 export const GUIDE_MAP: Record<string, GuidePage> = Object.fromEntries(
