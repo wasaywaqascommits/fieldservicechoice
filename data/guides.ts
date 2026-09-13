@@ -1524,17 +1524,30 @@ export const GUIDES: GuidePage[] = [
         body: [
           'You cannot price work until you know what an hour actually costs you to deliver. That is not just the technician’s wage. Add payroll taxes and benefits, the truck and fuel, insurance, tools, software, and a share of the office and owner time that keeps the whole thing running. Divide your total monthly costs by your billable hours and you get a real cost per hour, and it is almost always higher than owners expect.',
         ],
+        table: {
+          caption: 'An illustrative cost-per-hour build-up. Use your own monthly figures.',
+          headings: ['Input', 'What goes in', 'Notes'],
+          rows: [
+            ['Total monthly costs', 'Wages, taxes, truck, insurance, tools, office', 'Everything it takes to operate'],
+            ['Billable hours', 'The hours you can actually invoice', 'Not clocked hours, the ones customers pay for'],
+            ['Cost per hour', 'Total costs divided by billable hours', 'Almost always higher than owners expect'],
+            ['Your price', 'Cost per hour plus your target margin', 'Margin built in, not hoped for'],
+          ],
+        },
       },
       {
         heading: 'Add the margin you need to survive',
         body: [
-          'Your price has to cover that cost and leave a genuine profit on top, not just break even. Decide the net margin the business needs to grow and pay you properly, then build it into the rate rather than hoping it shows up at the end of the year. A job that only covers costs is a job that kept you busy and made you nothing.',
+          'Your price has to cover that cost and leave a genuine profit on top, not just break even. Decide the net margin the business needs to grow and pay you properly, then build it into the rate rather than hoping it shows up at the end of the year.',
         ],
+        callout: {
+          text: 'A job that only covers its costs is a job that kept you busy and made you nothing.',
+        },
       },
       {
         heading: 'Move from hourly to flat-rate where you can',
         body: [
-          'Billing by the hour punishes you for being fast and makes customers nervous about an open-ended bill. For repeatable work, price the job, not the clock. Build a flat-rate pricebook from your cost-per-hour and typical times, so a technician quotes the same clear number every time and a faster crew earns more, not less. This is one of the biggest profitability levers a trades business has.',
+          'Billing by the hour punishes you for being fast and makes customers nervous about an open-ended bill. For repeatable work, price the job, not the clock. [Build a flat-rate pricebook](/guides/how-to-build-a-flat-rate-pricebook/) from your cost-per-hour and typical times, so a technician quotes the same clear number every time and a faster crew earns more, not less. This is one of the biggest profitability levers a trades business has.',
         ],
       },
       {
@@ -1570,14 +1583,17 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Invoice on site, not on Sunday night',
         body: [
-          'The single biggest delay is invoicing that happens back at the office days after the work. Every day between finishing and sending is a day added to when you get paid, and the occasional job slips through and never gets billed at all. Invoicing from the technician’s phone before they leave the driveway removes that gap entirely, and the details are already there from the job, so there is nothing to re-type.',
+          'The single biggest delay is [invoicing](/guides/field-service-invoicing/) that happens back at the office days after the work. Every day between finishing and sending is a day added to when you get paid, and the occasional job slips through and never gets billed at all. Invoicing from the technician’s phone before they leave the driveway removes that gap entirely, and the details are already there from the job, so there is nothing to re-type.',
         ],
       },
       {
         heading: 'Take payment before you leave',
         body: [
-          'An invoice sent is not the same as money received. The strongest lever is collecting on the spot: card or ACH payment on the technician’s device the moment the work is signed off. It turns a receivable you have to chase into cash in hand. Just factor in the processing cost, typically around 2.9% plus 30 cents per card transaction and roughly 1% on ACH, and price with that in mind.',
+          'An invoice sent is not the same as money received. The strongest lever is collecting on the spot: card or ACH payment on the technician’s device the moment the work is signed off. It turns a receivable you have to chase into cash in hand. Just factor in the [processing cost](/guides/field-service-software-payment-processing/), typically around 2.9% plus 30 cents per card transaction and roughly 1% on ACH, and price with that in mind.',
         ],
+        callout: {
+          text: 'An invoice sent is not money received. Collect on the spot and the receivable never has to be chased.',
+        },
       },
       {
         heading: 'Make paying effortless for the customer',
@@ -1612,19 +1628,22 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Send the technician in informed',
         body: [
-          'A lot of second trips are booked blind. If the technician arrives without the equipment history, the model and serial number, or notes from the last visit, they diagnose from scratch and often discover they needed a part they did not bring. Full job and equipment history on the mobile app, before they knock, is the first and biggest fix.',
+          'A lot of second trips are booked blind. If the technician arrives without the equipment history, the model and serial number, or notes from the last visit, they diagnose from scratch and often discover they needed a part they did not bring. Full job and equipment history on the [mobile app](/guides/field-service-technician-mobile-app/), before they knock, is the first and biggest fix.',
         ],
+        callout: {
+          text: 'A second trip pays for the drive and the labor twice and earns once. Almost nothing else on the job is that expensive.',
+        },
       },
       {
         heading: 'Get the right parts on the truck',
         body: [
-          'The classic second trip is arriving, finding the fault, and not having the part. Truck-stock inventory that tracks what is on each van, tied to the kind of work booked, means you can send the technician who is actually carrying what the job needs. For parts-heavy trades, this alone moves the number materially.',
+          'The classic second trip is arriving, finding the fault, and not having the part. [Truck-stock inventory](/guides/field-service-inventory-management/) that tracks what is on each van, tied to the kind of work booked, means you can send the technician who is actually carrying what the job needs. For parts-heavy trades, this alone moves the number materially.',
         ],
       },
       {
         heading: 'Match the job to the right technician',
         body: [
-          'Skills-based dispatch matters more than pure proximity. Sending the nearest technician is no good if they cannot do the work. When your dispatch board factors in who has the skills and the parts for a specific job, not just who is closest, more jobs get finished on the first visit. That is a scheduling and dispatch capability worth prioritizing.',
+          'Skills-based dispatch matters more than pure proximity. Sending the nearest technician is no good if they cannot do the work. When your [dispatch board](/guides/field-service-dispatching/) factors in who has the skills and the parts for a specific job, not just who is closest, more jobs get finished on the first visit. That is a scheduling and dispatch capability worth prioritizing.',
         ],
       },
       {
@@ -1654,8 +1673,11 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Decide whether routing is really your problem',
         body: [
-          'Be honest about your work first. Route optimization is a big deal for route-dense trades, landscaping, pest control, cleaning, and anyone running dozens of short recurring visits a day. If you do a handful of longer service calls, drive time is a smaller slice of the day and the payoff is modest. Spend your effort where it moves the number.',
+          'Be honest about your work first. [Route optimization](/guides/field-service-route-optimization/) is a big deal for route-dense trades, [landscaping](/industries/landscaping/), [pest control](/industries/pest-control/), [cleaning](/industries/cleaning/), and anyone running dozens of short recurring visits a day. If you do a handful of longer service calls, drive time is a smaller slice of the day and the payoff is modest. Spend your effort where it moves the number.',
         ],
+        callout: {
+          text: 'Every extra minute per stop, multiplied across dozens of daily visits, is a job you never got to.',
+        },
       },
       {
         heading: 'Cluster work by geography',
@@ -1672,7 +1694,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Feed it accurate, live locations',
         body: [
-          'Routing is only as good as the data under it. Live GPS on your vehicles or technicians lets you re-route around a cancellation or an emergency using where people actually are, not where the morning plan assumed they would be. The combination of good sequencing and live location is what turns routing from a nice map into saved fuel and extra jobs.',
+          'Routing is only as good as the data under it. [Live GPS](/guides/field-service-gps-tracking/) on your vehicles or technicians lets you re-route around a cancellation or an emergency using where people actually are, not where the morning plan assumed they would be. The combination of good sequencing and live location is what turns routing from a nice map into saved fuel and extra jobs.',
         ],
       },
     ],
@@ -1696,8 +1718,11 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Ask at the moment of relief',
         body: [
-          'Timing is everything. The best time to ask for a review is right after you have solved the customer’s problem, when the relief and goodwill are highest. Wait a week and the feeling fades and the request gets ignored. Train technicians to mention it on the way out, and back that up with an automated request that goes out the same day the job is marked complete.',
+          'Timing is everything. The best time to ask for a review is right after you have solved the customer’s problem, when the relief and goodwill are highest. Wait a week and the feeling fades and the request gets ignored. Train technicians to mention it on the way out, and back that up with an [automated request](/guides/field-service-software-marketing-integrations/) that goes out the same day the job is marked complete.',
         ],
+        callout: {
+          text: 'Ask right after you have solved the problem, when goodwill is highest. A week later the feeling has faded and the request gets ignored.',
+        },
       },
       {
         heading: 'Remove every bit of friction',
@@ -1714,7 +1739,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Make it part of the workflow, not a project',
         body: [
-          'Review generation works when it is automatic and forgettable, not a campaign someone has to remember to run. Tools built around residential service, Housecall Pro is a well-known example, bake review requests into the end-of-job flow so they happen every time without anyone thinking about it. That consistency, job after job, is what compounds into a wall of recent reviews.',
+          'Review generation works when it is automatic and forgettable, not a campaign someone has to remember to run. Tools built around residential service, [Housecall Pro](/products/housecall-pro/) is a well-known example, bake review requests into the end-of-job flow so they happen every time without anyone thinking about it. That consistency, job after job, is what compounds into a wall of recent reviews.',
         ],
       },
     ],
@@ -1738,8 +1763,11 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Capture costs as the job happens',
         body: [
-          'Job costing only works if the costs are recorded while the work is live, not reconstructed from memory later. That means technician time logged against the job, parts added to the work order, and materials recorded on site. If capturing this is a manual chore done after the fact, it simply will not happen, which is exactly why most businesses stay in the dark about which jobs pay.',
+          '[Job costing](/guides/field-service-job-costing/) only works if the costs are recorded while the work is live, not reconstructed from memory later. That means technician time logged against the job, parts added to the [work order](/guides/field-service-work-order-management/), and materials recorded on site. If capturing this is a manual chore done after the fact, it simply will not happen, which is exactly why most businesses stay in the dark about which jobs pay.',
         ],
+        callout: {
+          text: 'Being busy and being profitable are not the same thing. Only job costing tells you, job by job, which one you are.',
+        },
       },
       {
         heading: 'Compare revenue to true cost, job by job',
@@ -1756,7 +1784,7 @@ export const GUIDES: GuidePage[] = [
       {
         heading: 'Then fix the price or drop the work',
         body: [
-          'Measurement is only useful if it changes something. Once you can see which work loses money, you have two honest choices: raise the price until it makes sense, or stop taking that work and put the capacity toward jobs that pay. Commercial and project businesses should treat this as essential; the platforms built for them, like Simpro and BuildOps, are strong on job costing, while lighter residential tools track it only partially.',
+          'Measurement is only useful if it changes something. Once you can see which work loses money, you have two honest choices: [raise the price](/guides/how-to-price-a-service-call/) until it makes sense, or stop taking that work and put the capacity toward jobs that pay. Commercial and project businesses should treat this as essential; the platforms built for them, like [Simpro](/products/simpro/) and [BuildOps](/products/buildops/), are strong on job costing, while lighter residential tools track it only partially.',
         ],
       },
     ],
