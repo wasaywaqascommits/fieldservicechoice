@@ -168,7 +168,7 @@ export const PRODUCTS: Product[] = [
     notIdealFor: ['Enterprise HVAC/plumbing with complex commercial job costing', 'Multi-branch operations needing granular role controls', 'Teams needing an advanced flat-rate pricebook'],
     verdict:
       'The strong default for small residential service teams that want fast setup and a clean mobile app over deep enterprise configurability.',
-    industries: ['hvac', 'plumbing', 'electrical', 'landscaping', 'cleaning', 'pool-service'],
+    industries: ['hvac', 'plumbing', 'electrical', 'landscaping', 'cleaning', 'pool-service', 'appliance-repair', 'garage-door', 'locksmith'],
     companySizes: ['solo', '2-5', '6-10', '11-25'],
     businessModels: ['residential', 'both', 'route'],
     pricing: verifiedPricing('tiered', true, [
@@ -238,7 +238,7 @@ export const PRODUCTS: Product[] = [
     notIdealFor: ['Complex commercial contractors', 'Businesses needing deep inventory or project management', 'Enterprise multi-entity operations'],
     verdict:
       'A capable all-in-one for residential service brands that lean on marketing, reviews and a polished customer booking experience.',
-    industries: ['hvac', 'plumbing', 'electrical', 'cleaning', 'pool-service'],
+    industries: ['hvac', 'plumbing', 'electrical', 'cleaning', 'pool-service', 'appliance-repair', 'garage-door'],
     companySizes: ['solo', '2-5', '6-10', '11-25', '26-50'],
     businessModels: ['residential', 'both'],
     pricing: verifiedPricing('tiered', true, [
@@ -368,7 +368,7 @@ export const PRODUCTS: Product[] = [
     notIdealFor: ['Enterprise commercial contractors', 'Businesses needing deep project management', 'Very large multi-branch operations'],
     verdict:
       'A pragmatic choice for phone-driven service trades that want communication and lead tracking tightly coupled to scheduling.',
-    industries: ['hvac', 'plumbing', 'electrical', 'other'],
+    industries: ['hvac', 'plumbing', 'electrical', 'appliance-repair', 'garage-door', 'locksmith', 'other'],
     companySizes: ['solo', '2-5', '6-10', '11-25'],
     businessModels: ['residential', 'both'],
     pricing: { model: 'tiered', startingStatus: 'needs_verification', freeTrial: null, plans: [] },
@@ -620,7 +620,7 @@ export const PRODUCTS: Product[] = [
     notIdealFor: ['Businesses needing advanced dispatch or pricebook', 'Commercial project management', 'Larger multi-crew operations'],
     verdict:
       'A cost-conscious pick for small teams that need the core essentials without paying for enterprise depth.',
-    industries: ['hvac', 'plumbing', 'electrical', 'landscaping', 'cleaning'],
+    industries: ['hvac', 'plumbing', 'electrical', 'landscaping', 'cleaning', 'pool-service', 'appliance-repair', 'locksmith'],
     companySizes: ['solo', '2-5', '6-10'],
     businessModels: ['residential', 'both'],
     pricing: verifiedPricing('tiered', true, [
@@ -686,7 +686,7 @@ export const PRODUCTS: Product[] = [
     notIdealFor: ['Android-first teams', 'Larger operations needing deep reporting', 'Complex commercial contractors'],
     verdict:
       'An efficient choice for very small, Apple-based trade businesses that want essentials without overhead.',
-    industries: ['plumbing', 'electrical', 'hvac', 'cleaning'],
+    industries: ['plumbing', 'electrical', 'hvac', 'cleaning', 'pool-service', 'garage-door'],
     companySizes: ['solo', '2-5', '6-10'],
     businessModels: ['residential', 'both'],
     pricing: verifiedPricing('tiered', true, [

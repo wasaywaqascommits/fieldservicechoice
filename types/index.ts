@@ -62,6 +62,9 @@ export type IndustrySlug =
   | 'pest-control'
   | 'cleaning'
   | 'pool-service'
+  | 'appliance-repair'
+  | 'garage-door'
+  | 'locksmith'
   | 'commercial'
   | 'other';
 
