@@ -1389,6 +1389,11 @@ const PRODUCTS_WITH_LOGOS = new Set([
   'zuper',
   'servicetrade',
   'tradify',
+  'gorilladesk',
+  'quoteiq',
+  'synchroteam',
+  'zenmaid',
+  'zenbooker',
 ]);
 for (const p of PRODUCTS) {
   if (PRODUCTS_WITH_LOGOS.has(p.slug)) p.logoImage = `/logos/${p.slug}.png`;
