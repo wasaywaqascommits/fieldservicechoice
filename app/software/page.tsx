@@ -6,8 +6,10 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { SoftwareDirectory } from '@/components/software/SoftwareDirectory';
 import { AffiliateDisclosure } from '@/components/shared/AffiliateDisclosure';
 
+const productCount = getProducts().length;
+
 export const metadata: Metadata = buildMetadata({
-  title: 'Field Service Software Directory, Compare 15 Platforms',
+  title: `Field Service Software Directory, Compare ${productCount} Platforms`,
   description:
     'Browse and filter field service management software by trade, team size, work type and capabilities. Compare up to four platforms side by side.',
   path: '/software/',

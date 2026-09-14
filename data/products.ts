@@ -11,7 +11,7 @@ import type {
 } from '@/types';
 
 /**
- * SEED / DEVELOPMENT product data for the initial 15 platforms (spec §4).
+ * SEED / DEVELOPMENT product data for the field service platforms (spec §4).
  *
  * DATA INTEGRITY (spec §5, §82, §108):
  *   - No pricing numbers are fabricated. `pricing.plans` is intentionally empty

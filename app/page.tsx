@@ -5,6 +5,7 @@ import {
   getComparisons,
   getGuides,
   getIndustries,
+  getProducts,
   getProductsBySlugs,
 } from '@/lib/database/content';
 import { getProductBySlug } from '@/lib/database/content';
@@ -26,6 +27,7 @@ const HERO_INDUSTRIES = ['hvac', 'plumbing', 'electrical', 'roofing', 'landscapi
 const POPULAR_SLUGS = ['jobber', 'housecall-pro', 'servicetitan', 'workiz', 'fieldpulse', 'fieldedge'];
 
 export default function HomePage() {
+  const productCount = getProducts().length;
   const popular = getProductsBySlugs(POPULAR_SLUGS);
   const industries = getIndustries();
   const comparisons = getComparisons().slice(0, 6);
@@ -149,7 +151,7 @@ export default function HomePage() {
         </div>
         <div className="mt-6">
           <Link href="/software/" className="font-medium text-brand-700 hover:underline">
-            Browse all 15 platforms →
+            Browse all {productCount} platforms →
           </Link>
         </div>
       </Section>
