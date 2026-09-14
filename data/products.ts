@@ -1150,6 +1150,19 @@ export const PRODUCTS: Product[] = [
           'The routing, online booking, recurring visits and billing are all built around residential route work, and there are no contracts plus free migration, so trying it is low risk. Where it is not the tool is commercial or project work, or trades that need a deep flat-rate pricebook. On accounting it syncs with QuickBooks Online but not Desktop, and SMS is a paid add-on, so factor those in.',
         ],
       },
+      {
+        heading: 'Where it stops',
+        body: [
+          'GorillaDesk is deliberately focused on route-based residential trades, and that focus is both its strength and its ceiling. It is not built for commercial or project work, there is no deep flat-rate pricebook, and it starts to feel tight once you grow past a couple of technicians or want modern AI and self-scheduling tools. If you fit the pest, lawn, cleaning or pool mould, that trade is easy to accept; if you are heading toward commercial contracting, you will outgrow it.',
+        ],
+      },
+      {
+        heading: 'What users consistently report',
+        body: [
+          'GorillaDesk rates exceptionally well, around 4.9 out of 5 across hundreds of reviews, and the praise is consistent: a clean, uncluttered interface built around how route trades actually work, a genuinely reliable mobile app, automated reminders that noticeably cut no-shows, and, for most users, responsive support with real call-backs.',
+          'The complaints are smaller in scale. A minority report support or uptime-communication issues, and users ask for more automation, better-looking invoices and fewer bugs after updates. Reviewers also note it shows its limits once you add a third technician or want AI and 24/7 self-scheduling, which is a fair signal of who it is and is not built for.',
+        ],
+      },
     ],
     alternatives: ['jobber', 'housecall-pro', 'servicem8', 'kickserv'],
     sources: officialSources('GorillaDesk', 'gorilladesk.com', { website: true, pricing: true }),
@@ -1204,6 +1217,19 @@ export const PRODUCTS: Product[] = [
           'For a solo operator or a small crew that wants to look professional and quote quickly, it is an affordable, capable option. The trade-offs are that it is a newer, smaller brand than the incumbents, and it is lighter on the heavier field-operations features like advanced dispatch, routing and inventory. If those are central to your work, weigh it against a more established platform first.',
         ],
       },
+      {
+        heading: 'The value pitch',
+        body: [
+          'The pitch owners respond to most is cost. Reviewers describe cutting their software bill sharply while getting more than they had before, and they like how fast the quote-to-send workflow is. For a small exterior-service business watching every dollar, that value, plus flat pricing that does not punish you for adding a helper, is the real draw.',
+        ],
+      },
+      {
+        heading: 'What users consistently report',
+        body: [
+          'QuoteIQ’s reviews skew positive on value and speed: owners report cutting their software costs sharply versus other CRMs, praise a clean, modern interface and a responsive support team, and mention quote workflows fast enough to go from a new customer to a sent quote in a couple of minutes.',
+          'The complaints point at polish and consistency. Reviewers mention occasional glitches, the app shutting down unexpectedly, and text messaging on invoices being unreliable. Several also note that quoted prices vary across third-party sites, so confirm the current plan pricing on QuoteIQ’s own page before you commit.',
+        ],
+      },
     ],
     alternatives: ['jobber', 'housecall-pro', 'kickserv', 'gorilladesk'],
     sources: officialSources('QuoteIQ', 'myquoteiq.com', { website: true, pricing: true }),
@@ -1252,6 +1278,19 @@ export const PRODUCTS: Product[] = [
         heading: 'What to weigh',
         body: [
           'If you want the operational essentials without enterprise weight, it is a practical choice, and the open API gives you room to extend it. Where it is lighter is the sales side: there is no deep flat-rate pricebook or built-in financing, so trades that lean on those will feel the gap. Being per-user, the cost also rises with every seat, so do the math at your real headcount.',
+        ],
+      },
+      {
+        heading: 'The configurability angle',
+        body: [
+          'The thing reviewers single out most is how configurable it is: you can shape the service reports and workflows around your business rather than bending your business to the software. That flexibility, paired with a mobile app that works on both Android and iOS, is a real part of the appeal for teams whose work does not fit a standard template.',
+        ],
+      },
+      {
+        heading: 'What users consistently report',
+        body: [
+          'Synchroteam rates solidly, around 4.4 out of 5, and users highlight how customizable it is, tailor-made service reports and workflows shaped to their business, along with easy setup, efficient scheduling and dispatch, a mobile app on both Android and iOS, and quick, helpful support.',
+          'The complaints are mostly small edges rather than dealbreakers: technicians cannot pause and restart a job without creating an extra ticket, reports export as PDF only with no Word option, and a few of the more advanced features feel limited. For a team that wants a configurable, per-user field tool, most reviewers find it does the core job well.',
         ],
       },
     ],
@@ -1306,6 +1345,19 @@ export const PRODUCTS: Product[] = [
           'For a maid service, that focus is the whole point, and the low flat price and 14-day trial make it easy to try. The flip side is obvious: it is only for cleaning, so any other trade should look elsewhere, and it deliberately skips the heavier features like a flat-rate pricebook and inventory. SMS is also a paid extra. QuickBooks Online sync arrives on the Pro tier and up.',
         ],
       },
+      {
+        heading: 'Built around cleaning, deliberately',
+        body: [
+          'Because ZenMaid serves only maid services, the small things match the trade: recurring schedules, cleaner assignment, client reminders and booking forms all assume a cleaning business rather than a generic field-service tool. That specificity is exactly why owners pick it over a broader platform, and exactly why it is not for anyone outside cleaning.',
+        ],
+      },
+      {
+        heading: 'What users consistently report',
+        body: [
+          'ZenMaid rates highly, around 4.7 out of 5 across 200-plus reviews, and cleaning-business owners consistently praise how intuitive it is, the automation that turns bookings into scheduled appointments, custom fields, SMS reminders, and fast, helpful support. Its cleaning-only focus is the single most-cited reason to choose it.',
+          'The recurring complaints are about scope and add-on costs. It lacks payroll integrations and fuller availability tracking, which adds admin for a growing team, and SMS reminders are billed separately in bundles rather than included, with no annual-billing discount. Price the texting you will actually use alongside the flat plan when you compare.',
+        ],
+      },
     ],
     alternatives: ['jobber', 'housecall-pro', 'servicem8', 'gorilladesk'],
     sources: officialSources('ZenMaid', 'zenmaid.com', { website: true, pricing: true }),
@@ -1357,6 +1409,19 @@ export const PRODUCTS: Product[] = [
         heading: 'What to weigh',
         body: [
           'For a residential home-service business that lives on inbound online bookings, that model is a genuine strength, and unlimited seats keep it affordable as you add crew. The higher tiers add drive-time-aware dispatch, which is useful for route-dense work. Where it is lighter is the accounting side, and it is built for residential rather than commercial or project work, so weigh that against your mix.',
+        ],
+      },
+      {
+        heading: 'The booking widget is the headline',
+        body: [
+          'Reviewers who have tried a stack of booking tools tend to single out Zenbooker’s customer-facing booking widget as the best-looking and highest-converting, which is the whole point for a business that wins work online. If the first impression a customer gets is your booking page, that polish is worth a lot.',
+        ],
+      },
+      {
+        heading: 'What users consistently report',
+        body: [
+          'Zenbooker’s standout in reviews is that customer-facing booking experience: multiple users who tested many booking platforms call its widget the best-looking and highest-converting they found, and they like the flat, no-per-user pricing and the easy setup.',
+          'The complaints are on the operator side. Reviewers report slow load times at times, note that the admin experience is built for desktop rather than mobile, and describe customer support as inconsistent. If you run the business largely from your phone, test the admin side before you commit.',
         ],
       },
     ],
