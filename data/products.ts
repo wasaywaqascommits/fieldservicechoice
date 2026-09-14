@@ -1105,6 +1105,267 @@ export const PRODUCTS: Product[] = [
     commercial: { type: 'affiliate', affiliateLinkSlug: 'tradify', disclosure: DISCLOSURE },
     published: true,
   },
+  {
+    slug: 'gorilladesk',
+    name: 'GorillaDesk',
+    vendorName: 'GorillaDesk',
+    tagline: 'All-in-one field service software for pest, lawn, cleaning and pool businesses.',
+    description:
+      'GorillaDesk is a field service platform built for route-based residential trades: pest control, lawn care, cleaning and pool service. It puts scheduling, routing, invoicing, online booking and payments in one place, and prices by route rather than by user.',
+    website: 'https://gorilladesk.com',
+    logoMark: 'Gd',
+    brandColor: '#37b34a',
+    bestFor: ['Route-based residential trades (pest, lawn, cleaning, pool)', 'Small teams that want flat per-route pricing', 'Businesses that run many recurring visits a day'],
+    notIdealFor: ['Commercial and project contractors', 'HVAC/plumbing needing a deep flat-rate pricebook', 'Enterprise multi-branch operations'],
+    verdict:
+      'A strong, affordable pick for route-dense residential trades that want routing, recurring visits and billing without per-user pricing or contracts.',
+    industries: ['pest-control', 'landscaping', 'cleaning', 'pool-service'],
+    companySizes: ['solo', '2-5', '6-10', '11-25'],
+    businessModels: ['residential', 'route', 'both'],
+    pricing: verifiedPricing('tiered', true, [
+      plan('Basic', 49, { billingModel: 'flat', contract: 'Month-to-month', notes: 'Per route · unlimited admin users', sourceUrl: 'https://gorilladesk.com/pricing/' }),
+      plan('Pro', 99, { billingModel: 'flat', contract: 'Month-to-month', notes: 'Per route · adds booking, GPS, QuickBooks', sourceUrl: 'https://gorilladesk.com/pricing/' }),
+      plan('Growth', 149, { billingModel: 'flat', contract: 'Month-to-month', notes: 'Per route · adds pipeline, multi-branch', sourceUrl: 'https://gorilladesk.com/pricing/' }),
+    ]),
+    implementation: 'low',
+    implementationNotes: 'Self-serve setup with free data migration; no setup fees or contracts.',
+    features: matrix({
+      available: ['scheduling', 'dispatching', 'estimates', 'invoicing', 'payments', 'customer_notifications', 'online_booking', 'recurring_jobs', 'route_optimization', 'gps_tracking', 'customer_portal', 'reporting', 'mobile_app', 'quickbooks_online'],
+      partial: ['crm', 'service_agreements', 'inventory'],
+      notAvailable: ['quickbooks_desktop', 'financing'],
+    }),
+    integrations: accounting(true, false, false),
+    pros: ['Flat per-route pricing with unlimited admin users', 'Strong routing for route-dense residential trades', 'No contracts and free data migration'],
+    tradeoffs: ['Built for residential route work, not commercial projects', 'Syncs QuickBooks Online only, no Desktop', 'SMS messaging costs extra'],
+    editorial: [
+      {
+        heading: 'Where GorillaDesk fits, in plain terms',
+        body: [
+          'GorillaDesk knows exactly who it is for: pest control, lawn care, cleaning and pool businesses that run a lot of short recurring visits and live or die on route efficiency. Instead of charging per user, it prices by route, from Basic at $49 a month up to Growth at $149, with unlimited admin users on every tier. For a route business, that pricing model alone can make it cheaper than a per-seat tool.',
+        ],
+      },
+      {
+        heading: 'What to weigh',
+        body: [
+          'The routing, online booking, recurring visits and billing are all built around residential route work, and there are no contracts plus free migration, so trying it is low risk. Where it is not the tool is commercial or project work, or trades that need a deep flat-rate pricebook. On accounting it syncs with QuickBooks Online but not Desktop, and SMS is a paid add-on, so factor those in.',
+        ],
+      },
+    ],
+    alternatives: ['jobber', 'housecall-pro', 'servicem8', 'kickserv'],
+    sources: officialSources('GorillaDesk', 'gorilladesk.com', { website: true, pricing: true }),
+    verification: verifiedDates({ pricing: true, pricingOn: '2026-09-14', editorialOn: '2026-09-14' }),
+    commercial: { type: 'affiliate', affiliateLinkSlug: 'gorilladesk', disclosure: DISCLOSURE },
+    published: true,
+  },
+  {
+    slug: 'quoteiq',
+    name: 'QuoteIQ',
+    vendorName: 'QuoteIQ',
+    tagline: 'Flat-rate home-service CRM with built-in AI quoting.',
+    description:
+      'QuoteIQ is a home-service CRM aimed at exterior-cleaning and outdoor trades like pressure washing, window cleaning, painting and lawn care. It covers quoting, scheduling, invoicing and payments, with AI quoting tools built in, and prices flat rather than per user.',
+    website: 'https://myquoteiq.com',
+    logoMark: 'Qi',
+    brandColor: '#2563eb',
+    bestFor: ['Solo and small exterior-service pros (pressure washing, window cleaning, painting)', 'Businesses that want flat pricing with no per-seat fees', 'Owners who want fast, AI-assisted quoting'],
+    notIdealFor: ['Commercial and enterprise operations', 'Teams needing deep dispatch, routing or inventory', 'Buyers wanting the most established brand'],
+    verdict:
+      'An affordable, flat-rate option for small home-service pros who want quoting and a customer database without paying per seat.',
+    industries: ['landscaping', 'cleaning', 'other'],
+    companySizes: ['solo', '2-5', '6-10'],
+    businessModels: ['residential', 'both'],
+    pricing: verifiedPricing('tiered', true, [
+      plan('Essentials', 29.99, { billingModel: 'flat', notes: 'Flat rate, no per-user fees', sourceUrl: 'https://myquoteiq.com/pricing/' }),
+      plan('Beginner', 74.99, { billingModel: 'flat', notes: 'Flat rate, no per-user fees', sourceUrl: 'https://myquoteiq.com/pricing/' }),
+      plan('Pro', 149.99, { billingModel: 'flat', notes: 'Flat rate, no per-user fees', sourceUrl: 'https://myquoteiq.com/pricing/' }),
+      plan('Elite', 299, { billingModel: 'flat', notes: 'Flat rate, no per-user fees', sourceUrl: 'https://myquoteiq.com/pricing/' }),
+      plan('Max', 699, { billingModel: 'flat', notes: 'Flat rate, no per-user fees', sourceUrl: 'https://myquoteiq.com/pricing/' }),
+    ]),
+    implementation: 'low',
+    implementationNotes: 'Self-serve signup with a free trial; annual billing saves roughly two months.',
+    features: matrix({
+      available: ['crm', 'estimates', 'invoicing', 'payments', 'scheduling', 'customer_notifications', 'online_booking', 'reporting', 'mobile_app'],
+      partial: ['dispatching', 'marketing_automation'],
+      notAvailable: ['route_optimization'],
+    }),
+    integrations: [],
+    pros: ['Flat pricing with no per-user fees', 'Built-in AI quoting and content tools', 'Low entry price for a solo operator'],
+    tradeoffs: ['Newer and smaller than the established brands', 'Lighter on dispatch, routing and inventory', 'Focused on residential exterior services'],
+    editorial: [
+      {
+        heading: 'Where QuoteIQ fits, in plain terms',
+        body: [
+          'QuoteIQ is built for the exterior-service trades, pressure washing, window cleaning, painting and lawn care, where the job is won on a fast, clear quote. It bundles quoting, a customer database, scheduling, invoicing and payments, adds AI tools to speed up estimates, and prices flat from $29.99 a month with no per-seat fees, which keeps it cheap as you add helpers.',
+        ],
+      },
+      {
+        heading: 'What to weigh',
+        body: [
+          'For a solo operator or a small crew that wants to look professional and quote quickly, it is an affordable, capable option. The trade-offs are that it is a newer, smaller brand than the incumbents, and it is lighter on the heavier field-operations features like advanced dispatch, routing and inventory. If those are central to your work, weigh it against a more established platform first.',
+        ],
+      },
+    ],
+    alternatives: ['jobber', 'housecall-pro', 'kickserv', 'gorilladesk'],
+    sources: officialSources('QuoteIQ', 'myquoteiq.com', { website: true, pricing: true }),
+    verification: verifiedDates({ pricing: true, pricingOn: '2026-09-14', editorialOn: '2026-09-14' }),
+    commercial: { type: 'affiliate', affiliateLinkSlug: 'quoteiq', disclosure: DISCLOSURE },
+    published: true,
+  },
+  {
+    slug: 'synchroteam',
+    name: 'Synchroteam',
+    vendorName: 'Synchroteam',
+    tagline: 'Configurable field service management for dispatch-driven teams.',
+    description:
+      'Synchroteam is a field service platform for small-to-mid service teams, covering scheduling, dispatch, a technician mobile app, GPS tracking, jobs, invoicing and reporting. It is priced per user with a straightforward two-tier plan structure.',
+    website: 'https://synchroteam.com',
+    logoMark: 'Sy',
+    brandColor: '#1e88e5',
+    bestFor: ['Small-to-mid teams that want simple per-user pricing', 'Dispatch- and schedule-driven service operations', 'Businesses wanting GPS tracking and a solid mobile app'],
+    notIdealFor: ['Teams needing a deep flat-rate pricebook or financing', 'Enterprise multi-department operations', 'Buyers who want the largest US brand'],
+    verdict:
+      'A straightforward, per-user field service tool for dispatch-driven teams that want scheduling, mobile and invoicing without enterprise weight.',
+    industries: ['hvac', 'plumbing', 'electrical', 'commercial', 'other'],
+    companySizes: ['solo', '2-5', '6-10', '11-25', '26-50'],
+    businessModels: ['residential', 'commercial', 'both'],
+    pricing: verifiedPricing('per_user', true, [
+      plan('Standard', 39.49, { billingModel: 'per_user', trialDays: 14, contract: 'Month-to-month', notes: 'Per user, per month', sourceUrl: 'https://www.synchroteam.com/en/pricing.php' }),
+      plan('Premium', 64.79, { billingModel: 'per_user', trialDays: 14, contract: 'Month-to-month', notes: 'Per user, per month', sourceUrl: 'https://www.synchroteam.com/en/pricing.php' }),
+    ]),
+    implementation: 'moderate',
+    implementationNotes: 'Self-serve 14-day trial with no card required; one administrator account is included.',
+    features: matrix({
+      available: ['scheduling', 'dispatching', 'estimates', 'invoicing', 'customer_notifications', 'gps_tracking', 'inventory', 'reporting', 'mobile_app', 'api', 'quickbooks_online', 'xero'],
+      partial: ['crm', 'recurring_jobs', 'payments', 'job_costing'],
+    }),
+    integrations: [...accounting(true, false, true), { name: 'Open API', category: 'automation', support: 'available' }],
+    pros: ['Simple per-user pricing with a free 14-day trial', 'Strong dispatch, scheduling and GPS tracking', 'QuickBooks Online and Xero support with an open API'],
+    tradeoffs: ['Lighter flat-rate pricebook and financing', 'Smaller US presence than the incumbents', 'Per-user cost scales with headcount'],
+    editorial: [
+      {
+        heading: 'Where Synchroteam fits, in plain terms',
+        body: [
+          'Synchroteam is a no-nonsense field service tool for dispatch-driven teams. The core is strong: a drag-and-drop schedule, a capable mobile app, GPS tracking, jobs, inventory and invoicing, with QuickBooks Online and Xero on the accounting side and an open API for custom work. Pricing is simply per user, Standard around $39 and Premium around $65 a month, with a 14-day trial and no contract.',
+        ],
+      },
+      {
+        heading: 'What to weigh',
+        body: [
+          'If you want the operational essentials without enterprise weight, it is a practical choice, and the open API gives you room to extend it. Where it is lighter is the sales side: there is no deep flat-rate pricebook or built-in financing, so trades that lean on those will feel the gap. Being per-user, the cost also rises with every seat, so do the math at your real headcount.',
+        ],
+      },
+    ],
+    alternatives: ['jobber', 'workiz', 'service-fusion', 'zuper'],
+    sources: officialSources('Synchroteam', 'synchroteam.com', { website: true, pricing: true }),
+    verification: verifiedDates({ pricing: true, pricingOn: '2026-09-14', editorialOn: '2026-09-14' }),
+    commercial: { type: 'affiliate', affiliateLinkSlug: 'synchroteam', disclosure: DISCLOSURE },
+    published: true,
+  },
+  {
+    slug: 'zenmaid',
+    name: 'ZenMaid',
+    vendorName: 'ZenMaid',
+    tagline: 'Scheduling and automation built specifically for maid services.',
+    description:
+      'ZenMaid is scheduling and automation software made specifically for residential cleaning and maid services. It handles recurring appointments, client communication, online booking, payments and cleaner scheduling, with flat monthly pricing rather than per-cleaner fees.',
+    website: 'https://zenmaid.com',
+    logoMark: 'Zm',
+    brandColor: '#14b8a6',
+    bestFor: ['Residential cleaning and maid services', 'Small cleaning teams that want flat pricing', 'Owners who want cleaning-specific scheduling and automation'],
+    notIdealFor: ['Trades other than cleaning', 'Large commercial janitorial operations', 'Teams needing a pricebook, inventory or job costing'],
+    verdict:
+      'The niche pick for residential maid services, built around exactly how cleaning businesses schedule, communicate and get paid.',
+    industries: ['cleaning'],
+    companySizes: ['solo', '2-5', '6-10', '11-25'],
+    businessModels: ['residential', 'route', 'both'],
+    pricing: verifiedPricing('tiered', true, [
+      plan('Starter', 19, { billingModel: 'flat', trialDays: 14, contract: 'Month-to-month', notes: 'Flat rate · up to 40 appointments/mo', sourceUrl: 'https://get.zenmaid.com/pricing' }),
+      plan('Pro', 39, { billingModel: 'flat', trialDays: 14, contract: 'Month-to-month', notes: 'Flat rate · unlimited appointments', sourceUrl: 'https://get.zenmaid.com/pricing' }),
+      plan('Pro Max', 49, { billingModel: 'flat', trialDays: 14, contract: 'Month-to-month', notes: 'Flat rate · adds availability, ratings, integrations', sourceUrl: 'https://get.zenmaid.com/pricing' }),
+    ]),
+    implementation: 'low',
+    implementationNotes: 'Very light, self-serve setup with a 14-day trial; built specifically for cleaning workflows.',
+    features: matrix({
+      available: ['scheduling', 'dispatching', 'customer_notifications', 'online_booking', 'payments', 'recurring_jobs', 'gps_tracking', 'reporting', 'mobile_app', 'quickbooks_online'],
+      partial: ['crm', 'estimates'],
+      notAvailable: ['pricebook', 'inventory', 'financing', 'quickbooks_desktop'],
+    }),
+    integrations: accounting(true, false, false),
+    pros: ['Purpose-built for maid and cleaning services', 'Flat, affordable pricing from $19 a month', 'Strong client communication and automation'],
+    tradeoffs: ['Only a fit for cleaning businesses', 'No flat-rate pricebook or inventory', 'SMS messaging costs extra'],
+    editorial: [
+      {
+        heading: 'Where ZenMaid fits, in plain terms',
+        body: [
+          'ZenMaid does one thing and does it for one audience: scheduling and automation for residential cleaning and maid services. Because it is not trying to serve every trade, the recurring scheduling, client reminders, booking forms and cleaner management all match how a cleaning business actually runs. Pricing is flat, from $19 a month, rather than per cleaner, which keeps it cheap as your team grows.',
+        ],
+      },
+      {
+        heading: 'What to weigh',
+        body: [
+          'For a maid service, that focus is the whole point, and the low flat price and 14-day trial make it easy to try. The flip side is obvious: it is only for cleaning, so any other trade should look elsewhere, and it deliberately skips the heavier features like a flat-rate pricebook and inventory. SMS is also a paid extra. QuickBooks Online sync arrives on the Pro tier and up.',
+        ],
+      },
+    ],
+    alternatives: ['jobber', 'housecall-pro', 'servicem8', 'gorilladesk'],
+    sources: officialSources('ZenMaid', 'zenmaid.com', { website: true, pricing: true }),
+    verification: verifiedDates({ pricing: true, pricingOn: '2026-09-14', editorialOn: '2026-09-14' }),
+    commercial: { type: 'affiliate', affiliateLinkSlug: 'zenmaid', disclosure: DISCLOSURE },
+    published: true,
+  },
+  {
+    slug: 'zenbooker',
+    name: 'Zenbooker',
+    vendorName: 'Zenbooker',
+    tagline: 'Online booking, quoting and dispatch for home-service businesses.',
+    description:
+      'Zenbooker is a booking-first platform for home-service businesses, combining an online booking page and website builder with quoting, dispatch, a field app and payments. It is priced by the number of service territories, with unlimited bookings and team seats on every plan.',
+    website: 'https://zenbooker.com',
+    logoMark: 'Zb',
+    brandColor: '#7c3aed',
+    bestFor: ['Home-service businesses that win work through online booking', 'Teams that want unlimited seats and bookings', 'Operations that need territory-based scheduling'],
+    notIdealFor: ['Commercial and project contractors', 'Teams needing deep accounting or a pricebook', 'Enterprise multi-entity operations'],
+    verdict:
+      'A booking-first platform for home-service businesses whose website is their main lead source, with unlimited seats and territory control.',
+    industries: ['cleaning', 'landscaping', 'pool-service', 'other'],
+    companySizes: ['solo', '2-5', '6-10', '11-25'],
+    businessModels: ['residential', 'route', 'both'],
+    pricing: verifiedPricing('tiered', true, [
+      plan('Standard', 29, { billingModel: 'flat', trialDays: 14, contract: 'Month-to-month', notes: '2 territories · unlimited bookings and seats', sourceUrl: 'https://zenbooker.com/pricing' }),
+      plan('Professional', 79, { billingModel: 'flat', trialDays: 14, contract: 'Month-to-month', notes: '8 territories · adds estimates, whitelabeling', sourceUrl: 'https://zenbooker.com/pricing' }),
+      plan('Enterprise', 149, { billingModel: 'flat', trialDays: 14, contract: 'Month-to-month', notes: '36 territories · adds drive-time routing', sourceUrl: 'https://zenbooker.com/pricing' }),
+      plan('National', 259, { billingModel: 'flat', trialDays: 14, contract: 'Month-to-month', notes: '96 territories', sourceUrl: 'https://zenbooker.com/pricing' }),
+    ]),
+    implementation: 'low',
+    implementationNotes: 'Self-serve 14-day trial with no card required; includes a website builder and booking page.',
+    features: matrix({
+      available: ['online_booking', 'scheduling', 'dispatching', 'estimates', 'invoicing', 'payments', 'customer_notifications', 'crm', 'mobile_app'],
+      partial: ['reporting', 'route_optimization'],
+      planDependent: ['api'],
+    }),
+    integrations: [{ name: 'Stripe', category: 'payments', support: 'available' }],
+    pros: ['Booking-first, with a website builder and booking page', 'Unlimited bookings and team seats on every plan', 'Drive-time aware dispatch on higher tiers'],
+    tradeoffs: ['Tiers are capped by number of territories', 'Lighter accounting depth', 'Aimed at residential home services, not commercial'],
+    editorial: [
+      {
+        heading: 'Where Zenbooker fits, in plain terms',
+        body: [
+          'Zenbooker starts from the booking, not the back office. If your website is where you win work, it gives you an online booking page, quote requests, a website builder, and then the dispatch and field app to run the jobs that come in. Every plan includes unlimited bookings and unlimited team seats, and pricing is set by how many service territories you cover, from $29 a month for two up to $259 for ninety-six.',
+        ],
+      },
+      {
+        heading: 'What to weigh',
+        body: [
+          'For a residential home-service business that lives on inbound online bookings, that model is a genuine strength, and unlimited seats keep it affordable as you add crew. The higher tiers add drive-time-aware dispatch, which is useful for route-dense work. Where it is lighter is the accounting side, and it is built for residential rather than commercial or project work, so weigh that against your mix.',
+        ],
+      },
+    ],
+    alternatives: ['housecall-pro', 'jobber', 'servicem8', 'gorilladesk'],
+    sources: officialSources('Zenbooker', 'zenbooker.com', { website: true, pricing: true }),
+    verification: verifiedDates({ pricing: true, pricingOn: '2026-09-14', editorialOn: '2026-09-14' }),
+    commercial: { type: 'affiliate', affiliateLinkSlug: 'zenbooker', disclosure: DISCLOSURE },
+    published: true,
+  },
 ];
 
 /**
