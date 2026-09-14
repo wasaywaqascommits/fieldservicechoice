@@ -20,7 +20,9 @@ export const hasSupabasePublic = Boolean(supabaseConfig.url && supabaseConfig.an
 export const hasSupabaseAdmin = Boolean(supabaseConfig.url && supabaseConfig.serviceRoleKey);
 
 export const analyticsConfig = {
-  gaId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || '',
+  // GA4 measurement ID. Public by design (it ships in the page source). The env
+  // var can override it, but this default keeps analytics working out of the box.
+  gaId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-1E83SD5XV3',
   posthogKey: process.env.NEXT_PUBLIC_POSTHOG_KEY || '',
   posthogHost: process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com',
 };
