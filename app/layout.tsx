@@ -5,6 +5,7 @@ import { SITE_NAME, SITE_URL } from '@/lib/env';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { Analytics } from '@/components/analytics/Analytics';
+import { CookieConsent } from '@/components/analytics/CookieConsent';
 import { jsonLdScript, organizationJsonLd, websiteJsonLd } from '@/lib/seo/jsonld';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
@@ -39,6 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </main>
         <Footer />
         <Analytics />
+        <CookieConsent />
       </body>
     </html>
   );
