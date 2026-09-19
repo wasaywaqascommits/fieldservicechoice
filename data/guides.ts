@@ -2075,7 +2075,7 @@ export const GUIDES: GuidePage[] = [
     title: 'Field Service Software and Accounting: How the Integrations Really Work',
     category: 'Integration',
     intro:
-      'The accounting integration is the one that decides whether your books stay clean or you re-type every invoice by hand. It is also the integration people get wrong most often, because the details vary sharply between platforms. Here is the honest landscape.',
+      'The accounting integration is the one that decides whether your books stay clean or you re-type every invoice by hand. It is also the integration people get wrong most often, because support for QuickBooks Online, QuickBooks Desktop and Xero varies sharply between platforms.',
     sections: [
       {
         heading: 'The one distinction that matters most',

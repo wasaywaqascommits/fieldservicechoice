@@ -103,7 +103,7 @@ export const INDUSTRIES: IndustryPage[] = [
       {
         question: 'What do plumbers need from field service software?',
         answer:
-          'Service plumbing needs fast emergency and on-call scheduling, clear on-site estimates, invoicing and online payments, and strong customer communication. As shops grow, a flat-rate pricebook and service agreements help. Commercial and project plumbers additionally need job costing, inventory and progress billing.',
+          'Service plumbing needs fast emergency and on-call scheduling, clear on-site estimates, invoicing and online payments, and strong customer communication. As shops grow, a flat-rate pricebook and service agreements help. Commercial and project plumbers also need job costing, inventory and progress billing.',
       },
       {
         question: 'What is the best software for commercial plumbing?',

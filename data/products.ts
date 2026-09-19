@@ -343,7 +343,7 @@ export const PRODUCTS: Product[] = [
       {
         heading: 'What users consistently report',
         body: [
-          'Users credit ServiceTitan as a genuinely comprehensive system that centralizes scheduling, dispatch, inventory and finance in one place, and larger shops that use it fully tend to defend it strongly.',
+          'Users credit ServiceTitan as a genuinely all-in-one system that centralizes scheduling, dispatch, inventory and finance in one place, and larger shops that use it fully tend to defend it strongly.',
           'The complaints are almost all about commitment and cost rather than capability. Contracts are typically multi-year with steep early-exit fees (users report being quoted thousands of dollars to leave), there is no free trial, onboarding is long, and support can be slow. Technicians also report the mobile app crashing and losing data offline. The clear takeaway from reviews: negotiate hard and get every contract term in writing before you sign.',
         ],
       },
@@ -873,7 +873,7 @@ export const PRODUCTS: Product[] = [
     bestFor: ['Businesses running planned/recurring maintenance', 'Service-contract heavy operations', 'Teams managing many properties per client'],
     notIdealFor: ['Very small startups', 'Simple one-off residential jobs only', 'Teams wanting the cheapest tool'],
     verdict:
-      'A good fit for maintenance-driven trades that need robust service-contract and planned-maintenance management.',
+      'A good fit for maintenance-driven trades that need deep service-contract and planned-maintenance management.',
     industries: ['hvac', 'plumbing', 'commercial'],
     companySizes: ['6-10', '11-25', '26-50', '51-100'],
     businessModels: ['commercial', 'both', 'route'],

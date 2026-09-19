@@ -32,7 +32,7 @@ export const BEST_PAGES: BestPage[] = [
       {
         heading: 'What field service management software actually does',
         body: [
-          'Field service management software is the system a trade or home-service business uses to run the work its technicians do in the field. At its core it turns a job into a repeatable flow: a customer request becomes a scheduled visit, a dispatched technician, a completed job with notes and photos, an invoice and a payment, with a full history kept against the customer and the equipment.',
+          'Field service management software is the system a trade or home-service business uses to run the work its technicians do in the field. It turns a job into a repeatable flow: a customer request becomes a scheduled visit, a dispatched technician, a completed job with notes and photos, an invoice and a payment, with a full history kept against the customer and the equipment.',
           'The capabilities that matter most in practice are scheduling and dispatch, a technician mobile app (ideally one that works offline), estimates and invoicing, online payments, customer notifications, and an accounting integration so the same numbers do not get typed twice. Larger operations add a flat-rate pricebook, service or membership agreements, inventory, job costing and deeper reporting.',
           'Almost every platform claims all of these. The difference is depth: a tool can technically "do" job costing while being far too shallow for a commercial contractor, or "support" QuickBooks while syncing only the Online version and not Desktop. That gap between a checkbox and a capability is what this shortlist is trying to cut through.',
         ],
@@ -263,7 +263,7 @@ export const BEST_PAGES: BestPage[] = [
       'Small field-service businesses value fast setup, ease of use and predictable cost over enterprise depth. These platforms are the strongest fits for owner-operators and small teams.',
     lead: [
       'For a small field-service business, the best software is rarely the one with the most features, it is the one your team will actually use from day one. At one to a handful of technicians, you do not have an office manager to run a three-month implementation or configure a complex pricebook. Speed of setup, a mobile app your crew likes, and predictable monthly cost matter more than enterprise depth you will never touch.',
-      'The good news is that this end of the market is well served. Several platforms are built specifically for owner-operators and small teams, covering scheduling, quoting, invoicing, payments and customer communication without a formal rollout. The risk is the opposite of what most buyers fear: not that you will outgrow a small-business tool, but that you will overbuy an enterprise platform and pay for complexity that slows you down.',
+      'This end of the market is well served. Several platforms are built specifically for owner-operators and small teams, covering scheduling, quoting, invoicing, payments and customer communication without a formal rollout. The risk is the opposite of what most buyers fear: not that you will outgrow a small-business tool, but that you will overbuy an enterprise platform and pay for complexity that slows you down.',
       'The ordering below is our independent editorial view for a typical small business. For a shortlist matched to your trade, team size and budget, use the Finder.',
     ],
     methodologyNote: METHODOLOGY_NOTE,
