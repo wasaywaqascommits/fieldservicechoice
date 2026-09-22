@@ -27,8 +27,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const page = getIndustryBySlug(slug);
   if (!page) return buildMetadata({ title: 'Not found', description: 'Not found', path: `/industries/${slug}/`, noindex: true });
   return buildMetadata({
-    title: `Best ${page.shortName} Field Service Software`,
-    description: `${page.intro.slice(0, 155)}`,
+    title: page.seo?.title ?? `Best ${page.shortName} Field Service Software`,
+    description: page.seo?.description ?? `${page.intro.slice(0, 155)}`,
     path: `/industries/${page.slug}/`,
     ogType: 'article',
   });

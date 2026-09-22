@@ -66,6 +66,11 @@ export const INDUSTRIES: IndustryPage[] = [
           'Membership and maintenance-agreement management is a strength of the more established platforms. ServiceTitan and FieldEdge handle recurring agreements, visit scheduling and renewals well. If memberships are central to your revenue, treat depth here as a hard requirement when you compare options.',
       },
     ],
+    seo: {
+      title: 'Best HVAC Software (Field Service Platforms Compared)',
+      description:
+        'Compare the best HVAC software for dispatch, flat-rate pricebook, maintenance agreements, financing and QuickBooks, from small residential teams to established HVAC companies.',
+    },
     published: true,
   },
   {
@@ -120,7 +125,17 @@ export const INDUSTRIES: IndustryPage[] = [
         answer:
           'Fast dispatch is a strength of the service-oriented platforms, Jobber, Housecall Pro and Workiz all handle same-day scheduling well, and Workiz adds built-in call handling that phone-driven shops value. Larger operations with high dispatch volume may prefer ServiceTitan’s deeper dispatch board.',
       },
+      {
+        question: 'What is the best software for plumbers?',
+        answer:
+          'For most plumbers, the best software is a mobile-first plumbing service tool that speeds up on-site quoting, dispatch, invoicing and payments, Jobber, Housecall Pro and Workiz all fit that bill. Commercial and project plumbers need estimating and job-costing depth instead, which points to Simpro or ServiceTitan. Pick the side your work leans toward rather than a tool that tries to do both.',
+      },
     ],
+    seo: {
+      title: 'Best Plumbing Software for Service & Commercial Plumbers',
+      description:
+        'Compare the best plumbing software for plumbers, from residential service and emergency dispatch to commercial job costing, with pricebook, invoicing and QuickBooks options.',
+    },
     published: true,
   },
   {
@@ -230,6 +245,11 @@ export const INDUSTRIES: IndustryPage[] = [
           'The priorities shift toward CRM and sales pipeline, estimating and proposals, document and photo management, production/project workflows, and job costing, rather than recurring-visit scheduling. If insurance or production workflows are central to your business, weigh those capabilities heavily.',
       },
     ],
+    seo: {
+      title: 'Best Roofing Software for Sales & Production',
+      description:
+        'Compare the best roofing software for CRM and sales pipeline, estimating, document and photo management, and project tracking, for service repair and full production roofers.',
+    },
     published: true,
   },
   {
@@ -283,7 +303,22 @@ export const INDUSTRIES: IndustryPage[] = [
         answer:
           'Yes, recurring and route billing is a core need for landscaping, and the platforms recommended here support repeating visits and recurring invoicing to keep revenue predictable. If subscription-style billing is central to your model. Confirm the depth of recurring billing when you evaluate options.',
       },
+      {
+        question: 'What is the best lawn care software?',
+        answer:
+          'Lawn care is recurring and route-based, so the best lawn care software is the one that handles repeating visits and tight routes cleanly. Jobber is a popular fit for lawn care and landscaping; FieldPulse and Kickserv are common alternatives, and very route-dense operations may want specialized routing. Match the tool to how many stops your crews run each day.',
+      },
+      {
+        question: 'Is there lawn care management software for multiple crews?',
+        answer:
+          'Yes. Once you run several crews, lawn care management software needs solid crew scheduling, route planning and recurring billing so nothing slips between teams. Jobber and FieldPulse both scale from solo operators to multi-crew lawn care. Prioritize recurring-job handling and mobile crew tools when you compare, since that is where multi-crew time is won or lost.',
+      },
     ],
+    seo: {
+      title: 'Best Lawn Care & Landscaping Software',
+      description:
+        'Compare the best lawn care and landscaping software for recurring routes, crew scheduling and invoicing, from solo lawn care to multi-crew landscaping operations.',
+    },
     published: true,
   },
   {
@@ -338,6 +373,11 @@ export const INDUSTRIES: IndustryPage[] = [
           'Reliable recurring billing keeps revenue predictable, and the platforms recommended here support recurring visits and subscription-style invoicing. If recurring billing and route density are central to your model, prioritize the depth of recurring scheduling and billing when you compare options.',
       },
     ],
+    seo: {
+      title: 'Best Pest Control Software',
+      description:
+        'Compare the best pest control software for route optimization, recurring scheduling, chemical and service records, and reliable recurring billing for route-based operations.',
+    },
     published: true,
   },
   {
@@ -390,7 +430,27 @@ export const INDUSTRIES: IndustryPage[] = [
         answer:
           'Recurring visit scheduling, automatic recurring billing, route planning, and automated reminders to cut no-shows are the core. Online booking helps win new clients, and a simple mobile app with checklists keeps crews consistent. Deep pricebook and financing features matter far less for cleaning than for the mechanical trades.',
       },
+      {
+        question: 'What is the best software for a house cleaning or maid service?',
+        answer:
+          'House cleaning and maid services run on recurring residential visits, so the priorities are easy recurring scheduling, automatic billing and client reminders. Jobber and Housecall Pro both handle residential cleaning well; ServiceM8 suits a very small operation and Kickserv is a budget option. The same tools cover house cleaning software and maid service software needs, since the underlying workflow is the same.',
+      },
+      {
+        question: 'What software do janitorial and commercial cleaning companies use?',
+        answer:
+          'Commercial janitorial work leans on crew scheduling, recurring contracts and reliable recurring invoicing rather than online booking. General FSM tools like Jobber and Housecall Pro cover most janitorial and commercial cleaning management needs; if you run large fixed contracts, weigh recurring billing and team scheduling depth hardest when you compare cleaning company systems.',
+      },
+      {
+        question: 'Can I use this for a carpet cleaning or window cleaning business?',
+        answer:
+          'Yes. Carpet cleaning and window cleaning are route- and booking-driven like the rest of the cleaning trade, so the same recurring scheduling, online booking and mobile-invoicing tools fit. Jobber and Housecall Pro are common picks for both. The main difference is job length and equipment, not the software, so prioritize scheduling and payments the same way.',
+      },
     ],
+    seo: {
+      title: 'Best Cleaning Business Software for Maid & Janitorial Teams',
+      description:
+        'Compare the best cleaning business software for maid services, house cleaning, janitorial and commercial teams, with recurring scheduling, routing and automatic billing.',
+    },
     published: true,
   },
   {
@@ -443,7 +503,22 @@ export const INDUSTRIES: IndustryPage[] = [
         answer:
           'Many field service apps let technicians capture readings, notes and photos against each property on site, which builds a service history you can refer back to. If detailed chemical logging is central to how you work, test that mobile flow specifically during a trial to be sure it fits.',
       },
+      {
+        question: 'What is the best pool maintenance software?',
+        answer:
+          'For pool maintenance, prioritize recurring route scheduling and fast on-site logging over back-office depth. Jobber and Housecall Pro are strong all-rounders for pool service management, ServiceM8 suits a small Apple-based route, and Kickserv is a budget pick. The right pool maintenance software is the one that keeps your recurring routes tight and logging quick.',
+      },
+      {
+        question: 'Does pool service software work for pool and spa businesses?',
+        answer:
+          'Yes. Pool and spa service runs on the same recurring routes, service history and mobile logging as pool-only work, so the same tools fit. If you also sell repairs or renovations, weigh quoting and payments alongside routing. Test the mobile flow during a trial to confirm it captures readings and spa service the way you work.',
+      },
     ],
+    seo: {
+      title: 'Best Pool Service Software (Pool & Spa Maintenance)',
+      description:
+        'Compare the best pool service software for route scheduling, chemical logging and recurring billing, including pool maintenance, pool cleaning and pool and spa businesses.',
+    },
     published: true,
   },
   {
@@ -496,7 +571,17 @@ export const INDUSTRIES: IndustryPage[] = [
         answer:
           'If most of your work comes from inbound calls, call tracking tells you which marketing actually produces booked jobs, so you can spend where it works. Communication-focused tools such as Workiz build this in, which is why they suit phone-driven trades like appliance repair.',
       },
+      {
+        question: 'Is there dedicated appliance repair scheduling software?',
+        answer:
+          'Most appliance shops use general field service software rather than a niche product, because appliance repair scheduling software really comes down to fast dispatch, a clear technician calendar and parts on the truck. Workiz suits call-heavy shops, while Jobber and Housecall Pro handle scheduling and payments cleanly. Prioritize dispatch speed and parts inventory over a label that says appliance-specific.',
+      },
     ],
+    seo: {
+      title: 'Best Appliance Repair Software & Scheduling Tools',
+      description:
+        'Compare the best appliance repair software for call handling, dispatch scheduling, parts inventory and equipment history, with mobile invoicing and card payments in the field.',
+    },
     published: true,
   },
   {
