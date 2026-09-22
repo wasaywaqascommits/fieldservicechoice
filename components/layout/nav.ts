@@ -52,6 +52,14 @@ export const FOOTER_COMPANY: NavLink[] = [
   { label: 'Partner With Us', href: '/partner-with-us/' },
 ];
 
+/**
+ * Public brand profiles shown in the footer. Keep in sync with
+ * ORGANIZATION_PROFILES in lib/seo/jsonld.ts (the schema `sameAs`).
+ */
+export const SOCIAL_LINKS: NavLink[] = [
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/company/field-service-choice' },
+];
+
 export const FOOTER_LEGAL: NavLink[] = [
   { label: 'Editorial Policy', href: '/editorial-policy/' },
   { label: 'Data Verification', href: '/data-verification/' },

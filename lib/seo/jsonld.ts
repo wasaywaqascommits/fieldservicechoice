@@ -11,6 +11,15 @@ import type { Author, Product } from '@/types';
  * verified price exists.
  */
 
+/**
+ * Verified public profiles for the brand. Added to Organization `sameAs` so
+ * search engines can tie the site to the same real-world entity across the web.
+ * Only add a URL here once the profile is live and links back to the site.
+ */
+export const ORGANIZATION_PROFILES = [
+  'https://www.linkedin.com/company/field-service-choice',
+];
+
 export function organizationJsonLd() {
   return {
     '@context': 'https://schema.org',
@@ -19,6 +28,7 @@ export function organizationJsonLd() {
     url: SITE_URL,
     description:
       'Independent discovery, comparison and recommendation platform for Field Service Management software.',
+    sameAs: ORGANIZATION_PROFILES,
   };
 }
 
